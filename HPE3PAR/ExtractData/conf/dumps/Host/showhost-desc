@@ -1,0 +1,110 @@
+Id Name ReportedName OS Arch OS_Ver OS_Patch IP Multipath MPVer ClusterSW ClusterVer ClusterID ClusterName HA_Ver
+---------- Host flashesx03.acme.local ----------
+Name       : flashesx03.acme.local
+Domain     : -
+Id         : 4
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx01.acme.local ----------
+Name       : flashesx01.acme.local
+Domain     : -
+Id         : 5
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx02.acme.local ----------
+Name       : flashesx02.acme.local
+Domain     : -
+Id         : 6
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx04.acme.local ----------
+Name       : flashesx04.acme.local
+Domain     : -
+Id         : 7
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host CLInfraESX01 ----------
+Name       : CLInfraESX01
+Domain     : -
+Id         : 8
+Location   : B7
+IP Address : 10.250.166.111
+OS         : ESX 4.x/5.x
+Model      : HP DL360 G7
+Contact    : Jake
+Comment    : 10.250.154.56
+
+---------- Host esxvcd03 ----------
+Name       : esxvcd03
+Domain     : -
+Id         : 9
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host esxvcd04 ----------
+Name       : esxvcd04
+Domain     : -
+Id         : 10
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host NBU5240 ----------
+Name       : NBU5240
+Domain     : -
+Id         : 11
+Location   : --
+IP Address : --
+OS         : RHE Linux (5.x, 6.x)
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX03 ----------
+Name       : TECESX03
+Domain     : -
+Id         : 12
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX04 ----------
+Name       : TECESX04
+Domain     : -
+Id         : 13
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --

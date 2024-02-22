@@ -1,0 +1,282 @@
+AdmissionTime,CagePos,Capacity,Detailed_State,Failed_MB,FmtActive,FmtBlkSize,FmtProgress,Free_Chunk,Free_MB,FW_Rev,FW_Status,Id,LdA,LifeLeft_PCT,MediaType,MFR,Model,Node_WWN,Nrm_Unused_Fail,Nrm_Unused_Free,Nrm_Unused_Unavail,Nrm_Unused_Uninit,Nrm_Used_Fail,Nrm_Used_OK,Order,Path_A0,Path_A1,Path_B0,Path_B1,Port_A0,Port_A1,Port_B0,Port_B1,Protocol,Rd_CErr,Rd_UErr,RPM,SedState,Serial,Size_MB,Spare_Chunk,Spare_MB,Spr_Unused_Fail,Spr_Unused_Free,Spr_Unused_Uninit,Spr_Used_Fail,Spr_Used_OK,State,Temp_DegC,Total_Chunk,Type,Unavail_MB,Volume_MB,Wr_CErr,Wr_UErr
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+col,showpd - Explanation of column headers for showpd
+
+Id           Identifier of the physical disk.
+CagePos      Position of the PD.  The format varies depending on the drive
+             cage type:
+               - DC1 format is <cage>:<side>.<mag>:<disk>, where <cage> is the
+               cage number, <side> is 0 or 1 (for left or right, respectively,
+               as viewed from the front), <mag> is the magazine number (0
+               through 4) and <disk> is the disk position (0 through 3) within
+               the magazine.
+               - DC2 and DC4 format is <cage>:<mag>:<disk>, where <cage> is
+               the cage number, <mag> is the magazine number (0 through 9) and
+               <disk> is the disk position (0 through 3) within the magazine.
+               - DC3 format is <cage>:<mag>:<disk>, where <cage> is the cage
+               number, <mag> is the magazine number (0 through 15) and <disk>
+               is always 0.
+             If the position ends with "?" the current position of
+             the drive is not known (for example, the drive may be missing),
+             and the position shown is the last known position.
+Size_MB      Total size of the disk in MB (1024^2 bytes).
+Free_MB      Free size of the disk in MB (1024^2 bytes).
+             This includes the size that is available to use, uninitialized,
+             and unavailable to use.
+Volume_MB    PD space used for volumes in MB (1024^2 bytes).
+Spare_MB     PD space reserved for spares in MB (1024^2 bytes).
+Unavail_MB   Unavailable PD space MB (1024^2 bytes).
+Failed_MB    PD space in failed chunklets in MB (1024^2 bytes).
+Total_Chunk  Number of chunklets on the PD.
+Free_Chunk   Number of free chunklets on the PD.
+Spare_Chunk  Number of spare chunklets on the PD.
+Nrm_Used_OK
+Nrm_Used_Fail
+Nrm_Unused_Free
+Nrm_Unused_Uninit
+Nrm_Unused_Unavail
+Nrm_Unused_Fail
+Spr_Used_OK
+Spr_Used_Fail
+Spr_Unused_Free
+Spr_Unused_Uninit
+Spr_Unused_Fail
+             Counts of various types of chunklets on the PD.  The column
+             names consist of three parts.
+             The first part is either
+                 Nrm      The chunklet is for normal use.
+                 Spr      The chunklet is reserved for spare.
+             The middle part is either
+                 Used     The chunklet is used.
+                 Unused   The chunklet is unused.
+             The last part is one of
+                 OK       The chunklet is OK.
+                 Uninit   The chunklet is OK but uninitialized.
+                 Unavail  The chunklet is unavailable.
+                 Fail     The chunklet has failed.
+Node_WWN     Node World Wide Name of the PD.
+State        State of the PD, can be one of the following
+                 normal   PD is normal
+                 degraded PD is not operating normally. Use "showpd -state" to
+                          find out the detail information
+                 new      PD is new, needs to be admitted before it can be
+                          used (see help admitpd)
+                 failed   PD has failed
+Detailed_State Detailed state information of the PD
+                 invalid          PD is invalid
+                 inquiry_failed   PD has a scsi inquiry failure
+                 unit_ready_failed
+                                  PD failed a test-unit-ready command test
+                 read_capacity_failed
+                                  Unable to read PD capacity
+                 write_label_failed
+                                  Unable to write PD label
+                 mode_page_update_failed
+                                  Failed to update a scsi mode page
+                 read_label_failed
+                                  Failed to read the PD label
+                 invalid_label    PD has invalid label
+                 invalid_capacity PD has invalid capacity
+                 invalid_type     PD is of invalid drive type
+                 invalid_firmware PD has invalid firmware
+                 invalid_block_size
+                                  PD blocksize is not correct for the system
+                                  (512 bytes or 520 bytes with DIF)
+                 invalid_cage     PD cage position has not yet been determined
+                 prolonged_not_ready
+                                  PD not ready for a prolonged period
+                 prolonged_missing
+                                  PD missing for a prolonged period
+                 invalid_media    PD has invalid media
+                 failed_hardware  PD has failed hardware
+                 smart_threshold_exceeded
+                                  PD has exceeded the smart threshold
+                 multiple_chunklets_media_bad
+                                  PD has multiple failed chunklets
+                 media_failed     PD has invalid media
+                 increased_error_count
+                                  PD has a high error count
+                 no_valid_ports
+                                  PD has no valid ports
+                 errors_on_A0_port
+                                  PD has errors on A0 port
+                 errors_on_B0_port
+                                  PD has errors on B0 port
+                 errors_on_A1_port
+                                  PD has errors on A1 port
+                 errors_on_B1_port
+                                  PD has errors on B1 port
+                 disabled_A0_port
+                                  PD's A0 port disabled
+                 disabled_B0_port
+                                  PD's B0 port disabled
+                 disabled_A1_port
+                                  PD's A1 port disabled
+                 disabled_B1_port
+                                  PD's B1 port disabled
+                 notready         PD is not ready
+                 missing          PD is missing
+                 missing_A0_port
+                                  PD's A0 port is missing
+                 missing_B0_port
+                                  PD's B0 port is missing
+                 missing_A1_port
+                                  PD's A1 port is missing
+                 missing_B1_port
+                                  PD's B1 port is missing
+                 relocating
+                                  PD's chunklets are being moved
+                 servicing
+                                  PD's chunklets are being serviced
+                                  (servicemag is in progress and PD not
+                                   available for LD allocation)
+                 cage_reported_pd_unknown
+                                  PD is reported by cage as unknown
+                 cage_reported_pd_missing
+                                  PD is reported by cage as missing
+                 new_offloop
+                                  PD is offloop
+                 new_onloop
+                                  PD is onloop
+                 spinup
+                                  PD is spun up
+                 cage_reported_pd_ready
+                                  PD is reported by cage as ready
+                 fail_to_spinup
+                                  PD failed to spin up
+                 loop_failure
+                                  PD had loop failure
+                 drive_error_bit
+                                  PD had error bit set
+                 sysmgr_bypassed
+                                  PD bypassed by sysmgr
+                 port_bypassed
+                                  PD port bypassed by sysmgr
+                 drive_not_ready
+                                  PD is not ready
+                 sysmgr_spundown
+                                  PD was spun down by sysmgr
+                 spundown_by_cage_FW
+                                  PD was spundown by cage firmware or via
+                                  maintenance interface
+                 overtemp_spundown
+                                  PD was spun down due to over heating
+                 spindown_request_failed
+                                  PD failed to respond to the spindown request
+                 i2c failure
+                                  PD had i2c failure
+                 prolonged_missing_A0_port
+                                  PD's A0 port missing for a prolonged period
+                 prolonged_missing_B0_port
+                                  PD's B0 port missing for a prolonged period
+                 prolonged_missing_A1_port
+                                  PD's A1 port missing for a prolonged period
+                 prolonged_missing_B1_port
+                                  PD's B1 port missing for a prolonged period
+                 invalid_connection
+                                  PD has invalid connection to the node
+                 over_temperature_warning
+                                  PD is over heated
+                 over_temperature_alert
+                                  PD is over heated and will be spundown
+                 old_firmware
+                                  PD firmware is old
+                 not_available_for_allocations
+                                  PD is not available for LD allocation
+                 formatting
+                                  PD not ready due to active format operation
+                 dif_threshold_exceeded
+                                  PD failed from too many DIF errors reported
+                 medium_format_corrupted
+                                  PD failed due to a failed format operation or
+                                  other fatal internal table error
+Port_A0
+Port_B0
+Port_A1
+Port_B1      Port location for the A and B ports of the PD, in the format
+             <node>:<slot>:<port>.  Note that the primary path to the disk is
+             shown by an asterisk(*) in either the A(APort) or B(BPort) column,
+             and a minus(-) sign following a path indicates the port is
+             disabled.
+Path_A0
+Path_B0
+Path_A1
+Path_B1      Similar to port information above but also shows the port
+             information that is saved in the Table of Contents (TOC) if
+             different from the current port.  If shown, the port saved in the
+             TOC is shown after a '\'.
+             Instead of an asterisk to show primary path information, the path
+             selection order is shown in the Order column.
+Capacity     The vendor's advertised disk drive capacity in GB.
+Order        The order of preference of the path to the disk.
+LdA          LD allocation allowed from this LD, Y = yes, N = no
+Type         Device type of the PD.
+                 FC    Fibre Channel PDs.
+                 NL    Nearline PDs.
+                 SSD   Solid State Drive PDs.
+RPM          Drive relative performance metric. The number does not represent
+             a rotational speed for the drives without spinning media (SSD). It
+             is meant as a rough estimation of the performance difference
+             between the drive and the other drives in the system. For FC and
+             NL drives, the number corresponds to both a performance measure
+             and actual rotational speed. For SSD drives, the number is to be
+             treated as a relative performance benchmark that takes into
+             account I/O's per second, bandwidth and access time.
+MFR          Disk Drive Manufacturer.
+Model        Manufacturer's device Id for disk.
+Serial       Disk Drive serial number.
+FW_Rev       Firmware Revision.
+FW_Status    Firmware status.
+Rd_CErr      Correctable read errors.
+Rd_UErr      Uncorrectable read errors.
+Wr_CErr      Correctable write errors.
+Wr_UErr      Uncorrectable write errors.
+Temp_DegC    Drive temperature (centigrade).
+LifeLeft_PCT Percentage of wear leveling space remaining for the disk.
+MediaType    Type of media the drive uses.
+Protocol     Protocol type used by the drive.
+SedState      Information about the encryption capabilities of the drive.
+                 unknown          The SED capability is not known.
+                 not_capable      The drive is not self-encrypting.
+                 capable          The drive is a self-encrypting drive.
+                 fips_capable     The drive is a FIPS compliant self-encrypting drive.
+                 owned            The drive is a self-encrypting drive owned by
+                                  this system.
+                 fips_owned       The drive is a FIPS compliant self-encrypting
+                                  drive and is owned by this system.
+                 owned_by_other_system
+                                  The drive is a self-encrypting drive, and is
+                                  already owned by another system.
+AdmissionTime The time when the PD was admitted.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+ Id CagePos State  ----Node_WWN---- --MFR-- -----Model------ -Serial- -FW_Rev- Protocol MediaType -----AdmissionTime-----
+--- 0:16:0  new    500117310096F1E8 SanDisk DOPE0480S5xnNMRI A001E86A 3P04     SAS      cMLC      -----------------------
+--- 0:17:0  new    500117310096EE94 SanDisk DOPE0480S5xnNMRI A001E7AE 3P04     SAS      cMLC      -----------------------
+--- 0:18:0  new    500117310096F06C SanDisk DOPE0480S5xnNMRI A001E817 3P04     SAS      cMLC      -----------------------
+--- 0:19:0  new    5001173100976AFC SanDisk DOPE0480S5xnNMRI A00207B5 3P04     SAS      cMLC      -----------------------
+--- 0:20:0  new    5001173100976970 SanDisk DOPE0480S5xnNMRI A0020556 3P04     SAS      cMLC      -----------------------
+--- 0:21:0  new    500117310096F15C SanDisk DOPE0480S5xnNMRI A001E84C 3P04     SAS      cMLC      -----------------------
+--- 0:22:0  new    500117310096F268 SanDisk DOPE0480S5xnNMRI A001E899 3P04     SAS      cMLC      -----------------------
+--- 0:23:0  new    500117310096F174 SanDisk DOPE0480S5xnNMRI A001E84E 3P04     SAS      cMLC      -----------------------
+  0 0:0:0   normal 5001173100429280 SanDisk DOPE0480S5xnNMRI 0001BC5A 3P04     SAS      cMLC      2014-11-26 12:42:25 CST
+  1 0:1:0   normal 500117310042992C SanDisk DOPE0480S5xnNMRI 0001BE05 3P04     SAS      cMLC      2014-11-26 12:42:25 CST
+  2 0:2:0   normal 50011731004270A8 SanDisk DOPE0480S5xnNMRI 0001B3E4 3P04     SAS      cMLC      2014-11-26 12:42:25 CST
+  3 0:3:0   normal 5001173100428D78 SanDisk DOPE0480S5xnNMRI 0001BB18 3P04     SAS      cMLC      2014-11-26 12:42:26 CST
+  4 0:4:0   normal 5001173100429380 SanDisk DOPE0480S5xnNMRI 0001BC9A 3P04     SAS      cMLC      2014-11-26 12:42:26 CST
+  5 0:5:0   normal 5001173100428EE0 SanDisk DOPE0480S5xnNMRI 0001BB72 3P04     SAS      cMLC      2014-11-26 12:42:26 CST
+  6 0:6:0   normal 5001173100426CFC SanDisk DOPE0480S5xnNMRI 0001B2F9 3P04     SAS      cMLC      2014-11-26 12:42:26 CST
+  7 0:7:0   normal 50011731004299C8 SanDisk DOPE0480S5xnNMRI 0001BE2C 3P04     SAS      cMLC      2014-11-26 12:42:26 CST
+  8 0:8:0   normal 500117310096F1D8 SanDisk DOPE0480S5xnNMRI A001E842 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+  9 0:9:0   normal 500117310096F1EC SanDisk DOPE0480S5xnNMRI A001E847 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 10 0:10:0  normal 500117310096F00C SanDisk DOPE0480S5xnNMRI A001E768 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 11 0:11:0  normal 5001173100976A34 SanDisk DOPE0480S5xnNMRI A0020596 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 12 0:12:0  normal 500117310096F21C SanDisk DOPE0480S5xnNMRI A001E87A 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 13 0:13:0  normal 500117310096F064 SanDisk DOPE0480S5xnNMRI A001E80D 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 14 0:14:0  normal 500117310096F054 SanDisk DOPE0480S5xnNMRI A001E7A0 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+ 15 0:15:0  normal 50011731009765F8 SanDisk DOPE0480S5xnNMRI A0020190 3P04     SAS      cMLC      2016-06-10 14:35:16 CDT
+-------------------------------------------------------------------------------------------------------------------------
+ 24 total

@@ -1,0 +1,6 @@
+3Par7450 cli% srpdspace -btsecs -15m
+                                   -----------------Normal (Chunklets)----------------- -----------------Spare (Chunklets)------------------
+                   Time       Secs Used_OK Used_Fail Avail_Clean Avail_Dirty Avail_Fail Used_OK Used_Fail Avail_Clean Avail_Dirty Avail_Fail
+2017-06-22 05:10:00 CDT 1498126200     434         0        5988           0         10       0         0         704           0          0
+2017-06-22 05:15:00 CDT 1498126500     434         0        5988           0         10       0         0         704           0          0
+2017-06-22 05:20:00 CDT 1498126800     434         0        5988           0         10       0         0         704           0          0

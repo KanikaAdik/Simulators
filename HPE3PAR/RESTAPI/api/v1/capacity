@@ -1,0 +1,154 @@
+{
+    "allCapacity": {
+        "totalMiB": 10960896,
+        "allocated": {
+            "totalAllocatedMiB": 1165312,
+            "volumes": {
+                "totalVolumesMiB": 122880,
+                "nonCPGsMiB": 0,
+                "nonCPGUserMiB": 0,
+                "nonCPGSnapshotMiB": 0,
+                "nonCPGAdminMiB": 0,
+                "CPGsMiB": 122880,
+                "CPGUserMiB": 55294,
+                "CPGUserUsedMiB": 55294,
+                "CPGUserUnusedMiB": 0,
+                "CPGSnapshotMiB": 43010,
+                "CPGSnapshotUsedMiB": 684,
+                "CPGSnapshotUnusedMiB": 42326,
+                "CPGAdminMiB": 24576,
+                "CPGAdminUsedMiB": 768,
+                "CPGAdminUnusedMiB": 23808,
+                "unmappedMiB": 0,
+                "capacityEfficiency": {
+                    "compaction": 11.5,
+                    "deduplication": 0
+                }
+            },
+            "system": {
+                "totalSystemMiB": 1042432,
+                "internalMiB": 321536,
+                "spareMiB": 720896,
+                "spareUsedMiB": 0,
+                "spareUnusedMiB": 720896
+            }
+        },
+        "freeMiB": 6131712,
+        "freeInitializedMiB": 6131712,
+        "freeUninitializedMiB": 0,
+        "unavailableCapacityMiB": 0,
+        "failedCapacityMiB": 10240
+    },
+    "FCCapacity": {
+        "totalMiB": 0,
+        "allocated": {
+            "totalAllocatedMiB": 0,
+            "volumes": {
+                "totalVolumesMiB": 0,
+                "nonCPGsMiB": 0,
+                "nonCPGUserMiB": 0,
+                "nonCPGSnapshotMiB": 0,
+                "nonCPGAdminMiB": 0,
+                "CPGsMiB": 0,
+                "CPGUserMiB": 0,
+                "CPGUserUsedMiB": 0,
+                "CPGUserUnusedMiB": 0,
+                "CPGSnapshotMiB": 0,
+                "CPGSnapshotUsedMiB": 0,
+                "CPGSnapshotUnusedMiB": 0,
+                "CPGAdminMiB": 0,
+                "CPGAdminUsedMiB": 0,
+                "CPGAdminUnusedMiB": 0,
+                "unmappedMiB": 0
+            },
+            "system": {
+                "totalSystemMiB": 0,
+                "internalMiB": 0,
+                "spareMiB": 0,
+                "spareUsedMiB": 0,
+                "spareUnusedMiB": 0
+            }
+        },
+        "freeMiB": 0,
+        "freeInitializedMiB": 0,
+        "freeUninitializedMiB": 0,
+        "unavailableCapacityMiB": 0,
+        "failedCapacityMiB": 0
+    },
+    "NLCapacity": {
+        "totalMiB": 0,
+        "allocated": {
+            "totalAllocatedMiB": 0,
+            "volumes": {
+                "totalVolumesMiB": 0,
+                "nonCPGsMiB": 0,
+                "nonCPGUserMiB": 0,
+                "nonCPGSnapshotMiB": 0,
+                "nonCPGAdminMiB": 0,
+                "CPGsMiB": 0,
+                "CPGUserMiB": 0,
+                "CPGUserUsedMiB": 0,
+                "CPGUserUnusedMiB": 0,
+                "CPGSnapshotMiB": 0,
+                "CPGSnapshotUsedMiB": 0,
+                "CPGSnapshotUnusedMiB": 0,
+                "CPGAdminMiB": 0,
+                "CPGAdminUsedMiB": 0,
+                "CPGAdminUnusedMiB": 0,
+                "unmappedMiB": 0
+            },
+            "system": {
+                "totalSystemMiB": 0,
+                "internalMiB": 0,
+                "spareMiB": 0,
+                "spareUsedMiB": 0,
+                "spareUnusedMiB": 0
+            }
+        },
+        "freeMiB": 0,
+        "freeInitializedMiB": 0,
+        "freeUninitializedMiB": 0,
+        "unavailableCapacityMiB": 0,
+        "failedCapacityMiB": 0
+    },
+    "SSDCapacity": {
+        "totalMiB": 10960896,
+        "allocated": {
+            "totalAllocatedMiB": 1165312,
+            "volumes": {
+                "totalVolumesMiB": 122880,
+                "nonCPGsMiB": 0,
+                "nonCPGUserMiB": 0,
+                "nonCPGSnapshotMiB": 0,
+                "nonCPGAdminMiB": 0,
+                "CPGsMiB": 122880,
+                "CPGUserMiB": 55294,
+                "CPGUserUsedMiB": 55294,
+                "CPGUserUnusedMiB": 0,
+                "CPGSnapshotMiB": 43010,
+                "CPGSnapshotUsedMiB": 684,
+                "CPGSnapshotUnusedMiB": 42326,
+                "CPGAdminMiB": 24576,
+                "CPGAdminUsedMiB": 768,
+                "CPGAdminUnusedMiB": 23808,
+                "unmappedMiB": 0,
+                "capacityEfficiency": {
+                    "compaction": 11.5,
+                    "deduplication": 0
+                }
+            },
+            "system": {
+                "totalSystemMiB": 1042432,
+                "internalMiB": 321536,
+                "spareMiB": 720896,
+                "spareUsedMiB": 0,
+                "spareUnusedMiB": 720896
+            }
+        },
+        "freeMiB": 6131712,
+        "freeInitializedMiB": 6131712,
+        "freeUninitializedMiB": 0,
+        "unavailableCapacityMiB": 0,
+        "failedCapacityMiB": 10240
+    }
+}

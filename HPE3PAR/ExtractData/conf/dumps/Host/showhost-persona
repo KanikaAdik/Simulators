@@ -1,0 +1,12 @@
+Id Name                  Persona_Id Persona_Name Persona_Caps
+ 4 flashesx03.acme.local         11 VMware       SubLun,ALUA
+ 5 flashesx01.acme.local         11 VMware       SubLun,ALUA
+ 6 flashesx02.acme.local         11 VMware       SubLun,ALUA
+ 7 flashesx04.acme.local         11 VMware       SubLun,ALUA
+ 8 CLInfraESX01                  11 VMware       SubLun,ALUA
+ 9 esxvcd03                      11 VMware       SubLun,ALUA
+10 esxvcd04                      11 VMware       SubLun,ALUA
+11 NBU5240                        2 Generic-ALUA UARepLun,SESLun,ALUA
+12 TECESX03                      11 VMware       SubLun,ALUA
+13 TECESX04                      11 VMware       SubLun,ALUA
+

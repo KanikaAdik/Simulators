@@ -1,0 +1,6 @@
+                           ------ Ports ------- ----- Paths -----
+Lun VVname        Host     Host Inactive InServ Available Healthy Multipathing FailedPathPolicy MonIntervalSecs HostDevName
+ 31 CS_InfraLUN31 TECESX03    2        0      4         4       0 Unknown      Unknown                        0 --
+ 31 CS_InfraLUN31 TECESX04    2        0      4         4       0 Unknown      Unknown                        0 --
+---------------------------------------------------------------------------------------------------------------------------
+  2

@@ -1,0 +1,7 @@
+3Par7450 cli% srvvspace -attime -groupby VV_NAME
+Time: 2017-06-22 06:40:00 CDT (1498131600)
+              ------RawRsvd(MB)------- ----User(MB)---- ------Snap(MB)------ -----Admin(MB)------ ----------Total(MB)---------- -Capacity Efficiency-
+      VV_NAME   User Snap Admin  Total  Used Free  Rsvd Used Free Rsvd Vcopy Used Free Rsvd Vcopy Vcopy  Used  Rsvd VirtualSize   Compaction    Dedup
+      .srdata 109227    0     0 109227 81920    0 81920    0    0    0     0    0    0    0     0     0 81920 81920       81920            -        -
+CS_InfraLUN31  44373  683   768  45824 29690 3590 33280    0  512  512     0   22  234  256     0     0 29712 34048      409600         13.8        -
+        admin  20480    0     0  20480 10240    0 10240    0    0    0     0    0    0    0     0     0 10240 10240       10240            -        -

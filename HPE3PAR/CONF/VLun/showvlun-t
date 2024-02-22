@@ -1,0 +1,5 @@
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total

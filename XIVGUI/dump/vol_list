@@ -1,0 +1,126 @@
+Name                          Size (GB)   Master Name   Consistency Group   Pool                       Creator   Used Capacity (GB)
+HUSVM_1                       51                                            Demo_std - Do NOT delete   Demo      0
+HUSVM_2                       51                                            Demo_std - Do NOT delete   Demo      0
+Oracle_1                      34                                            Demo_std - Do NOT delete   Demo      21
+Oracle_2                      34                                            Demo_std - Do NOT delete   Demo      6
+Oracle_3                      34                                            Demo_std - Do NOT delete   Demo      21
+XIV_1                         34                                            Demo_std - Do NOT delete   Demo      0
+XIV_2                         34                                            Demo_std - Do NOT delete   Demo      0
+XIV_3                         34                                            Demo_std - Do NOT delete   Demo      0
+Test1                         17                                            Test                       Steve     0
+Thin1                         17                                            Test_thin                  Steve     0
+Test1.snapshot_00002          17          Test1                             Test                       SDTest
+Test1.snapshot_00003          17          Test1                             Test                       SDTest
+Test1.snapshot_00004          17          Test1                             Test                       SDTest
+Test1.snapshot_00005          17          Test1                             Test                       SDTest
+win0158_1                     34                                            Demo_std - Do NOT delete   Demo      20
+Win332                        34                                            Demo_std - Do NOT delete   Demo      0
+win0158_3                     34                                            Demo_std - Do NOT delete   Demo      0
+SDTest_VSP1                   17                                            Test_thin                  SDTest    0
+SDTest_R800_3                 17                                            Test_thin                  SDTest    0
+SDTest_R800_2                 17                                            Test_thin                  SDTest    0
+SDTest_R800_1                 17                                            Test_thin                  SDTest    0
+XIV_TO_VSP3_1                 68                                            Demo_std - Do NOT delete   Demo      0
+XIV_TO_VSP3_2                 68                                            Demo_std - Do NOT delete   Demo      0
+XIV_TO_VSP3_3                 68                                            Demo_std - Do NOT delete   Demo      0
+XIV_TO_VSP3_4                 68                                            Demo_std - Do NOT delete   Demo      0
+XIV_TO_VSP3_5                 68                                            Demo_std - Do NOT delete   Demo      0
+vol_001                       17                                            ILAB_P01                   ILAB      0
+vol_002                       17                                            ILAB_P01                   ILAB      0
+vol_003                       17                                            ILAB_P01                   ILAB      0
+vol_004                       17                                            ILAB_P01                   ILAB      0
+vol_005                       17                                            ILAB_P01                   ILAB      0
+vol_006                       17                                            ILAB_P01                   ILAB      0
+vol_007                       17                                            ILAB_P01                   ILAB      0
+vol_008                       17                                            ILAB_P01                   ILAB      0
+vol_009                       17                                            ILAB_P01                   ILAB      0
+vol_010                       17                                            ILAB_P01                   ILAB      0
+AD_v_001-AD_v_003_001         3109                                          ILAB_P01                   ILAB      0
+AD_v_001-AD_v_003_002         3109                                          ILAB_P01                   ILAB      0
+AD_v_001-AD_v_003_003         3109                                          ILAB_P01                   ILAB      0
+HTSM                          120                                           Demo_std - Do NOT delete   Atul      0
+WIN3158_G1000                 17                                            Demo_std - Do NOT delete   Demo2     1
+Infra-1                       17                                            Demo_std - Do NOT delete   Demo2     0
+Infra-0                       17                                            Demo_std - Do NOT delete   Demo2     7
+Infra-4-VirDemo               34                                            Demo_thin - Do NOT delete  Demo2     0
+Cumulus001                    17                                            Test                       admin     17
+SQL_1                         68                                            Demo_thin - Do NOT delete  Demo2     6
+SQL_2                         68                                            Demo_thin - Do NOT delete  Demo2     21
+ASMCONFIG01                   17                                            Demo_thin - Do NOT delete  Demo2     0
+DATA01                        68                                            Demo_thin - Do NOT delete  Demo2     4
+FRA01                         51                                            Demo_thin - Do NOT delete  Demo2     18
+TEMP01                        34                                            Demo_thin - Do NOT delete  Demo2     0
+REDO01                        17                                            Demo_thin - Do NOT delete  Demo2     10
+POC_001                       17                                            Test                       admin     0
+POC_002                       17                                            Test                       admin     0
+POCO_001                      34                                            ILAB_P01                   admin     0
+POCO_002                      34                                            ILAB_P01                   admin     0
+Infra-GAD_1                   68                                            Demo_thin - Do NOT delete  Demo2     0
+Infra-GAD_2                   68                                            Demo_thin - Do NOT delete  Demo2     0
+vol1                          2508                                          pool1                      SVC       0
+TESTVIRT                      51                                            Demo_thin - Do NOT delete  Demo2     0
+WIN3157_1_DL                  17                                            Demo_thin - Do NOT delete  PoC       2
+TESTEZ                        34                                            Demo_thin - Do NOT delete  Demo2     0
+Infra-5                       34                                            Demo_thin - Do NOT delete  Demo2     8
+Infra-8                       34                                            Demo_thin - Do NOT delete  Demo2     8
+Infra-9                       51                                            Demo_thin - Do NOT delete  Demo2     0
+Infra-10                      17                                            Demo_thin - Do NOT delete  Demo2     0
+TEST001                       34                                            Demo_thin - Do NOT delete  Demo2     0
+Cvol_001                      17                                            Test_thin                  admin     17
+Cvol_002                      17                                            Test_thin                  admin     0
+Cvol_003                      17                                            Test_thin                  admin     17
+Cvol_004                      17                                            Test_thin                  admin     0
+Cvol_005                      17                                            Test_thin                  admin     1
+APPDAT                        34                                            Demo_thin - Do NOT delete  Demo2     0
+APPDAT2                       34                                            Demo_thin - Do NOT delete  Demo2     0
+XIV100G_1                     120                                           Demo_thin - Do NOT delete  Demo2     0
+XIV100G_2                     120                                           Demo_thin - Do NOT delete  Demo2     0
+ESX2010                       206                                           Demo_thin - Do NOT delete  Demo2     51
+lin-vir                       51                                            Demo_thin - Do NOT delete  Demo2     11
+XIV_LUN_AJ                    34                                            Demo_thin - Do NOT delete  Demo2     3
+HUR-VirDemo-Data              68                                            Demo_thin - Do NOT delete  Demo2     23
+HUR-VirDemo-Log               68                                            Demo_thin - Do NOT delete  Demo2     8
+R800_vol_001                  17                                            R800_UVM                   ILAB      0
+R800_vol_002                  17                                            R800_UVM                   ILAB      0
+R800_vol_003                  17                                            R800_UVM                   ILAB      0
+R800_vol_004                  17                                            R800_UVM                   ILAB      0
+R800_vol_005                  17                                            R800_UVM                   ILAB      0
+R800_vol_006                  17                                            R800_UVM                   ILAB      0
+R800_vol_007                  17                                            R800_UVM                   ILAB      0
+R800_vol_008                  17                                            R800_UVM                   ILAB      0
+new_vol_r800_001              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_002              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_003              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_004              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_005              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_006              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_007              34                                            ILAB_P01                   ILAB      1
+new_vol_r800_008              34                                            ILAB_P01                   ILAB      1
+DemoVol                       34                                            Demo_thin - Do NOT delete  Demo2     3
+DemoMigrationTarget           34                                            Demo_thin - Do NOT delete  Demo2     0
+UVM_TK_001                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_002                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_003                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_004                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_005                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_006                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_007                    17                                            UVM_TK_Pool                ILAB      1
+UVM_TK_008                    17                                            UVM_TK_Pool                ILAB      1
+XIV_LUN_AJ_Migration Target   34                                            ILAB_P01                   Demo2     0
+HAD_Test_Vol_000              34                                            HAD Test                   HAD       0
+HAD_Test_Vol_Demo_002         51                                            HAD Test                   HAD       0
+HAD_Test_Vol_Demo_003         17                                            HAD Test                   HAD       0
+HAD_Test_Vol_Demo_004         17                                            HAD Test                   HAD       0
+VirDemo_KP                    17                                            Test_thin                  Demo2     8
+ibm_uvm_vol_001               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_002               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_003               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_004               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_005               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_006               17                                            IBM_UVM                    ILAB      1
+ibm_uvm_vol_007               17                                            IBM_UVM                    ILAB      0
+ibm_uvm_vol_008               17                                            IBM_UVM                    ILAB      0
+HAD_Test_Vol_001_RN           17                                            HAD Test                   HAD       0
+HAD_Test_Vol_001_SS           17                                            HAD Test                   HAD       0
+HAD_SF_003                    17                                            HAD Test                   HAD       0
+smis_xiv_volume               17                                            HAD Test                   HAD       0

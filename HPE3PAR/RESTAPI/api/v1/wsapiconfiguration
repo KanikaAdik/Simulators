@@ -1,0 +1,10 @@
+{
+    "httpState": "Enabled",
+    "httpPort": 8008,
+    "httpsState": "Enabled",
+    "httpsPort": 8080,
+    "version": "1.4.2",
+    "sessionsInUse": 1,
+    "systemResourceUsage": 48,
+    "sessionTimeout": 15
+}

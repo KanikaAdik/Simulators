@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+import sys, os
+"""
+controller - 
+             idcpu --    srstatcpu -attime -groupby node 0 -etsecs "2017-06-22 04:40:00 CDT"
+system -
+	     cpu  -            srstatcpu -btsecs -15m
+"""
+arglen = len(sys.argv)
+args = sys.argv[1:]
+command = 'cpu.txt' 
+
+
+if arglen == 1:
+    #no arguments
+    print "Not a valid command"
+else:
+    if '-btsecs' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","system",command)
+    elif '-etsecs' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","controller",command)
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        raise
+

@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import sys, os
+"""
+controller -
+            space  -    srldspace -attime -groupby OWNER
+CPG -
+	  srldspace - attime -groupby CPG_NAME
+Logical Drive -
+                idspcae -  srldspace -attime -groupby LD_NAME
+"""
+
+arglen = len(sys.argv)
+args = sys.argv[1:]
+command = 'ldSpace.txt' 
+
+
+if arglen == 1:
+    #no arguments
+    print "Not a valid command"
+else:
+    if 'OWNER' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","controller",command)
+    elif 'CPG_NAME' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","CPG",command)
+    elif 'LD_NAME' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","LogicalDrive",command)
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        raise
+

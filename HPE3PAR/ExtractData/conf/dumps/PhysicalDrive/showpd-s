@@ -1,0 +1,27 @@
+ Id CagePos Type -State- -Detailed_State- -SedState--
+--- 0:16:0  SSD  new     normal           not_capable
+--- 0:17:0  SSD  new     normal           not_capable
+--- 0:18:0  SSD  new     normal           not_capable
+--- 0:19:0  SSD  new     normal           not_capable
+--- 0:20:0  SSD  new     normal           not_capable
+--- 0:21:0  SSD  new     normal           not_capable
+--- 0:22:0  SSD  new     normal           not_capable
+--- 0:23:0  SSD  new     normal           not_capable
+  0 0:0:0   SSD  normal  normal           not_capable
+  1 0:1:0   SSD  normal  normal           not_capable
+  2 0:2:0   SSD  normal  normal           not_capable
+  3 0:3:0   SSD  normal  normal           not_capable
+  4 0:4:0   SSD  normal  normal           not_capable
+  5 0:5:0   SSD  normal  normal           not_capable
+  6 0:6:0   SSD  normal  normal           not_capable
+  7 0:7:0   SSD  normal  normal           not_capable
+  8 0:8:0   SSD  normal  normal           not_capable
+  9 0:9:0   SSD  normal  normal           not_capable
+ 10 0:10:0  SSD  normal  normal           not_capable
+ 11 0:11:0  SSD  normal  normal           not_capable
+ 12 0:12:0  SSD  normal  normal           not_capable
+ 13 0:13:0  SSD  normal  normal           not_capable
+ 14 0:14:0  SSD  normal  normal           not_capable
+ 15 0:15:0  SSD  normal  normal           not_capable
+-----------------------------------------------------
+ 24 total

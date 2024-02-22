@@ -1,0 +1,5 @@
+3Par7450 cli% srstatcmp -attime -groupby node 0 -etsecs "2017-06-22 04:40:00 CDT" -full
+Time: 2017-06-22 04:40:00 CDT (1498124400)
+     ------------count/sec------------- --hit%--- ------dack/sec------- --------------------Page States--------------------- ----Dirty Pages----
+NODE rhit whit     r    w   r+w lockblk    r    w  NL  FC SSD150 SSD100  free  clean write1 writen wrtsched writing dcowpend NL FC SSD150 SSD100
+   0 65.5  4.1 107.2 10.4 117.6     0.0 61.2 39.5 0.0 0.0    0.0    0.0 62189 854548      9     68      211       0        0  0  0      0    288

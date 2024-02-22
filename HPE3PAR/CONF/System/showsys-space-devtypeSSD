@@ -1,0 +1,33 @@
+------------- System Capacity (MB) -------------,
+Total Capacity                     ,10960896
+  Allocated                        ,1288192
+    Volumes                        ,245760
+      Non-CPGs                     ,0
+        User                       ,0
+        Snapshot                   ,0
+        Admin                      ,0
+      CPGs (TPVVs & TDVVs & CPVVs) ,245760
+        User                       ,122878
+          Used                     ,122878
+          Unused                   ,0
+        Snapshot                   ,73730
+          Used                     ,4098
+          Unused                   ,69632
+        Admin                      ,49152
+          Used                     ,3456
+          Unused                   ,45696
+      Unmapped                     ,0
+    System                         ,1042432
+      Internal                     ,321536
+      Spare                        ,720896
+        Used                       ,0
+        Unused                     ,720896
+  Free                             ,6008832
+    Initialized                    ,6008832
+    Uninitialized                  ,0
+  Unavailable                      ,0
+  Failed                           ,10240
+------------- Capacity Efficiency --------------,
+Compaction                        ,9.7
+Dedup                             ,0.0
+

@@ -1,0 +1,459 @@
+#################################################### wsapi ############################################
+showwsapi - Show the Web Services API server information.
+
+SYNTAX
+    showwsapi [option]
+
+DESCRIPTION
+    The showwsapi command displays the WSAPI server service configuration state
+    as either Enabled or Disabled. It displays the server current running
+    status as Active, Inactive or Error. It also displays the current status
+    of the HTTP and HTTPS ports and their port numbers.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    The following option is for the WSAPI information:
+
+    -d
+        Shows WSAPI information in table format.
+
+SPECIFIERS
+    None.
+
+NOTES
+    The version column may display "Unknown" if the Web Services API server
+    was restarted and not ready to accept queries.
+
+EXAMPLES
+    The following example shows the current Web Services API server status:
+
+    cli% showwsapi
+    -Service- -State- -HTTP_State- HTTP_Port -HTTPS_State- HTTPS_Port -Version-
+    Enabled   Active  Enabled           8008 Disabled            8080 1.1
+
+3Par7450 cli% showwsapi
+-Service- -State- -HTTP_State- HTTP_Port -HTTPS_State- HTTPS_Port -Version-
+Enabled   Active  Enabled           8008 Enabled             8080 1.4.2
+3Par7450 cli% showwsapi -d
+-------WSAPI Server Configuration-------
+service State             :      Enabled
+server State              :       Active
+HTTP State                :      Enabled
+HTTP Port                 :         8008
+HTTPS State               :      Enabled
+HTTPS Port                :         8080
+Number of sessions In Use :            0
+System Resource Usage     :           48
+Version                   :        1.4.2
+Session Timeout           :   15 Minutes
+
+
+####################################################Version ############################################
+showversion - Show server software version information.
+
+SYNTAX
+    showversion [options]
+
+DESCRIPTION
+    The showversion command displays information about the storage server
+    software. Use this command to determine if the storage system is using the
+    latest software version.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -a
+        Show all component versions.
+
+    -b
+        Show build levels.
+
+    -s
+        Show release version number only (useful for scripting).
+
+SPECIFIERS
+    None.
+
+NOTES
+    When displaying all versions, for certain components multiple versions
+    might be installed.  In such cases, multiple lines are displayed.
+
+    If no options are specified, the overall version of the software is
+    displayed.
+
+EXAMPLES
+    None.
+
+/////////////////////////////////////////////////////////////
+3Par7450 cli% showversion -a
+Release version 3.2.1 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1 (P27)
+CLI Client                       3.2.1
+System Manager                   3.2.1 (P30)
+Kernel                           3.2.1 (MU3)
+TPD Kernel Code                  3.2.1 (P17)
+TPD Kernel Patch                 3.2.1 (P31)
+CIM Server                       3.2.1 (P29)
+WSAPI Server                     3.2.1 (MU3)
+Console Menu                     3.2.1 (MU3)
+Event Manager                    3.2.1 (MU3)
+Internal Test Tools              3.2.1 (MU3)
+LD Check Tools                   3.2.1 (MU3)
+Network Controller               3.2.1 (MU3)
+Node Disk Scrubber               3.2.1 (MU3)
+PD Scrubber                      3.2.1 (MU3)
+Per-Node Server                  3.2.1 (MU3)
+Persistent Repository            3.2.1 (MU3)
+Powerfail Tools                  3.2.1 (MU3)
+Preserved Data Tools             3.2.1 (MU3)
+Process Monitor                  3.2.1 (MU3)
+Rolling Upgrade Tools            3.2.1 (MU3)
+Software Updater                 3.2.1 (P30)
+TOC Server                       3.2.1 (MU3)
+VV Check Tools                   3.2.1 (P18)
+File Persona                     1.0.1.15-20150513
+SNMP Agent                       1.8.0
+SSH                              5.5p1-6+squeeze1
+VASA Provider                    2.1.8 (P18)
+Firmware Database                20160115
+Drive Firmware                   20160115
+UEFI BIOS                        14.08.19
+MCU Firmware                     4.63
+Cage Firmware (DC1)              4.44
+Cage Firmware (DC2)              2.64
+Cage Firmware (DC3)              08
+Cage Firmware (DC4)              2.64
+Cage Firmware (DCS1)             321c
+Cage Firmware (DCS2)             321c
+Cage Firmware (DCN1)             321c
+QLogic QLA4052C HBA Firmware     03.00.01.77
+QLogic QLE8242 CNA Firmware      04.11.152
+Emulex LP11002 HBA Firmware      02.82.x10
+Emulex LPe12002 HBA Firmware     02.02.x15
+Emulex LPe12004 HBA Firmware     02.02.x15
+Emulex LPe16002 HBA Firmware     01.01.65.16
+3PAR FC044X HBA Firmware         200A8
+LSI 9201-16e HBA Firmware        17.11.00
+LSI 9205-8e HBA Firmware         17.11.00
+
+/////////////////////////////////////////////////////////////
+
+3Par7450 cli% showversion -b
+Release version 3.2.1.292 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1.366 (P27)
+CLI Client                       3.2.1.366
+System Manager                   3.2.1.384 (P30)
+Kernel                           3.2.1.292 (MU3)
+TPD Kernel Code                  3.2.1.312 (P17)
+TPD Kernel Patch                 3.2.1.396 (P31)
+3Par7450 cli% showversion -s
+3.2.1
+3Par7450 cli%
+
+/////////////////////////////////////////////////////////////
+3Par7450 cli% showversion
+Release version 3.2.1 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1 (P27)
+CLI Client                       3.2.1
+System Manager                   3.2.1 (P30)
+Kernel                           3.2.1 (MU3)
+TPD Kernel Code                  3.2.1 (P17)
+TPD Kernel Patch                 3.2.1 (P31)
+3Par7450 cli%
+
+
+
+
+
+
+ 
+showspace - Show estimated free space for logical disk creation.
+
+SYNTAX
+    showspace [options <arg>]
+
+DESCRIPTION
+    The showspace command displays estimated free space for logical disk
+    creation.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    The following options are used to select the logical disk creation
+    parameters used for space calculation:
+
+    -cpg <CPG_name>|<pattern>
+        Specifies that logical disk creation parameters are taken from CPGs that
+        match the specified CPG name or pattern, indicated with a glob-style
+        pattern. Multiple CPG names or patterns can be specified using a comma
+        separated list, for example cpg1,cpg2,cpg3. Only the -hist option can be
+        specified with the -cpg option.
+
+    -hist
+        Specifies that free space history over time for CPGs specified with the
+        -cpg option is displayed. This option can only be used if the -cpg
+        option is specified.
+
+    -t <RAID_type>
+        Specifies the RAID type of the logical disk: r0 for RAID-0, r1 for
+        RAID-1, r5 for RAID-5, or r6 for RAID-6. If no RAID type is specified,
+        the default is r1 for FC and SSD device types and r6 for NL device types.
+
+    -ssz <size_number_chunklets>
+        Specifies the set size in terms of chunklets. The default depends on the
+        RAID type specified: 2 for RAID-1, 4 for RAID-5, and 8 for RAID-6.
+
+    -rs <size>
+        Specifies the number of sets in a row. The <size> is a positive integer.
+        If not specified, no row limit is imposed.
+
+    -ss <size_KB>
+        Specifies the step size from 32 KB to 512 KB. The step size should be a
+        power of 2 and a multiple of 32. The default value depends on raid type and
+        device type used. If no value is entered and FC or NL drives are used, the
+        step size defaults to 256 KB for RAID-0 and RAID-1, and 128 KB for RAID-5.
+        If SSD drives are used, the step size defaults to 32 KB for RAID-0 and
+        RAID-1, and 64 KB for RAID-5. For RAID-6, the default is a function of the
+        set size.
+
+    -ha port|cage|mag
+        Specifies that the layout must support the failure of one port pair,
+        one cage, or one drive magazine (mag).  This option has no meaning
+        for RAID-0.
+
+    -ch first|last
+        Specifies the chunklet location preference characteristics: either first
+        (attempt to use the lowest numbered available chunklets) or last(attempt
+        to use the highest numbered available chunklets). If no argument is
+        specified, the default characteristic is first.
+
+    -p <pattern>
+        Specifies a pattern for candidate disks. Patterns are used to select
+        disks that are used for creating logical disks. If no pattern is
+        specified, the option defaults to Fibre Channel (FC) disks. If
+        specified multiple times, each instance of the specified pattern adds
+        additional candidate disks that match the pattern. The -devtype pattern
+        cannot be used to mix Nearline (NL), FC, and Solid State Drive (SSD)
+        drives.
+
+        The following arguments can be specified as patterns for this option:
+        -nd <item>
+            Specifies one or more nodes. Nodes are identified by one or more
+            integers (item).  Multiple nodes are separated with a single comma
+            (e.g. 1,2,3). A range of nodes is separated with a hyphen (e.g. 0-
+            7). The primary path of the disks must be on the specified node(s).
+        -st <item>
+            Specifies one or more PCI slots. Slots are identified by one or more
+            integers (item). Multiple slots are separated with a single comma
+            (e.g. 1,2,3). A range of slots is separated with a hyphen (e.g. 0-
+            7). The primary path of the disks must be on the specified PCI
+            slot(s).
+        -pt <item>
+            Specifies one or more ports. Ports are identified by one or more
+            integers (item). Multiple ports are separated with a single comma
+            (e.g. 1,2,3). A range of ports is separated with a hyphen (e.g. 0-
+            4). The primary path of the disks must be on the specified port(s).
+        -cg <item>
+            Specifies one or more drive cages. Drive cages are identified by one
+            or more integers (item). Multiple drive cages are separated with a
+            single comma (e.g. 1,2,3). A range of drive cages is separated with
+            a hyphen (e.g. 0-3). The specified drive cage(s) must contain disks.
+        -mg <item>
+            Specifies one or more drive magazines. (The "1." or "0." displayed
+            in the CagePos column of showpd output indicating the side of the
+            cage is omitted when using -mg.) Drive magazines are identified by
+            one or more integers (item). Multiple drive magazines are separated
+            with a single comma (e.g. 1,2,3). A range of drive magazines is
+            separated with a hyphen(e.g. 0-7). The specified drive magazine(s)
+            must contain disks.
+        -pn <item>
+            Specifies one or more disk positions within a drive magazine. Disk
+            positions are identified by one or more integers (item). Multiple
+            disk positions are separated with a single comma(e.g. 1,2,3). A
+            range of disk positions is separated with a hyphen(e.g. 0-3). The
+            specified position(s) must contain disks.
+        -dk <item>
+            Specifies one or more physical disks. Disks are identified by one or
+            more integers(item). Multiple disks are separated with a single
+            comma (e.g. 1,2,3). A range of disks is separated with a hyphen(e.g.
+            0-3).  Disks must match the specified ID(s).
+        -tc_gt <number>
+            Specifies that physical disks with total chunklets greater than the
+            number specified be selected.
+        -tc_lt <number>
+            Specifies that physical disks with total chunklets less than the
+            number specified be selected.
+        -fc_gt <number>
+            Specifies that physical disks with free chunklets greater than the
+            number specified be selected.
+        -fc_lt <number>
+            Specifies that physical disks with free chunklets less than the
+            number specified be selected.
+        -devid <model>
+            Specifies that physical disks identified by their models be
+            selected. Models can be specified in a comma-separated list.
+            Models can be displayed by issuing the "showpd -i" command.
+        -devtype <type>
+            Specifies that physical disks must have the specified device type
+                (FC for Fibre Channel, NL for Nearline, SSD for Solid State
+            Drive to be used. Device types can be displayed by issuing the
+            "showpd" command. If it is not specified, the default device type
+            is FC.
+        -rpm <number>
+            Drives must be of the specified relative performance metric, as
+            shown in the "RPM" column of the "showpd" command.
+            The number does not represent a rotational speed for the drives
+            without spinning media (SSD). It is meant as a rough estimation of
+            the performance difference between the drive and the other drives
+            in the system.  For FC and NL drives, the number corresponds to
+            both a performance measure and actual rotational speed. For SSD
+            drives, the number is to be treated as a relative performance
+            benchmark that takes into account I/O's per second, bandwidth and
+            access time.
+
+        Disks that satisfy all of the specified characteristics are used.
+        For example -p -fc_gt 60 -fc_lt 230 -nd 2 specifies all the disks that
+        have greater than 60 and less than 230 free chunklets and that are
+        connected to node 2 through their primary path.
+
+SPECIFIERS
+    None.
+
+NOTES
+    The -cpg and -hist options cannot be used with any other option.
+
+    The showspace command includes chunklets in the process of being initialized
+    as shown by the "Normal, Unused, Uninit" column of showpd -c. The space
+    represented by these chunklets will not actually be available until the
+    initialization process is complete.
+
+    The space calculated is an estimate and not an exact figure.
+
+    For this command MB = 1048576 bytes.
+
+EXAMPLES
+    The following example displays the estimated free space for a RAID-1
+    logical disk:
+
+        cli% showspace -t r1
+
+/////////////////////////////////////////////////////////////
+3Par7450 cli% showspace -cpg *
+     ----------------------(MB)-----------------------
+ CPG ----EstFree---- ----Usr---- ---Snp---- ---Adm---- -Capacity Efficiency-
+Name RawFree  LDFree Total  Used Total Used Total Used   Compaction    Dedup
+ AFA 6107136 4580352 33280 33280 40448  512  8192  256         12.7        -
+AFA2 6107136 4580352     0     0     0    0     0    0          0.0        -
+/////////////////////////////////////////////////////////////
+*******************************************************************************************
+showvvcpg - show VV space distribution among CPGs
+
+SYNTAX
+    showvvcpg [options] [<vvname|pattern|VV_set> ...]
+
+DESCRIPTION
+    The showvvcpg command displays the Virtual Volume(VV) space distribution
+    among CPGs.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -domain <domain_name|pattern>[,<domain_name|pattern>...]
+        Show only VVs that are in domains with names matching one or more of
+        the specified domain_name or patterns. Only VVs within domains that
+        the user is a member of can be listed. Multiple domain names or
+        patterns can be repeated using a comma-separated list
+        (for example -domain <domain_name>,<domain_name>...).
+
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+SPECIFIERS
+    <vvname|pattern>...
+        Only show virtual volumes with the specified names, names that match
+        the glob-style patterns or belong to matching VV sets.  The VV set
+        specifier must start with 'set:' and be followed by a VV set name or
+        glob-style pattern.
+
+NOTES
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+    The columns shown under the heading 'New (MB)' are empty (0) unless
+    some regions are currently being moved from one CPG to another. For the
+    duration of the move, the space being moved appears under both the normal
+    '(MB)' heading for the old CPG and under the 'New (MB)' heading for the
+    new CPG. After the move is completed, the space is removed from the old
+    CPG and appears only under the normal '(MB)' heading for the new CPG.
+
+EXAMPLES
+    Show VV space distribution among CPGs in the 'ESX' domain for VVs with
+    names that end in 'sysrpt'.
+
+    cli% showvvcpg -domain ESX *sysrpt
+                          -----(MB)------ -New (MB)--
+    Name       CPG        Adm  Snp    Usr Adm Snp Usr
+    esx-sysrpt esx-fc-r1  256 1920 114560   0   0   0
+    esx-sysrpt esx-ssd-r1 256 1152   7296   0   0   0
+    -------------------------------------------------
+    1          -          512 3072 121856   0   0   0
+
+    Show VV space distribution for VVs belonging to VV sets with names
+    that begin with 'tv':
+
+    cli% showvvcpg set:tv*
+                   ----(MB)---- -New (MB)--
+    Name      CPG  Adm Snp  Usr Adm Snp Usr
+    testvv    cpg0   0   0 1024   0   0   0
+    newtestvv cpg0   0   0 1024   0   0   0
+    ---------------------------------------
+    2         -      0   0 2048   0   0   0
+
+3Par7450 cli% showvvcpg
+                  -----(MB)----- -New (MB)--
+Name          CPG Adm Snp    Usr Adm Snp Usr
+admin         ---   0   0  10240   0   0   0
+.srdata       ---   0   0  81920   0   0   0
+CS_InfraLUN31 AFA 256 512  33280   0   0   0
+--------------------------------------------
+3             -   256 512 125440   0   0   0
+/////////////////////////////////////////////////////////////
+3Par7450 cli% showvvcpg -domain *
+                  -----(MB)----- -New (MB)--
+Name          CPG Adm Snp    Usr Adm Snp Usr
+admin         ---   0   0  10240   0   0   0
+.srdata       ---   0   0  81920   0   0   0
+CS_InfraLUN31 AFA 256 512  33280   0   0   0
+--------------------------------------------
+3             -   256 512 125440   0   0   0
+
+ 

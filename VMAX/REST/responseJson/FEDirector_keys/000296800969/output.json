@@ -1,0 +1,14 @@
+{
+    "feDirectorInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "directorId": "FA-1D"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "directorId": "FA-2D"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "total": 6,
+    "members": [
+        {
+            "username": "3parcim",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "browse"
+                }
+            ]
+        },
+        {
+            "username": "3paradm",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "super"
+                }
+            ]
+        },
+        {
+            "username": "3parsvc",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "super"
+                }
+            ]
+        },
+        {
+            "username": "3parservice",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "service"
+                }
+            ]
+        },
+        {
+            "username": "3paredit",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "edit"
+                }
+            ]
+        },
+        {
+            "username": "3parbrowse",
+            "privileges": [
+                {
+                    "domain": "all",
+                    "role": "browse"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "href": "https://10.250.138.128:8080/api/v1/users",
+            "rel": "self"
+        }
+    ]
+}

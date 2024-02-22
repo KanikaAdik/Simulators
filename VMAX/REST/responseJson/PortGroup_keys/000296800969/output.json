@@ -1,0 +1,74 @@
+{
+    "portGroupInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "VMware1_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "FileServer_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "VMware7_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "Test_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "VMware7_Test_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "PG_QA_200029"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "2D_P28_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "1D_P28_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "Itprodn_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "HyperV1_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "Ucsrackvmware3_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "Vmware6_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "Prodn_PG"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portGroupId": "PG_QA_ESX20-249_FA-2D-28_29"
+        }
+    ]
+}

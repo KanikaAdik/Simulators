@@ -1,0 +1,29 @@
+{
+    "fePortInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portId": "28"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portId": "29"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portId": "30"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portId": "31"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "portId": "32"
+        }
+    ]
+}

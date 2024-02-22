@@ -1,0 +1,12 @@
+Id Name                  -Initiator_CHAP_Name- -Target_CHAP_Name-
+ 4 flashesx03.acme.local --                    --
+ 5 flashesx01.acme.local --                    --
+ 6 flashesx02.acme.local --                    --
+ 7 flashesx04.acme.local --                    --
+ 8 CLInfraESX01          --                    --
+ 9 esxvcd03              --                    --
+10 esxvcd04              --                    --
+11 NBU5240               --                    --
+12 TECESX03              --                    --
+13 TECESX04              --                    --
+--                       --                    --

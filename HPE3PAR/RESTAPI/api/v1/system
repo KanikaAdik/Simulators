@@ -1,0 +1,25 @@
+{
+    "id": 49581,
+    "name": "3Par7450",
+    "systemVersion": "3.2.1.292",
+    "IPv4Addr": "10.250.138.128",
+    "model": "HP_3PAR 7450",
+    "serialNumber": "1649581",
+    "totalNodes": 2,
+    "masterNode": 0,
+    "onlineNodes": [
+        0,
+        1
+    ],
+    "clusterNodes": [
+        0,
+        1
+    ],
+    "chunkletSizeMiB": 1024,
+    "totalCapacityMiB": 10960896,
+    "allocatedCapacityMiB": 1165312,
+    "freeCapacityMiB": 6131712,
+    "failedCapacityMiB": 10240,
+    "comment": "StoreFrontRemoteAccess(M5lPpIWLTASuSU09GYLpNQ,jrzeszutko@forsythe.com)",
+    "timeZone": "America/Chicago"
+}

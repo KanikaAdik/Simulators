@@ -1,0 +1,82 @@
+Switch Name           : mds9148
+Switch Type           : 
+Kickstart Image       : 5.0(1a) bootflash:/m9100-s3ek9-kickstart-mz.5.0.1a.bin
+System Image          : 5.0(1a) bootflash:/m9100-s3ek9-mz.5.0.1a.bin
+IP Address/Mask       : 192.168.144.14/20
+
+VSAN    1:    name:VSAN0001, state:active, interop mode:default
+              domain id:0x86(134), WWN:20:01:00:2a:6a:3b:95:81 [Principal]
+              active-zone:size:, default-zone:deny
+
+
+-------------------------------------------------------------------------------
+Interface  Vsan   Admin  Admin   Status          SFP    Oper  Oper   Port
+                  Mode   Trunk                          Mode  Speed  Channel
+                         Mode                                 (Gbps)
+-------------------------------------------------------------------------------
+fc1/1      1      F      off     up               swl    F       4    1
+fc1/2      1      auto   off     up               swl    F       4    --
+fc1/3      1      auto   off     up               swl    F       4    --
+fc1/4      1      auto   off     up               swl    F       4    --
+fc1/5      1      F      off     up               swl    F       4    1
+fc1/6      1      auto   off     up               swl    F       4    --
+fc1/7      1      auto   off     up               swl    F       4    --
+fc1/8      1      auto   off     up               swl    F       4    --
+fc1/9      1      auto   off     up               swl    F       4    --
+fc1/10     1      auto   off     up               swl    F       4    --
+fc1/11     1      auto   off     up               swl    FL      4    --
+fc1/12     1      auto   off     up               swl    FL      4    --
+fc1/13     1      auto   off     up               swl    F       4    --
+fc1/14     1      auto   off     up               swl    F       4    --
+fc1/15     1      auto   off     up               swl    F       4    --
+fc1/16     1      auto   off     up               swl    F       4    --
+fc1/17     1      auto   on      sfpAbsent        --     --           --
+fc1/18     1      auto   on      sfpAbsent        --     --           --
+fc1/19     1      auto   on      sfpAbsent        --     --           --
+fc1/20     1      auto   on      sfpAbsent        --     --           --
+fc1/21     1      auto   on      sfpAbsent        --     --           --
+fc1/22     1      auto   on      sfpAbsent        --     --           --
+fc1/23     1      auto   on      sfpAbsent        --     --           --
+fc1/24     1      auto   on      sfpAbsent        --     --           --
+fc1/25     1      auto   on      sfpAbsent        --     --           --
+fc1/26     1      auto   on      sfpAbsent        --     --           --
+fc1/27     1      auto   on      sfpAbsent        --     --           --
+fc1/28     1      auto   on      sfpAbsent        --     --           --
+fc1/29     1      auto   on      sfpAbsent        --     --           --
+fc1/30     1      auto   on      sfpAbsent        --     --           --
+fc1/31     1      auto   on      sfpAbsent        --     --           --
+fc1/32     1      auto   on      sfpAbsent        --     --           --
+fc1/33     1      auto   on      sfpAbsent        --     --           --
+fc1/34     1      auto   on      sfpAbsent        --     --           --
+fc1/35     1      auto   on      sfpAbsent        --     --           --
+fc1/36     1      auto   on      sfpAbsent        --     --           --
+fc1/37     1      auto   on      sfpAbsent        --     --           --
+fc1/38     1      auto   on      sfpAbsent        --     --           --
+fc1/39     1      auto   on      sfpAbsent        --     --           --
+fc1/40     1      auto   on      sfpAbsent        --     --           --
+fc1/41     1      auto   on      sfpAbsent        --     --           --
+fc1/42     1      auto   on      sfpAbsent        --     --           --
+fc1/43     1      auto   on      sfpAbsent        --     --           --
+fc1/44     1      auto   on      sfpAbsent        --     --           --
+fc1/45     1      auto   on      sfpAbsent        --     --           --
+fc1/46     1      auto   on      sfpAbsent        --     --           --
+fc1/47     1      auto   on      sfpAbsent        --     --           --
+fc1/48     1      auto   on      sfpAbsent        --     --           --
+
+-------------------------------------------------------------------------------
+Interface                Status                            Speed
+                                                           (Gbps)
+-------------------------------------------------------------------------------
+sup-fc0                  up                                1
+
+-------------------------------------------------------------------------------
+Interface               Status     IP Address         Speed     MTU
+-------------------------------------------------------------------------------
+mgmt0                    up         192.168.144.14/20  100 Mbps 1500
+
+-------------------------------------------------------------------------------
+Interface             Vsan  Admin  Status        Oper  Oper    IP
+                            Trunk                Mode  Speed   Address
+                            Mode                       (Gbps)
+-------------------------------------------------------------------------------
+port-channel 1        1     off    up             F    8       --

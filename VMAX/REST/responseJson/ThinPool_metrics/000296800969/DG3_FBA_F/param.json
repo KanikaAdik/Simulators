@@ -1,0 +1,14 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "metrics": [
+        "BEPercentReads", 
+        "BEPercentWrites", 
+        "BEAvgResponseTime", 
+        "BEReadResponseTime", 
+        "BEWriteResponseTime"
+    ], 
+    "dataFormat": "Average", 
+    "poolId": "DG3_FBA_F"
+}

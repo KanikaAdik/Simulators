@@ -1,0 +1,1989 @@
+
+
+Server IP Address:       $$$$
+Agent Rev:           7.33.8 (1.19)
+
+
+All Disks Information
+---------------------
+
+
+Bus 0 Enclosure 0  Disk 0
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRKAHP    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 0
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1845238
+Number of Writes:        2800558
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           1845238
+Write Requests:          2800558
+Kbytes Read:             514550718
+Kbytes Written:          108028905
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              2854639670
+Busy Ticks:              2224281155
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        56.2
+Prct Busy:        43.7
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 1417541
+High Sum of Seeks:       449153372472762
+Idle Ticks SPA:          3675661535
+Idle Ticks SPB:          3473945431
+Busy Ticks SPA:          1022491677
+Busy Ticks SPB:          1201789478
+Queue Length:            8471654
+Prct Copied:             N/A
+Actual Capacity:         274848
+LBA of User Space:       562878464
+
+Bus 0 Enclosure 0  Disk 1
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRJP7P    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 1
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1783976
+Number of Writes:        2318827
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           1783976
+Write Requests:          2318827
+Kbytes Read:             513654229
+Kbytes Written:          96970485
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              4157581443
+Busy Ticks:              921908457
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        81.8
+Prct Busy:        18.1
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 936661
+High Sum of Seeks:       231246768372590
+Idle Ticks SPA:          1759310336
+Idle Ticks SPB:          2398271107
+Busy Ticks SPA:          2937875741
+Busy Ticks SPB:          2279000012
+Queue Length:            6318853
+Prct Copied:             N/A
+Actual Capacity:         274848
+LBA of User Space:       562878464
+
+Bus 0 Enclosure 0  Disk 2
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRLG2P    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 2
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1825871
+Number of Writes:        2815351
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           1825871
+Write Requests:          2815351
+Kbytes Read:             512860654
+Kbytes Written:          108336567
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              3004715946
+Busy Ticks:              2074981785
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        59.1
+Prct Busy:        40.8
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 1454952
+High Sum of Seeks:       447756759744471
+Idle Ticks SPA:          3699620314
+Idle Ticks SPB:          3600062928
+Busy Ticks SPA:          999309809
+Busy Ticks SPB:          1075671976
+Queue Length:            8737053
+Prct Copied:             N/A
+Actual Capacity:         274848
+LBA of User Space:       562878464
+
+Bus 0 Enclosure 0  Disk 3
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRLWKP    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 3
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1786168
+Number of Writes:        1622823
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           1786168
+Write Requests:          1622823
+Kbytes Read:             512576618
+Kbytes Written:          48584305
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              2902370242
+Busy Ticks:              2178528369
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        57.1
+Prct Busy:        42.8
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 817752
+High Sum of Seeks:       78240451530418
+Idle Ticks SPA:          3755154221
+Idle Ticks SPB:          3442183317
+Busy Ticks SPA:          942188985
+Busy Ticks SPB:          1236339384
+Queue Length:            5282179
+Prct Copied:             N/A
+Actual Capacity:         274848
+LBA of User Space:       562878464
+
+Bus 0 Enclosure 0  Disk 4
+Vendor Id:               HITACHI
+Product Id:              HUSMH842 CLAR200
+Product Revision:        C292
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0LX1ZSBA    
+Sectors:                 N/A
+Capacity:                187847
+Private:                 Unbound
+Bind Signature:          N/A, 0, 4
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         88514084
+Number of Writes:        645118212
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033289  
+Request Service Time:    N/A
+Read Requests:           88514084
+Write Requests:          645118212
+Kbytes Read:             1568647365
+Kbytes Written:          1520428111
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash
+Clariion TLA Part Number:005051195EFD
+User Capacity:           0
+Idle Ticks:              249260959
+Busy Ticks:              768030836
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        24.5
+Prct Busy:        75.5
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 211554401
+High Sum of Seeks:       616200066309109
+Idle Ticks SPA:          1783907862
+Idle Ticks SPB:          2760320393
+Busy Ticks SPA:          3016523107
+Busy Ticks SPB:          2046475025
+Queue Length:            1495740290
+Prct Copied:             N/A
+Actual Capacity:         187815
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 5
+Vendor Id:               HITACHI
+Product Id:              HUSMH842 CLAR200
+Product Revision:        C292
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0LX2410A    
+Sectors:                 N/A
+Capacity:                187847
+Private:                 Unbound
+Bind Signature:          N/A, 0, 5
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         286823874
+Number of Writes:        645120763
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033289  
+Request Service Time:    N/A
+Read Requests:           286823874
+Write Requests:          645120763
+Kbytes Read:             1012226053
+Kbytes Written:          1520422757
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash
+Clariion TLA Part Number:005051195EFD
+User Capacity:           0
+Idle Ticks:              4003916461
+Busy Ticks:              1318205753
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        75.2
+Prct Busy:        24.7
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 270529111
+High Sum of Seeks:       889853510366543
+Idle Ticks SPA:          4105556040
+Idle Ticks SPB:          4193327717
+Busy Ticks SPA:          748236208
+Busy Ticks SPB:          569969545
+Queue Length:            1877811071
+Prct Copied:             N/A
+Actual Capacity:         187815
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 6
+Vendor Id:               HITACHI
+Product Id:              HUSMH842 CLAR200
+Product Revision:        C292
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0LX200ZA    
+Sectors:                 0 (0)
+Capacity:                187847
+Private:                 Unbound
+Bind Signature:          N/A, 0, 6
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488194
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118033289  
+Request Service Time:    N/A
+Read Requests:           488194
+Write Requests:          0
+Kbytes Read:             499908609
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash
+Clariion TLA Part Number:005051195EFD
+User Capacity:           0
+Idle Ticks:              85016497
+Busy Ticks:              698282028
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        10.8
+Prct Busy:        89.1
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       2313179136
+Idle Ticks SPA:          3999216732
+Idle Ticks SPB:          380767061
+Busy Ticks SPA:          698281710
+Busy Ticks SPB:          318
+Queue Length:            488194
+Prct Copied:             N/A
+Actual Capacity:         187815
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 7
+Vendor Id:               SAMSUNG
+Product Id:              SM162524 CLAR400
+Product Revision:        DM0M
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           7YNEAG501300
+Sectors:                 N/A
+Capacity:                375600
+Private:                 Unbound
+Bind Signature:          N/A, 0, 7
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         15874332
+Number of Writes:        21825429
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033254  
+Request Service Time:    N/A
+Read Requests:           15874332
+Write Requests:          21825429
+Kbytes Read:             1676893022
+Kbytes Written:          1496035784
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash VP
+Clariion TLA Part Number:005050524M  
+User Capacity:           0
+Idle Ticks:              3758451778
+Busy Ticks:              1331001806
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        73.8
+Prct Busy:        26.1
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 9362658
+High Sum of Seeks:       252453520087706
+Idle Ticks SPA:          402116516
+Idle Ticks SPB:          3356335262
+Busy Ticks SPA:          85728
+Busy Ticks SPB:          1330916078
+Queue Length:            135887235
+Prct Copied:             N/A
+Actual Capacity:         375568
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 8
+Vendor Id:               SAMSUNG
+Product Id:              SM162524 CLAR400
+Product Revision:        DM0M
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           7YNEAG502224
+Sectors:                 N/A
+Capacity:                375600
+Private:                 Unbound
+Bind Signature:          N/A, 0, 8
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1556343
+Number of Writes:        21825446
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033254  
+Request Service Time:    N/A
+Read Requests:           1556343
+Write Requests:          21825446
+Kbytes Read:             558723282
+Kbytes Written:          1496037516
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash VP
+Clariion TLA Part Number:005050524M  
+User Capacity:           0
+Idle Ticks:              1999227415
+Busy Ticks:              3102233968
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        39.1
+Prct Busy:        60.8
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 8658582
+High Sum of Seeks:       7051913447266
+Idle Ticks SPA:          3757474949
+Idle Ticks SPB:          2536719762
+Busy Ticks SPA:          940024455
+Busy Ticks SPB:          2162209513
+Queue Length:            123728295
+Prct Copied:             N/A
+Actual Capacity:         375568
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 9
+Vendor Id:               SAMSUNG
+Product Id:              SM162524 CLAR400
+Product Revision:        DM0M
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           7YNEAG501312
+Sectors:                 N/A
+Capacity:                375600
+Private:                 Unbound
+Bind Signature:          N/A, 0, 9
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         15913941
+Number of Writes:        21844224
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033254  
+Request Service Time:    N/A
+Read Requests:           15913941
+Write Requests:          21844224
+Kbytes Read:             1681087243
+Kbytes Written:          1496800519
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash VP
+Clariion TLA Part Number:005050524M  
+User Capacity:           0
+Idle Ticks:              4072180685
+Busy Ticks:              1024127977
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        79.9
+Prct Busy:        20.1
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 9263199
+High Sum of Seeks:       252954281024066
+Idle Ticks SPA:          402162553
+Idle Ticks SPB:          3670018132
+Busy Ticks SPA:          39712
+Busy Ticks SPB:          1024088265
+Queue Length:            136549612
+Prct Copied:             N/A
+Actual Capacity:         375568
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 10
+Vendor Id:               SAMSUNG
+Product Id:              SM162524 CLAR400
+Product Revision:        DM0M
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           7YNEAG501291
+Sectors:                 N/A
+Capacity:                375600
+Private:                 Unbound
+Bind Signature:          N/A, 0, 10
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         1521200
+Number of Writes:        21844217
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033254  
+Request Service Time:    N/A
+Read Requests:           1521200
+Write Requests:          21844217
+Kbytes Read:             558137152
+Kbytes Written:          1496801135
+Stripe Boundary Crossing: None
+Drive Type:              SAS Flash VP
+Clariion TLA Part Number:005050524M  
+User Capacity:           0
+Idle Ticks:              2304291149
+Busy Ticks:              2820202133
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        44.9
+Prct Busy:        55.0
+Hardware Power Savings Qualified: NO
+Hardware Power Savings Eligible: NO
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 8575336
+High Sum of Seeks:       7331820288400
+Idle Ticks SPA:          3773221217
+Idle Ticks SPB:          2826037228
+Busy Ticks SPA:          924278610
+Busy Ticks SPB:          1895923523
+Queue Length:            120809615
+Prct Copied:             N/A
+Actual Capacity:         375568
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 11
+Vendor Id:               HITACHI
+Product Id:              HUC10189 CLAR900
+Product Revision:        L7SS
+Lun:                     7 6 9 10 
+Type:                    7: RAID1 6: RAID1 9: RAID1 10: RAID1 
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            7: 100 6: 100 9: 100 10: 100 
+Prct Bound:              7: 100 6: 100 9: 100 10: 100 
+Serial Number:           0DG7VD1F    
+Sectors:                 6291456 (3072)
+Capacity:                840313
+Private:                 7: 65536 6: 4263936 9: 8462336 10: 10563584 
+Bind Signature:          N/A, 0, 11
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         543391
+Number of Writes:        203409664
+Number of Luns:          4
+Raid Group ID:           0
+Clariion Part Number:    DG118000056  
+Request Service Time:    N/A
+Read Requests:           543391
+Write Requests:          203409664
+Kbytes Read:             506912385
+Kbytes Written:          133316480
+Stripe Boundary Crossing: 0
+Drive Type:              SAS
+Clariion TLA Part Number:005051468PWR
+User Capacity:           3
+Idle Ticks:              55824384
+Busy Ticks:              739620907
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        7.02
+Prct Busy:        92.9
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 184382976
+High Sum of Seeks:       584325763915776
+Idle Ticks SPA:          402192637
+Idle Ticks SPB:          3948599043
+Busy Ticks SPA:          9936
+Busy Ticks SPB:          739610971
+Queue Length:            885178875
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 12
+Vendor Id:               SEAGATE
+Product Id:              ST990080 CLAR900
+Product Revision:        CSFE
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           6XS3G5WC    
+Sectors:                 N/A
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 12
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         83980348
+Number of Writes:        37700268
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118032758  
+Request Service Time:    N/A
+Read Requests:           83980348
+Write Requests:          37700268
+Kbytes Read:             2055349601
+Kbytes Written:          489035504
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005049206PWR
+User Capacity:           0
+Idle Ticks:              2883134596
+Busy Ticks:              2219069002
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        56.5
+Prct Busy:        43.4
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 71487503
+High Sum of Seeks:       34475122879546
+Idle Ticks SPA:          1635432227
+Idle Ticks SPB:          1247702369
+Busy Ticks SPA:          3061737471
+Busy Ticks SPB:          3452298827
+Queue Length:            326891206
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 13
+Vendor Id:               SEAGATE
+Product Id:              ST990080 CLAR900
+Product Revision:        CSFE
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           6XS46L0F    
+Sectors:                 N/A
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 13
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         83967149
+Number of Writes:        37719028
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118032758  
+Request Service Time:    N/A
+Read Requests:           83967149
+Write Requests:          37719028
+Kbytes Read:             2056040890
+Kbytes Written:          490468012
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005049206PWR
+User Capacity:           0
+Idle Ticks:              550408190
+Busy Ticks:              256070853
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        68.2
+Prct Busy:        31.7
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 71927911
+High Sum of Seeks:       278171341706932
+Idle Ticks SPA:          317741713
+Idle Ticks SPB:          232666477
+Busy Ticks SPA:          84460698
+Busy Ticks SPB:          171610155
+Queue Length:            325151247
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 14
+Vendor Id:               SEAGATE
+Product Id:              ST990080 CLAR900
+Product Revision:        CSFE
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           6XS4CDTD    
+Sectors:                 N/A
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 14
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         83950715
+Number of Writes:        37703631
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118032758  
+Request Service Time:    N/A
+Read Requests:           83950715
+Write Requests:          37703631
+Kbytes Read:             2054381593
+Kbytes Written:          489073488
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005049206PWR
+User Capacity:           0
+Idle Ticks:              1856335614
+Busy Ticks:              3244004313
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        36.4
+Prct Busy:        63.6
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 71635338
+High Sum of Seeks:       33350801274292
+Idle Ticks SPA:          1751870863
+Idle Ticks SPB:          104464751
+Busy Ticks SPA:          2945298848
+Busy Ticks SPB:          298705465
+Queue Length:            327664976
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 15
+Vendor Id:               HITACHI
+Product Id:              HUC10909 CLAR900
+Product Revision:        C600
+Lun:                     7 6 9 10 
+Type:                    7: RAID1 6: RAID1 9: RAID1 10: RAID1 
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            7: 100 6: 100 9: 100 10: 100 
+Prct Bound:              7: 100 6: 100 9: 100 10: 100 
+Serial Number:           W8JN421G    
+Sectors:                 6291456 (3072)
+Capacity:                840313
+Private:                 7: 65536 6: 4263936 9: 8462336 10: 10563584 
+Bind Signature:          N/A, 0, 15
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         492129
+Number of Writes:        203409685
+Number of Luns:          4
+Raid Group ID:           0
+Clariion Part Number:    DG118033034  
+Request Service Time:    N/A
+Read Requests:           492129
+Write Requests:          203409685
+Kbytes Read:             499205505
+Kbytes Written:          133318400
+Stripe Boundary Crossing: 0
+Drive Type:              SAS
+Clariion TLA Part Number:005050349PWR
+User Capacity:           3
+Idle Ticks:              1471644683
+Busy Ticks:              3625536304
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        28.8
+Prct Busy:        71.1
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 183465254
+High Sum of Seeks:       1033195528966528
+Idle Ticks SPA:          402196206
+Idle Ticks SPB:          1069448477
+Busy Ticks SPA:          6163
+Busy Ticks SPB:          3625530141
+Queue Length:            883832622
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 16
+Vendor Id:               HITACHI
+Product Id:              HUC10189 CLAR900
+Product Revision:        L7SS
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0DG8NXVF    
+Sectors:                 0 (0)
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 16
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488194
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000056  
+Request Service Time:    N/A
+Read Requests:           488194
+Write Requests:          0
+Kbytes Read:             499908609
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005051468PWR
+User Capacity:           0
+Idle Ticks:              3869630107
+Busy Ticks:              1208866188
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        76.2
+Prct Busy:        23.8
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       4591859712
+Idle Ticks SPA:          3488872399
+Idle Ticks SPB:          380757708
+Busy Ticks SPA:          1208856416
+Busy Ticks SPB:          9772
+Queue Length:            488194
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 17
+Vendor Id:               HITACHI
+Product Id:              HUC10189 CLAR900
+Product Revision:        L7SS
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0DG29J8D    
+Sectors:                 N/A
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 17
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         84005928
+Number of Writes:        37727613
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118000056  
+Request Service Time:    N/A
+Read Requests:           84005928
+Write Requests:          37727613
+Kbytes Read:             2056502542
+Kbytes Written:          490643721
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005051468PWR
+User Capacity:           0
+Idle Ticks:              2007430410
+Busy Ticks:              3096561462
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        39.3
+Prct Busy:        60.6
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 67636656
+High Sum of Seeks:       679103529716996
+Idle Ticks SPA:          389621906
+Idle Ticks SPB:          1617808504
+Busy Ticks SPA:          12580450
+Busy Ticks SPB:          3083981012
+Queue Length:            303683513
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 18
+Vendor Id:               SEAGATE
+Product Id:              ST990080 CLAR900
+Product Revision:        CSFE
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           6XS4D17Z    
+Sectors:                 N/A
+Capacity:                840313
+Private:                 Unbound
+Bind Signature:          N/A, 0, 18
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         83931068
+Number of Writes:        37663772
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118032758  
+Request Service Time:    N/A
+Read Requests:           83931068
+Write Requests:          37663772
+Kbytes Read:             2055936814
+Kbytes Written:          487934999
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005049206PWR
+User Capacity:           0
+Idle Ticks:              244063753
+Busy Ticks:              568083263
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        30.0
+Prct Busy:        69.9
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 72302543
+High Sum of Seeks:       33496968328962
+Idle Ticks SPA:          214681846
+Idle Ticks SPB:          29381907
+Busy Ticks SPA:          187858386
+Busy Ticks SPB:          380224877
+Queue Length:            334126641
+Prct Copied:             N/A
+Actual Capacity:         840281
+LBA of User Space:       65536
+
+Bus 0 Enclosure 0  Disk 19
+State:                   Empty
+
+Bus 0 Enclosure 0  Disk 20
+State:                   Empty
+
+Bus 0 Enclosure 0  Disk 21
+State:                   Empty
+
+Bus 0 Enclosure 0  Disk 22
+State:                   Empty
+
+Bus 0 Enclosure 0  Disk 23
+State:                   Empty
+
+Bus 0 Enclosure 0  Disk 24
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 0
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6G9VV    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 0
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488195
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488195
+Write Requests:          0
+Kbytes Read:             499909633
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3246259743
+Busy Ticks:              1831908742
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        63.9
+Prct Busy:        36.0
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3746340864
+Idle Ticks SPA:          2865492333
+Idle Ticks SPB:          380767410
+Busy Ticks SPA:          1831908542
+Busy Ticks SPB:          200
+Queue Length:            488195
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 1
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6HWYZ    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 1
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488192
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488192
+Write Requests:          0
+Kbytes Read:             499906561
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3200273433
+Busy Ticks:              1878662456
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        63.0
+Prct Busy:        36.9
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3740981248
+Idle Ticks SPA:          402202208
+Idle Ticks SPB:          2798071225
+Busy Ticks SPA:          252
+Busy Ticks SPB:          1878662204
+Queue Length:            488192
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 2
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6G4NQ    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 2
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488195
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488195
+Write Requests:          0
+Kbytes Read:             499909633
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3229452320
+Busy Ticks:              1849046424
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        63.5
+Prct Busy:        36.4
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3746211840
+Idle Ticks SPA:          2848685048
+Idle Ticks SPB:          380767272
+Busy Ticks SPA:          1849046231
+Busy Ticks SPB:          193
+Queue Length:            488195
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 3
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6G5ME    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 3
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488192
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488192
+Write Requests:          0
+Kbytes Read:             499906561
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3243837568
+Busy Ticks:              1834879138
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        63.8
+Prct Busy:        36.1
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3741134848
+Idle Ticks SPA:          402202298
+Idle Ticks SPB:          2841635270
+Busy Ticks SPA:          149
+Busy Ticks SPB:          1834878989
+Queue Length:            488192
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 4
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6G57K    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 4
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488194
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488194
+Write Requests:          0
+Kbytes Read:             499908609
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3301066557
+Busy Ticks:              1776883816
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        65.0
+Prct Busy:        34.9
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3746639872
+Idle Ticks SPA:          2920299099
+Idle Ticks SPB:          380767458
+Busy Ticks SPA:          1776883626
+Busy Ticks SPB:          190
+Queue Length:            488194
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 5
+Vendor Id:               SEAGATE
+Product Id:              ST600MM0 CLAR600
+Product Revision:        LS5C
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           S0M6J2FP    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 5
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488191
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033069  
+Request Service Time:    N/A
+Read Requests:           488191
+Write Requests:          0
+Kbytes Read:             499905537
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050211PWR
+User Capacity:           0
+Idle Ticks:              3293917470
+Busy Ticks:              1784357000
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        64.8
+Prct Busy:        35.1
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 1
+High Sum of Seeks:       3741607936
+Idle Ticks SPA:          402202326
+Idle Ticks SPB:          2891715144
+Busy Ticks SPA:          152
+Busy Ticks SPB:          1784356848
+Queue Length:            488192
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 6
+Vendor Id:               HITACHI
+Product Id:              HUC10906 CLAR600
+Product Revision:        C600
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           W7HKNUWG    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 6
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488195
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033213  
+Request Service Time:    N/A
+Read Requests:           488195
+Write Requests:          0
+Kbytes Read:             499909633
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050344PWR
+User Capacity:           0
+Idle Ticks:              3793263210
+Busy Ticks:              1284892588
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        74.7
+Prct Busy:        25.3
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3777552384
+Idle Ticks SPA:          3412495789
+Idle Ticks SPB:          380767421
+Busy Ticks SPA:          1284892424
+Busy Ticks SPB:          164
+Queue Length:            488195
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 7
+Vendor Id:               HITACHI
+Product Id:              HUC10906 CLAR600
+Product Revision:        C600
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           W7HL6KAG    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 7
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488192
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118033213  
+Request Service Time:    N/A
+Read Requests:           488192
+Write Requests:          0
+Kbytes Read:             499906561
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050344PWR
+User Capacity:           0
+Idle Ticks:              3770684678
+Busy Ticks:              1308126389
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        74.2
+Prct Busy:        25.7
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3772819456
+Idle Ticks SPA:          402195465
+Idle Ticks SPB:          3368489213
+Busy Ticks SPA:          7038
+Busy Ticks SPB:          1308119351
+Queue Length:            488192
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 8
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRLNHP    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 8
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488194
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           488194
+Write Requests:          0
+Kbytes Read:             499908609
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              2463488
+Busy Ticks:              780506525
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        0.31
+Prct Busy:        99.6
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3788007424
+Idle Ticks SPA:          3916663457
+Idle Ticks SPB:          380767327
+Busy Ticks SPA:          780506313
+Busy Ticks SPB:          212
+Queue Length:            488194
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 9
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Enabled
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHR1DUP    
+Sectors:                 N/A
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 9
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488193
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           N/A
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           488193
+Write Requests:          0
+Kbytes Read:             499907585
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              4273246660
+Busy Ticks:              806001170
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        84.1
+Prct Busy:        15.8
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       3782713344
+Idle Ticks SPA:          402193973
+Idle Ticks SPB:          3871052687
+Busy Ticks SPA:          8509
+Busy Ticks SPB:          805992661
+Queue Length:            488193
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 10
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHNK7RP    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 10
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488195
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           488195
+Write Requests:          0
+Kbytes Read:             499909633
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              5424522
+Busy Ticks:              777545545
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        0.69
+Prct Busy:        99.3
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       2039042048
+Idle Ticks SPA:          3919624380
+Idle Ticks SPB:          380767438
+Busy Ticks SPA:          777545350
+Busy Ticks SPB:          195
+Queue Length:            488195
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 11
+Vendor Id:               HITACHI
+Product Id:              HUC15606 CLAR600
+Product Revision:        C3E4
+Lun:                     Unbound
+Type:                    N/A
+State:                   Unbound
+Hot Spare:               N/A
+Prct Rebuilt:            Unbound
+Prct Bound:              Unbound
+Serial Number:           0XHRM12P    
+Sectors:                 0 (0)
+Capacity:                549691
+Private:                 Unbound
+Bind Signature:          N/A, 0, 11
+Hard Read Errors:        0
+Hard Write Errors:       0
+Soft Read Errors:        0
+Soft Write Errors:       0
+Read Retries:     N/A
+Write Retries:    N/A
+Remapped Sectors:        N/A
+Number of Reads:         488193
+Number of Writes:        0
+Number of Luns:          0
+Raid Group ID:           This disk does not belong to a RAIDGroup 
+Clariion Part Number:    DG118000394  
+Request Service Time:    N/A
+Read Requests:           488193
+Write Requests:          0
+Kbytes Read:             499907585
+Kbytes Written:          0
+Stripe Boundary Crossing: None
+Drive Type:              SAS
+Clariion TLA Part Number:005050935PWR
+User Capacity:           0
+Idle Ticks:              4277607694
+Busy Ticks:              800985100
+Current Speed: 6Gbps
+Maximum Speed: 6Gbps
+Queue Max:        N/A
+Queue Avg:        N/A
+Prct Idle:        84.2
+Prct Busy:        15.7
+Hardware Power Savings Qualified: YES
+Hardware Power Savings Eligible: YES
+Power Savings State: Full Power
+Current Power Savings Log Timestamp: N/A
+Spinning Ticks: N/A
+Standby Ticks: N/A
+Number of Spin Ups: N/A
+Arrivals with Nonzero Queue: 0
+High Sum of Seeks:       2031140864
+Idle Ticks SPA:          402196110
+Idle Ticks SPB:          3875411584
+Busy Ticks SPA:          6358
+Busy Ticks SPB:          800978742
+Queue Length:            488193
+Prct Copied:             N/A
+Actual Capacity:         549659
+LBA of User Space:       65536
+
+Bus 1 Enclosure 0  Disk 12
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 13
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 14
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 15
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 16
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 17
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 18
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 19
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 20
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 21
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 22
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 23
+State:                   Empty
+
+Bus 1 Enclosure 0  Disk 24
+State:                   Empty
+

@@ -1,0 +1,19 @@
+{
+    "poolInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "poolId": "DG1_FBA7_2"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "poolId": "DG2_FBA10K"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "poolId": "DG3_FBA_F"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+Release version 3.2.1 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1 (P27)
+CLI Client                       3.2.1
+System Manager                   3.2.1 (P30)
+Kernel                           3.2.1 (MU3)
+TPD Kernel Code                  3.2.1 (P17)
+TPD Kernel Patch                 3.2.1 (P31)
+CIM Server                       3.2.1 (P29)
+WSAPI Server                     3.2.1 (MU3)
+Console Menu                     3.2.1 (MU3)
+Event Manager                    3.2.1 (MU3)
+Internal Test Tools              3.2.1 (MU3)
+LD Check Tools                   3.2.1 (MU3)
+Network Controller               3.2.1 (MU3)
+Node Disk Scrubber               3.2.1 (MU3)
+PD Scrubber                      3.2.1 (MU3)
+Per-Node Server                  3.2.1 (MU3)
+Persistent Repository            3.2.1 (MU3)
+Powerfail Tools                  3.2.1 (MU3)
+Preserved Data Tools             3.2.1 (MU3)
+Process Monitor                  3.2.1 (MU3)
+Rolling Upgrade Tools            3.2.1 (MU3)
+Software Updater                 3.2.1 (P30)
+TOC Server                       3.2.1 (MU3)
+VV Check Tools                   3.2.1 (P18)
+File Persona                     1.0.1.15-20150513
+SNMP Agent                       1.8.0
+SSH                              5.5p1-6+squeeze1
+VASA Provider                    2.1.8 (P18)
+Firmware Database                20160115
+Drive Firmware                   20160115
+UEFI BIOS                        14.08.19
+MCU Firmware                     4.63
+Cage Firmware (DC1)              4.44
+Cage Firmware (DC2)              2.64
+Cage Firmware (DC3)              08
+Cage Firmware (DC4)              2.64
+Cage Firmware (DCS1)             321c
+Cage Firmware (DCS2)             321c
+Cage Firmware (DCN1)             321c
+QLogic QLA4052C HBA Firmware     03.00.01.77
+QLogic QLE8242 CNA Firmware      04.11.152
+Emulex LP11002 HBA Firmware      02.82.x10
+Emulex LPe12002 HBA Firmware     02.02.x15
+Emulex LPe12004 HBA Firmware     02.02.x15
+Emulex LPe16002 HBA Firmware     01.01.65.16
+3PAR FC044X HBA Firmware         200A8
+LSI 9201-16e HBA Firmware        17.11.00
+LSI 9205-8e HBA Firmware         17.11.00
+

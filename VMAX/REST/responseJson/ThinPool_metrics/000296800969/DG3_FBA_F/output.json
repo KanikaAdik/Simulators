@@ -1,0 +1,36 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578473816, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "BEPercentReads": 0.5113261, 
+                "timestamp": 1494577800000, 
+                "BEReadResponseTime": 0.6162052, 
+                "BEAvgResponseTime": 0.32055363, 
+                "BEWriteResponseTime": 0.3190341, 
+                "BEPercentWrites": 99.48868
+            }, 
+            {
+                "BEPercentReads": 1.3725189, 
+                "timestamp": 1494578100000, 
+                "BEReadResponseTime": 0.6915101, 
+                "BEAvgResponseTime": 0.34175774, 
+                "BEWriteResponseTime": 0.3368905, 
+                "BEPercentWrites": 98.62749
+            }, 
+            {
+                "BEPercentReads": 1.8727429, 
+                "timestamp": 1494578400000, 
+                "BEReadResponseTime": 0.6804537, 
+                "BEAvgResponseTime": 0.34136513, 
+                "BEWriteResponseTime": 0.33489367, 
+                "BEPercentWrites": 98.12726
+            }
+        ]
+    }, 
+    "id": "c98b7419-d83c-458c-94a5-cff5235b4cac_0", 
+    "maxPageSize": 1000
+}

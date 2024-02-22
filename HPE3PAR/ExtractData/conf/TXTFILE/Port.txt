@@ -1,0 +1,404 @@
+###################################################### Port #######################################################
+3Par7450 cli% showport -h
+showport - Show information about ports in the system.
+
+SYNTAX
+    showport [options] [-failed] [-sortcol <col>[,<dir>]] [<node:slot:port> |<pattern>...]
+
+DESCRIPTION
+    The showport command displays information about ports in the system.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -i
+        Shows port hardware inventory information.
+
+    -c
+        Displays all devices connected to the port. Such devices include cages
+        (for initiator ports), hosts (for target ports) and ports from other
+        storage system (for RCFC and peer ports).
+
+    -par
+        Displays a parameter listing such as the configured data rate of a port
+        and the maximum data rate that the card supports. Also shown is the
+        type of attachment (Direct Connect or Fabric Attached) and whether the
+        unique_nwwn and VCN capabilities are enabled.
+
+    -rc
+        Displays information that is specific to the Remote Copy ports.
+
+    -rcfc
+        Displays information that is specific to the Fibre Channel Remote Copy
+        ports.
+
+    -peer
+        Displays information that is specific to the Fibre Channel ports for
+        Data Migration.
+
+    -rcip
+        Displays information specific to the Ethernet Remote Copy ports.
+
+    -iscsi
+        Displays information about iSCSI ports.
+
+    -iscsiname
+        Displays iSCSI names associated with iSCSI ports.
+
+    -fcoe
+        Displays information that is specific to Fibre Channel over Ethernet
+        (FCoE) ports.
+
+    -sfp
+        Displays information about the SFPs attached to ports.
+
+    -ddm
+        Displays Digital Diagnostics Monitoring (DDM) readings from the SFPs if
+        they support DDM. This option must be used with the -sfp option.
+
+    -d
+        Displays detailed information about the SFPs attached to ports. This
+        option is used with the -sfp option.
+
+    -failed
+        Shows only failed ports.
+
+    -state
+        Displays the detailed state information. This is the same as -s.
+
+    -s
+        Displays the detailed state information.
+        This option is deprecated and will be removed in a subsequent release.
+
+    -ids
+        Displays the identities hosted by each physical port.
+
+    -fs
+        Displays information specific to the Ethernet File Persona ports.
+        To see IP address, netmask and gateway information on File Persona,
+        run "showfs -net".
+
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+SPECIFIERS
+    <node:slot:port>...
+        Requests that information for a specified port is displayed.
+        This specifier can be repeated to display configuration information
+        about multiple ports. If not specified, configuration information
+        for all ports in the system is displayed.
+
+        node
+            Specifies the node using a number from 0 through 7.
+
+        slot
+            Specifies the PCI slot in the specified node. Valid ranges are:
+            0 - 9 for the V-Class storage system platform.
+            0 - 5 for the S- and T-Class storage system platforms.
+            0 - 3 for the E200 storage system platform.
+            0 - 2 for the F-Class storage system platform.
+
+        port
+            Specifies the port using a number from 1 through 4.
+
+    <pattern>...
+        Specifies that the port matching the specified glob-style
+        pattern is displayed. This specifier can be repeated to display
+        configuration information about multiple ports. If not
+        specified, configuration information for all ports in the
+        system is displayed.
+
+NOTES
+    None.
+
+EXAMPLES
+    The following example displays information about all ports in the system:
+        cli% showport
+
+    The following example displays hardware and connection information about the
+    ports settings:
+        cli% showport -i
+
+    The following example displays devices connected to ports and
+    information about the ports settings on node 0 slot 4:
+        cli% showport -par 0:4:*
+    N:S:P Connmode ConnType CfgRate MaxRate Class2   UniqNodeWwn VCN      IntCoal TMWO
+    0:4:1 host     point    auto    4Gbps   disabled disabled    disabled enabled enabled
+    0:4:2 host     point    auto    4Gbps   disabled disabled    disabled enabled enabled
+    0:4:3 disk     loop     auto    4Gbps   disabled disabled    disabled enabled n/a
+    0:4:4 disk     loop     auto    4Gbps   disabled disabled    disabled enabled n/a
+    -----------------------------------------------------------------------------
+    4
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showport
+col,showport - Explanation of column headers for showport
+
+N:S:P        Port location in the format <Node>:<Slot>:<Port> where Slot is the
+             PCI slot number in the node, and Port is the port number in the PCI
+             card.
+Mode         Can be one of
+                 initiator  Initiator port connects to disks (default state)
+                 target     Target port connects to hosts or fabric
+                 suspended  Target port that has yet to be initialized by the
+                            system
+                 peer       Peer port is an ethernet port used for remote
+                            copy or File Persona
+State
+Detailed_State
+             State and Detailed state of the port is one of
+                 config_wait           Configuration wait
+                 alpa_wait             ALPA wait
+                 login_wait            Login wait
+                 ready                 Link is ready
+                 loss_sync             Link loss sync
+                 error                 In error state
+                 xxx                   xxx
+                 non_participate       Link not participate
+                 taking_coredump       Taking coredump
+                 offline               Link offline
+                 fw_dead               Firmware dead
+                 link_idle_for_reset   Link is idle for reset
+                 dhcp_in_progress      DHCP is in progress
+                 pending_reset         Link reset pending
+                 unknown               Link state unknown
+Type         Link type can be one of
+                 host   FC port connected to hosts or fabric
+                 disk   FC port connected to disks
+                 rcfc   FC port used for Remote Copy
+                 peer   FC port used for data migration
+                 rcip   IP (ethernet) port used for Remote Copy
+                 fs     IP (ethernet) port used for File Persona
+                 iscsi  iSCSI (ethernet) port connected to hosts
+                 free   Port is not connected to hosts or disks
+Protocol     Protocol can be one of
+                 FC     Fibre Channel
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+3Par7450 cli% showport
+N:S:P      Mode     State ----Node_WWN---- -Port_WWN/HW_Addr- Type Protocol Label Partner FailoverState
+0:0:1 initiator     ready 50002ACFF700C1AD   50002AC00100C1AD disk      SAS  DP-1       -             -
+0:0:2 initiator loss_sync 50002ACFF700C1AD   50002AC00200C1AD free      SAS  DP-2       -             -
+0:1:1    target     ready 2FF70002AC00C1AD   20110002AC00C1AD host       FC     -   1:1:1          none
+0:1:2    target     ready 2FF70002AC00C1AD   20120002AC00C1AD host       FC     -   1:1:2          none
+0:3:1      peer   offline                -       D4C9EF080E3F rcip       IP RCIP0       -             -
+1:0:1 initiator     ready 50002ACFF700C1AD   50002AC10100C1AD disk      SAS  DP-1       -             -
+1:0:2 initiator loss_sync 50002ACFF700C1AD   50002AC10200C1AD free      SAS  DP-2       -             -
+1:1:1    target     ready 2FF70002AC00C1AD   21110002AC00C1AD host       FC     -   0:1:1          none
+1:1:2    target     ready 2FF70002AC00C1AD   21120002AC00C1AD host       FC     -   0:1:2          none
+1:3:1      peer   offline                -       D4C9EF080C4B rcip       IP RCIP1       -             -
+-------------------------------------------------------------------------------------------------------
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showport -i
+N:S:P Brand  Model    Rev Firmware    Serial  HWType
+0:0:1 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+0:0:2 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+0:1:1 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+0:1:2 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+0:3:1 Intel  e1000e   n/a 2.3.2-k     Onboard Eth
+1:0:1 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+1:0:2 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+1:1:1 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+1:1:2 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+1:3:1 Intel  e1000e   n/a 2.3.2-k     Onboard Eth
+----------------------------------------------------
+   10
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -c
+N:S:P      Mode                Device Pos Config       Topology  Rate Cls Mode_change
+0:0:1 initiator                 cage0   0  valid point_to_point 6Gbps n/a  prohibited
+0:0:2 initiator                   ---   -    ---            n/a   n/a n/a  prohibited
+0:1:1    target flashesx03.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx01.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx02.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx04.acme.local   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd03   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd04   0  valid         fabric 8Gbps   3     allowed
+                             TECESX03   0  valid         fabric 8Gbps   3     allowed
+                             TECESX04   0  valid         fabric 8Gbps   3     allowed
+0:1:2    target              esxvcd03   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd04   0  valid         fabric 8Gbps   3     allowed
+                             TECESX03   0  valid         fabric 8Gbps   3     allowed
+                             TECESX04   0  valid         fabric 8Gbps   3     allowed
+1:0:1 initiator                 cage0   0  valid point_to_point 6Gbps n/a  prohibited
+1:0:2 initiator                   ---   -    ---            n/a   n/a n/a  prohibited
+1:1:1    target flashesx03.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx01.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx02.acme.local   0  valid         fabric 8Gbps   3     allowed
+                flashesx04.acme.local   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd03   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd04   0  valid         fabric 8Gbps   3     allowed
+                             TECESX03   0  valid         fabric 8Gbps   3     allowed
+                             TECESX04   0  valid         fabric 8Gbps   3     allowed
+1:1:2    target              esxvcd03   0  valid         fabric 8Gbps   3     allowed
+                             esxvcd04   0  valid         fabric 8Gbps   3     allowed
+                             TECESX03   0  valid         fabric 8Gbps   3     allowed
+                             TECESX04   0  valid         fabric 8Gbps   3     allowed
+-------------------------------------------------------------------------------------
+   28
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -par
+N:S:P Connmode ConnType CfgRate MaxRate Class2   UniqNodeWwn VCN      IntCoal  TMWO
+0:0:1 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+0:0:2 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+0:1:1 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+0:1:2 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+1:0:1 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+1:0:2 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+1:1:1 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+1:1:2 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+--------------------------------------------------------------------------------------
+8
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -rc
+N:S:P   State ---HwAddr--- Rate Type
+0:3:1 offline D4C9EF080E3F  n/a rcip
+1:3:1 offline D4C9EF080C4B  n/a rcip
+------------------------------------
+    2
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -rcfc
+There is no specified port information.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -peer
+There is no specified port information.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -rcip
+N:S:P   State ---HwAddr--- IPAddr Netmask Gateway MTU Rate Duplex AutoNeg
+0:3:1 offline D4C9EF080E3F      -       -       -   -  n/a    n/a     n/a
+1:3:1 offline D4C9EF080C4B      -       -       -   -  n/a    n/a     n/a
+-------------------------------------------------------------------------
+    2
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -iscsi
+There is no specified port information.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -fcoe
+No fcoe port information found
+There is no specified port information.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -sfp
+N:S:P -State- -Manufacturer- MaxSpeed(Gbps) TXDisable TXFault RXLoss DDM
+0:1:1 OK      HP-F                      8.5 No        No      No     Yes
+0:1:2 OK      HP-F                      8.5 No        No      No     Yes
+1:1:1 OK      HP-F                      8.5 No        No      No     Yes
+1:1:2 OK      HP-F                      8.5 No        No      No     Yes
+------------------------------------------------------------------------
+    4
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -d -sfp
+---------Port 0:1:1----------
+N:S:P          :   0:1:1
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY83230GQM
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 0:1:2----------
+N:S:P          :   0:1:2
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY83230GR1
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 1:1:1----------
+N:S:P          :   1:1:1
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY832301NJ
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 1:1:2----------
+N:S:P          :   1:1:2
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY832301NQ
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showport -failed
+N:S:P Mode   State -Node_WWN- -Port_WWN/HW_Addr- Type Protocol Label Partner FailoverState
+0:3:1 peer offline          -       D4C9EF080E3F rcip       IP RCIP0       -             -
+1:3:1 peer offline          -       D4C9EF080C4B rcip       IP RCIP1       -             -
+------------------------------------------------------------------------------------------
+    2
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -state
+N:S:P --State-- -Detailed_State-
+0:0:1 ready     ready
+0:0:2 loss_sync loss_sync
+0:1:1 ready     ready
+0:1:2 ready     ready
+0:3:1 offline   offline
+1:0:1 ready     ready
+1:0:2 loss_sync loss_sync
+1:1:1 ready     ready
+1:1:2 ready     ready
+1:3:1 offline   offline
+--------------------------------
+   10
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -ids
+N:S:P -Node_WWN/IPAddr- -Port_WWN/iSCSI_Name-
+0:0:1  50002ACFF700C1AD      50002AC00100C1AD
+0:0:2  50002ACFF700C1AD      50002AC00200C1AD
+0:1:1  2FF70002AC00C1AD      20110002AC00C1AD
+0:1:2  2FF70002AC00C1AD      20120002AC00C1AD
+1:0:1  50002ACFF700C1AD      50002AC10100C1AD
+1:0:2  50002ACFF700C1AD      50002AC10200C1AD
+1:1:1  2FF70002AC00C1AD      21110002AC00C1AD
+1:1:2  2FF70002AC00C1AD      21120002AC00C1AD
+---------------------------------------------
+    8
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showport -fs
+There is no specified port information.

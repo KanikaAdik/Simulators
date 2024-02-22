@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HiCommandServerMessage>
+  <APIInfo version="7.5" />
+  <Response>
+    <EchoCommand name="GetServerInfo" status="COMPLETED" result="0" resultSource="ServerAdmin.GetServerInfo" messageID="685887320" />
+    <ResultList>
+      <ServerInfo serverVersion="Hitachi Device Manager Server v8.4 Build 0840-03 (Jan 25, 2016)" serverURL="https://192.168.20.27:2443" upTime="9 days 12 hours 31 minutes 17 seconds" upSince="Mon, 15 May 2017 21:32:53 GMT" currentApiVersion="8.4" license="0">
+        <StorageArray arrayFamily="AMS/WMS/SMS" displayArrayFamily="AMS/WMS/SMS" />
+        <StorageArray arrayFamily="HDS9500V" displayArrayFamily="HDS9500V" />
+        <StorageArray arrayFamily="HDS9900V" displayArrayFamily="HDS9900V" />
+        <StorageArray arrayFamily="HUS" displayArrayFamily="HUS" />
+        <StorageArray arrayFamily="HM700" displayArrayFamily="HUS VM" />
+        <StorageArray arrayFamily="R700" displayArrayFamily="P9500" />
+        <StorageArray arrayFamily="USP" displayArrayFamily="USP" />
+        <StorageArray arrayFamily="R600" displayArrayFamily="USP_V" />
+        <StorageArray arrayFamily="R700" displayArrayFamily="VSP" />
+        <StorageArray arrayFamily="R800" displayArrayFamily="VSP G1000" />
+        <StorageArray arrayFamily="HM800" displayArrayFamily="VSP Gx00" />
+        <StorageArray arrayFamily="HDS9900V" displayArrayFamily="XP1024/128" />
+        <StorageArray arrayFamily="USP" displayArrayFamily="XP12K/10K/SVS200" />
+        <StorageArray arrayFamily="R600" displayArrayFamily="XP24K/20K" />
+        <StorageArray arrayFamily="R800" displayArrayFamily="XP7" />
+      </ServerInfo>
+    </ResultList>
+  </Response>
+</HiCommandServerMessage>
+

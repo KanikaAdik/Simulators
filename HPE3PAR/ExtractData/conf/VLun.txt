@@ -1,0 +1,378 @@
+##############################################Virtual Lun ########################################
+showvlun - Show information about VLUNs in the system.
+
+SYNTAX
+    showvlun [options <arg>]
+    showvlun -listcols
+
+DESCRIPTION
+    Display information about VLUNs, including all active and template VLUNs.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -listcols
+        List the columns available to be shown in the -showcols option
+        described below (see 'clihelp -col showvlun' for help on each column).
+
+    The [options] are generally of two kinds: those that select the type of
+    information that is displayed, and those that filter the list of VLUNs that
+    are displayed.
+
+    By default (if none of the information selection options below are
+    specified) the following columns are shown:
+    Lun VVName HostName Host_WWN Port Type
+
+    Options that select the type of information shown include the following:
+
+    -showcols <column>[,<column>...]
+        Explicitly select the columns to be shown using a comma-separated list
+        of column names.  For this option the full column names are shown in
+        the header.
+        Run 'showvlun -listcols' to list the available columns.
+        Run 'clihelp -col showvlun' for a description of each column.
+
+    -lvw
+        Shows the WWN of the virtual volume associated with the VLUN.
+
+    -pathsum
+        Shows path summary information for active VLUNs
+
+    Options that filter the VLUNs that are displayed include the following
+
+    -a
+        Shows only active VLUNs.
+
+    -t
+        Shows only VLUN templates.
+
+    -host {<hostname>|<pattern>|<hostset>}...
+        Displays only VLUNs exported to hosts that match <hostname> or
+        glob-style patterns, or to the host sets that match <hostset> or
+        glob-style patterns(see help on sub,globpat). The host set name must
+        start with "set:". Multiple host names, host sets or patterns can
+        be repeated using a comma-separated list.
+
+    -v {<VV_name>|<pattern>|<VV_set>}...
+        Displays only VLUNs of virtual volumes that match <VV_name> or
+        glob-style patterns, or to the vv sets that match <VV-set> or glob-style
+        patterns (see help on sub,globpat). The VV set name must start
+        with "set:". Multiple volume names, vv sets or patterns can be
+        repeated using a comma-separated list (for example -v <VV_name>,
+        <VV_name>...).
+
+    -l {<LUN|pattern>}...
+        Specifies that only exports to the specified LUN are displayed. This
+        specifier can be repeated to display information for multiple LUNs.
+
+    -nodes <nodelist>
+        Requests that only VLUNs for specific nodes are displayed. The node list
+        is specified as a series of integers separated by commas (for example
+        0,1,2). The list can also consist of a single integer (for example 1).
+
+    -slots <slotlist>
+        Requests that only VLUNs for specific slots are displayed. The slot list
+        is specified as a series of integers separated by commas (for example
+        0,1,2). The list can also consist of a single integer (for example 1).
+
+    -ports <portlist>
+        Requests that only VLUNs for specific ports are displayed. The port list
+        is specified as a series of integers separated by commas ((for example
+        1,2). The list can also consist of a single integer (for example 1).
+
+    -domain {<domain_name|pattern>}...
+        Shows only the VLUNs whose virtual volumes are in domains with names
+        that match one or more of the <domainname_or_pattern> options. This
+        option does not allow listing objects within a domain of which the user
+        is not a member. Multiple domain names or patterns can be repeated using
+        a comma-separated list.
+
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+SPECIFIERS
+    None.
+
+NOTES
+    The use of VV sets for the -v option and host sets for the -host option
+    affects the listing of VLUNs related to these sets, rather than each
+    individual member. As a result only VLUN templates will be shown; active
+    VLUNs always show each host and/or VV.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    The following example displays all active and template VLUNs using
+    glob-style patterns:
+
+        cli% showvlun -v *.2,*.3
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showvlun
+col,showvlun - Explanation of column headers for showvlun
+
+Lun                  Exported LUN value
+VVName               Name of exported VV
+HostName             Host VLUN is exported to
+Host_WWN/iSCSI_Name  WWN or iSCSI name of host
+Port                 Storage system port VLUN exported on
+Type                 VLUN type; exported to host/host set/port/both
+VV_WWN               WWN of exported VV
+Status               Status of the target port for the VLUN has several options.
+                        active      The target port is in alua active state.
+                        standby     The target port is in alua standby state.
+                        unavail     The target port is in alua unavailable state.
+                        transit     The target port is in alua transition state.
+                        n/a         The target port does not support alua.
+ID                   Target port group ID for the VLUN
+
+For -pathsum:
+
+Ports:
+Host                 Number of host WWNs visible to the storage system
+Inactive             WWNs reported by the host but not visible to storage system
+InServ               Number of Storage System ports that can see the host
+
+Paths:
+Available            Total available distinct paths between host and storage
+                     system
+Healthy              Number of paths seen by storage system and reported good by
+                     host
+
+Multipathing         Multipathing method in use (eg round-robin, failover)
+
+FailedPathPolicy     Failed path monitoring method
+                     (Test Unit Read, Inquiry, ReadSector0)
+MonIntervalSecs      Monitoring interval in secs after which the host
+                     checks for failed paths
+HostDevName          The device name for this VLUN on the host
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		
+3Par7450 cli% showvlun -showcols Domain,FailedPathPolicy,Host_WWN,HostDevName,HostName,ID,IsSubLUN,Lun,MonIntervalSecs,Multipathing,Port,Status,Type,VV_WWN,VVName
+
+3Par7450 cli% showvlun -lvw
+Active VLUNs
+Lun VVName        -------------VV_WWN------------- HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150159      1:1:2 host active  1
+------------------------------------------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        -------------VV_WWN------------- HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 ----------------       --- host
+-------------------------------------------------------------------------------------------
+  2 total
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+  3Par7450 cli% showvlun -pathsum
+                           ------ Ports ------- ----- Paths -----
+Lun VVname        Host     Host Inactive InServ Available Healthy Multipathing FailedPathPolicy MonIntervalSecs HostDevName
+ 31 CS_InfraLUN31 TECESX03    2        0      4         4       0 Unknown      Unknown                        0 --
+ 31 CS_InfraLUN31 TECESX04    2        0      4         4       0 Unknown      Unknown                        0 --
+---------------------------------------------------------------------------------------------------------------------------
+  2
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -a
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -t
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -host *
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -v *
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -l *
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -nodes 1
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  4 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -nodes 0,1~1
+Error while parsing -nodes argument: can't use non-numeric string as operand of "<<"
+3Par7450 cli% showvlun -nodes 0,1
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showvlun -slots *
+Error while parsing -slots argument: Integer * not between 0 and 9
+3Par7450 cli% showvlun -slots 0,1
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+3Par7450 cli% showvlun -ports 0
+Active VLUNs
+no vluns listed
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  3Par7450 cli% showvlun -domain *
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+***************************

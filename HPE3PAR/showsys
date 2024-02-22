@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+"""
+SYSTEM --       showsys -d
+                showsys -param
+                                showsys
+                                showsys -space
+"""
+import sys, os
+
+args = len(sys.argv)
+command = sys.argv[0].split("/")[-1]
+
+#print os.environ.has_key('DEB')
+
+if args == 1:
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","System",command)
+    with open(path) as f:
+        print f.read()
+else:
+    filename = command+"".join(sys.argv[1:])
+    """
+    if filename =="showsys-d":
+        if os.environ.has_key("SYSD"):
+            filename = "showsys-d_csv"
+        else:
+            os.environ['SYSD'] = 'TRUE'
+            os.putenv('SYSD','TRUE')
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","System",filename)
+    argument = sys.argv[1]
+    try:
+        with open(path) as f:
+            print f.read()
+        os.system('bash')
+    except:
+        raise
+
+    """ 
+    #filename = command+"".join(sys.argv[1:])
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","System",filename)
+    argument = sys.argv[1]
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        raise

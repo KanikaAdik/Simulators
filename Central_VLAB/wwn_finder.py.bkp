@@ -1,0 +1,77 @@
+import os, sys , re, glob
+
+PORT_REGEX = '.*?(([0-9A-Fa-f]{2}[:-]){7}[0-9A-Fa-f]{2}).*?'
+PORTS = []
+def usage():
+    str = """ 
+             This Script is for checking Nightly Build Availability
+             and downloading it and then update the INI Accordingly\n
+             python  -d <Directory> [Direcory where PortWN needs to find and repalce]\n
+    """
+    print str
+    sys.exit()
+
+def write_to_file(filename, data):
+    try:
+        file = open(filename,"a+")
+        file.write(data)
+        file.close()
+    except Exception as e:
+        log = "Error While writing file"
+        write_to_file(log_file,str(log))
+
+def check(fineName = None):
+    datafile = file(fineName)
+    found = False
+    lines = []
+    for line in datafile:
+        if "wwn" in line or "WWN" in line:
+            print line
+            matched = re.match(PORT_REGEX, line)
+            if matched:
+                port = matched.group(1)
+                PORTS.append(port)
+                #if port not in PORTS:
+                #    PORTS.append(port)
+            else:
+                write_to_file(log_file,"Regex match failed") 
+            lines.append(line)
+    return lines
+
+try:
+    work_dir = sys.argv[2]
+except:
+    usage()
+    sys.exit(0)
+
+if work_dir == ".":
+    work_dir = os.getcwd()   
+
+log_file = os.path.join(os.getcwd(),"serach_replace.log")
+
+dir_list = os.listdir(work_dir)
+
+dir_list =  glob.glob("%s/*" % work_dir)
+
+all_files = []
+for root,dirs,files in os.walk(work_dir):
+    try:
+        if type(files) == list:
+            for temp_file in files:
+                all_files.append(os.path.join(root, temp_file))
+    
+    except Exception as e:
+        write_to_file(log_file,"Error While getting files :  %s" % (str(e)))
+#print all_files
+
+all_items = []
+for item in all_files:
+     item_list = check(item)
+     all_items.extend(item_list)
+
+print len(all_items)
+print len(PORTS)
+
+
+
+#print all_items

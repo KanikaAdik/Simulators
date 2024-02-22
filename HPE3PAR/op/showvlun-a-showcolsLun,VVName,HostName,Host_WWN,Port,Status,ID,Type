@@ -1,0 +1,63 @@
+Lun,VVName,HostName,Host_WWN,Port,Status,ID,Type
+0,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:1,active,1,host set
+31,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:1,active,1,host
+0,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:1,active,1,host set
+31,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:1,active,1,host
+0,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:2,active,1,host set
+31,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:2,active,1,host
+0,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:2,active,1,host set
+31,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:2,active,1,host
+0,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:1,active,1,host set
+31,CS_InfraLUN31,TECESX03,20000025B515015A,0:1:1,active,1,host
+0,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:1,active,1,host set
+31,CS_InfraLUN31,TECESX04,20000025B5150158,0:1:1,active,1,host
+0,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:2,active,1,host set
+31,CS_InfraLUN31,TECESX03,20000025B515015B,1:1:2,active,1,host
+0,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:2,active,1,host set
+31,CS_InfraLUN31,TECESX04,20000025B5150159,1:1:2,active,1,host
+0,cumulus_vv1,testHost1,100000051E585244,1:1:2,active,1,host set
+1,cumulus_vv1,testHost1,100000051E585244,1:1:2,active,1,host set
+2,CS_InfraLUN31,testHost1,100000051E585244,1:1:2,active,1,host set
+31,cumulus_vv1,testHost1,100000051E585244,1:1:2,active,1,host
+0,cumulus_vv1,testHost1,100000051E585244,1:1:1,active,1,host set
+1,cumulus_vv1,testHost1,100000051E585244,1:1:1,active,1,host set
+2,CS_InfraLUN31,testHost1,100000051E585244,1:1:1,active,1,host set
+31,cumulus_vv1,testHost1,100000051E585244,1:1:1,active,1,host
+0,cumulus_vv1,testHost1,100000051E585244,0:1:1,active,1,host set
+1,cumulus_vv1,testHost1,100000051E585244,0:1:1,active,1,host set
+2,CS_InfraLUN31,testHost1,100000051E585244,0:1:1,active,1,host set
+31,cumulus_vv1,testHost1,100000051E585244,0:1:1,active,1,host
+0,cumulus_vv1,testHost1,100000051E585244,0:1:2,active,1,host set
+1,cumulus_vv1,testHost1,100000051E585244,0:1:2,active,1,host set
+2,CS_InfraLUN31,testHost1,100000051E585244,0:1:2,active,1,host set
+31,cumulus_vv1,testHost1,100000051E585244,0:1:2,active,1,host
+0,CS_InfraLUN31,TECESX14,20000025B7021705,1:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX14,20000025B7021705,1:1:1,active,1,host set
+2,Cumulus_TestCapacityClone_Volum,TECESX14,20000025B7021705,1:1:1,active,1,host
+3,cum_qa,TECESX14,20000025B7021705,1:1:1,active,1,host
+4,cum_qa,TECESX14,20000025B7021705,1:1:1,active,1,host
+0,CS_InfraLUN31,TECESX14,20000025B7021705,1:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX14,20000025B7021705,1:1:2,active,1,host set
+2,Cumulus_TestCapacityClone_Volum,TECESX14,20000025B7021705,1:1:2,active,1,host
+3,cum_qa,TECESX14,20000025B7021705,1:1:2,active,1,host
+4,cum_qa,TECESX14,20000025B7021705,1:1:2,active,1,host
+0,CS_InfraLUN31,TECESX14,20000025B7021704,0:1:1,active,1,host set
+1,CS_InfraLUN31,TECESX14,20000025B7021704,0:1:1,active,1,host set
+2,Cumulus_TestCapacityClone_Volum,TECESX14,20000025B7021704,0:1:1,active,1,host
+3,cum_qa,TECESX14,20000025B7021704,0:1:1,active,1,host
+4,cum_qa,TECESX14,20000025B7021704,0:1:1,active,1,host
+0,CS_InfraLUN31,TECESX14,20000025B7021704,0:1:2,active,1,host set
+1,CS_InfraLUN31,TECESX14,20000025B7021704,0:1:2,active,1,host set
+2,Cumulus_TestCapacityClone_Volum,TECESX14,20000025B7021704,0:1:2,active,1,host
+3,cum_qa,TECESX14,20000025B7021704,0:1:2,active,1,host
+4,cum_qa,TECESX14,20000025B7021704,0:1:2,active,1,host
+---------------------------------------------------------------------------------------
+60,total,,,,,,

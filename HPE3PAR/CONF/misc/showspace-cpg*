@@ -1,0 +1,5 @@
+     ----------------------(MB)-----------------------
+ CPG ----EstFree---- ----Usr---- ---Snp---- ---Adm---- -Capacity Efficiency-
+Name RawFree  LDFree Total  Used Total Used Total Used   Compaction    Dedup
+ AFA 6107136 4580352 33280 33280 40448  512  8192  256         12.7        -
+AFA2 6107136 4580352     0     0     0    0     0    0          0.0        -

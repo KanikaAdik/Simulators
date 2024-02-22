@@ -1,0 +1,99 @@
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2010, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Software
+  BIOS:      version 1.0.18
+  loader:    version N/A
+  kickstart: version 5.0(1a)
+  system:    version 5.0(1a)
+  BIOS compile time:       01/07/10
+  kickstart image file is: bootflash:/m9100-s3ek9-kickstart-mz.5.0.1a.bin
+  kickstart compile time:  12/25/2020 12:00:00 [02/21/2010 20:09:44]
+  system image file is:    bootflash:/m9100-s3ek9-mz.5.0.1a.bin
+  system compile time:     2/2/2010 17:00:00 [02/21/2010 23:13:41]
+
+
+Hardware
+  cisco MDS 9148 FC (1 Slot) Chassis ("1/2/4/8 Gbps FC/Supervisor-3")
+  Motorola, e500v2  with 1036308 kB of memory.
+  Processor Board ID JAF1823ADGG
+
+  Device name: mds9148
+  bootflash:    1001952 kB
+Kernel uptime is 809 day(s), 11 hour(s), 44 minute(s), 43 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 5.0(1a)
+  Service: 
+--------------------------------
+Switch hardware ID information
+--------------------------------
+
+Switch is booted up
+  Switch type is : MDS 9148 FC (1 Slot) Chassis
+  Model number is DS-C9148-16P-K9
+  H/W version is 1.1
+  Part Number is 73-11862-06
+  Part Revision is A0
+  Manufacture Date is Year 18 Week 12
+  Serial number is AMS18120093
+  CLEI code is CMMFV00ARA
+
+--------------------------------
+Chassis has 1 Module slots
+--------------------------------
+
+Module1  ok
+  Module type is : 1/2/4/8 Gbps FC/Supervisor-3
+  0 submodules are present
+  Model number is DS-C9148-K9-SUP
+  H/W version is 1.1
+  Part Number is 73-11862-06
+  Part Revision is A0
+  Manufacture Date is Year 18 Week 23
+  Serial number is JAF1823ADGG
+  CLEI code is CMMFV00ARA
+
+---------------------------------------
+Chassis has 2 PowerSupply Slots
+---------------------------------------
+
+PS1 fail/shutdown
+  Power supply type is: 300.00W 110v/220v AC
+  Model number is DS-C48-300AC
+  H/W version is 160.0
+  Part Number is 341-0320-01
+  Part Revision is A0
+  Manufacture Date is Year 18 Week 13
+  Serial number is PAC18134TRF
+  CLEI code is 
+
+PS2 ok
+  Power supply type is: 300.00W 110v/220v AC
+  Model number is DS-C48-300AC
+  H/W version is 160.0
+  Part Number is 341-0320-01
+  Part Revision is A0
+  Manufacture Date is Year 18 Week 13
+  Serial number is PAC18134TRG
+  CLEI code is 
+
+----------------------------------
+Chassis has 4 Fan slots
+----------------------------------
+
+Fan1 ok
+
+Fan2 ok
+
+Fan3 ok
+
+Fan4 ok
+

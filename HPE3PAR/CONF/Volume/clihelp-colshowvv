@@ -1,0 +1,248 @@
+Adm_Free_MB,Adm_Free_Zn,Adm_RawRsvd_MB,Adm_Rsvd_MB,Adm_Used_MB,Adm_Zn,Alert_Adm_Fail,Alert_Adm_Fail_Y,Alert_Snp_Fail,Alert_Snp_Fail_Y,Alert_Snp_Lim,Alert_Snp_Lim_Y,Alert_Snp_Wrn,Alert_Snp_Wrn_Y,Alert_Usr_Fail,Alert_Usr_Fail_Y,Alert_Usr_Lim,Alert_Usr_Lim_Y,Alert_Usr_Wrn,Alert_Usr_Wrn_Y,BsId,Comment,Compaction,Copied_MB,Copied_Perc,CopyOf,CreationTime,Dedup,Detailed_State,Domain,EfficiencyUpdateTime,ExpirationTime,Grown_Adm_MB,Grown_Snp_MB,Grown_Usr_MB,HPC,Id,Limit_Snp_Perc,Limit_Usr_Perc,Mstr,Name,PBlkRemain,Policies,PPrnt,Prnt,Prov,RcopyGroup,RcopyStatus,Rd,Reclaimed_Adm_MB,Reclaimed_Snp_MB,Reclaimed_Usr_MB,RetentionEndTime,Roch,Rwch,SctSz,Snp_Free_MB,Snp_Free_Zn,Snp_RawRsvd_MB,Snp_Rsvd_MB,Snp_Used_MB,Snp_Used_Perc,Snp_Zn,SnpCPG,SpaceCalcTime,SPT,State,Tot_RawRsvd_MB,Tot_Rsvd_MB,Type,Udid,UnrefSpaceFreedTime,Usr_Free_MB,Usr_Free_Zn,Usr_RawRsvd_MB,Usr_Rsvd_MB,Usr_Used_MB,Usr_Used_Perc,Usr_Zn,UsrCPG,VSize_MB,VV_WWN,Warn_Snp_Perc,Warn_Usr_Perc
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+col,showvv - Explanation of column headers for showvv
+
+Id           VV identifier
+Name         VV name
+Domain       VV domain
+Prov         The provisioning for the VV, can be one of the following
+                 full     Fully provisioned VV, either with no Snp (snapshot)
+                          space or with statically allocated Snp space.
+                 tpvv     Thin provisioned VV, with space for the base volume
+                          allocated from the Usr space that is associated with
+                          the UsrCPG.  Snapshots allocate space from the Snp
+                          space associated with the SnpCPG (if any).
+                 tdvv     Thin deduplicated VV, with space for the base volume
+                          allocated from the Usr space that is associated with
+                          the UsrCPG.  Snapshots allocate space from the Snp
+                          space associated with the SnpCPG (if any).
+                 cpvv     Commonly provisioned VV.  The Usr space for this VV is
+                          fully provisioned and the Snp space is associated with
+                          a SnpCPG.
+                 tpsd     An old-style thin provisioned VV (created on a 2.2.4
+                          release or earlier) where both the base VV and
+                          snapshot data are allocated from the Snp space
+                          associated with the UsrCPG.
+                 snp      The VV is a snapshot (Type vcopy) and its space is
+                          provisioned from the base volume's snapshot space.
+                 peer     Remote volume admitted into the local storage system
+Type         Indicates the copy type of the VV and can be one of the following
+                 base     Base volume (not a copy)
+                 pcopy    Physical copy (full copy)
+                 vcopy    Snapshot copy (virtual copy)
+CopyOf       If the VV is a physical copy or virtual copy of another VV, this
+             field indicates the VV that this VV is a copy of.
+BsId         The Id of the VV that is the base VV (at the root of the snapshot
+             tree) for the VV.
+Rd           The Read/Write permissions for the VV, takes the following values
+                 RW       Read and write allowed
+                 RO       Read only
+State        State of the VV is one of
+                 normal     VV is operating normally
+                 failed     VV is operating abnormally
+                 degraded   VV is in degraded state
+Detailed_State
+             Detailed state of VV is one or more of
+                 lds_not_started              LDs Not Started
+                 needs_check                  Needs to be checked for consistency
+                 not_started                  VV Not Started
+                 needs_maint_check            Maintenance Check Required
+                 internal_consistency_error   Internal Consistency Error
+                 snapdata_invalid             Snapdata Invalid
+                 preserved                    One or more sets of an LD is
+                                              unavailable due to missing chunklets
+                                              and the remaining VV data is preserved
+                                              in a preserved data ld.
+                 stale                        Parts of the VV contain old data
+                                              because a copy-on-write operation
+                                              failed
+                 copy_failed                  A promote or copy to this volume
+                                              failed
+                 degraded_avail               Degraded due to availability
+                 degraded_perf                Degraded due to performance
+                 promoting                    Volume is currently the target of a
+                                              promote
+                 copy_target                  Volume is currently the target of a
+                                              physical copy
+                 resync_target                Volume is currently the target of a
+                                              resync copy
+                 tuning                       Volume is tuning
+                 closing                      Volume is closing
+                 removing                     Volume is removing
+                 creating                     Volume is creating
+                 importing                    Volume is importing
+                 exclusive                    Local storage system has exclusive
+                                              access to the volume. Any host
+                                              access to the volume is going
+                                              through local storage system and
+                                              not through remote storage system
+                 converting                   Volume is converting to a thin
+                                              provisioned or fully provisioned
+                                              virtual volume
+                 copy_source                  Copy Source
+                 consistent                   Volume is being imported consistently
+                                              along with other volumes in the VV set.
+
+                 standby                      Standby mode
+                 unknown                      Volume state unknown
+Mstr         Master node for the VV (node that is responsible for assigning
+             mapping zones)
+Prnt         Id of the parent in the snapshot tree (not necessarily same
+             as the CopyOf VV)
+Roch         Id of the read-only child VV in the snapshot tree
+Rwch         Id of the read-write child VV in the snapshot tree
+PPrnt        Id of the Physical Parent.  Valid only for a physical copy
+VV_WWN       Volume World Wide Name
+CreationTime
+             The time when the VV was created
+RetentionEndTime
+             The time at which the volume retention time expires
+ExpirationTime
+             The time when the VV will expire
+SpaceCalcTime
+             The time when the snapshot space was calculated
+Comment      Comment associated with the volume
+Policies     Policies used for the VV, of the form <snap_pol>,<sys_pol>,<vv_pol>
+             where <snap_pol> is one of
+                 no_stale_ss    No stale snapshots. If there is no space for
+                                a copy-on-write operation, the host write will
+                                fail.
+                 stale_ss       Stale snapshots. If there is no space for
+                                a copy-on-write operation, the snapshot is
+                                allowed to go stale but the host write can
+                                proceed without an error.
+             and <sys_pol> is one of
+                 system         Special volume used by the system
+                 no_system      Normal user volume
+             and <vv_pol> is one of
+                 one_host       This indicates a volume is constrained to export
+                                to one host or one host cluster.
+                 no_one_host    This indicates a volume exported to multiple
+                                hosts for use by a cluster-aware application, or
+                                when "port presents" VLUNs are used.
+                 zero_detect    This indicates that the storage system will scan
+                                for zeros in the incoming write data.
+                 no_zero_detect This indicates that the storage system will not
+                                scan for zeros in the incoming write data.
+                 no_cache       This indicates that the storage system is
+                                disabled for write caching, read caching, and
+                                read ahead for the volume. This is a read-only
+                                policy and cannot be set.
+                 read_cache     This indicates that the storage system is
+                                disabled for write caching. This is a read-only
+                                policy and cannot be set.
+Adm_Rsvd_MB  Adm (snapshot admin or SA) reserved space in MB (1024^2 bytes)
+Adm_RawRsvd_MB
+             Raw (including RAID overhead) Adm reserved space in
+             MB (1024^2 bytes)
+Adm_Used_MB  Adm used space in MB (1024^2 bytes).
+Adm_Free_MB  Adm free space in MB (1024^2 bytes)
+Adm_Zn       Adm space zones
+Adm_Free_Zn  Adm space free zones
+Snp_Rsvd_MB  Snp (snapshot data or SD) reserved space in MB (1024^2 bytes)
+Snp_RawRsvd_MB
+             Raw (including RAID overhead) Snp reserved space in
+             MB (1024^2 bytes)
+Snp_Used_MB  Snp used space in MB (1024^2 bytes).
+Snp_Free_MB  Snp free space in MB (1024^2 bytes)
+Snp_Zn       Snp space zones
+Snp_Free_Zn  Snp space free zones
+Snp_Used_Perc
+             Snp used space as a percentage of the virtual size (VSize_MB).
+Usr_Rsvd_MB  Usr (User) reserved space in MB (1024^2 bytes)
+Usr_RawRsvd_MB
+             Raw (including RAID overhead) Usr reserved space in
+             MB (1024^2 bytes)
+Usr_Used_MB  Usr used space in MB (1024^2 bytes)
+Usr_Free_MB  Usr free space in MB (1024^2 bytes)
+Usr_Zn       Usr space zones
+Usr_Free_Zn  Usr space free zones
+Usr_Used_Perc
+             Usr used space as a percentage of the virtual size (VSize_MB)
+VSize_MB     Virtual size of volume in MB (1024^2 bytes)
+Tot_Rsvd_MB  Total reserved space (Adm_Rsvd_MB + Snp_Rsvd_MB + Usr_Rsvd_MB)
+Tot_RawRsvd_MB
+             Total raw reserved space (Adm_RawRsvd_MB + Snp_RawRsvd_MB +
+             Usr_RawRsvd_MB)
+PBlkRemain   For a physical copy destination, the number of blocks that
+             still remain to be copied from the parent
+SPT          Sectors per track. Simulated geometry of the 'disk' for the VV.
+HPC          Head per cylinder. Simulated geometry of the 'disk' for the VV.
+SctSz        Sector Size in Bytes.
+UsrCPG       CPG name from which the user (Usr) space is allocated
+SnpCPG       CPG name from which the snapshot (Snp and Adm) space is allocated
+Copied_MB    MB copied for physical copies and snapshot promotes
+Copied_Perc  Copied_MB as a percent of the virtual size (VSize_MB)
+RcopyStatus  Remote Copy status of the volume.  Valid states are
+                 none      Volume is not associated with Remote Copy
+                 primary   Volume is the primary copy
+                 secondary Volume is the secondary copy
+                 snap      Volume is a Remote Copy snapshot
+                 sync      Volume is a Remote Copy snapshot that is being
+                           used for synchronization.
+                 delete    Volume is a Remote Copy snapshot that is marked for
+                           deletion.
+RcopyGroup   The Remote Copy group that the volume is a part of (if any)
+Warn_Snp_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Snp_Used_MB
+             will generate a warning alert.
+Limit_Snp_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Snp_Used_MB
+             will be prevented from growing.
+Warn_Usr_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Usr_Used_MB
+             will generate a warning alert.
+Limit_Usr_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Usr_Used_MB
+             will be prevented from growing.
+Alert_Adm_Fail
+             Time (if any) at which an alert was posted indicating that the Adm
+             space for the VV failed to grow.
+Alert_Snp_Fail
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV failed to grow.
+Alert_Usr_Fail
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV failed to grow.
+Alert_Snp_Wrn
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV passed the warning limit (Warn_Snp_Perc).
+Alert_Usr_Wrn
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV passed the warning limit (Warn_Usr_Perc).
+Alert_Snp_Lim
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV reached the growth limit (Limit_Snp_Perc).
+Alert_Usr_Wrn
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV reached the growth limit (Limit_Usr_Perc).
+Alert_Adm_Fail_Y
+Alert_Snp_Fail_Y
+Alert_Usr_Fail_Y
+Alert_Snp_Wrn_Y
+Alert_Usr_Wrn_Y
+Alert_Snp_Lim_Y
+Alert_Usr_Wrn_Y
+             Indication that the corresponding alert was generated. For example,
+             if Alert_Snp_Fail is a valid time, Alert_Snp_Fail_Y is 'Y'
+             otherwise Alert_Snp_Fail_Y is '-'.
+Grown_Adm_MB
+             Amount of adm space that the volume has grown.
+Grown_Snp_MB
+             Amount of snapshot space that the volume has grown.
+Grown_Usr_MB
+             Amount of user space that the volume has grown.
+Reclaimed_Adm_MB
+             Amount of adm space that the volume has had reclaimed.
+Reclaimed_Snp_MB
+             Amount of snapshot space that the volume has had reclaimed.
+Reclaimed_Usr_MB
+             Amount of user space that the volume has had reclaimed.
+Udid
+             User-defined identifier per VV for OpenVMS hosts.
+Compaction   Compaction ratio (TPVV and TDVV)
+Dedup        Dedup ratio (TDVV)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+

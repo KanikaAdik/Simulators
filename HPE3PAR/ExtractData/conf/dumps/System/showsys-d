@@ -1,0 +1,26 @@
+
+
+--------------General--------------
+System Name        :       3Par7450
+System Model       :   HP_3PAR 7450
+Serial Number      :        1649581
+System ID          :          49581
+Number of Nodes    :              2
+Master Node        :              0
+Nodes Online       :            0,1
+Nodes in Cluster   :            0,1
+Chunklet Size (MB) :           1024
+
+-----System Capacity (MB)------
+Total Capacity     :   10960896
+Allocated Capacity :    1165312
+Free Capacity      :    6131712
+Failed Capacity    :      10240
+
+There is no system fan information
+
+--------System Descriptors--------
+Location    :
+Owner       :
+Contact     :
+Comment     : StoreFrontRemoteAccess(M5lPpIWLTASuSU09GYLpNQ,jrzeszutko@forsythe.                                                                                                                     com)

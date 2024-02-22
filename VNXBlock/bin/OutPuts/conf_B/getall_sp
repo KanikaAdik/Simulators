@@ -1,0 +1,64 @@
+
+
+Server IP Address:       $$$$
+Agent Rev:           7.33.8 (1.19)
+
+
+SP Information
+--------------
+
+
+Storage Processor:                  SP B
+Storage Processor Network Name:     SPB
+Storage Processor IP Address:       $$$$
+Storage Processor Subnet Mask:      255.255.240.0
+Storage Processor Gateway Address:  192.168.144.1
+Storage Processor IPv6 Mode:               Not Supported
+Management Port Settings: 
+Link Status:                        Link-Up
+Current Speed:                      1000Mbps/full duplex
+Requested Speed:                    Auto
+Auto-Negotiate:                     YES
+Capable Speeds:                     1000Mbps half/full duplex
+                                    10Mbps half/full duplex
+                                    100Mbps half/full duplex
+                                    Auto
+System Fault LED:              OFF
+Statistics Logging:            ON
+SP Read Cache State            Enabled
+SP Write Cache State           Enabled
+Max Requests:                  N/A
+Average Requests:              N/A
+Hard errors:                   N/A
+Total Reads:                   1806541398
+Total Writes:                  611548097
+Prct Busy:                     31.8
+Prct Idle:                     68.1
+System Date:                   06/14/2017
+Day of the week:               Wednesday
+System Time:                   09:22:11
+Read_requests:                 1806541398
+Write_requests:                611548097
+Blocks_read:                   115579611250
+Blocks_written:                39114627795
+Sum_queue_lengths_by_arrivals: 4433727538
+Arrivals_to_non_zero_queue:    1515147049
+Hw_flush_on:                   N/A
+Idle_flush_on:                 N/A
+Lw_flush_off:                  N/A
+Write_cache_flushes:           328932405
+Write_cache_blocks_flushed:    2580054799
+Internal bus 1 busy ticks:     N/A
+Internal bus 1 idle ticks:     N/A
+Internal bus 2 busy ticks:     N/A
+Internal bus 2 idle ticks:     N/A
+Internal bus 3 busy ticks:     N/A
+Internal bus 3 idle ticks:     N/A
+Internal bus 4 busy ticks:     N/A
+Internal bus 4 idle ticks:     N/A
+Internal bus 5 busy ticks:     N/A
+Internal bus 5 idle ticks:     N/A
+Controller busy ticks:         27773722
+Controller idle ticks:         59489883
+Serial Number For The SP:      FCNJT153700259
+

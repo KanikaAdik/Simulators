@@ -1,0 +1,19 @@
+{
+    "diskGroupInfo": [
+        {
+            "diskGroupId": "1", 
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000
+        }, 
+        {
+            "diskGroupId": "2", 
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000
+        }, 
+        {
+            "diskGroupId": "3", 
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000
+        }
+    ]
+}

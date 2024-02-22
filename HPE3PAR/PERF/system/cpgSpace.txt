@@ -1,0 +1,6 @@
+3Par7450 cli% srcpgspace -btsecs -15m
+                                   -----Used (MB)----- -----Free (MB)------ ------Total (MB)------ -(MB)- -Capacity Efficiency-
+                   Time       Secs Adm Snp   Usr Total  Adm   Snp Usr Total  Adm   Snp   Usr Total Growth   Compaction    Dedup
+2017-06-22 06:35:00 CDT 1498131300 256 512 33280 34048 7936 39936   0 47872 8192 40448 33280 81920      0         13.8        -
+2017-06-22 06:40:00 CDT 1498131600 256 512 33280 34048 7936 39936   0 47872 8192 40448 33280 81920      0         13.8        -
+2017-06-22 06:45:00 CDT 1498131900 256 512 33280 34048 7936 39936   0 47872 8192 40448 33280 81920      0         13.8        -

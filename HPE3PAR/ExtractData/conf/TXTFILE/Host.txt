@@ -1,0 +1,701 @@
+############################################## Host ########################################
+
+showhost - show host and host path information.
+
+SYNTAX
+    showhost [options <arg>] [<host_name>... | <pattern> ... |
+                                    <host_set> ... ]
+
+DESCRIPTION
+    The showhost command displays information about defined hosts and host
+    paths in the system.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -d
+        Shows a detailed listing of host and path information. This option can
+        be used with -agent and -domain options.
+
+    -verbose
+        Shows a verbose listing of all host information. This option cannot
+        be used with -d.
+
+    -chap
+        Shows the CHAP authentication properties. This option cannot be used
+        with -d.
+
+    -desc
+        Shows the host descriptor information. This option cannot be used with
+        -d.
+
+    -agent
+        Shows information provided by host agent.
+
+    -pathsum
+        Shows summary information about hosts and paths. This option cannot be
+        used with -d.
+
+    -persona
+        Shows the host persona settings in effect. This option cannot be used
+        with -d.
+
+    -listpersona
+        Lists the defined host personas. This option cannot be used with -d.
+
+    -noname
+        Shows only host paths (WWNs and iSCSI names) not assigned to any host.
+        This option cannot be used with -d.
+
+    -domain <domainname_or_pattern,...> | <domain_set>
+        Shows only hosts that are in domains or domain sets that match one or
+        more of the specifier <domainname_or_pattern> or set <domainset>
+        arguments. The set name <domain_set> must start with "set:". This
+        specifier does not allow listing objects within a domain of which the
+        user is not a member.
+
+    -lesb
+        Shows the CRC error counts for the host/port.
+
+SPECIFIERS
+    <host_name>...
+        Name of the host up to 31 characters in length. This specifier can be
+        repeated to specify multiple hosts.
+
+    <pattern>...
+        Specifies that information is shown for all hosts matching the specified
+        glob-style pattern. This specifier can be repeated to show information
+        for multiple hosts using different patterns.
+
+    <host_set>...
+        Specifies that information about all the hosts that are members of
+        set <host_set> should be displayed. The set name <host_set> must start
+        with "set:". Acts as if all members were individually specified as
+        parameters to the comment. May be repeated to specify multiple host
+        sets.
+
+NOTES
+    If hostnames, host sets or patterns are specified, then hosts with names
+    that match any of the patterns or are members of the sets are listed.
+    Otherwise all hosts are listed. Patterns are glob-style (shell-style)
+    patterns (see Help on sub,globpat).
+
+    Host descriptor information is available only for hosts that have been
+    assigned a name via the createhost command.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    The following example displays detailed host and path information:
+
+      cli% showhost -d
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showhost
+col,showhost - Explanation of column headers for showhost
+
+ID              Host identifier
+Name            Host name
+Persona         Host persona
+WWN/iSCSI_Name  Host WWN name or iSCSI name
+Port            Storage system port host is visible on
+IP_addr         IP address for host if iSCSI
+
+For -pathsum
+
+WWNs            Number of host WWNs visible from the storage system cluster
+Ports           Number of storage system ports host is visible on
+Nodes           List of nodes that are connected to the host
+
+For -agent
+
+ReportedName    Hostname reported by the agent
+OS              OS type (eg Solaris, Linux)
+OS_Ver          OS Version
+OS_Patch        OS patch level
+IP              Primary IP address of the host
+Multipath       Multipathing software in use on host
+MPVer           Version of the multipathing software in use
+ClusterSW       Host clustering software in use on host
+ClusterVer      Version of the host clustering software in use
+ClusterID       ID of the host cluster the host is a member of
+ClusterName     Name of the host cluster the host is a member of
+HA_Ver          Version of host agent running on host
+WWN             WWN of the host HBA
+HBA_Vendor      Vendor of the host HBA
+HBA_Model       Model of the host HBA
+HBA_Firmware    Firmware version on the host HBA
+HBA_DriverVer   Host driver version
+Speed           Speed the host reports for this WWN
+MultipleAttach  Indicates if the host WWN is seen on multiple storage system
+                ports
+
+For -persona
+Id              Host identifier
+Name            Host name
+Persona_Id      Host persona identifier
+Persona_Name    Host persona name (generally an OS type)
+Persona_Caps    Host persona capabilities which are in effect (see -listpersona)
+
+For -listpersona
+Persona_Id      Host persona identifier
+Persona_Name    Host persona name (generally an OS type)
+Persona_Caps    Host persona capabilities which are in effect
+                        Capabilities are:
+                        RTPG            Report Target Port Groups
+                        UARepLun        Unit Attention/Report Luns changed
+                        NACA            Normal Auto Contingent Allegiance
+                        VolSetAddr      Volume Set Addressing
+                        SoftInq         Soft Inquiry data
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	  
+	  
+3Par7450 cli% showhost
+Id Name                  Persona      -WWN/iSCSI_Name- Port
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 1:1:1
+                                      20000025B500BB1C ---
+                                      20000025B500AA1C 0:1:1
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 1:1:1
+                                      20000025B500AA1E 0:1:1
+                                      20000025B500BB1E ---
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 1:1:1
+                                      20000025B500BB0E ---
+                                      20000025B500AA0E 0:1:1
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 1:1:1
+                                      20000025B500BB0B ---
+                                      20000025B500AA0B 0:1:1
+ 8 CLInfraESX01          VMware       10000000C9F3A148 ---
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:1
+                                      20000025B500AA0D 0:1:1
+                                      20000025B500AA0D 1:1:2
+                                      20000025B500AA0D 0:1:2
+                                      20000025B500BB0D ---
+10 esxvcd04              VMware       20000025B500AA1D 1:1:1
+                                      20000025B500BB1D ---
+                                      20000025B500AA1D 0:1:2
+                                      20000025B500AA1D 1:1:2
+                                      20000025B500AA1D 0:1:1
+11 NBU5240               Generic-ALUA 21000024FF7692AA ---
+                                      21000024FF7692AB ---
+                                      21000024FF769BA2 ---
+                                      21000024FF769BA3 ---
+12 TECESX03              VMware       20000025B515015A 0:1:1
+                                      20000025B515015A 0:1:2
+                                      20000025B515015B 1:1:1
+                                      20000025B515015B 1:1:2
+13 TECESX04              VMware       20000025B5150158 0:1:1
+                                      20000025B5150158 0:1:2
+                                      20000025B5150159 1:1:1
+                                      20000025B5150159 1:1:2
+--                                    100000051E585244 1:1:2
+                                      100000051E585244 0:1:2
+                                      100000051E585244 1:1:1
+                                      100000051E585244 0:1:1
+                                      100000051E585243 1:1:2
+                                      100000051E585243 0:1:2
+                                      100000051E585243 1:1:1
+                                      100000051E585243 0:1:1
+/////////////////////////////////////////////////////////////////////////////
+									  
+3Par7450 cli% showhost -d
+Id Name                  Persona      -WWN/iSCSI_Name- Port  IP_addr
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 1:1:1 n/a
+ 4 flashesx03.acme.local VMware       20000025B500BB1C ---   n/a
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 0:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 1:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 0:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500BB1E ---   n/a
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 1:1:1 n/a
+ 6 flashesx02.acme.local VMware       20000025B500BB0E ---   n/a
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 0:1:1 n/a
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 1:1:1 n/a
+ 7 flashesx04.acme.local VMware       20000025B500BB0B ---   n/a
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 0:1:1 n/a
+ 8 CLInfraESX01          VMware       10000000C9F3A148 ---   n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:1 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 0:1:1 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:2 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 0:1:2 n/a
+ 9 esxvcd03              VMware       20000025B500BB0D ---   n/a
+10 esxvcd04              VMware       20000025B500AA1D 1:1:1 n/a
+10 esxvcd04              VMware       20000025B500BB1D ---   n/a
+10 esxvcd04              VMware       20000025B500AA1D 0:1:2 n/a
+10 esxvcd04              VMware       20000025B500AA1D 1:1:2 n/a
+10 esxvcd04              VMware       20000025B500AA1D 0:1:1 n/a
+11 NBU5240               Generic-ALUA 21000024FF7692AA ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF7692AB ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF769BA2 ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF769BA3 ---   n/a
+12 TECESX03              VMware       20000025B515015A 0:1:1 n/a
+12 TECESX03              VMware       20000025B515015A 0:1:2 n/a
+12 TECESX03              VMware       20000025B515015B 1:1:1 n/a
+12 TECESX03              VMware       20000025B515015B 1:1:2 n/a
+13 TECESX04              VMware       20000025B5150158 0:1:1 n/a
+13 TECESX04              VMware       20000025B5150158 0:1:2 n/a
+13 TECESX04              VMware       20000025B5150159 1:1:1 n/a
+13 TECESX04              VMware       20000025B5150159 1:1:2 n/a
+-- --                    --           100000051E585244 1:1:2 n/a
+-- --                    --           100000051E585244 0:1:2 n/a
+-- --                    --           100000051E585244 1:1:1 n/a
+-- --                    --           100000051E585244 0:1:1 n/a
+-- --                    --           100000051E585243 1:1:2 n/a
+-- --                    --           100000051E585243 0:1:2 n/a
+-- --                    --           100000051E585243 1:1:1 n/a
+-- --                    --           100000051E585243 0:1:1 n/a
+/////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showhost -persona
+Id Name                  Persona_Id Persona_Name Persona_Caps
+ 4 flashesx03.acme.local         11 VMware       SubLun,ALUA
+ 5 flashesx01.acme.local         11 VMware       SubLun,ALUA
+ 6 flashesx02.acme.local         11 VMware       SubLun,ALUA
+ 7 flashesx04.acme.local         11 VMware       SubLun,ALUA
+ 8 CLInfraESX01                  11 VMware       SubLun,ALUA
+ 9 esxvcd03                      11 VMware       SubLun,ALUA
+10 esxvcd04                      11 VMware       SubLun,ALUA
+11 NBU5240                        2 Generic-ALUA UARepLun,SESLun,ALUA
+12 TECESX03                      11 VMware       SubLun,ALUA
+13 TECESX04                      11 VMware       SubLun,ALUA
+/////////////////////////////////////////////////////////////////////////////
+
+
+3Par7450 cli% showhost -chap
+Id Name                  -Initiator_CHAP_Name- -Target_CHAP_Name-
+ 4 flashesx03.acme.local --                    --
+ 5 flashesx01.acme.local --                    --
+ 6 flashesx02.acme.local --                    --
+ 7 flashesx04.acme.local --                    --
+ 8 CLInfraESX01          --                    --
+ 9 esxvcd03              --                    --
+10 esxvcd04              --                    --
+11 NBU5240               --                    --
+12 TECESX03              --                    --
+13 TECESX04              --                    --
+--                       --                    --
+/////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showhost -agent
+Id Name ReportedName OS Arch OS_Ver OS_Patch IP Multipath MPVer ClusterSW ClusterVer ClusterID ClusterName HA_Ver
+/////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -desc
+---------- Host flashesx03.acme.local ----------
+Name       : flashesx03.acme.local
+Domain     : -
+Id         : 4
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx01.acme.local ----------
+Name       : flashesx01.acme.local
+Domain     : -
+Id         : 5
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx02.acme.local ----------
+Name       : flashesx02.acme.local
+Domain     : -
+Id         : 6
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx04.acme.local ----------
+Name       : flashesx04.acme.local
+Domain     : -
+Id         : 7
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host CLInfraESX01 ----------
+Name       : CLInfraESX01
+Domain     : -
+Id         : 8
+Location   : B7
+IP Address : 10.250.166.111
+OS         : ESX 4.x/5.x
+Model      : HP DL360 G7
+Contact    : Jake
+Comment    : 10.250.154.56
+
+---------- Host esxvcd03 ----------
+Name       : esxvcd03
+Domain     : -
+Id         : 9
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host esxvcd04 ----------
+Name       : esxvcd04
+Domain     : -
+Id         : 10
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host NBU5240 ----------
+Name       : NBU5240
+Domain     : -
+Id         : 11
+Location   : --
+IP Address : --
+OS         : RHE Linux (5.x, 6.x)
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX03 ----------
+Name       : TECESX03
+Domain     : -
+Id         : 12
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX04 ----------
+Name       : TECESX04
+Domain     : -
+Id         : 13
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -pathsum
+Id Name                  WWNs Ports Nodes
+ 4 flashesx03.acme.local    2     2   0,1
+ 5 flashesx01.acme.local    2     2   0,1
+ 6 flashesx02.acme.local    2     2   0,1
+ 7 flashesx04.acme.local    2     2   0,1
+ 8 CLInfraESX01             1     0    --
+ 9 esxvcd03                 2     4   0,1
+10 esxvcd04                 2     4   0,1
+11 NBU5240                  4     0    --
+12 TECESX03                 2     4   0,1
+13 TECESX04                 2     4   0,1
+--                          2     4   0,1
+////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -listpersona
+Persona_Id Persona_Name   Persona_Caps
+         1 Generic        UARepLun,SESLun
+         2 Generic-ALUA   UARepLun,SESLun,ALUA
+         6 Generic-legacy --
+         7 HPUX-legacy    VolSetAddr,Lun0SCC
+         8 AIX-legacy     NACA
+         9 EGENERA        SoftInq
+        10 ONTAP-legacy   SoftInq
+        11 VMware         SubLun,ALUA
+        12 OpenVMS        UARepLun,RTPG,SESLun,Lun0SCC
+        13 HPUX           UARepLun,VolSetAddr,SESLun,ALUA,Lun0SCC
+        15 WindowsServer  UARepLun,SESLun,ALUA,WSC
+////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -noname
+Id Name Persona -WWN/iSCSI_Name- Port
+--              100000051E585244 1:1:2
+                100000051E585244 0:1:2
+                100000051E585244 1:1:1
+                100000051E585244 0:1:1
+                100000051E585243 1:1:2
+                100000051E585243 0:1:2
+                100000051E585243 1:1:1
+                100000051E585243 0:1:1
+////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -lesb
+Id Name                  -WWN/iSCSI_Name- Port  ALPA     LinkFail   LossSync    LossSig    PrimSeq InvWord InvCRC
+ 4 flashesx03.acme.local 20000025B500AA1C 1:1:1 0x200609        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB1C --    --             --         --         --         --      --     --
+                         20000025B500AA1C 0:1:1 0x200609        0 4294967295 4294967295 4294967295       0      0
+ 5 flashesx01.acme.local 20000025B500AA1E 1:1:1 0x200603        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA1E 0:1:1 0x200603        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB1E --    --             --         --         --         --      --     --
+ 6 flashesx02.acme.local 20000025B500AA0E 1:1:1 0x20060c        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB0E --    --             --         --         --         --      --     --
+                         20000025B500AA0E 0:1:1 0x20060c        0 4294967295 4294967295 4294967295       0      0
+ 7 flashesx04.acme.local 20000025B500AA0B 1:1:1 0x20060a        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB0B --    --             --         --         --         --      --     --
+                         20000025B500AA0B 0:1:1 0x20060a        0 4294967295 4294967295 4294967295       0      0
+ 8 CLInfraESX01          10000000C9F3A148 --    --             --         --         --         --      --     --
+ 9 esxvcd03              20000025B500AA0D 1:1:1 0x200401        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA0D 0:1:1 0x200401        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA0D 1:1:2 0x200401        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA0D 0:1:2 0x200401        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB0D --    --             --         --         --         --      --     --
+10 esxvcd04              20000025B500AA1D 1:1:1 0x200614        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500BB1D --    --             --         --         --         --      --     --
+                         20000025B500AA1D 0:1:2 0x200614        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA1D 1:1:2 0x200614        0 4294967295 4294967295 4294967295       0      0
+                         20000025B500AA1D 0:1:1 0x200614        0 4294967295 4294967295 4294967295       0      0
+11 NBU5240               21000024FF7692AA --    --             --         --         --         --      --     --
+11 NBU5240               21000024FF7692AB --    --             --         --         --         --      --     --
+11 NBU5240               21000024FF769BA2 --    --             --         --         --         --      --     --
+11 NBU5240               21000024FF769BA3 --    --             --         --         --         --      --     --
+12 TECESX03              20000025B515015A 0:1:1 0xa9402         0 4294967295 4294967295 4294967295       0      0
+                         20000025B515015A 0:1:2 0xa9402         0 4294967295 4294967295 4294967295       0      0
+                         20000025B515015B 1:1:1 0x292603        0 4294967295 4294967295 4294967295       0      0
+                         20000025B515015B 1:1:2 0x292603        0 4294967295 4294967295 4294967295       0      0
+13 TECESX04              20000025B5150158 0:1:1 0xa9418         0 4294967295 4294967295 4294967295       0      0
+                         20000025B5150158 0:1:2 0xa9418         0 4294967295 4294967295 4294967295       0      0
+                         20000025B5150159 1:1:1 0x292605        0 4294967295 4294967295 4294967295       0      0
+                         20000025B5150159 1:1:2 0x292605        0 4294967295 4294967295 4294967295       0      0
+////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -domain *
+Id Name                  Persona      -WWN/iSCSI_Name- Port
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 1:1:1
+                                      20000025B500BB1C ---
+                                      20000025B500AA1C 0:1:1
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 1:1:1
+                                      20000025B500AA1E 0:1:1
+                                      20000025B500BB1E ---
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 1:1:1
+                                      20000025B500BB0E ---
+                                      20000025B500AA0E 0:1:1
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 1:1:1
+                                      20000025B500BB0B ---
+                                      20000025B500AA0B 0:1:1
+ 8 CLInfraESX01          VMware       10000000C9F3A148 ---
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:1
+                                      20000025B500AA0D 0:1:1
+                                      20000025B500AA0D 1:1:2
+                                      20000025B500AA0D 0:1:2
+                                      20000025B500BB0D ---
+10 esxvcd04              VMware       20000025B500AA1D 1:1:1
+                                      20000025B500BB1D ---
+                                      20000025B500AA1D 0:1:2
+                                      20000025B500AA1D 1:1:2
+                                      20000025B500AA1D 0:1:1
+11 NBU5240               Generic-ALUA 21000024FF7692AA ---
+                                      21000024FF7692AB ---
+                                      21000024FF769BA2 ---
+                                      21000024FF769BA3 ---
+12 TECESX03              VMware       20000025B515015A 0:1:1
+                                      20000025B515015A 0:1:2
+                                      20000025B515015B 1:1:1
+                                      20000025B515015B 1:1:2
+13 TECESX04              VMware       20000025B5150158 0:1:1
+                                      20000025B5150158 0:1:2
+                                      20000025B5150159 1:1:1
+                                      20000025B5150159 1:1:2
+--                                    100000051E585244 1:1:2
+                                      100000051E585244 0:1:2
+                                      100000051E585244 1:1:1
+                                      100000051E585244 0:1:1
+                                      100000051E585243 1:1:2
+                                      100000051E585243 0:1:2
+                                      100000051E585243 1:1:1
+                                      100000051E585243 0:1:1
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showhost -verbose
+Id Name                  Persona      -WWN/iSCSI_Name- Port  IP_addr
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 1:1:1 n/a
+ 4 flashesx03.acme.local VMware       20000025B500BB1C ---   n/a
+ 4 flashesx03.acme.local VMware       20000025B500AA1C 0:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 1:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500AA1E 0:1:1 n/a
+ 5 flashesx01.acme.local VMware       20000025B500BB1E ---   n/a
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 1:1:1 n/a
+ 6 flashesx02.acme.local VMware       20000025B500BB0E ---   n/a
+ 6 flashesx02.acme.local VMware       20000025B500AA0E 0:1:1 n/a
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 1:1:1 n/a
+ 7 flashesx04.acme.local VMware       20000025B500BB0B ---   n/a
+ 7 flashesx04.acme.local VMware       20000025B500AA0B 0:1:1 n/a
+ 8 CLInfraESX01          VMware       10000000C9F3A148 ---   n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:1 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 0:1:1 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 1:1:2 n/a
+ 9 esxvcd03              VMware       20000025B500AA0D 0:1:2 n/a
+ 9 esxvcd03              VMware       20000025B500BB0D ---   n/a
+10 esxvcd04              VMware       20000025B500AA1D 1:1:1 n/a
+10 esxvcd04              VMware       20000025B500BB1D ---   n/a
+10 esxvcd04              VMware       20000025B500AA1D 0:1:2 n/a
+10 esxvcd04              VMware       20000025B500AA1D 1:1:2 n/a
+10 esxvcd04              VMware       20000025B500AA1D 0:1:1 n/a
+11 NBU5240               Generic-ALUA 21000024FF7692AA ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF7692AB ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF769BA2 ---   n/a
+11 NBU5240               Generic-ALUA 21000024FF769BA3 ---   n/a
+12 TECESX03              VMware       20000025B515015A 0:1:1 n/a
+12 TECESX03              VMware       20000025B515015A 0:1:2 n/a
+12 TECESX03              VMware       20000025B515015B 1:1:1 n/a
+12 TECESX03              VMware       20000025B515015B 1:1:2 n/a
+13 TECESX04              VMware       20000025B5150158 0:1:1 n/a
+13 TECESX04              VMware       20000025B5150158 0:1:2 n/a
+13 TECESX04              VMware       20000025B5150159 1:1:1 n/a
+13 TECESX04              VMware       20000025B5150159 1:1:2 n/a
+-- --                    --           100000051E585244 1:1:2 n/a
+-- --                    --           100000051E585244 0:1:2 n/a
+-- --                    --           100000051E585244 1:1:1 n/a
+-- --                    --           100000051E585244 0:1:1 n/a
+-- --                    --           100000051E585243 1:1:2 n/a
+-- --                    --           100000051E585243 0:1:2 n/a
+-- --                    --           100000051E585243 1:1:1 n/a
+-- --                    --           100000051E585243 0:1:1 n/a
+
+Id Name                  -Initiator_CHAP_Name- -Target_CHAP_Name-
+ 4 flashesx03.acme.local --                    --
+ 5 flashesx01.acme.local --                    --
+ 6 flashesx02.acme.local --                    --
+ 7 flashesx04.acme.local --                    --
+ 8 CLInfraESX01          --                    --
+ 9 esxvcd03              --                    --
+10 esxvcd04              --                    --
+11 NBU5240               --                    --
+12 TECESX03              --                    --
+13 TECESX04              --                    --
+--                       --                    --
+
+---------- Host flashesx03.acme.local ----------
+Name       : flashesx03.acme.local
+Domain     : -
+Id         : 4
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx01.acme.local ----------
+Name       : flashesx01.acme.local
+Domain     : -
+Id         : 5
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx02.acme.local ----------
+Name       : flashesx02.acme.local
+Domain     : -
+Id         : 6
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host flashesx04.acme.local ----------
+Name       : flashesx04.acme.local
+Domain     : -
+Id         : 7
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host CLInfraESX01 ----------
+Name       : CLInfraESX01
+Domain     : -
+Id         : 8
+Location   : B7
+IP Address : 10.250.166.111
+OS         : ESX 4.x/5.x
+Model      : HP DL360 G7
+Contact    : Jake
+Comment    : 10.250.154.56
+
+---------- Host esxvcd03 ----------
+Name       : esxvcd03
+Domain     : -
+Id         : 9
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host esxvcd04 ----------
+Name       : esxvcd04
+Domain     : -
+Id         : 10
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host NBU5240 ----------
+Name       : NBU5240
+Domain     : -
+Id         : 11
+Location   : --
+IP Address : --
+OS         : RHE Linux (5.x, 6.x)
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX03 ----------
+Name       : TECESX03
+Domain     : -
+Id         : 12
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+---------- Host TECESX04 ----------
+Name       : TECESX04
+Domain     : -
+Id         : 13
+Location   : --
+IP Address : --
+OS         : ESX 4.x/5.x
+Model      : --
+Contact    : --
+Comment    : --
+
+Id Name                  Persona_Id Persona_Name Persona_Caps
+ 4 flashesx03.acme.local         11 VMware       SubLun,ALUA
+ 5 flashesx01.acme.local         11 VMware       SubLun,ALUA
+ 6 flashesx02.acme.local         11 VMware       SubLun,ALUA
+ 7 flashesx04.acme.local         11 VMware       SubLun,ALUA
+ 8 CLInfraESX01                  11 VMware       SubLun,ALUA
+ 9 esxvcd03                      11 VMware       SubLun,ALUA
+10 esxvcd04                      11 VMware       SubLun,ALUA
+11 NBU5240                        2 Generic-ALUA UARepLun,SESLun,ALUA
+12 TECESX03                      11 VMware       SubLun,ALUA
+13 TECESX04                      11 VMware       SubLun,ALUA
+////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli%

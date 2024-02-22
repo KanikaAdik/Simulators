@@ -1,0 +1,6 @@
+3Par7450 cli% srldspace -attime -groupby CPG_NAME
+Time: 2017-06-22 05:50:00 CDT (1498128600)
+         ----------(MB)-----------
+CPG_NAME    Raw  Used  Free  Total
+     --- 321536 92160 79872 172032
+     AFA 122880 34048 47872  81920

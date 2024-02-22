@@ -1,0 +1,2241 @@
+{
+    "total": 9,
+    "members": [
+        {
+            "role": "create",
+            "comments": "Rights are limited to creation of objects such as volumes, CPGs, hosts, and schedules.",
+            "rightsInfo": [
+                {
+                    "right": "vvset_annotate",
+                    "rightDescription": "Annotate the comment of a virtual volume set"
+                },
+                {
+                    "right": "cpg_create",
+                    "rightDescription": "Create Common Provision Group"
+                },
+                {
+                    "right": "groupsv_create",
+                    "rightDescription": "Create a virtual volume group"
+                },
+                {
+                    "right": "groupvvcopy_create",
+                    "rightDescription": "Create a physical copy volume group"
+                },
+                {
+                    "right": "sv_create",
+                    "rightDescription": "Create a virtual copy volume"
+                },
+                {
+                    "right": "vv_create",
+                    "rightDescription": "Create a virtual volume"
+                },
+                {
+                    "right": "vvset_create",
+                    "rightDescription": "Create a virtual volume set"
+                },
+                {
+                    "right": "vvcopy_create",
+                    "rightDescription": "Create physical copy volume"
+                },
+                {
+                    "right": "hostset_annotate",
+                    "rightDescription": "Annotate the comment of a host set"
+                },
+                {
+                    "right": "host_create",
+                    "rightDescription": "Create a host"
+                },
+                {
+                    "right": "hostset_create",
+                    "rightDescription": "Create paths to a system host set"
+                },
+                {
+                    "right": "vlun_create",
+                    "rightDescription": "Export a virtual volume as a SCSI LUN"
+                },
+                {
+                    "right": "rcopytarget_admit",
+                    "rightDescription": "Add a target to a remote copy volume"
+                },
+                {
+                    "right": "rcopygroup_create",
+                    "rightDescription": "Create a remote copy group"
+                },
+                {
+                    "right": "rcopygroup_set",
+                    "rightDescription": "Set remote copy group properties"
+                },
+                {
+                    "right": "rcopytarget_set",
+                    "rightDescription": "Set remote copy target properties"
+                },
+                {
+                    "right": "rcopy_start",
+                    "rightDescription": "Start the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_start",
+                    "rightDescription": "Start remote copy group"
+                },
+                {
+                    "right": "rcopy_stop",
+                    "rightDescription": "Stop the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_stop",
+                    "rightDescription": "Stop a remote copy group"
+                },
+                {
+                    "right": "rcopy_sync",
+                    "rightDescription": "Synchronize remote copy groups"
+                },
+                {
+                    "right": "domainset_annotate",
+                    "rightDescription": "Annotate the comment of a domain set"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "domainset_create",
+                    "rightDescription": "Create a domain set"
+                },
+                {
+                    "right": "control_encryption_status",
+                    "rightDescription": "Show encryption status"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "health_check",
+                    "rightDescription": "Check the current health of the system"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                }
+            ]
+        },
+        {
+            "role": "basic_edit",
+            "comments": "Rights are similar to Edit role, but more restricted, specifically in the ability to remove objects such as volumes, VLUNs, and hosts.",
+            "rightsInfo": [
+                {
+                    "right": "cpg_compact",
+                    "rightDescription": "Consolidate space in a Common Provisioning Group"
+                },
+                {
+                    "right": "cpg_create",
+                    "rightDescription": "Create Common Provision Group"
+                },
+                {
+                    "right": "groupsv_create",
+                    "rightDescription": "Create a virtual volume group"
+                },
+                {
+                    "right": "groupvvcopy_create",
+                    "rightDescription": "Create a physical copy volume group"
+                },
+                {
+                    "right": "sv_create",
+                    "rightDescription": "Create a virtual copy volume"
+                },
+                {
+                    "right": "vv_create",
+                    "rightDescription": "Create a virtual volume"
+                },
+                {
+                    "right": "vvset_create",
+                    "rightDescription": "Create a virtual volume set"
+                },
+                {
+                    "right": "vvcopy_create",
+                    "rightDescription": "Create physical copy volume"
+                },
+                {
+                    "right": "vv_grow",
+                    "rightDescription": "Grow a virtual volume"
+                },
+                {
+                    "right": "sv_promote",
+                    "rightDescription": "Promote a virtual copy volume"
+                },
+                {
+                    "right": "svgrp_promote",
+                    "rightDescription": "Promote multiple virtual copy volumes"
+                },
+                {
+                    "right": "vvcopy_promote",
+                    "rightDescription": "Promote a physical volume back to its base volume"
+                },
+                {
+                    "right": "vvcopy_remove",
+                    "rightDescription": "Remove physical copy of a volume"
+                },
+                {
+                    "right": "ld_remove",
+                    "rightDescription": "Remove a logical disk"
+                },
+                {
+                    "right": "sv_remove",
+                    "rightDescription": "Remove virtual copy of a volume"
+                },
+                {
+                    "right": "sv_set",
+                    "rightDescription": "Set properties of a virtual copy of a volume"
+                },
+                {
+                    "right": "vvcopy_set",
+                    "rightDescription": "Set properties of a physical copy of a volume"
+                },
+                {
+                    "right": "vvset_set",
+                    "rightDescription": "Set virtual volume set properties"
+                },
+                {
+                    "right": "vv_tune",
+                    "rightDescription": "Tune a virtual volume"
+                },
+                {
+                    "right": "snapspace_update",
+                    "rightDescription": "Update snapshot space accounting information"
+                },
+                {
+                    "right": "host_create",
+                    "rightDescription": "Create a host"
+                },
+                {
+                    "right": "hostset_create",
+                    "rightDescription": "Create paths to a system host set"
+                },
+                {
+                    "right": "vlun_create",
+                    "rightDescription": "Export a virtual volume as a SCSI LUN"
+                },
+                {
+                    "right": "host_set",
+                    "rightDescription": "Set host properties"
+                },
+                {
+                    "right": "hostset_set",
+                    "rightDescription": "Set host set properties"
+                },
+                {
+                    "right": "rcopylink_admit",
+                    "rightDescription": "Add remote copy links"
+                },
+                {
+                    "right": "rcopytarget_admit",
+                    "rightDescription": "Add a target to a remote copy volume"
+                },
+                {
+                    "right": "rcopyvv_admit",
+                    "rightDescription": "Add a volume to a remote copy volume group"
+                },
+                {
+                    "right": "rcopygroup_create",
+                    "rightDescription": "Create a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_create",
+                    "rightDescription": "Create a remote copy target"
+                },
+                {
+                    "right": "rcopylink_dismiss",
+                    "rightDescription": "Dismiss remote copy links"
+                },
+                {
+                    "right": "rcopytarget_dismiss",
+                    "rightDescription": "Dismiss a remote copy target from a group"
+                },
+                {
+                    "right": "rcopyvv_dismiss",
+                    "rightDescription": "Dismiss a virtual volume from a remote copy group"
+                },
+                {
+                    "right": "rcopygroup_remove",
+                    "rightDescription": "Remove a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_remove",
+                    "rightDescription": "Remove a remote copy target"
+                },
+                {
+                    "right": "rcopygroup_set",
+                    "rightDescription": "Set remote copy group properties"
+                },
+                {
+                    "right": "rcopytarget_set",
+                    "rightDescription": "Set remote copy target properties"
+                },
+                {
+                    "right": "rcopy_start",
+                    "rightDescription": "Start the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_start",
+                    "rightDescription": "Start remote copy group"
+                },
+                {
+                    "right": "rcopy_stop",
+                    "rightDescription": "Stop the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_stop",
+                    "rightDescription": "Stop a remote copy group"
+                },
+                {
+                    "right": "rcopy_sync",
+                    "rightDescription": "Synchronize remote copy groups"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "domain_create",
+                    "rightDescription": "Create a domain"
+                },
+                {
+                    "right": "domainset_create",
+                    "rightDescription": "Create a domain set"
+                },
+                {
+                    "right": "user_create",
+                    "rightDescription": "Create a user"
+                },
+                {
+                    "right": "control_encryption_status",
+                    "rightDescription": "Show encryption status"
+                },
+                {
+                    "right": "domain_moveto",
+                    "rightDescription": "Move objects from one domain to another"
+                },
+                {
+                    "right": "authparam_set",
+                    "rightDescription": "Set LDAP authentication properties"
+                },
+                {
+                    "right": "domainset_set",
+                    "rightDescription": "Set domain set properties"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "user_setown",
+                    "rightDescription": "Set a user's own properties"
+                },
+                {
+                    "right": "health_check",
+                    "rightDescription": "Check the current health of the system"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "alert_set",
+                    "rightDescription": "Set alert properties"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                }
+            ]
+        },
+        {
+            "role": "3PAR_AO",
+            "comments": "Used internally by HP for Adaptive Optimization operations.",
+            "rightsInfo": [
+                {
+                    "right": "cpg_compact",
+                    "rightDescription": "Consolidate space in a Common Provisioning Group"
+                },
+                {
+                    "right": "reg_move",
+                    "rightDescription": "Move virtual volume regions between logical disks"
+                },
+                {
+                    "right": "aocfg_start",
+                    "rightDescription": "Start executing an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "aocfg_create",
+                    "rightDescription": "Create Adadptive Optimization configuration"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "aocfg_remove",
+                    "rightDescription": "Remove an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "aocfg_set",
+                    "rightDescription": "Set properties on an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                }
+            ]
+        },
+        {
+            "role": "3PAR_RM",
+            "comments": "Used internally by HP for operations required by Recovery Manager.",
+            "rightsInfo": [
+                {
+                    "right": "groupsv_create",
+                    "rightDescription": "Create a virtual volume group"
+                },
+                {
+                    "right": "sv_create",
+                    "rightDescription": "Create a virtual copy volume"
+                },
+                {
+                    "right": "vv_create",
+                    "rightDescription": "Create a virtual volume"
+                },
+                {
+                    "right": "vvset_create",
+                    "rightDescription": "Create a virtual volume set"
+                },
+                {
+                    "right": "sv_promote",
+                    "rightDescription": "Promote a virtual copy volume"
+                },
+                {
+                    "right": "svgrp_promote",
+                    "rightDescription": "Promote multiple virtual copy volumes"
+                },
+                {
+                    "right": "vvcopy_remove",
+                    "rightDescription": "Remove physical copy of a volume"
+                },
+                {
+                    "right": "ld_remove",
+                    "rightDescription": "Remove a logical disk"
+                },
+                {
+                    "right": "sv_remove",
+                    "rightDescription": "Remove virtual copy of a volume"
+                },
+                {
+                    "right": "sv_set",
+                    "rightDescription": "Set properties of a virtual copy of a volume"
+                },
+                {
+                    "right": "vvcopy_set",
+                    "rightDescription": "Set properties of a physical copy of a volume"
+                },
+                {
+                    "right": "vvset_set",
+                    "rightDescription": "Set virtual volume set properties"
+                },
+                {
+                    "right": "vlun_create",
+                    "rightDescription": "Export a virtual volume as a SCSI LUN"
+                },
+                {
+                    "right": "vlun_remove",
+                    "rightDescription": "Remove a VLUN"
+                },
+                {
+                    "right": "host_set",
+                    "rightDescription": "Set host properties"
+                },
+                {
+                    "right": "rcopytarget_admit",
+                    "rightDescription": "Add a target to a remote copy volume"
+                },
+                {
+                    "right": "rcopygroup_create",
+                    "rightDescription": "Create a remote copy group"
+                },
+                {
+                    "right": "rcopygroup_set",
+                    "rightDescription": "Set remote copy group properties"
+                },
+                {
+                    "right": "rcopytarget_set",
+                    "rightDescription": "Set remote copy target properties"
+                },
+                {
+                    "right": "rcopy_start",
+                    "rightDescription": "Start the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_start",
+                    "rightDescription": "Start remote copy group"
+                },
+                {
+                    "right": "rcopy_stop",
+                    "rightDescription": "Stop the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_stop",
+                    "rightDescription": "Stop a remote copy group"
+                },
+                {
+                    "right": "rcopy_sync",
+                    "rightDescription": "Synchronize remote copy groups"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "control_encryption_status",
+                    "rightDescription": "Show encryption status"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "user_setown",
+                    "rightDescription": "Set a user's own properties"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                },
+                {
+                    "right": "task_start",
+                    "rightDescription": "Run commands in the background"
+                }
+            ]
+        },
+        {
+            "role": "audit",
+            "comments": "For security scanners to perform a scan of the HP 3PAR OS file system. An audit user has no access to the CLI.",
+            "rightsInfo": [
+                {
+                    "right": "audit_chroot",
+                    "rightDescription": "Secure access to a read only chroot of the InForm OS file system"
+                }
+            ]
+        },
+        {
+            "role": "super",
+            "comments": "Rights are granted to all operations.",
+            "rightsInfo": [
+                {
+                    "right": "pd_admit",
+                    "rightDescription": "Admit a physical disk to the system"
+                },
+                {
+                    "right": "vv_admit",
+                    "rightDescription": "Admit remote virtual volume to the system"
+                },
+                {
+                    "right": "vvset_annotate",
+                    "rightDescription": "Annotate the comment of a virtual volume set"
+                },
+                {
+                    "right": "ld_check",
+                    "rightDescription": "Logical disk validity checks"
+                },
+                {
+                    "right": "pd_check",
+                    "rightDescription": "Physical disk diagnostic checks"
+                },
+                {
+                    "right": "vv_check",
+                    "rightDescription": "Virtual volume validity checks"
+                },
+                {
+                    "right": "cpg_compact",
+                    "rightDescription": "Consolidate space in a Common Provisioning Group"
+                },
+                {
+                    "right": "ld_compact",
+                    "rightDescription": "Consolidate space in a logical disk"
+                },
+                {
+                    "right": "pd_control",
+                    "rightDescription": "Spin up or spin down a physical disk"
+                },
+                {
+                    "right": "cpg_create",
+                    "rightDescription": "Create Common Provision Group"
+                },
+                {
+                    "right": "groupsv_create",
+                    "rightDescription": "Create a virtual volume group"
+                },
+                {
+                    "right": "groupvvcopy_create",
+                    "rightDescription": "Create a physical copy volume group"
+                },
+                {
+                    "right": "ld_create",
+                    "rightDescription": "Create logical disk"
+                },
+                {
+                    "right": "spare_create",
+                    "rightDescription": "Create spare chunklet"
+                },
+                {
+                    "right": "sv_create",
+                    "rightDescription": "Create a virtual copy volume"
+                },
+                {
+                    "right": "template_create",
+                    "rightDescription": "Create a template for a VV, CPG, or LD"
+                },
+                {
+                    "right": "vv_create",
+                    "rightDescription": "Create a virtual volume"
+                },
+                {
+                    "right": "vvset_create",
+                    "rightDescription": "Create a virtual volume set"
+                },
+                {
+                    "right": "vvcopy_create",
+                    "rightDescription": "Create physical copy volume"
+                },
+                {
+                    "right": "pd_dismiss",
+                    "rightDescription": "Dismiss a physical disk from the system"
+                },
+                {
+                    "right": "space_free",
+                    "rightDescription": "Free space in a specific Virtual Volume"
+                },
+                {
+                    "right": "vv_grow",
+                    "rightDescription": "Grow a virtual volume"
+                },
+                {
+                    "right": "vv_import",
+                    "rightDescription": "Import a remote virtual volume to local storage"
+                },
+                {
+                    "right": "ch_move",
+                    "rightDescription": "Move chunklets from one physical disk to another"
+                },
+                {
+                    "right": "ch_movetospare",
+                    "rightDescription": "Move chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "pd_movetospare",
+                    "rightDescription": "Move used chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "pd_movereloc",
+                    "rightDescription": "Move relocated chunklets from one physical disk to another"
+                },
+                {
+                    "right": "reg_move",
+                    "rightDescription": "Move virtual volume regions between logical disks"
+                },
+                {
+                    "right": "sv_promote",
+                    "rightDescription": "Promote a virtual copy volume"
+                },
+                {
+                    "right": "svgrp_promote",
+                    "rightDescription": "Promote multiple virtual copy volumes"
+                },
+                {
+                    "right": "vvcopy_promote",
+                    "rightDescription": "Promote a physical volume back to its base volume"
+                },
+                {
+                    "right": "cpg_remove",
+                    "rightDescription": "Remove Common Provision Group"
+                },
+                {
+                    "right": "vvcopy_remove",
+                    "rightDescription": "Remove physical copy of a volume"
+                },
+                {
+                    "right": "ld_remove",
+                    "rightDescription": "Remove a logical disk"
+                },
+                {
+                    "right": "template_remove",
+                    "rightDescription": "Remove template for a VV, CPG, or LD"
+                },
+                {
+                    "right": "vv_remove",
+                    "rightDescription": "Remove a base virtual volume"
+                },
+                {
+                    "right": "wsapisession_remove",
+                    "rightDescription": "Remove WSAPI session"
+                },
+                {
+                    "right": "sv_remove",
+                    "rightDescription": "Remove virtual copy of a volume"
+                },
+                {
+                    "right": "spare_remove",
+                    "rightDescription": "Remove spare chunklets from a PD"
+                },
+                {
+                    "right": "cpg_set",
+                    "rightDescription": "Set Common Provision Group properties"
+                },
+                {
+                    "right": "sv_set",
+                    "rightDescription": "Set properties of a virtual copy of a volume"
+                },
+                {
+                    "right": "pd_set",
+                    "rightDescription": "Set physical disk properties"
+                },
+                {
+                    "right": "template_set",
+                    "rightDescription": "Set template for a VV, CPG, or LD"
+                },
+                {
+                    "right": "vv_set",
+                    "rightDescription": "Set virtual volume properties"
+                },
+                {
+                    "right": "vvcopy_set",
+                    "rightDescription": "Set properties of a physical copy of a volume"
+                },
+                {
+                    "right": "vvset_set",
+                    "rightDescription": "Set virtual volume set properties"
+                },
+                {
+                    "right": "aocfg_start",
+                    "rightDescription": "Start executing an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "ld_start",
+                    "rightDescription": "Start a logical disk"
+                },
+                {
+                    "right": "vv_start",
+                    "rightDescription": "Start a virtual volume"
+                },
+                {
+                    "right": "vv_tune",
+                    "rightDescription": "Tune a virtual volume"
+                },
+                {
+                    "right": "pd_tune",
+                    "rightDescription": "Tune a physical disk"
+                },
+                {
+                    "right": "snapspace_update",
+                    "rightDescription": "Update snapshot space accounting information"
+                },
+                {
+                    "right": "vv_update",
+                    "rightDescription": "Remove old virtual copy and create a new virtual copy of a volume"
+                },
+                {
+                    "right": "pd_upgrade",
+                    "rightDescription": "Update physical disk firmware"
+                },
+                {
+                    "right": "qos_set",
+                    "rightDescription": "Set QoS rule properties"
+                },
+                {
+                    "right": "flashcache_create",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "flashcache_remove",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "flashcache_set",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "hostset_annotate",
+                    "rightDescription": "Annotate the comment of a host set"
+                },
+                {
+                    "right": "host_create",
+                    "rightDescription": "Create a host"
+                },
+                {
+                    "right": "hostset_create",
+                    "rightDescription": "Create paths to a system host set"
+                },
+                {
+                    "right": "vlun_create",
+                    "rightDescription": "Export a virtual volume as a SCSI LUN"
+                },
+                {
+                    "right": "host_remove",
+                    "rightDescription": "Remove a host"
+                },
+                {
+                    "right": "vlun_remove",
+                    "rightDescription": "Remove a VLUN"
+                },
+                {
+                    "right": "host_service",
+                    "rightDescription": "Service a host"
+                },
+                {
+                    "right": "host_set",
+                    "rightDescription": "Set host properties"
+                },
+                {
+                    "right": "hostset_set",
+                    "rightDescription": "Set host set properties"
+                },
+                {
+                    "right": "rcopylink_admit",
+                    "rightDescription": "Add remote copy links"
+                },
+                {
+                    "right": "rcopytarget_admit",
+                    "rightDescription": "Add a target to a remote copy volume"
+                },
+                {
+                    "right": "rcopyvv_admit",
+                    "rightDescription": "Add a volume to a remote copy volume group"
+                },
+                {
+                    "right": "rcopygroup_create",
+                    "rightDescription": "Create a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_create",
+                    "rightDescription": "Create a remote copy target"
+                },
+                {
+                    "right": "rclink_check",
+                    "rightDescription": "Remote copy link validity checks"
+                },
+                {
+                    "right": "rcopylink_dismiss",
+                    "rightDescription": "Dismiss remote copy links"
+                },
+                {
+                    "right": "rcopytarget_dismiss",
+                    "rightDescription": "Dismiss a remote copy target from a group"
+                },
+                {
+                    "right": "rcopyvv_dismiss",
+                    "rightDescription": "Dismiss a virtual volume from a remote copy group"
+                },
+                {
+                    "right": "rcopygroup_remove",
+                    "rightDescription": "Remove a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_remove",
+                    "rightDescription": "Remove a remote copy target"
+                },
+                {
+                    "right": "rcopygroup_set",
+                    "rightDescription": "Set remote copy group properties"
+                },
+                {
+                    "right": "rcopytarget_set",
+                    "rightDescription": "Set remote copy target properties"
+                },
+                {
+                    "right": "rcopy_start",
+                    "rightDescription": "Start the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_start",
+                    "rightDescription": "Start remote copy group"
+                },
+                {
+                    "right": "rcopy_stop",
+                    "rightDescription": "Stop the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_stop",
+                    "rightDescription": "Stop a remote copy group"
+                },
+                {
+                    "right": "rcopy_sync",
+                    "rightDescription": "Synchronize remote copy groups"
+                },
+                {
+                    "right": "domainset_annotate",
+                    "rightDescription": "Annotate the comment of a domain set"
+                },
+                {
+                    "right": "password_checkany",
+                    "rightDescription": "Check any user password"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "domain_create",
+                    "rightDescription": "Create a domain"
+                },
+                {
+                    "right": "domainset_create",
+                    "rightDescription": "Create a domain set"
+                },
+                {
+                    "right": "snmpuser_create",
+                    "rightDescription": "Create an SNMP user"
+                },
+                {
+                    "right": "user_create",
+                    "rightDescription": "Create a user"
+                },
+                {
+                    "right": "control_encryption",
+                    "rightDescription": "Control the encryption"
+                },
+                {
+                    "right": "control_encryption_status",
+                    "rightDescription": "Show encryption status"
+                },
+                {
+                    "right": "event_debug",
+                    "rightDescription": "Debug events"
+                },
+                {
+                    "right": "domain_moveto",
+                    "rightDescription": "Move objects from one domain to another"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "domain_remove",
+                    "rightDescription": "Remove a domain"
+                },
+                {
+                    "right": "snmpuser_remove",
+                    "rightDescription": "Remove an SNMP user"
+                },
+                {
+                    "right": "spcred_remove",
+                    "rightDescription": "Remove SP credentials"
+                },
+                {
+                    "right": "user_remove",
+                    "rightDescription": "Remove a user"
+                },
+                {
+                    "right": "userconn_remove",
+                    "rightDescription": "Remove user connections"
+                },
+                {
+                    "right": "authparam_set",
+                    "rightDescription": "Set LDAP authentication properties"
+                },
+                {
+                    "right": "clienv_set",
+                    "rightDescription": "Set the CLI environment parameters"
+                },
+                {
+                    "right": "domain_set",
+                    "rightDescription": "Set domain properties"
+                },
+                {
+                    "right": "domainset_set",
+                    "rightDescription": "Set domain set properties"
+                },
+                {
+                    "right": "license_set",
+                    "rightDescription": "Set the license key"
+                },
+                {
+                    "right": "password_setany",
+                    "rightDescription": "Change any user password"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "user_setany",
+                    "rightDescription": "Set any user properties"
+                },
+                {
+                    "right": "user_setown",
+                    "rightDescription": "Set a user's own properties"
+                },
+                {
+                    "right": "useracl_set",
+                    "rightDescription": "Set user Access Control List properties"
+                },
+                {
+                    "right": "sshbanner_set",
+                    "rightDescription": "Set/Remove the SSH banner"
+                },
+                {
+                    "right": "sshbanner_show",
+                    "rightDescription": "Show the SSH banner"
+                },
+                {
+                    "right": "port_check",
+                    "rightDescription": "Perform diagnostic tests on ports"
+                },
+                {
+                    "right": "port_control",
+                    "rightDescription": "Control and configure ports"
+                },
+                {
+                    "right": "cage_locate",
+                    "rightDescription": "Locate a drive cage"
+                },
+                {
+                    "right": "mag_service",
+                    "rightDescription": "Service a magazine or physical disk"
+                },
+                {
+                    "right": "battery_set",
+                    "rightDescription": "Set battery properties"
+                },
+                {
+                    "right": "cage_set",
+                    "rightDescription": "Set cage properties"
+                },
+                {
+                    "right": "node_set",
+                    "rightDescription": "Set controller node properties"
+                },
+                {
+                    "right": "cage_upgrade",
+                    "rightDescription": "Upgrade cage firmware"
+                },
+                {
+                    "right": "snmpmgr_add",
+                    "rightDescription": "Add an SNMP manager"
+                },
+                {
+                    "right": "task_cancel",
+                    "rightDescription": "Cancel a task"
+                },
+                {
+                    "right": "mag_control",
+                    "rightDescription": "Take magazines or disks on or off a loop"
+                },
+                {
+                    "right": "health_check",
+                    "rightDescription": "Check the current health of the system"
+                },
+                {
+                    "right": "snmp_check",
+                    "rightDescription": "Check and send SNMPv2 test trap"
+                },
+                {
+                    "right": "aocfg_create",
+                    "rightDescription": "Create Adadptive Optimization configuration"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "sralertcrit_create",
+                    "rightDescription": "Create System Reporter alert criterion"
+                },
+                {
+                    "right": "sys_locate",
+                    "rightDescription": "Locate a system by blinking its LEDs"
+                },
+                {
+                    "right": "node_locate",
+                    "rightDescription": "Locate a controller node by blinking its LEDs"
+                },
+                {
+                    "right": "alert_remove",
+                    "rightDescription": "Remove alerts"
+                },
+                {
+                    "right": "aocfg_remove",
+                    "rightDescription": "Remove an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "snmpmgr_remove",
+                    "rightDescription": "Remove an SNMP manager"
+                },
+                {
+                    "right": "snmppw_remove",
+                    "rightDescription": "Remove an SNMP community strings"
+                },
+                {
+                    "right": "sralertcrit_remove",
+                    "rightDescription": "Remove System Reporter alert criterion"
+                },
+                {
+                    "right": "task_remove",
+                    "rightDescription": "Remove a task"
+                },
+                {
+                    "right": "cim_set",
+                    "rightDescription": "Set CIM server properties"
+                },
+                {
+                    "right": "statch_set",
+                    "rightDescription": "Set statistics collection mode on specified chunklets"
+                },
+                {
+                    "right": "statpdch_set",
+                    "rightDescription": "Set statistics collection mode on PD chunklets"
+                },
+                {
+                    "right": "node_service",
+                    "rightDescription": "Service a controller node"
+                },
+                {
+                    "right": "date_set",
+                    "rightDescription": "Set system date and time properties"
+                },
+                {
+                    "right": "alert_set",
+                    "rightDescription": "Set alert properties"
+                },
+                {
+                    "right": "aocfg_set",
+                    "rightDescription": "Set properties on an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "net_set",
+                    "rightDescription": "Set administration network interface configuration"
+                },
+                {
+                    "right": "ntp_set",
+                    "rightDescription": "Set the system NTP server"
+                },
+                {
+                    "right": "sched_setany",
+                    "rightDescription": "Set any user scheduled task properties"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                },
+                {
+                    "right": "snmppw_set",
+                    "rightDescription": "Set SNMP community strings"
+                },
+                {
+                    "right": "sralertcrit_set",
+                    "rightDescription": "Set System Reporter alert criterion properties"
+                },
+                {
+                    "right": "sys_set",
+                    "rightDescription": "Set System Properties"
+                },
+                {
+                    "right": "sysmgr_set",
+                    "rightDescription": "Set System Manager Properties"
+                },
+                {
+                    "right": "task_set",
+                    "rightDescription": "Edit tasks"
+                },
+                {
+                    "right": "wsapi_set",
+                    "rightDescription": "Set the Web Services API server properties"
+                },
+                {
+                    "right": "vasa_set",
+                    "rightDescription": "Set the VASA Provider server properties"
+                },
+                {
+                    "right": "node_shutdown",
+                    "rightDescription": "Shutdown a controller node"
+                },
+                {
+                    "right": "sys_shutdown",
+                    "rightDescription": "Shutdown the system"
+                },
+                {
+                    "right": "cim_start",
+                    "rightDescription": "Starts the CIM server"
+                },
+                {
+                    "right": "cim_stop",
+                    "rightDescription": "Stop the CIM server"
+                },
+                {
+                    "right": "wsapi_stop",
+                    "rightDescription": "Stop the Web Services API server"
+                },
+                {
+                    "right": "vasa_stop",
+                    "rightDescription": "Stop the VASA Provider server"
+                },
+                {
+                    "right": "task_start",
+                    "rightDescription": "Run commands in the background"
+                },
+                {
+                    "right": "wsapi_start",
+                    "rightDescription": "Start the Web Services API Server"
+                },
+                {
+                    "right": "vasa_start",
+                    "rightDescription": "Start the VASA Provider Server"
+                },
+                {
+                    "right": "sys_tune",
+                    "rightDescription": "Tune the system layout"
+                },
+                {
+                    "right": "task_wait",
+                    "rightDescription": "Wait for task completion"
+                },
+                {
+                    "right": "fpg_create",
+                    "rightDescription": "Create a file provisioning group"
+                },
+                {
+                    "right": "fpg_grow",
+                    "rightDescription": "Grow a file provisioning group"
+                },
+                {
+                    "right": "fpg_remove",
+                    "rightDescription": "Remove a file provisioning group"
+                },
+                {
+                    "right": "fpg_set",
+                    "rightDescription": "Set properties of a file provisioning group"
+                },
+                {
+                    "right": "fs_start",
+                    "rightDescription": "Initializes and starts File Services"
+                },
+                {
+                    "right": "fs_stop",
+                    "rightDescription": "Stops File Services"
+                },
+                {
+                    "right": "fshare_create",
+                    "rightDescription": "Creates file shares"
+                },
+                {
+                    "right": "fshare_set",
+                    "rightDescription": "Set/modify file share properties"
+                },
+                {
+                    "right": "fshare_remove",
+                    "rightDescription": "Remove file shares"
+                },
+                {
+                    "right": "fsuser_create",
+                    "rightDescription": "Create File Services local user"
+                },
+                {
+                    "right": "fsuser_set",
+                    "rightDescription": "Modify File Services local user"
+                },
+                {
+                    "right": "fsuser_remove",
+                    "rightDescription": "Remove File Services local user"
+                },
+                {
+                    "right": "fsgroup_create",
+                    "rightDescription": "Create File Services local group"
+                },
+                {
+                    "right": "fsgroup_set",
+                    "rightDescription": "Modify File Services local group"
+                },
+                {
+                    "right": "fsgroup_remove",
+                    "rightDescription": "Remove File Services local group"
+                },
+                {
+                    "right": "fsip_create",
+                    "rightDescription": "Assign network config to a Virtual File Server"
+                },
+                {
+                    "right": "fsip_set",
+                    "rightDescription": "Modify network config of a Virtual File Server"
+                },
+                {
+                    "right": "fsip_remove",
+                    "rightDescription": "Remove network config of a Virtual File Server"
+                },
+                {
+                    "right": "fsnap_create",
+                    "rightDescription": "Create file store snapshots"
+                },
+                {
+                    "right": "fsnap_remove",
+                    "rightDescription": "Remove file store snapshots"
+                },
+                {
+                    "right": "fsquota_set",
+                    "rightDescription": "Set user, group and fstore quotas for a Virtual File Server"
+                },
+                {
+                    "right": "fstore_create",
+                    "rightDescription": "Create File Store"
+                },
+                {
+                    "right": "fstore_remove",
+                    "rightDescription": "Removes File Store"
+                },
+                {
+                    "right": "fstore_set",
+                    "rightDescription": "Set File Store properties"
+                },
+                {
+                    "right": "vfs_create",
+                    "rightDescription": "Create VFS"
+                },
+                {
+                    "right": "vfs_remove",
+                    "rightDescription": "Remove VFS"
+                },
+                {
+                    "right": "vfs_set",
+                    "rightDescription": "Set VFS properties"
+                },
+                {
+                    "right": "fsnapclean_start",
+                    "rightDescription": "Start or resume an on-demand reclamation task"
+                },
+                {
+                    "right": "fsnapclean_stop",
+                    "rightDescription": "Stop or pause an on-demand reclamation task"
+                },
+                {
+                    "right": "fs_set",
+                    "rightDescription": "Sets or modifies File Services related properties"
+                },
+                {
+                    "right": "fsav_start",
+                    "rightDescription": "Start AV service or start/resume on demand AV scan task"
+                },
+                {
+                    "right": "fsav_stop",
+                    "rightDescription": "Stop AV service or stop/pause on demand AV scan task"
+                },
+                {
+                    "right": "fsav_set",
+                    "rightDescription": "Configure antivirus properties for file services"
+                },
+                {
+                    "right": "fsconf_backup",
+                    "rightDescription": "Backup configuration for file services"
+                },
+                {
+                    "right": "fsconf_restore",
+                    "rightDescription": "Restore configuration for file services"
+                },
+                {
+                    "right": "fsndmp_set",
+                    "rightDescription": "Sets or modifies NDMP related properties"
+                },
+                {
+                    "right": "fsndmp_start",
+                    "rightDescription": "Starts iSCSI and NDMP Services"
+                },
+                {
+                    "right": "fsndmp_stop",
+                    "rightDescription": "Stops iSCSI and NDMP Services"
+                }
+            ]
+        },
+        {
+            "role": "edit",
+            "comments": "Rights are granted to most operations, such as for creating, editing, and removing virtual volumes.",
+            "rightsInfo": [
+                {
+                    "right": "vvset_annotate",
+                    "rightDescription": "Annotate the comment of a virtual volume set"
+                },
+                {
+                    "right": "vv_check",
+                    "rightDescription": "Virtual volume validity checks"
+                },
+                {
+                    "right": "cpg_compact",
+                    "rightDescription": "Consolidate space in a Common Provisioning Group"
+                },
+                {
+                    "right": "ld_compact",
+                    "rightDescription": "Consolidate space in a logical disk"
+                },
+                {
+                    "right": "cpg_create",
+                    "rightDescription": "Create Common Provision Group"
+                },
+                {
+                    "right": "groupsv_create",
+                    "rightDescription": "Create a virtual volume group"
+                },
+                {
+                    "right": "groupvvcopy_create",
+                    "rightDescription": "Create a physical copy volume group"
+                },
+                {
+                    "right": "ld_create",
+                    "rightDescription": "Create logical disk"
+                },
+                {
+                    "right": "sv_create",
+                    "rightDescription": "Create a virtual copy volume"
+                },
+                {
+                    "right": "vv_create",
+                    "rightDescription": "Create a virtual volume"
+                },
+                {
+                    "right": "vvset_create",
+                    "rightDescription": "Create a virtual volume set"
+                },
+                {
+                    "right": "vvcopy_create",
+                    "rightDescription": "Create physical copy volume"
+                },
+                {
+                    "right": "space_free",
+                    "rightDescription": "Free space in a specific Virtual Volume"
+                },
+                {
+                    "right": "vv_grow",
+                    "rightDescription": "Grow a virtual volume"
+                },
+                {
+                    "right": "vv_import",
+                    "rightDescription": "Import a remote virtual volume to local storage"
+                },
+                {
+                    "right": "ch_move",
+                    "rightDescription": "Move chunklets from one physical disk to another"
+                },
+                {
+                    "right": "ch_movetospare",
+                    "rightDescription": "Move chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "pd_movetospare",
+                    "rightDescription": "Move used chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "reg_move",
+                    "rightDescription": "Move virtual volume regions between logical disks"
+                },
+                {
+                    "right": "sv_promote",
+                    "rightDescription": "Promote a virtual copy volume"
+                },
+                {
+                    "right": "svgrp_promote",
+                    "rightDescription": "Promote multiple virtual copy volumes"
+                },
+                {
+                    "right": "vvcopy_promote",
+                    "rightDescription": "Promote a physical volume back to its base volume"
+                },
+                {
+                    "right": "cpg_remove",
+                    "rightDescription": "Remove Common Provision Group"
+                },
+                {
+                    "right": "vvcopy_remove",
+                    "rightDescription": "Remove physical copy of a volume"
+                },
+                {
+                    "right": "ld_remove",
+                    "rightDescription": "Remove a logical disk"
+                },
+                {
+                    "right": "vv_remove",
+                    "rightDescription": "Remove a base virtual volume"
+                },
+                {
+                    "right": "sv_remove",
+                    "rightDescription": "Remove virtual copy of a volume"
+                },
+                {
+                    "right": "cpg_set",
+                    "rightDescription": "Set Common Provision Group properties"
+                },
+                {
+                    "right": "sv_set",
+                    "rightDescription": "Set properties of a virtual copy of a volume"
+                },
+                {
+                    "right": "vv_set",
+                    "rightDescription": "Set virtual volume properties"
+                },
+                {
+                    "right": "vvcopy_set",
+                    "rightDescription": "Set properties of a physical copy of a volume"
+                },
+                {
+                    "right": "vvset_set",
+                    "rightDescription": "Set virtual volume set properties"
+                },
+                {
+                    "right": "aocfg_start",
+                    "rightDescription": "Start executing an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "vv_tune",
+                    "rightDescription": "Tune a virtual volume"
+                },
+                {
+                    "right": "pd_tune",
+                    "rightDescription": "Tune a physical disk"
+                },
+                {
+                    "right": "snapspace_update",
+                    "rightDescription": "Update snapshot space accounting information"
+                },
+                {
+                    "right": "vv_update",
+                    "rightDescription": "Remove old virtual copy and create a new virtual copy of a volume"
+                },
+                {
+                    "right": "qos_set",
+                    "rightDescription": "Set QoS rule properties"
+                },
+                {
+                    "right": "flashcache_create",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "flashcache_remove",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "flashcache_set",
+                    "rightDescription": "unknown"
+                },
+                {
+                    "right": "hostset_annotate",
+                    "rightDescription": "Annotate the comment of a host set"
+                },
+                {
+                    "right": "host_create",
+                    "rightDescription": "Create a host"
+                },
+                {
+                    "right": "hostset_create",
+                    "rightDescription": "Create paths to a system host set"
+                },
+                {
+                    "right": "vlun_create",
+                    "rightDescription": "Export a virtual volume as a SCSI LUN"
+                },
+                {
+                    "right": "host_remove",
+                    "rightDescription": "Remove a host"
+                },
+                {
+                    "right": "vlun_remove",
+                    "rightDescription": "Remove a VLUN"
+                },
+                {
+                    "right": "host_set",
+                    "rightDescription": "Set host properties"
+                },
+                {
+                    "right": "hostset_set",
+                    "rightDescription": "Set host set properties"
+                },
+                {
+                    "right": "rcopylink_admit",
+                    "rightDescription": "Add remote copy links"
+                },
+                {
+                    "right": "rcopytarget_admit",
+                    "rightDescription": "Add a target to a remote copy volume"
+                },
+                {
+                    "right": "rcopyvv_admit",
+                    "rightDescription": "Add a volume to a remote copy volume group"
+                },
+                {
+                    "right": "rcopygroup_create",
+                    "rightDescription": "Create a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_create",
+                    "rightDescription": "Create a remote copy target"
+                },
+                {
+                    "right": "rclink_check",
+                    "rightDescription": "Remote copy link validity checks"
+                },
+                {
+                    "right": "rcopylink_dismiss",
+                    "rightDescription": "Dismiss remote copy links"
+                },
+                {
+                    "right": "rcopytarget_dismiss",
+                    "rightDescription": "Dismiss a remote copy target from a group"
+                },
+                {
+                    "right": "rcopyvv_dismiss",
+                    "rightDescription": "Dismiss a virtual volume from a remote copy group"
+                },
+                {
+                    "right": "rcopygroup_remove",
+                    "rightDescription": "Remove a remote copy group"
+                },
+                {
+                    "right": "rcopytarget_remove",
+                    "rightDescription": "Remove a remote copy target"
+                },
+                {
+                    "right": "rcopygroup_set",
+                    "rightDescription": "Set remote copy group properties"
+                },
+                {
+                    "right": "rcopytarget_set",
+                    "rightDescription": "Set remote copy target properties"
+                },
+                {
+                    "right": "rcopy_start",
+                    "rightDescription": "Start the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_start",
+                    "rightDescription": "Start remote copy group"
+                },
+                {
+                    "right": "rcopy_stop",
+                    "rightDescription": "Stop the remote copy service"
+                },
+                {
+                    "right": "rcopygroup_stop",
+                    "rightDescription": "Stop a remote copy group"
+                },
+                {
+                    "right": "rcopy_sync",
+                    "rightDescription": "Synchronize remote copy groups"
+                },
+                {
+                    "right": "domainset_annotate",
+                    "rightDescription": "Annotate the comment of a domain set"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "domainset_create",
+                    "rightDescription": "Create a domain set"
+                },
+                {
+                    "right": "domain_moveto",
+                    "rightDescription": "Move objects from one domain to another"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "clienv_set",
+                    "rightDescription": "Set the CLI environment parameters"
+                },
+                {
+                    "right": "domainset_set",
+                    "rightDescription": "Set domain set properties"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "user_setown",
+                    "rightDescription": "Set a user's own properties"
+                },
+                {
+                    "right": "useracl_set",
+                    "rightDescription": "Set user Access Control List properties"
+                },
+                {
+                    "right": "sshbanner_show",
+                    "rightDescription": "Show the SSH banner"
+                },
+                {
+                    "right": "task_cancel",
+                    "rightDescription": "Cancel a task"
+                },
+                {
+                    "right": "aocfg_create",
+                    "rightDescription": "Create Adadptive Optimization configuration"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "aocfg_remove",
+                    "rightDescription": "Remove an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "task_remove",
+                    "rightDescription": "Remove a task"
+                },
+                {
+                    "right": "statch_set",
+                    "rightDescription": "Set statistics collection mode on specified chunklets"
+                },
+                {
+                    "right": "statpdch_set",
+                    "rightDescription": "Set statistics collection mode on PD chunklets"
+                },
+                {
+                    "right": "aocfg_set",
+                    "rightDescription": "Set properties on an Adaptive Optimization configuration"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                },
+                {
+                    "right": "task_set",
+                    "rightDescription": "Edit tasks"
+                },
+                {
+                    "right": "task_start",
+                    "rightDescription": "Run commands in the background"
+                },
+                {
+                    "right": "sys_tune",
+                    "rightDescription": "Tune the system layout"
+                },
+                {
+                    "right": "task_wait",
+                    "rightDescription": "Wait for task completion"
+                },
+                {
+                    "right": "fpg_create",
+                    "rightDescription": "Create a file provisioning group"
+                },
+                {
+                    "right": "fpg_grow",
+                    "rightDescription": "Grow a file provisioning group"
+                },
+                {
+                    "right": "fpg_remove",
+                    "rightDescription": "Remove a file provisioning group"
+                },
+                {
+                    "right": "fpg_set",
+                    "rightDescription": "Set properties of a file provisioning group"
+                },
+                {
+                    "right": "fshare_create",
+                    "rightDescription": "Creates file shares"
+                },
+                {
+                    "right": "fshare_set",
+                    "rightDescription": "Set/modify file share properties"
+                },
+                {
+                    "right": "fshare_remove",
+                    "rightDescription": "Remove file shares"
+                },
+                {
+                    "right": "fsuser_create",
+                    "rightDescription": "Create File Services local user"
+                },
+                {
+                    "right": "fsuser_set",
+                    "rightDescription": "Modify File Services local user"
+                },
+                {
+                    "right": "fsuser_remove",
+                    "rightDescription": "Remove File Services local user"
+                },
+                {
+                    "right": "fsgroup_create",
+                    "rightDescription": "Create File Services local group"
+                },
+                {
+                    "right": "fsgroup_set",
+                    "rightDescription": "Modify File Services local group"
+                },
+                {
+                    "right": "fsgroup_remove",
+                    "rightDescription": "Remove File Services local group"
+                },
+                {
+                    "right": "fsip_create",
+                    "rightDescription": "Assign network config to a Virtual File Server"
+                },
+                {
+                    "right": "fsip_set",
+                    "rightDescription": "Modify network config of a Virtual File Server"
+                },
+                {
+                    "right": "fsip_remove",
+                    "rightDescription": "Remove network config of a Virtual File Server"
+                },
+                {
+                    "right": "fsnap_create",
+                    "rightDescription": "Create file store snapshots"
+                },
+                {
+                    "right": "fsnap_remove",
+                    "rightDescription": "Remove file store snapshots"
+                },
+                {
+                    "right": "fsquota_set",
+                    "rightDescription": "Set user, group and fstore quotas for a Virtual File Server"
+                },
+                {
+                    "right": "fstore_create",
+                    "rightDescription": "Create File Store"
+                },
+                {
+                    "right": "fstore_remove",
+                    "rightDescription": "Removes File Store"
+                },
+                {
+                    "right": "fstore_set",
+                    "rightDescription": "Set File Store properties"
+                },
+                {
+                    "right": "vfs_create",
+                    "rightDescription": "Create VFS"
+                },
+                {
+                    "right": "vfs_remove",
+                    "rightDescription": "Remove VFS"
+                },
+                {
+                    "right": "vfs_set",
+                    "rightDescription": "Set VFS properties"
+                },
+                {
+                    "right": "fs_set",
+                    "rightDescription": "Sets or modifies File Services related properties"
+                },
+                {
+                    "right": "fsav_start",
+                    "rightDescription": "Start AV service or start/resume on demand AV scan task"
+                },
+                {
+                    "right": "fsav_stop",
+                    "rightDescription": "Stop AV service or stop/pause on demand AV scan task"
+                },
+                {
+                    "right": "fsav_set",
+                    "rightDescription": "Configure antivirus properties for file services"
+                },
+                {
+                    "right": "fsndmp_set",
+                    "rightDescription": "Sets or modifies NDMP related properties"
+                }
+            ]
+        },
+        {
+            "role": "browse",
+            "comments": "Rights are limited to read-only access.",
+            "rightsInfo": [
+                {
+                    "right": "vv_update",
+                    "rightDescription": "Remove old virtual copy and create a new virtual copy of a volume"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "user_setown",
+                    "rightDescription": "Set a user's own properties"
+                },
+                {
+                    "right": "sshbanner_show",
+                    "rightDescription": "Show the SSH banner"
+                },
+                {
+                    "right": "task_wait",
+                    "rightDescription": "Wait for task completion"
+                }
+            ]
+        },
+        {
+            "role": "service",
+            "comments": "Rights are limited to operations required to service the storage server.",
+            "rightsInfo": [
+                {
+                    "right": "pd_admit",
+                    "rightDescription": "Admit a physical disk to the system"
+                },
+                {
+                    "right": "ld_check",
+                    "rightDescription": "Logical disk validity checks"
+                },
+                {
+                    "right": "pd_check",
+                    "rightDescription": "Physical disk diagnostic checks"
+                },
+                {
+                    "right": "vv_check",
+                    "rightDescription": "Virtual volume validity checks"
+                },
+                {
+                    "right": "pd_control",
+                    "rightDescription": "Spin up or spin down a physical disk"
+                },
+                {
+                    "right": "ld_create",
+                    "rightDescription": "Create logical disk"
+                },
+                {
+                    "right": "spare_create",
+                    "rightDescription": "Create spare chunklet"
+                },
+                {
+                    "right": "pd_dismiss",
+                    "rightDescription": "Dismiss a physical disk from the system"
+                },
+                {
+                    "right": "ch_move",
+                    "rightDescription": "Move chunklets from one physical disk to another"
+                },
+                {
+                    "right": "ch_movetospare",
+                    "rightDescription": "Move chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "pd_movetospare",
+                    "rightDescription": "Move used chunklets from a physical disk to spare space"
+                },
+                {
+                    "right": "pd_movereloc",
+                    "rightDescription": "Move relocated chunklets from one physical disk to another"
+                },
+                {
+                    "right": "ld_remove",
+                    "rightDescription": "Remove a logical disk"
+                },
+                {
+                    "right": "spare_remove",
+                    "rightDescription": "Remove spare chunklets from a PD"
+                },
+                {
+                    "right": "cpg_set",
+                    "rightDescription": "Set Common Provision Group properties"
+                },
+                {
+                    "right": "pd_set",
+                    "rightDescription": "Set physical disk properties"
+                },
+                {
+                    "right": "ld_start",
+                    "rightDescription": "Start a logical disk"
+                },
+                {
+                    "right": "vv_start",
+                    "rightDescription": "Start a virtual volume"
+                },
+                {
+                    "right": "pd_upgrade",
+                    "rightDescription": "Update physical disk firmware"
+                },
+                {
+                    "right": "host_service",
+                    "rightDescription": "Service a host"
+                },
+                {
+                    "right": "password_checkown",
+                    "rightDescription": "Check a user's own password"
+                },
+                {
+                    "right": "control_encryption_status",
+                    "rightDescription": "Show encryption status"
+                },
+                {
+                    "right": "event_debug",
+                    "rightDescription": "Debug events"
+                },
+                {
+                    "right": "sshkey_remove",
+                    "rightDescription": "Remove users public SSH keys"
+                },
+                {
+                    "right": "clienv_set",
+                    "rightDescription": "Set the CLI environment parameters"
+                },
+                {
+                    "right": "license_set",
+                    "rightDescription": "Set the license key"
+                },
+                {
+                    "right": "password_setown",
+                    "rightDescription": "Set a user's own password"
+                },
+                {
+                    "right": "sshkey_set",
+                    "rightDescription": "Set the public SSH key for a user"
+                },
+                {
+                    "right": "port_check",
+                    "rightDescription": "Perform diagnostic tests on ports"
+                },
+                {
+                    "right": "port_control",
+                    "rightDescription": "Control and configure ports"
+                },
+                {
+                    "right": "cage_locate",
+                    "rightDescription": "Locate a drive cage"
+                },
+                {
+                    "right": "mag_service",
+                    "rightDescription": "Service a magazine or physical disk"
+                },
+                {
+                    "right": "battery_set",
+                    "rightDescription": "Set battery properties"
+                },
+                {
+                    "right": "cage_set",
+                    "rightDescription": "Set cage properties"
+                },
+                {
+                    "right": "node_set",
+                    "rightDescription": "Set controller node properties"
+                },
+                {
+                    "right": "cage_upgrade",
+                    "rightDescription": "Upgrade cage firmware"
+                },
+                {
+                    "right": "task_cancel",
+                    "rightDescription": "Cancel a task"
+                },
+                {
+                    "right": "mag_control",
+                    "rightDescription": "Take magazines or disks on or off a loop"
+                },
+                {
+                    "right": "health_check",
+                    "rightDescription": "Check the current health of the system"
+                },
+                {
+                    "right": "snmp_check",
+                    "rightDescription": "Check and send SNMPv2 test trap"
+                },
+                {
+                    "right": "sched_create",
+                    "rightDescription": "Create a schedule for tasks"
+                },
+                {
+                    "right": "sralertcrit_create",
+                    "rightDescription": "Create System Reporter alert criterion"
+                },
+                {
+                    "right": "sys_locate",
+                    "rightDescription": "Locate a system by blinking its LEDs"
+                },
+                {
+                    "right": "node_locate",
+                    "rightDescription": "Locate a controller node by blinking its LEDs"
+                },
+                {
+                    "right": "alert_remove",
+                    "rightDescription": "Remove alerts"
+                },
+                {
+                    "right": "sralertcrit_remove",
+                    "rightDescription": "Remove System Reporter alert criterion"
+                },
+                {
+                    "right": "cim_set",
+                    "rightDescription": "Set CIM server properties"
+                },
+                {
+                    "right": "node_service",
+                    "rightDescription": "Service a controller node"
+                },
+                {
+                    "right": "date_set",
+                    "rightDescription": "Set system date and time properties"
+                },
+                {
+                    "right": "alert_set",
+                    "rightDescription": "Set alert properties"
+                },
+                {
+                    "right": "net_set",
+                    "rightDescription": "Set administration network interface configuration"
+                },
+                {
+                    "right": "ntp_set",
+                    "rightDescription": "Set the system NTP server"
+                },
+                {
+                    "right": "sched_setany",
+                    "rightDescription": "Set any user scheduled task properties"
+                },
+                {
+                    "right": "sched_setown",
+                    "rightDescription": "Set a user's own scheduled task properties"
+                },
+                {
+                    "right": "sralertcrit_set",
+                    "rightDescription": "Set System Reporter alert criterion properties"
+                },
+                {
+                    "right": "sys_set",
+                    "rightDescription": "Set System Properties"
+                },
+                {
+                    "right": "wsapi_set",
+                    "rightDescription": "Set the Web Services API server properties"
+                },
+                {
+                    "right": "vasa_set",
+                    "rightDescription": "Set the VASA Provider server properties"
+                },
+                {
+                    "right": "node_shutdown",
+                    "rightDescription": "Shutdown a controller node"
+                },
+                {
+                    "right": "sys_shutdown",
+                    "rightDescription": "Shutdown the system"
+                },
+                {
+                    "right": "cim_start",
+                    "rightDescription": "Starts the CIM server"
+                },
+                {
+                    "right": "cim_stop",
+                    "rightDescription": "Stop the CIM server"
+                },
+                {
+                    "right": "wsapi_stop",
+                    "rightDescription": "Stop the Web Services API server"
+                },
+                {
+                    "right": "vasa_stop",
+                    "rightDescription": "Stop the VASA Provider server"
+                },
+                {
+                    "right": "task_start",
+                    "rightDescription": "Run commands in the background"
+                },
+                {
+                    "right": "wsapi_start",
+                    "rightDescription": "Start the Web Services API Server"
+                },
+                {
+                    "right": "vasa_start",
+                    "rightDescription": "Start the VASA Provider Server"
+                },
+                {
+                    "right": "task_wait",
+                    "rightDescription": "Wait for task completion"
+                },
+                {
+                    "right": "fs_start",
+                    "rightDescription": "Initializes and starts File Services"
+                },
+                {
+                    "right": "fs_stop",
+                    "rightDescription": "Stops File Services"
+                },
+                {
+                    "right": "fsnapclean_start",
+                    "rightDescription": "Start or resume an on-demand reclamation task"
+                },
+                {
+                    "right": "fsnapclean_stop",
+                    "rightDescription": "Stop or pause an on-demand reclamation task"
+                },
+                {
+                    "right": "fsconf_backup",
+                    "rightDescription": "Backup configuration for file services"
+                },
+                {
+                    "right": "fsconf_restore",
+                    "rightDescription": "Restore configuration for file services"
+                },
+                {
+                    "right": "fsndmp_start",
+                    "rightDescription": "Starts iSCSI and NDMP Services"
+                },
+                {
+                    "right": "fsndmp_stop",
+                    "rightDescription": "Stops iSCSI and NDMP Services"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "href": "https://10.250.138.128:8080/api/v1/roles",
+            "rel": "self"
+        }
+    ]
+}

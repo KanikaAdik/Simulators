@@ -1,0 +1,13 @@
+showvvset: Invalid option: -v
+
+SYNTAX
+    showvvset [options] [<setname_or_pattern>...]
+    showvvset -vv [options] [<vvname_or_pattern>...]
+
+OPTIONS
+    -d
+        Show a more detailed listing of each set.
+    -vv
+        Show VV sets that contain the supplied vvnames or patterns
+    -summary
+        Shows VV sets with summarized output with VV sets names and number of VVs in those sets

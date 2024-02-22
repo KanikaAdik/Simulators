@@ -1,0 +1,217 @@
+{
+    "total": 10,
+    "members": [
+        {
+            "portPos": {
+                "node": 0,
+                "slot": 0,
+                "cardPort": 1
+            },
+            "mode": 3,
+            "linkState": 4,
+            "nodeWWN": "50002ACFF700C1AD",
+            "portWWN": "50002AC00100C1AD",
+            "type": 2,
+            "protocol": 5,
+            "label": "DP-1",
+            "device": [
+                "cage0"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 0,
+                "slot": 0,
+                "cardPort": 2
+            },
+            "mode": 3,
+            "linkState": 5,
+            "nodeWWN": "50002ACFF700C1AD",
+            "portWWN": "50002AC00200C1AD",
+            "type": 3,
+            "protocol": 5,
+            "label": "DP-2",
+            "device": []
+        },
+        {
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "mode": 2,
+            "linkState": 4,
+            "nodeWWN": "2FF70002AC00C1AD",
+            "portWWN": "20110002AC00C1AD",
+            "type": 1,
+            "protocol": 1,
+            "partnerPos": {
+                "node": 1,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "failoverState": 1,
+            "device": [
+                "flashesx03.acme.local",
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local",
+                "esxvcd03",
+                "esxvcd03",
+                "esxvcd04",
+                "esxvcd04",
+                "TECESX03",
+                "TECESX04"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "mode": 2,
+            "linkState": 4,
+            "nodeWWN": "2FF70002AC00C1AD",
+            "portWWN": "20120002AC00C1AD",
+            "type": 1,
+            "protocol": 1,
+            "partnerPos": {
+                "node": 1,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "failoverState": 1,
+            "device": [
+                "flashesx03.acme.local",
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local",
+                "esxvcd03",
+                "esxvcd03",
+                "esxvcd04",
+                "esxvcd04",
+                "TECESX03",
+                "TECESX04"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 0,
+                "slot": 3,
+                "cardPort": 1
+            },
+            "mode": 4,
+            "linkState": 10,
+            "HWAddr": "D4C9EF080E3F",
+            "type": 7,
+            "protocol": 4,
+            "label": "RCIP0",
+            "device": []
+        },
+        {
+            "portPos": {
+                "node": 1,
+                "slot": 0,
+                "cardPort": 1
+            },
+            "mode": 3,
+            "linkState": 4,
+            "nodeWWN": "50002ACFF700C1AD",
+            "portWWN": "50002AC10100C1AD",
+            "type": 2,
+            "protocol": 5,
+            "label": "DP-1",
+            "device": [
+                "cage0"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 1,
+                "slot": 0,
+                "cardPort": 2
+            },
+            "mode": 3,
+            "linkState": 5,
+            "nodeWWN": "50002ACFF700C1AD",
+            "portWWN": "50002AC10200C1AD",
+            "type": 3,
+            "protocol": 5,
+            "label": "DP-2",
+            "device": []
+        },
+        {
+            "portPos": {
+                "node": 1,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "mode": 2,
+            "linkState": 4,
+            "nodeWWN": "2FF70002AC00C1AD",
+            "portWWN": "21110002AC00C1AD",
+            "type": 1,
+            "protocol": 1,
+            "partnerPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "failoverState": 1,
+            "device": [
+                "flashesx03.acme.local",
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local",
+                "esxvcd03",
+                "esxvcd03",
+                "esxvcd04",
+                "esxvcd04"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 1,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "mode": 2,
+            "linkState": 4,
+            "nodeWWN": "2FF70002AC00C1AD",
+            "portWWN": "21120002AC00C1AD",
+            "type": 1,
+            "protocol": 1,
+            "partnerPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "failoverState": 1,
+            "device": [
+                "flashesx03.acme.local",
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local",
+                "esxvcd03",
+                "esxvcd03",
+                "esxvcd04",
+                "esxvcd04"
+            ]
+        },
+        {
+            "portPos": {
+                "node": 1,
+                "slot": 3,
+                "cardPort": 1
+            },
+            "mode": 4,
+            "linkState": 10,
+            "HWAddr": "D4C9EF080C4B",
+            "type": 7,
+            "protocol": 4,
+            "label": "RCIP1",
+            "device": []
+        }
+    ]
+}

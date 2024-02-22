@@ -1,0 +1,339 @@
+Information about each I/O module(s) on SPA:  
+
+SP ID:                       A
+I/O Module Slot:             0
+I/O Module Type:             Unknown
+I/O Module State:            Empty
+I/O Module Substate:         Not Present
+I/O Module Power state:      Not Available
+I/O Carrier:                 No
+I/O Module Label:            Unknown
+
+SP ID:                       A
+I/O Module Slot:             1
+I/O Module Type:             Unknown
+I/O Module State:            Empty
+I/O Module Substate:         Not Present
+I/O Module Power state:      Not Available
+I/O Carrier:                 No
+I/O Module Label:            Unknown
+
+SP ID:                       A
+I/O Module Slot:             2
+I/O Module Type:             Fibre Channel
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            8 Gb Fibre
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             0
+Port Usage:                  Special
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             1
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            2
+Port Role:                   FE
+Logical Port ID:             2
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            3
+Port Role:                   FE
+Logical Port ID:             3
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       A
+I/O Module Slot:             3
+I/O Module Type:             iSCSI
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            10 GbE BaseT
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             4
+Port Usage:                  Special
+Port Type:                   iSCSI
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             5
+Port Usage:                  Normal
+Port Type:                   iSCSI
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       A
+I/O Module Slot:             4
+I/O Module Type:             Fibre Channel
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            8 Gb Fibre
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             6
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             7
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            2
+Port Role:                   FE
+Logical Port ID:             8
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            3
+Port Role:                   FE
+Logical Port ID:             9
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       A
+I/O Module Slot:             Base Module
+I/O Module Type:             SAS
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            N/A
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   BE
+Logical Port ID:             0
+Port Usage:                  Normal
+Port Type:                   SAS
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   BE
+Logical Port ID:             1
+Port Usage:                  Normal
+Port Type:                   SAS
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Information about each I/O module(s) on SPB:  
+
+SP ID:                       B
+I/O Module Slot:             0
+I/O Module Type:             Unknown
+I/O Module State:            Empty
+I/O Module Substate:         Not Present
+I/O Module Power state:      Not Available
+I/O Carrier:                 No
+I/O Module Label:            Unknown
+
+SP ID:                       B
+I/O Module Slot:             1
+I/O Module Type:             Unknown
+I/O Module State:            Empty
+I/O Module Substate:         Not Present
+I/O Module Power state:      Not Available
+I/O Carrier:                 No
+I/O Module Label:            Unknown
+
+SP ID:                       B
+I/O Module Slot:             2
+I/O Module Type:             Fibre Channel
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            8 Gb Fibre
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             0
+Port Usage:                  Special
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             1
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            2
+Port Role:                   FE
+Logical Port ID:             2
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            3
+Port Role:                   FE
+Logical Port ID:             3
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       B
+I/O Module Slot:             3
+I/O Module Type:             iSCSI
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            10 GbE BaseT
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             4
+Port Usage:                  Special
+Port Type:                   iSCSI
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             5
+Port Usage:                  Normal
+Port Type:                   iSCSI
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       B
+I/O Module Slot:             4
+I/O Module Type:             Fibre Channel
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            8 Gb Fibre
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   FE
+Logical Port ID:             6
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   FE
+Logical Port ID:             7
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            2
+Port Role:                   FE
+Logical Port ID:             8
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            3
+Port Role:                   FE
+Logical Port ID:             9
+Port Usage:                  Normal
+Port Type:                   Fibre Channel
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+SP ID:                       B
+I/O Module Slot:             Base Module
+I/O Module Type:             SAS
+I/O Module State:            Present
+I/O Module Substate:         Good
+I/O Module Power state:      On
+I/O Carrier:                 No
+I/O Module Label:            N/A
+
+Information about each port on this I/O module:  
+Physical Port ID:            0
+Port Role:                   BE
+Logical Port ID:             0
+Port Usage:                  Normal
+Port Type:                   SAS
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Physical Port ID:            1
+Port Role:                   BE
+Logical Port ID:             1
+Port Usage:                  Normal
+Port Type:                   SAS
+Port State:                  Enabled
+Port Substate:               Good
+Is Persisted:                Yes
+
+Information about maximum VLANs per port:  
+Max VLANs per port:          8
+

@@ -1,0 +1,9 @@
+                  ----------Alert Time-----------
+                  -Adm- ----Snp----- ----Usr-----
+ Id Name          Fail  Fail Wrn Lim Fail Wrn Lim
+  1 .srdata       --    --   --  --  --   --  --
+  0 admin         --    --   --  --  --   --  --
+284 CS_InfraLUN31 --    --   --  --  --   --  --
+-------------------------------------------------
+  3 total         -     -    -   -   -    -   -
+

@@ -1,0 +1,572 @@
+
+{
+    "total": 11,
+    "members": [
+        {
+            "id": 4,
+            "name": "flashesx03.acme.local",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB1C",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1C",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB1C",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1C",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 5,
+            "name": "flashesx01.acme.local",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB1E",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1E",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1E",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB1E",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 6,
+            "name": "flashesx02.acme.local",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB0E",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0E",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB0E",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0E",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 7,
+            "name": "flashesx04.acme.local",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB0B",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0B",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB0B",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0B",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 8,
+            "name": "CLInfraESX01",
+            "descriptors": {
+                "location": "B7",
+                "IPAddr": "10.250.166.111",
+                "os": "ESX 4.x/5.x",
+                "model": "HP DL360 G7",
+                "contact": "Jake",
+                "comment": "10.250.154.56"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "10000000C9F3A148",
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 9,
+            "name": "esxvcd03",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB0D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB0D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB0D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA0D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB0D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 10,
+            "name": "esxvcd04",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B500BB1D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB1D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB1D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500BB1D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1D",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B500AA1D",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 11,
+            "name": "NBU5240",
+            "descriptors": {
+                "os": "RHE Linux (5.x, 6.x)"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "21000024FF7692AA",
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "21000024FF7692AB",
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "21000024FF769BA2",
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "21000024FF769BA3",
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 2,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 12,
+            "name": "TECESX03",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B515015A",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B515015A",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B515015B",
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "id": 13,
+            "name": "TECESX04",
+            "descriptors": {
+                "os": "ESX 4.x/5.x"
+            },
+            "FCPaths": [
+                {
+                    "wwn": "20000025B5150158",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B5150158",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "20000025B5150159",
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "persona": 8,
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        },
+        {
+            "FCPaths": [
+                {
+                    "wwn": "100000051E585244",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585244",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585244",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585244",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585243",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585243",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 2
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585243",
+                    "portPos": {
+                        "node": 1,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                },
+                {
+                    "wwn": "100000051E585243",
+                    "portPos": {
+                        "node": 0,
+                        "slot": 1,
+                        "cardPort": 1
+                    },
+                    "hostSpeed": 0
+                }
+            ],
+            "iSCSIPaths": [],
+            "initiatorChapEnabled": false,
+            "targetChapEnabled": false
+        }
+    ]
+}

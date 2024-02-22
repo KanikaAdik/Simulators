@@ -1,0 +1,6 @@
+3Par7450 cli% srvvspace -btsecs -15m
+                                   ------RawRsvd(MB)------- -----User(MB)----- ------Snap(MB)------ -----Admin(MB)------ -----------Total(MB)----------- -Capacity Efficiency-
+                   Time       Secs   User Snap Admin  Total   Used Free   Rsvd Used Free Rsvd Vcopy Used Free Rsvd Vcopy Vcopy   Used   Rsvd VirtualSize   Compaction    Dedup
+2017-06-22 06:30:00 CDT 1498131000 174080  683   768 175531 121848 3592 125440    0  512  512     0   22  234  256     0     0 121870 126208      501760         13.8        -
+2017-06-22 06:35:00 CDT 1498131300 174080  683   768 175531 121849 3591 125440    0  512  512     0   22  234  256     0     0 121871 126208      501760         13.8        -
+2017-06-22 06:40:00 CDT 1498131600 174080  683   768 175531 121850 3590 125440    0  512  512     0   22  234  256     0     0 121872 126208      501760         13.8        -

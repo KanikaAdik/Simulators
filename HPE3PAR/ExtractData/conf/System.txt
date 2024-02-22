@@ -1,0 +1,120 @@
+###################################################SYSTEM###############################################
+
+SYNTAX
+    showsys [options]
+
+OPTIONS
+    -d
+        Specifies that more detailed information about the system is displayed.
+
+    -param
+        Specifies that the system parameters are displayed.
+
+    -fan
+        Displays the system fan information.
+
+    -space
+        Displays the system capacity information in MB (1024^2 bytes).
+
+    -domainspace
+        Displays the system capacity information broken down by domain in MB
+        (1024^2 bytes).
+
+    -desc
+        Displays the system descriptor properties.
+
+    -devtype FC|NL|SSD
+        Displays the system capacity information where the disks must have a
+        device type string matching the specified device type; either Fibre
+        Channel (FC), Nearline (NL), Solid State Drive (SSD), This option can
+        only be issued with the -space option.
+3Par7450 cli%
+
+
+3Par7450 cli% showsys -d
+--------------General--------------
+System Name        :       3Par7450
+System Model       :   HP_3PAR 7450
+Serial Number      :        1649581
+System ID          :          49581
+Number of Nodes    :              2
+Master Node        :              0
+Nodes Online       :            0,1
+Nodes in Cluster   :            0,1
+Chunklet Size (MB) :           1024
+
+-----System Capacity (MB)------
+Total Capacity     :   10960896
+Allocated Capacity :    1165312
+Free Capacity      :    6131712
+Failed Capacity    :      10240
+
+There is no system fan information
+
+--------System Descriptors--------
+Location    :
+Owner       :
+Contact     :
+Comment     : StoreFrontRemoteAccess(M5lPpIWLTASuSU09GYLpNQ,jrzeszutko@forsythe.                                                                                                                     com)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showsys -param
+System parameters from configured settings
+
+------Parameter------      --Value--
+RawSpaceAlertFC       :            0
+RawSpaceAlertNL       :            0
+RawSpaceAlertSSD      :            0
+RemoteSyslog          :            0
+RemoteSyslogHost      :      0.0.0.0
+SparingAlgorithm      :      Minimal
+EventLogSize          :           3M
+VVRetentionTimeMax    :    336 Hours
+UpgradeNote           :
+PortFailoverEnabled   :          yes
+AutoExportAfterReboot :          yes
+AllowR5OnNLDrives     :           no
+AllowR0               :           no
+ThermalShutdown       :          yes
+FailoverMatchedSet    :           no
+SessionTimeout        :     01:00:00
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showsys
+                                                  ---------------(MB)----------------
+   ID --Name-- ---Model---- -Serial- Nodes Master TotalCap AllocCap FreeCap FailedCap
+49581 3Par7450 HP_3PAR 7450 1649581      2      0 10960896  1165312 6131712     10240
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showsys -space
+------------- System Capacity (MB) -------------
+Total Capacity                      :   10960896
+  Allocated                         :    1165312
+    Volumes                         :     122880
+      Non-CPGs                      :          0
+        User                        :          0
+        Snapshot                    :          0
+        Admin                       :          0
+      CPGs (TPVVs & TDVVs & CPVVs)  :     122880
+        User                        :      44372
+          Used                      :      44372
+          Unused                    :          0
+        Snapshot                    :      53932
+          Used                      :        684
+          Unused                    :      53248
+        Admin                       :      24576
+          Used                      :        768
+          Unused                    :      23808
+      Unmapped                      :          0
+    System                          :    1042432
+      Internal                      :     321536
+      Spare                         :     720896
+        Used                        :          0
+        Unused                      :     720896
+  Free                              :    6131712
+    Initialized                     :    6131712
+    Uninitialized                   :          0
+  Unavailable                       :          0
+  Failed                            :      10240
+------------- Capacity Efficiency --------------
+Compaction                          :       13.8
+Dedup                               :   --------

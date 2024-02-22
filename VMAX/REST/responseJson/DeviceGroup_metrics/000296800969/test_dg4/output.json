@@ -1,0 +1,45 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578474472, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "HostReads": 0.0, 
+                "HostWrites": 0.0, 
+                "HostMBReads": 0.0, 
+                "PercentHit": 0.0, 
+                "timestamp": 1494577800000, 
+                "WPCount": 0.0, 
+                "ResponseTime": 0.0, 
+                "HostIOs": 0.0, 
+                "HostMBWritten": 0.0
+            }, 
+            {
+                "HostReads": 0.0, 
+                "HostWrites": 0.0, 
+                "HostMBReads": 0.0, 
+                "PercentHit": 0.0, 
+                "timestamp": 1494578100000, 
+                "WPCount": 0.0, 
+                "ResponseTime": 0.0, 
+                "HostIOs": 0.0, 
+                "HostMBWritten": 0.0
+            }, 
+            {
+                "HostReads": 0.0, 
+                "HostWrites": 0.0, 
+                "HostMBReads": 0.0, 
+                "PercentHit": 0.0, 
+                "timestamp": 1494578400000, 
+                "WPCount": 0.0, 
+                "ResponseTime": 0.0, 
+                "HostIOs": 0.0, 
+                "HostMBWritten": 0.0
+            }
+        ]
+    }, 
+    "id": "8342b708-39a4-4b4f-b92b-a8e75faccc70_0", 
+    "maxPageSize": 1000
+}

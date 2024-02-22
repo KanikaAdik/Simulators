@@ -1,0 +1,5 @@
+N:S:P Mode   State -Node_WWN- -Port_WWN/HW_Addr- Type Protocol Label Partner FailoverState
+0:3:1 peer offline          -       D4C9EF080E3F rcip       IP RCIP0       -             -
+1:3:1 peer offline          -       D4C9EF080C4B rcip       IP RCIP1       -             -
+------------------------------------------------------------------------------------------
+    2

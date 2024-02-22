@@ -1,0 +1,12 @@
+Release version 3.2.1.292 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1.366 (P27)
+CLI Client                       3.2.1.366
+System Manager                   3.2.1.384 (P30)
+Kernel                           3.2.1.292 (MU3)
+TPD Kernel Code                  3.2.1.312 (P17)
+TPD Kernel Patch                 3.2.1.396 (P31)
+3.2.1
+

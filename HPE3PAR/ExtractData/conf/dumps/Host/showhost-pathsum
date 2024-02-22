@@ -1,0 +1,12 @@
+Id Name                  WWNs Ports Nodes
+ 4 flashesx03.acme.local    2     2   0,1
+ 5 flashesx01.acme.local    2     2   0,1
+ 6 flashesx02.acme.local    2     2   0,1
+ 7 flashesx04.acme.local    2     2   0,1
+ 8 CLInfraESX01             1     0    --
+ 9 esxvcd03                 2     4   0,1
+10 esxvcd04                 2     4   0,1
+11 NBU5240                  4     0    --
+12 TECESX03                 2     4   0,1
+13 TECESX04                 2     4   0,1
+--                          2     4   0,1

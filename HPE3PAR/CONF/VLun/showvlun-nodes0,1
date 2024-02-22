@@ -1,0 +1,20 @@
+Error while parsing -nodes argument: can't use non-numeric string as operand of "<<"
+Active VLUNs
+Lun VVName        HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 TECESX04 20000025B5150159      1:1:2 host active  1
+---------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 TECESX04 ----------------       --- host
+----------------------------------------------------------
+  2 total

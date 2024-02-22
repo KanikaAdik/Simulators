@@ -1,0 +1,389 @@
+#####################################Controller Node#######################################
+
+SYNTAX
+    shownode [option] [<node_ID> ...]
+
+OPTIONS
+    The following options are for node summary and inventory information:
+
+    -listcols
+        List the columns available to be shown with the -showcols option
+        described below (see 'clihelp -col shownode' for help on each column).
+
+        By default (if none of the information selection options below are
+        specified) the following columns are shown:
+        Node Name State Master InCluster LED Control_Mem Data_Mem Available_Cache
+
+        To display columns pertaining to a specific node component use
+        the -listcols option in conjunction with one of the following
+        options: -pci, -cpu, -mem, -drive, -fan, -ps, -mcu, -uptime.
+
+    -showcols <column>[,<column>...]
+        Explicitly select the columns to be shown using a comma-separated list
+        of column names.  For this option, the full column names are shown in
+        the header.
+        Run 'shownode -listcols' to list Node component columns.
+        Run 'shownode -listcols <node_component>' to list columns associated
+        with a specific <node_component>.
+
+        <node_component> can be one of the following options: -pci, -cpu, -mem,
+        -drive, -fan, -ps, -mcu, -uptime.
+
+        If a specific node component option is not provided, then -showcols expects
+        Node columns as input.
+
+        If a column (Node or specific node component) does not match either the Node
+        columns list or a specific node component columns list, then
+        'shownode -showcols <cols>' request is denied.
+
+        If an invalid column is provided with -showcols, the request is denied.
+
+        The -showcols option can also be used in conjunction with a list of node IDs.
+
+        Run 'clihelp -col shownode' for a description of each column.
+
+    -i
+        Shows node inventory information in table format.
+    -d
+        Shows node and its component information in table format.
+
+    The following options are for node component information. These options
+    cannot be used together with options, -i and -d:
+
+    -verbose
+        Displays detailed information in verbose format. It can be used together
+        with the following component options.
+
+    -fan
+        Displays the node fan information.
+
+    -pci
+        Displays PCI card information
+
+    -cpu
+        Displays CPU information
+
+    -mem
+        Displays physical memory information.
+
+    -drive
+        Displays the disk drive information.
+
+    -ps
+        Displays power supply information.
+
+    -mcu
+        Displays MicroController Unit information.
+
+    -state
+        Displays the detailed state information for node or power supply (-ps).
+        This is the same as -s.
+
+    -s
+        Displays the detailed state information for node or power supply (-ps).
+        This option is deprecated and will be removed in a subsequent release.
+
+    -uptime
+        Show the amount of time each node has been running since the last shutdown.
+
+    -svc
+        Displays inventory information with HP serial number, spare part etc.
+        This option must be used with -i option and it is supported only on
+        HP 3PAR 7000 series systems
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col shownode
+col,shownode - Explanation of column headers for shownode
+
+Node           Node ID
+Name           Node name
+State          Node state
+                 OK              Node and its components are operating normally
+                 Degraded        Node is degraded when the power supply is
+                                 missing, failed, or degraded (fan failed,
+                                 battery max life low, failed, expired, or not
+                                 present
+                 Failed          Node is not initialized, offline, kernel
+                                 revision mismatched, IDE partition bad,
+                                 rebooting, or shutdown
+Detailed_State
+               Detailed state of node is one or more of
+                 tod_bat_fail
+                                 Time-Of-Day Battery Failure
+                 invalid_bat_config
+                                 Invalid Battery Configuration
+                 link_error
+                                 Link Error
+                 uncorrectable_mem_error
+                                 Uncorrectable Memory Error
+                 multi_uncorrectable_mem_error
+                                 Multiple Uncorrectable Memory Error
+                 correctable_mem_error
+                                 Correctable Memory Error
+                 internal_system_error
+                                 Internal System Error
+                 hardware_watchdog_error
+                                 Hardware Watchdog Error
+                 pci_error
+                                 PCI Error
+                 driver_software_error
+                                 Driver Software Error
+                 cpu_overheating
+                                 CPU Overheating
+                 cpu_vrm_overheating
+                                 CPU VRM Overheating
+                 control_cache_dimm_overheating
+                                 Control Cache DIMM Overheating
+                 node_offline_due_to_failure
+                                 Node Offline Due to Failure
+                 node_shutdown_manually
+                                 Node Shutdown Manually
+                 unknown         Node state unknown
+Master         Node is the master (Yes or No)
+InCluster      Node is in the cluster (Yes or No)
+LED            Node LED information
+                 --              Node LED is unknown
+                 off             Node LED is off
+                 Green           Kernel is not running
+                 GreenBlnk       Normal state
+                 Amber           Node is degraded/failed and kernel is not
+                                 running
+                 AmberBlnk       Node is degraded/failed
+                 Blue            A node component is placed into service-mode
+                 BlueBlnk        A node component is not properly seated
+ControlMem     Total control memory in the node in MB (1024^2 bytes)
+DataMem        Total data memory in the node in MB (1024^2 bytes)
+Assy_Serial    Assembly Serial Number
+Assy_Part      Model Number
+
+For PCI cards
+
+Node           Node ID
+Slot           Slot ID
+Type           PCI card type
+                 Eth    Ethernet
+                 FC     Fibre Channel
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+Rev            Revision number
+Firmware       Firmware version
+
+For CPUs
+
+Node           Node ID
+CPU            CPU ID
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+CPUSpeed       CPU speed (MHz)
+BusSpeed       Bus speed (MHz)
+
+For Physical Memory
+
+Node           Node ID
+Riser          The riser card info where the physical memory is located
+Slot           Slot
+SlotID         Slot ID in JXXX format
+Name           Physical memory name
+Usage          Physical memory usage type
+                  Control
+                  Data
+Type           DIMM Type
+Manufacturer   Manufacturer
+Serial         Serial number
+Latency        CAS Latency
+Size           Memory size in MB (1024^2 bytes)
+
+For IDE Drives
+
+Node           Node ID
+IDE            IDE ID
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+Firmware       Firmware version
+Size           IDE drive size in MB (1024^2 bytes)
+
+For Power Supplies
+node
+Node           Node ID
+PS             Power supply ID
+PSState        Power supply state
+                 --          Cannot determine the state
+                 OK          Power supply is operating normally
+                 Failed      Power supply is operating abnormally
+                 NotPresent  Power supply is missing
+                 Degraded    Fan failure or battery state is not OK
+FanState       Power supply fan state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+ACState        AC state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+DCState        DC state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+BatState       Battery state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+                 Degraded    Battery is in degraded state
+                 NotPresent  Battery is missing
+Detailed_State
+               Detailed state of power supply is one or more of
+                 invalid_bat_count      Invalid Battery Count
+                 dc_failed              DC Failed
+                 ac_failed              AC Failed
+                 fan_failed             Fan Failed
+                 charger_overload       Charger Overload
+                 battery_not_present    Battery Not Present
+                 invalid_firmware       Invalid Firmware
+                 oscillating_presence   Oscillating Presence
+                 oscillating_dc         Oscillating DC Failure
+                 oscillating_ac         Oscillating AC Failure
+                 oscillating_fan        Oscillating Fan Failure
+                 oscillating_charger    Oscillating Charger Overload
+                 oscillating_bat        Oscillating Battery Failure
+                 NotPresent             Not Present
+                 unknown                Power supply state unknown
+ChrgLvl        Battery charge level
+Assy_Serial    Assembly Serial Number
+
+For Node Fan
+
+Node           Node ID
+FanModuleID    Fan Module ID for V-Class systems only
+PriNode        Primary node ID
+SecNode        Secondary node ID
+State          State information
+LED            Status LED information
+Status_LED     Status LED information
+Service_LED    Service LED information for V-class systems only
+Speed          Fan speed
+FanASpeed      FanA speed for V-Class systems only
+FanBSpeed      FanB speed for V-Class systems only
+
+For MicroController Unit (MCU)
+
+Node                Node ID
+Model               Model
+Firmware            Firmware version
+State               The State of the MicroController Unit (MCU) is one of
+                        ready                 MicroController is ready
+                        updating_fw           MicroController firmware is being updated
+                        busy                  MicroController is busy processing other request
+                        failed                MicroController failed
+                        stopped               MicroController stopped
+                        panic                 MicroController is in a panic state
+                        unknown               MicroController is unknown
+
+ResetReason         The reset reason of the MicroController is one of
+                        cold_on_power            MicroController was cold reset
+                        watchdog_timer_expired   MicroController watchdog timer expired
+                        soft_reset               MicroController was soft reset
+                        external_reset           MicroController was reset by another process
+                        panic_reset              MicroController was reset because it was in a panic state
+                        flash_update             MicroController flash is being updated
+                        hard_reset               MicroController experienced a hard reset
+                        board_reset              MicroController board was reset
+
+up Since                Date since the MicroController Unit or node was up and running.
+
+For Field Replaceable Units (FRU)
+
+SaleableSerial      HP Saleable Serial Number
+Saleable_PN         HP Saleable Part   Number
+Spare_PN            HP Spare Part Number
+HPModelName         HP Model Name
+Assem_Rev           HP Assembly Revision Number
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+3Par7450 cli% shownode
+                                                               Control    Data        Cache
+Node --Name--- -State- Master InCluster -Service_LED ---LED--- Mem(MB) Mem(MB) Available(%)
+   0 1649581-0 OK      Yes    Yes       Off          GreenBlnk   16384   16384          100
+   1 1649581-1 OK      No     Yes       Off          GreenBlnk   16384   16384          100
+
+///////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% shownode -listcols
+Available_Cache,Control_Mem,Data_Mem,InCluster,LED,Master,Name,Node,State
+
+3Par7450 cli% shownode -showcols Name,Node,State,Master,InCluster,Control_Mem,D
+ata_Mem,Available_Cache
+Name       Node State Master InCluster Control_Mem Data_Mem Available_Cache
+1649581-0     0 OK    Yes    Yes             16384    16384             100
+1649581-1     1 OK    No     Yes             16384    16384             100
+---------------------------------------------------------------------------
+          total                                                           2
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+3Par7450 cli% shownode -d
+-------------------------------------------Nodes--------------------------------------------
+                                                                Control    Data        Cache
+Node --Name--- -State- Master InCluster -Service_LED- ---LED--- Mem(MB) Mem(MB) Available(%)
+   0 1649581-0 OK      Yes    Yes       Off           GreenBlnk   16384   16384          100
+   1 1649581-1 OK      No     Yes       Off           GreenBlnk   16384   16384          100
+
+----------------------------PCI Cards----------------------------
+Node Slot Type -Manufacturer- -Model-- -Serial- -Rev- Firmware
+   0    0 SAS  LSI            9205-8e  Onboard  01    17.11.00.00
+   0    1 FC   EMULEX         LPe12002 Onboard  03    2.02.X.15
+   0    3 Eth  Intel          e1000e   Onboard  n/a   2.3.2-k
+   1    0 SAS  LSI            9205-8e  Onboard  01    17.11.00.00
+   1    1 FC   EMULEX         LPe12002 Onboard  03    2.02.X.15
+   1    3 Eth  Intel          e1000e   Onboard  n/a   2.3.2-k
+
+----------------------------CPUs----------------------------
+Node CPU -Manufacturer- -Serial- CPUSpeed(MHz) BusSpeed(MHz)
+   0   0 GenuineIntel   --                2294        100.00
+   0   1 GenuineIntel   --                2294        100.00
+   0   2 GenuineIntel   --                2294        100.00
+   0   3 GenuineIntel   --                2294        100.00
+   0   4 GenuineIntel   --                2294        100.00
+   0   5 GenuineIntel   --                2294        100.00
+   0   6 GenuineIntel   --                2294        100.00
+   0   7 GenuineIntel   --                2294        100.00
+   1   0 GenuineIntel   --                2294        100.00
+   1   1 GenuineIntel   --                2294        100.00
+   1   2 GenuineIntel   --                2294        100.00
+   1   3 GenuineIntel   --                2294        100.00
+   1   4 GenuineIntel   --                2294        100.00
+   1   5 GenuineIntel   --                2294        100.00
+   1   6 GenuineIntel   --                2294        100.00
+   1   7 GenuineIntel   --                2294        100.00
+
+--------------------------------------Physical Memory---------------------------------------
+Node Slot SlotID --Name--- -Usage- ---Type--- --Manufacturer--- -Serial- -Latency-- Size(MB)
+   0    0 J0155  DIMM0.0   Control DDR3_SDRAM SK Hynix          90050BA1 CL6.0/11.0    16384
+   0  n/a J0300  DIMM0.0.0 Data    DDR2_SDRAM Micron Technology B1FF3514 CL3.0/5.0      8192
+   0  n/a J0301  DIMM0.1.0 Data    DDR2_SDRAM Micron Technology B1FF35A2 CL3.0/5.0      8192
+   1    0 J0155  DIMM0.0   Control DDR3_SDRAM SK Hynix          90046EDF CL6.0/11.0    16384
+   1  n/a J0300  DIMM0.0.0 Data    DDR2_SDRAM Micron Technology B1FF3372 CL3.0/5.0      8192
+   1  n/a J0301  DIMM0.1.0 Data    DDR2_SDRAM Micron Technology B1FF3379 CL3.0/5.0      8192
+
+--------------------------------Internal Drives---------------------------------
+Node Drive -Manufacturer- -----Model------ ---Serial--- -Firmware- Size(MB) Type
+   0     0 SanDisk        PU1000064GBATSSD 131587402900 CS.51.00      61057 ATA
+   1     0 SanDisk        PU1000064GBATSSD 131462401022 CS.51.00      61057 ATA
+
+--------------------------------Power Supplies---------------------------------
+Node PS -Assy_Serial-- -PSState- FanState ACState DCState -BatState- ChrgLvl(%)
+ 0,1  0 5DNSFA1434S01U OK        OK       OK      OK      OK                100
+ 0,1  1 5DNSFA1434Q011 OK        OK       OK      OK      OK                100
+
+------------------------------MCU------------------------------
+Node Model Firmware State ResetReason   -------Up Since--------
+   0 NEMOE 4.63     ready cold_power_on 2016-08-16 10:03:37 CDT
+   1 NEMOE 4.63     ready cold_power_on 2016-08-16 10:05:51 CDT
+
+-----------Uptime-----------
+Node -------Up Since--------
+   0 2016-08-16 09:52:55 CDT
+   1 2016-08-16 09:52:55 CDT

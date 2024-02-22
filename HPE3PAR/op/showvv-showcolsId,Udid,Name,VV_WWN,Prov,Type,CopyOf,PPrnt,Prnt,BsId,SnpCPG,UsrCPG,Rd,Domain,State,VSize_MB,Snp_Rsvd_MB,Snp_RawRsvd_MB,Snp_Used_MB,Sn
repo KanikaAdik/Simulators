@@ -1,0 +1,3 @@
+p_Free_MB,Usr_Rd_MB,Usr_RawRsvd_MB,Usr_Used_MB,Usr_Free_MB,Adm_Rsvd_MB,Adm_RawRsvd_MB,Adm_Used_MB,Adm_Free_MB,Tot_Rsvd_MB,Policies,Limit_Snp_Perc,Warn_Snp_Perc,Limi
+t_Usr_Perc,Warn_r_Perc,Compaction,Dedup
+Invalid columns specified: Usr_Rd_MB Warn_r_Perc

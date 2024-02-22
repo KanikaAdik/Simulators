@@ -1,0 +1,106 @@
+zoneset name ZONESET_V1 vsan 1
+  zone name Z_FC1_3_FC1_2_V1 vsan 1
+     interface fc1/3 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/2 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_4_FC1_1_V1 vsan 1
+     interface fc1/4 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/1 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_6_FC1_2_V1 vsan 1
+     interface fc1/6 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/2 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_6_FC1_3_V1 vsan 1
+     interface fc1/6 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/3 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_7_FC1_1_V1 vsan 1
+     interface fc1/7 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/1 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_7_FC1_4_V1 vsan 1
+     interface fc1/7 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/4 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_8_FC1_2_V1 vsan 1
+     interface fc1/8 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/2 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_8_FC1_3_V1 vsan 1
+     interface fc1/8 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/3 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Z_FC1_8_FC1_6_V1 vsan 1
+     interface fc1/8 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/6 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name External_Cluster_Netapp vsan 1
+     interface fc1/9 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/10 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/6 swwn 20:00:00:2a:6a:3b:95:80
+     interface fc1/8 swwn 20:00:00:2a:6a:3b:95:80
+  
+  zone name Eternus_48_49 vsan 1
+    pwwn 50:00:00:e0:da:1a:da:20
+    pwwn 50:00:00:e0:da:1a:da:30
+    pwwn 21:01:00:e0:8b:ba:35:0a
+    pwwn 21:03:00:e0:8b:fa:c3:08
+    fcalias name VM1 vsan 1
+      pwwn 28:1c:00:0c:29:00:00:02
+  
+  zone name Eternus_28_29 vsan 1
+    fcid 0x860600
+    fcid 0x860500
+    fcid 0x860aef
+    fcid 0x860bef
+  
+  zone name NPIV1_Netapp vsan 1
+    pwwn 21:02:00:e0:8b:da:c3:08
+    pwwn 50:0a:09:81:82:e1:91:16
+    pwwn 21:00:00:e0:8b:9a:35:0a
+    fcalias name VM1 vsan 1
+      pwwn 28:1c:00:0c:29:00:00:02
+  
+  zone name VNX_48_49 vsan 1
+    pwwn 21:00:00:e0:8b:9a:35:0a
+    pwwn 21:01:00:e0:8b:ba:35:0a
+    pwwn 21:02:00:e0:8b:da:c3:08
+    pwwn 21:03:00:e0:8b:fa:c3:08
+    fcalias name SPA0 vsan 1
+      pwwn 50:06:01:60:36:e0:18:3d
+    
+    fcalias name SPB0 vsan 1
+      pwwn 50:06:01:68:36:e0:18:3d
+    
+    fcalias name RahulSVM1 vsan 1
+      pwwn 28:1c:00:0c:29:00:00:06
+  
+  zone name Netapp_48_49_hba2 vsan 1
+    pwwn 50:0a:09:81:82:e1:91:16
+    pwwn 50:0a:09:82:82:e1:91:16
+    pwwn 21:01:00:e0:8b:ba:35:0a
+    pwwn 21:03:00:e0:8b:fa:c3:08
+  
+  zone name VNX_Brazil vsan 1
+    pwwn 21:00:00:e0:8b:1e:51:94
+    pwwn 50:06:01:60:36:e0:18:3d
+    pwwn 50:06:01:68:36:e0:18:3d
+  
+  zone name VNX_Linux1 vsan 1
+    pwwn 21:00:00:24:ff:0b:f4:05
+    pwwn 50:06:01:68:36:e0:18:3d
+    pwwn 50:06:01:60:36:e0:18:3d
+  
+  zone name External_Cluster_VNX vsan 1
+    fcalias name SPA0 vsan 1
+      pwwn 50:06:01:60:36:e0:18:3d
+    
+    fcalias name SPB0 vsan 1
+      pwwn 50:06:01:68:36:e0:18:3d
+    
+    fcalias name External_Cluster_31 vsan 1
+      pwwn 10:00:00:90:fa:5a:26:e3
+    
+    fcalias name External_Cluster_32 vsan 1
+      pwwn 10:00:00:90:fa:48:6a:11

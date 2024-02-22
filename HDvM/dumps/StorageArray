@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HiCommandServerMessage>
+  <APIInfo version="7.5" />
+  <Response>
+    <EchoCommand name="GetStorageArray" status="COMPLETED" result="0" resultSource="StorageManager.GetStorageArray" messageID="685887326" />
+    <ResultList>
+      <StorageArray objectID="ARRAY.HM800S.421358" name="VSP Gx00" serialNumber="421358" arrayFamily="HM800" arrayType="HM800S" description="VSP G100 (421358) at 192.168.20.232" productName="HM800" microcodeVersion="83-03-02-20/00" agentVersion="09_03_04" controllerVersion="83-03-03-20/00" numberOfControllers="2" capacityInGB="16610" freeCapacityInGB="10062" allocatedCapacityInGB="6548" hihsmCapacityInGB="0" onDemandCapacityInGB="0" totalFreeSpaceInGB="13659" largestFreeSpaceInGB="3220" capacityInKB="17417525248" freeCapacityInKB="10550771712" allocatedCapacityInKB="6866753536" hihsmCapacityInKB="0" onDemandCapacityInKB="0" totalFreeSpaceInKB="14323412224" largestFreeSpaceInKB="3377304576" cacheInMB="44032" sharedMemoryInMB="-1" numberOfSpareDrives="3" multipathSupport="1" securityStatus="2" sequenceNumber="421358" displayArrayFamily="VSP Gx00" displayArrayType="VSP G100" numberOfLUs="46" numberOfAllocatedLUs="25" numberOfUnallocatedLUs="5" slprStatus="-1" statusOfDBUpdating="0" openTotalCapacity="17417525248" openAllocatedCapacity="6866753536" openFreeCapacity="10550771712" openHiHsmCapacity="0" openOnDemandCapacity="0" imTotalCapacity="0" imAllocatedCapacity="0" imFreeCapacity="0" imHiHsmCapacity="0" imOnDemandCapacity="0" mfTotalCapacity="0" mfHiHsmCapacity="0" mfOnDemandCapacity="0" mfAllocatedCapacity="0" mfUnallocatedCapacity="0" numberOfOpenAllocatedLUs="25" numberOfOpenUnallocatedLUs="5" numberOfImAllocatedLUs="0" numberOfImUnallocatedLUs="0" numberOfMfLDEVs="0" numberOfAllocatedMfLDEVs="0" numberOfUnallocatedMfLDEVs="0" productCode="1" lastRefreshed="1471730240" autoFormatLU="0" statusOfDBInconsistency="0" openAllocatedActualCapacity="0" openUnallocatedCapacity="44040192" openUnallocatedActualCapacity="20971520" openReservedCapacity="10506731520" openReservedActualCapacity="10506731520" numberOfReservedLUs="16" numberOfOpenReservedLUs="16" numberOfImReservedLUs="0" lastConfigurationChanged="1471736175448" configUpdateStatus="0" physicalCapacityInTB="46.92" distributedMode="-1" hardwareRevision="NA" />
+    </ResultList>
+  </Response>
+</HiCommandServerMessage>
+

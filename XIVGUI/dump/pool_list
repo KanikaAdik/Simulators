@@ -1,0 +1,12 @@
+Name                       Size (GB)   Hard Size (GB)   Snapshot Size (GB)   Empty Space (GB)   Used by Volumes (GB)   Used by Snapshots (GB)   Locked
+Demo_std - Do NOT delete   1030        1030             103                  0                  240                    0                        no
+Demo_thin - Do NOT delete  1700        1047             120                  0                  584                    0                        no
+Test                       103         103              34                   0                  34                     0                        no
+Test_thin                  274         137              0                    85                 103                    0                        no
+ILAB_P01                   12008       12008            0                    2130               292                    0                        no
+pool1                      3006        3006             257                  240                17                     0                        no
+new-pool                   103         103              34                   68                 0                      0                        no
+R800_UVM                   223         223              34                   51                 0                      0                        no
+UVM_TK_Pool                257         257              34                   85                 137                    0                        no
+HAD Test                   4277        4277             429                  3659               0                      0                        no
+IBM_UVM                    223         223              34                   51                 137                    0                        no

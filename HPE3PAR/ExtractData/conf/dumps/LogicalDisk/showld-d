@@ -1,0 +1,18 @@
+Id Name          CPG RAID Own SizeMB RSizeMB RowSz StepKB SetSz Refcnt Avail CAvail -----CreationTime------ ----CreationPattern----
+ 0 admin.usr.0   ---    1 0/1   4096    8192     2     32     2      0 mag   mag    2014-11-26 12:43:13 CST -p -devtype SSD
+ 1 admin.usr.1   ---    1 0/1   1024    2048     1     32     2      0 mag   mag    2014-11-26 12:43:13 CST -p -devtype SSD
+ 2 admin.usr.2   ---    1 1/0   4096    8192     2     32     2      0 mag   mag    2014-11-26 12:43:13 CST -p -devtype SSD
+ 3 admin.usr.3   ---    1 1/0   1024    2048     1     32     2      0 mag   mag    2014-11-26 12:43:13 CST -p -devtype SSD
+ 4 log0.0        ---    1 0/-  20480   40960     2     32     2      0 mag   mag    2014-11-26 12:45:13 CST -p -devtype SSD -nd 0
+ 5 log1.0        ---    1 1/-  20480   40960     2     32     2      0 mag   mag    2014-11-26 12:45:13 CST -p -devtype SSD -nd 1
+ 6 pdsld0.0      ---    1 0/1   2048    6144     1     32     3      0 mag   mag    2014-11-26 12:45:34 CST -p -devtype SSD -nd 0
+ 7 pdsld0.1      ---    1 0/1  16384   49152     1     32     3      0 mag   mag    2014-11-26 12:48:21 CST -p -devtype SSD -nd 0,1
+ 8 pdsld0.2      ---    1 1/0  16384   49152     1     32     3      0 mag   mag    2014-11-26 12:48:21 CST -p -devtype SSD -nd 0,1
+ 9 .srdata.usr.0 ---    5 0/1  43008   57344     1     64     4      0 mag   mag    2014-11-26 12:51:53 CST -p -devtype SSD
+10 .srdata.usr.1 ---    5 1/0  43008   57344     1     64     4      0 mag   mag    2014-11-26 12:51:53 CST -p -devtype SSD
+11 tp-0-sa-0.0   AFA    1 0/1   4096   12288     2     32     3      0 mag   mag    2017-06-08 17:26:32 CDT -p -devtype SSD
+12 tp-0-sa-0.1   AFA    1 1/0   4096   12288     2     32     3      0 mag   mag    2017-06-08 17:26:32 CDT -p -devtype SSD
+13 tp-0-sd-0.0   AFA    5 0/1  36864   49152     2     64     4      0 mag   mag    2017-06-08 17:26:32 CDT -p -devtype SSD
+14 tp-0-sd-0.1   AFA    5 1/0  36864   49152     2     64     4      0 mag   mag    2017-06-08 17:26:32 CDT -p -devtype SSD
+-----------------------------------------------------------------------------------------------------------------------------------
+15                            253952  444416

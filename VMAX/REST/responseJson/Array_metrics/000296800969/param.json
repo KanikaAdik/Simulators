@@ -1,0 +1,26 @@
+{
+    "metrics": [
+        "HostIOs", 
+        "HostReads", 
+        "HostWrites", 
+        "PercentReads", 
+        "PercentWrites", 
+        "ReadResponseTime", 
+        "WriteResponseTime", 
+        "HostMBReads", 
+        "HostMBWritten", 
+        "FEReadHitReqs", 
+        "FEWriteHitReqs", 
+        "PercentHit", 
+        "SystemWPEvents", 
+        "WPCount", 
+        "FEReadMissReqs", 
+        "FEWriteMissReqs", 
+        "PercentCacheWP", 
+        "SystemMaxWPLimit"
+    ], 
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "dataFormat": "Average", 
+    "endDate": "1494578400000"
+}

@@ -1,0 +1,5 @@
+,,------(MB)------,,,
+Id,Name,Warn,Limit,Grow,Args
+0,AFA,-,-,32768,-t r5 -ha mag -ssz 4 -ss 64 -ch first -p -devtype SSD
+1,AFA2,-,-,32768,-t r5 -ha mag -ssz 4 -p -devtype SSD -rpm 100
+2,cumulus_cpg1,-,-,32768,-t r5 -ha mag -ssz 4 -p -devtype SSD -rpm 100

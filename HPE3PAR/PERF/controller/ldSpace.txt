@@ -1,0 +1,6 @@
+3Par7450 cli% srldspace -attime -groupby OWNER
+Time: 2017-06-29 04:25:00 CDT (1498728300)
+      ----------(MB)-----------
+OWNER    Raw  Used  Free  Total
+    0 225280 63104 64896 128000
+    1 219136 63104 62848 125952

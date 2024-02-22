@@ -1,0 +1,7 @@
+HostName,VVName
+set:cumulus_hostSet,cumulus_vv1
+set:cumulus_hostSet,set:cumulus_VVSet
+set:cumulus_hostset1,CS_InfraLUN31
+set:cumulus_hostset1,CS_InfraLUN31
+--------------------------------------
+,total

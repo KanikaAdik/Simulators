@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes" ?>
+<SymCLI_ML>
+  <Symmetrix>
+    <Symm_Info>
+      <symid>000296800969</symid>
+      <attachment>Local</attachment>
+    </Symm_Info>
+    <Director>
+      <Dir_Info>
+        <id>FA-1D</id>
+        <type>FibreChannel</type>
+        <symbolic>01D</symbolic>
+        <number>49</number>
+        <slot>1</slot>
+        <status>Online</status>
+      </Dir_Info>
+    </Director>
+    <Director>
+      <Dir_Info>
+        <id>FA-2D</id>
+        <type>FibreChannel</type>
+        <symbolic>02D</symbolic>
+        <number>50</number>
+        <slot>2</slot>
+        <status>Online</status>
+      </Dir_Info>
+    </Director>
+  </Symmetrix>
+</SymCLI_ML>

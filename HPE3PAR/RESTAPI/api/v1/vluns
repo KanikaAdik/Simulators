@@ -1,0 +1,96 @@
+{
+    "total": 6,
+    "members": [
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX03",
+            "remoteName": "20000025B515015A",
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": true
+        },
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX04",
+            "remoteName": "20000025B5150158",
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 2
+            },
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": true
+        },
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX03",
+            "remoteName": "20000025B515015A",
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": true
+        },
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX04",
+            "remoteName": "20000025B5150158",
+            "portPos": {
+                "node": 0,
+                "slot": 1,
+                "cardPort": 1
+            },
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": true
+        },
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX03",
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": false
+        },
+        {
+            "lun": 31,
+            "volumeName": "CS_InfraLUN31",
+            "hostname": "TECESX04",
+            "type": 3,
+            "volumeWWN": "60002AC0000000000000011C0000C1AD",
+            "multipathing": 1,
+            "failedPathPol": 1,
+            "failedPathInterval": 0,
+            "active": false
+        }
+    ]
+}
+

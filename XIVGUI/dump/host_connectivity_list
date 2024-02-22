@@ -1,0 +1,26 @@
+Host               Host Port          Module       Local FC port   Local iSCSI port   Type
+DEMO_WIN3158       10000000C9B068CA   1:Module:4   1:FC_Port:4:3                      FC
+lin3164            10000000C9B0613E   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_WIN312        10000000C9872782   1:Module:4   1:FC_Port:4:3                      FC
+win332             10000000C98755BE   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_VSP1000_161   50060E8007279840   1:Module:4   1:FC_Port:4:3                      FC
+VSPG600_143        50060E8012278A44   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_VSP2          50060E8006CF6A31   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_VSP3          50060E8006CF5420   1:Module:4   1:FC_Port:4:3                      FC
+VSPG400_140        50060E8012277444   1:Module:4   1:FC_Port:4:3                      FC
+WIN3154            10000000C9B0610C   1:Module:4   1:FC_Port:4:3                      FC
+ESX3016_3017       10000000C98767C6   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_WIN3157       10000000C9B065AE   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_VSP1000_160   50060E8007278F40   1:Module:4   1:FC_Port:4:3                      FC
+DEMO_WIN312        10000000C9872783   1:Module:5   1:FC_Port:5:3                      FC
+DEMO_WIN3157       10000000C9B065AF   1:Module:5   1:FC_Port:5:3                      FC
+win332             10000000C98755BF   1:Module:5   1:FC_Port:5:3                      FC
+VSPG600_143        50060E8012278A54   1:Module:5   1:FC_Port:5:3                      FC
+DEMO_VSP3          50060E8006CF5441   1:Module:5   1:FC_Port:5:3                      FC
+VSPG400_140        50060E8012277454   1:Module:5   1:FC_Port:5:3                      FC
+DEMO_WIN3158       10000000C9B068CB   1:Module:5   1:FC_Port:5:3                      FC
+DEMO_VSP1000_160   50060E8007278F50   1:Module:5   1:FC_Port:5:3                      FC
+DEMO_VSP1000_161   50060E8007279850   1:Module:5   1:FC_Port:5:3                      FC
+Cumulus            10000000C977D51E   1:Module:4   1:FC_Port:4:4                      FC
+ESX3016_3017       10000000C9875471   1:Module:5   1:FC_Port:5:3                      FC
+ESX3016_3017       10000000C9875470   1:Module:4   1:FC_Port:4:3                      FC

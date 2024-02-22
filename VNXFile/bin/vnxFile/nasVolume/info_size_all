@@ -1,0 +1,1393 @@
+id          = 1
+name        = root_disk
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = root_disk
+disks       = root_disk
+clnt_slices = root_dos,root_layout,root_slice_1,root_slice_2,root_slice_3,root_slice_4,root_slice_5,root_slice_6,root_slice_7,root_slice_8,root_slice_9,root_slice_10,root_slice_11,root_slice_12,root_slice_13,root_slice_14,root_slice_15,root_slice_16,root_rdf_channel,root_log_2,root_log_3,root_log_4,root_log_5,root_log_6,root_log_7,root_log_8,root_log_9,root_log_10,root_log_11,root_log_12,root_log_13,root_log_14,root_log_15,root_log_16,root_disk_reserve
+size        = total = 22527 avail = 9 used = 22518 ( 99% ) (sizes in MB)
+
+
+id          = 2
+name        = root_ldisk
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = root_ldisk
+disks       = root_ldisk
+clnt_slices = root_ufslog_1,root_ufslog_2,root_ufslog_3,root_ufslog_4,root_ufslog_5,root_ufslog_6,root_ufslog_7,root_ufslog_8,root_ufslog_9,root_ufslog_10,root_ufslog_11,root_ufslog_12,root_ufslog_13,root_ufslog_14,root_ufslog_15,root_ufslog_16,root_ldisk_reserve
+size        = total = 11263 avail = 9 used = 11254 ( 99% ) (sizes in MB)
+
+
+id          = 3
+name        = d3
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d3
+disks       = d3
+clnt_volume = md3
+size        = total = 2047 avail = 0 used = 2047 ( 100% ) (sizes in MB)
+
+
+id          = 4
+name        = d4
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d4
+disks       = d4
+clnt_volume = md4
+size        = total = 2047 avail = 0 used = 2047 ( 100% ) (sizes in MB)
+
+
+id          = 5
+name        = d5
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d5
+disks       = d5
+clnt_volume = md5
+size        = total = 4095 avail = 0 used = 4095 ( 100% ) (sizes in MB)
+
+
+id          = 6
+name        = d6
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d6
+disks       = d6
+clnt_volume = md6
+size        = total = 65535 avail = 0 used = 65535 ( 100% ) (sizes in MB)
+
+
+id          = 7
+name        = root_dos
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_dos
+slice_of    = root_disk
+ offset(MB) = 0
+ size  (MB) = 134
+disks       = root_disk
+size        = total = 134 avail = 134 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 8
+name        = root_layout
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_layout
+slice_of    = root_disk
+ offset(MB) = 134
+ size  (MB) = 1
+disks       = root_disk
+size        = total = 1 avail = 1 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 9
+name        = root_slice_1
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_1
+slice_of    = root_disk
+ offset(MB) = 135
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_1
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 10
+name        = root_volume_1
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_slice_1
+block dedup = N/A
+disks       = root_disk
+clnt_filesys= root_fs_1
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 11
+name        = root_slice_2
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_2
+slice_of    = root_disk
+ offset(MB) = 151
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_2
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 12
+name        = root_volume_2
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_slice_2,root_s54_2
+block dedup = N/A
+disks       = root_disk,root_ldisk
+clnt_filesys= root_fs_2
+size        = total = 256 avail = 0 used = 256 ( 100% ) (sizes in MB)
+
+
+id          = 13
+name        = root_slice_3
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_3
+slice_of    = root_disk
+ offset(MB) = 167
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_3
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 14
+name        = root_volume_3
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_slice_3,root_s56_3
+block dedup = N/A
+disks       = root_disk,root_ldisk
+clnt_filesys= root_fs_3
+size        = total = 256 avail = 0 used = 256 ( 100% ) (sizes in MB)
+
+
+id          = 15
+name        = root_slice_4
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_4
+slice_of    = root_disk
+ offset(MB) = 183
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_4
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 16
+name        = root_volume_4
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_4,root_s58_4
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 17
+name        = root_slice_5
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_5
+slice_of    = root_disk
+ offset(MB) = 199
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_5
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 18
+name        = root_volume_5
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_5,root_s60_5
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 19
+name        = root_slice_6
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_6
+slice_of    = root_disk
+ offset(MB) = 215
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_6
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 20
+name        = root_volume_6
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_6,root_s62_6
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 21
+name        = root_slice_7
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_7
+slice_of    = root_disk
+ offset(MB) = 231
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_7
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 22
+name        = root_volume_7
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_7,root_s64_7
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 23
+name        = root_slice_8
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_8
+slice_of    = root_disk
+ offset(MB) = 247
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_8
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 24
+name        = root_volume_8
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_8,root_s66_8
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 25
+name        = root_slice_9
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_9
+slice_of    = root_disk
+ offset(MB) = 263
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_9
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 26
+name        = root_volume_9
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_9,root_s68_9
+block dedup = N/A
+disks       = root_disk,root_ldisk
+size        = total = 256 avail = 256 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 27
+name        = root_slice_10
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_10
+slice_of    = root_disk
+ offset(MB) = 279
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_10
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 28
+name        = root_volume_10
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_10
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 29
+name        = root_slice_11
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_11
+slice_of    = root_disk
+ offset(MB) = 295
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_11
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 30
+name        = root_volume_11
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_11
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 31
+name        = root_slice_12
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_12
+slice_of    = root_disk
+ offset(MB) = 311
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_12
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 32
+name        = root_volume_12
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_12
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 33
+name        = root_slice_13
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_13
+slice_of    = root_disk
+ offset(MB) = 327
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_13
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 34
+name        = root_volume_13
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_13
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 35
+name        = root_slice_14
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_14
+slice_of    = root_disk
+ offset(MB) = 343
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_14
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 36
+name        = root_volume_14
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_14
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 37
+name        = root_slice_15
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_15
+slice_of    = root_disk
+ offset(MB) = 359
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_15
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 38
+name        = root_volume_15
+acl         = 0
+in_use      = False
+type        = meta
+volume_set  = root_slice_15
+block dedup = N/A
+disks       = root_disk
+size        = total = 16 avail = 16 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 39
+name        = root_slice_16
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_slice_16
+slice_of    = root_disk
+ offset(MB) = 375
+ size  (MB) = 16
+disks       = root_disk
+clnt_volume = root_volume_16
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 40
+name        = root_volume_16
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_slice_16
+block dedup = N/A
+disks       = root_disk
+clnt_filesys= root_fs_common
+size        = total = 16 avail = 0 used = 16 ( 100% ) (sizes in MB)
+
+
+id          = 41
+name        = root_rdf_channel
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_rdf_channel
+slice_of    = root_disk
+ offset(MB) = 391
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 42
+name        = root_log_2
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_2
+slice_of    = root_disk
+ offset(MB) = 395
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 43
+name        = root_log_3
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_3
+slice_of    = root_disk
+ offset(MB) = 399
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 44
+name        = root_log_4
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_4
+slice_of    = root_disk
+ offset(MB) = 403
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 45
+name        = root_log_5
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_5
+slice_of    = root_disk
+ offset(MB) = 407
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 46
+name        = root_log_6
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_6
+slice_of    = root_disk
+ offset(MB) = 411
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 47
+name        = root_log_7
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_7
+slice_of    = root_disk
+ offset(MB) = 415
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 48
+name        = root_log_8
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_8
+slice_of    = root_disk
+ offset(MB) = 419
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 49
+name        = root_log_9
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_9
+slice_of    = root_disk
+ offset(MB) = 423
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 50
+name        = root_log_10
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_10
+slice_of    = root_disk
+ offset(MB) = 427
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 51
+name        = root_log_11
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_11
+slice_of    = root_disk
+ offset(MB) = 431
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 52
+name        = root_log_12
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_12
+slice_of    = root_disk
+ offset(MB) = 435
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 53
+name        = root_log_13
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_13
+slice_of    = root_disk
+ offset(MB) = 439
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 54
+name        = root_log_14
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_14
+slice_of    = root_disk
+ offset(MB) = 443
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 55
+name        = root_log_15
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_15
+slice_of    = root_disk
+ offset(MB) = 447
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 56
+name        = root_log_16
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_log_16
+slice_of    = root_disk
+ offset(MB) = 451
+ size  (MB) = 4
+disks       = root_disk
+size        = total = 4 avail = 4 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 57
+name        = root_ufslog_1
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_1
+slice_of    = root_ldisk
+ offset(MB) = 0
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 58
+name        = root_ufslog_2
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_2
+slice_of    = root_ldisk
+ offset(MB) = 64
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 59
+name        = root_ufslog_3
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_3
+slice_of    = root_ldisk
+ offset(MB) = 128
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 60
+name        = root_ufslog_4
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_4
+slice_of    = root_ldisk
+ offset(MB) = 192
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 61
+name        = root_ufslog_5
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_5
+slice_of    = root_ldisk
+ offset(MB) = 256
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 62
+name        = root_ufslog_6
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_6
+slice_of    = root_ldisk
+ offset(MB) = 320
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 63
+name        = root_ufslog_7
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_7
+slice_of    = root_ldisk
+ offset(MB) = 384
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 64
+name        = root_ufslog_8
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_8
+slice_of    = root_ldisk
+ offset(MB) = 448
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 65
+name        = root_ufslog_9
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_9
+slice_of    = root_ldisk
+ offset(MB) = 512
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 66
+name        = root_ufslog_10
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_10
+slice_of    = root_ldisk
+ offset(MB) = 576
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 67
+name        = root_ufslog_11
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_11
+slice_of    = root_ldisk
+ offset(MB) = 640
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 68
+name        = root_ufslog_12
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_12
+slice_of    = root_ldisk
+ offset(MB) = 704
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 69
+name        = root_ufslog_13
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_13
+slice_of    = root_ldisk
+ offset(MB) = 768
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 70
+name        = root_ufslog_14
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_14
+slice_of    = root_ldisk
+ offset(MB) = 832
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 71
+name        = root_ufslog_15
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_15
+slice_of    = root_ldisk
+ offset(MB) = 896
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 72
+name        = root_ufslog_16
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ufslog_16
+slice_of    = root_ldisk
+ offset(MB) = 960
+ size  (MB) = 64
+disks       = root_ldisk
+clnt_volume = root_ufslog
+size        = total = 64 avail = 0 used = 64 ( 100% ) (sizes in MB)
+
+
+id          = 73
+name        = root_ufslog
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_ufslog_1,root_ufslog_2,root_ufslog_3,root_ufslog_4,root_ufslog_5,root_ufslog_6,root_ufslog_7,root_ufslog_8,root_ufslog_9,root_ufslog_10,root_ufslog_11,root_ufslog_12,root_ufslog_13,root_ufslog_14,root_ufslog_15,root_ufslog_16
+block dedup = N/A
+disks       = root_ldisk
+clnt_filesys= root_fs_ufslog
+size        = total = 1024 avail = 0 used = 1024 ( 100% ) (sizes in MB)
+
+
+id          = 74
+name        = root_ldisk_reserve
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_ldisk_reserve
+slice_of    = root_ldisk
+ offset(MB) = 1024
+ size  (MB) = 10230
+disks       = root_ldisk
+clnt_slices = root_panic_2,root_s54_2,root_panic_3,root_s56_3,root_panic_4,root_s58_4,root_panic_5,root_s60_5,root_panic_6,root_s62_6,root_panic_7,root_s64_7,root_panic_8,root_s66_8,root_panic_9,root_s68_9
+size        = total = 10230 avail = 8246 used = 1984 ( 19% ) (sizes in MB)
+
+
+id          = 75
+name        = root_disk_reserve
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_disk_reserve
+slice_of    = root_disk
+ offset(MB) = 455
+ size  (MB) = 22063
+disks       = root_disk
+clnt_volume = root_panic_reserve
+size        = total = 22063 avail = 0 used = 22063 ( 100% ) (sizes in MB)
+
+
+id          = 76
+name        = root_panic_reserve
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = root_disk_reserve
+block dedup = N/A
+disks       = root_disk
+clnt_filesys= root_panic_reserve
+size        = total = 22063 avail = 0 used = 22063 ( 100% ) (sizes in MB)
+
+
+id          = 77
+name        = root_panic_2
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_2
+slice_of    = root_ldisk_reserve
+ offset(MB) = 0
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 78
+name        = root_s54_2
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s54_2
+slice_of    = root_ldisk_reserve
+ offset(MB) = 8
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_2
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 79
+name        = root_panic_3
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_3
+slice_of    = root_ldisk_reserve
+ offset(MB) = 248
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 80
+name        = root_s56_3
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s56_3
+slice_of    = root_ldisk_reserve
+ offset(MB) = 256
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_3
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 81
+name        = root_panic_4
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_4
+slice_of    = root_ldisk_reserve
+ offset(MB) = 496
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 82
+name        = root_s58_4
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s58_4
+slice_of    = root_ldisk_reserve
+ offset(MB) = 504
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_4
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 83
+name        = root_panic_5
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_5
+slice_of    = root_ldisk_reserve
+ offset(MB) = 744
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 84
+name        = root_s60_5
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s60_5
+slice_of    = root_ldisk_reserve
+ offset(MB) = 752
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_5
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 85
+name        = root_panic_6
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_6
+slice_of    = root_ldisk_reserve
+ offset(MB) = 992
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 86
+name        = root_s62_6
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s62_6
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1000
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_6
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 87
+name        = root_panic_7
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_7
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1240
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 88
+name        = root_s64_7
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s64_7
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1248
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_7
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 89
+name        = root_panic_8
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_8
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1488
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 90
+name        = root_s66_8
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s66_8
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1496
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_8
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 91
+name        = root_panic_9
+acl         = 0
+in_use      = False
+type        = slice
+slice_name  = root_panic_9
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1736
+ size  (MB) = 8
+disks       = root_ldisk
+size        = total = 8 avail = 8 used = 0 ( 0% ) (sizes in MB)
+
+
+id          = 92
+name        = root_s68_9
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = root_s68_9
+slice_of    = root_ldisk_reserve
+ offset(MB) = 1744
+ size  (MB) = 240
+disks       = root_ldisk
+clnt_volume = root_volume_9
+size        = total = 240 avail = 0 used = 240 ( 100% ) (sizes in MB)
+
+
+id          = 93
+name        = md3
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = d3
+block dedup = N/A
+disks       = d3
+clnt_filesys= root_fs_d3
+size        = total = 2047 avail = 0 used = 2047 ( 100% ) (sizes in MB)
+
+
+id          = 94
+name        = md4
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = d4
+block dedup = N/A
+disks       = d4
+clnt_filesys= root_fs_d4
+size        = total = 2047 avail = 0 used = 2047 ( 100% ) (sizes in MB)
+
+
+id          = 95
+name        = md5
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = d5
+block dedup = N/A
+disks       = d5
+clnt_filesys= root_fs_d5
+size        = total = 4095 avail = 0 used = 4095 ( 100% ) (sizes in MB)
+
+
+id          = 96
+name        = md6
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = d6
+block dedup = N/A
+disks       = d6
+clnt_filesys= root_fs_d6
+size        = total = 65535 avail = 0 used = 65535 ( 100% ) (sizes in MB)
+
+
+id          = 97
+name        = d7
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d7
+disks       = d7
+clnt_volume = v99
+size        = total = 511999 avail = 0 used = 511999 ( 100% ) (sizes in MB)
+
+
+id          = 98
+name        = d8
+acl         = 0
+in_use      = True
+type        = disk
+disk_name   = d8
+disks       = d8
+clnt_volume = v99
+size        = total = 511999 avail = 0 used = 511999 ( 100% ) (sizes in MB)
+
+
+id          = 99
+name        = v99
+acl         = 0
+in_use      = True
+pool        = File Pool
+type        = stripe
+stripe_size = 262144
+volume_set  = d7,d8
+disks       = d7,d8
+clnt_slices = s69,s70,s71,s72
+size        = total = 1023999 avail = 1001471 used = 22528 ( 2% ) (sizes in MB)
+
+
+id          = 100
+name        = root_avm_vol_group_59
+acl         = 0
+in_use      = True
+type        = group
+volume_set  = v99
+disks       = d7,d8
+size        = total = 1023999 avail = 1001471 used = 22528 ( 2% ) (sizes in MB)
+
+
+id          = 101
+name        = s69
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = s69
+slice_of    = v99
+ offset(MB) = 0
+ size  (MB) = 10240
+disks       = d7,d8
+clnt_volume = v102
+size        = total = 10240 avail = 0 used = 10240 ( 100% ) (sizes in MB)
+
+
+id          = 102
+name        = v102
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = s69
+block dedup = N/A
+disks       = d7,d8
+clnt_filesys= Test1
+size        = total = 10240 avail = 0 used = 10240 ( 100% ) (sizes in MB)
+
+
+id          = 103
+name        = s70
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = s70
+slice_of    = v99
+ offset(MB) = 10240
+ size  (MB) = 10240
+disks       = d7,d8
+clnt_volume = v104
+size        = total = 10240 avail = 0 used = 10240 ( 100% ) (sizes in MB)
+
+
+id          = 104
+name        = v104
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = s70
+block dedup = N/A
+disks       = d7,d8
+clnt_filesys= Test2
+size        = total = 10240 avail = 0 used = 10240 ( 100% ) (sizes in MB)
+
+
+id          = 105
+name        = s71
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = s71
+slice_of    = v99
+ offset(MB) = 20480
+ size  (MB) = 1024
+disks       = d7,d8
+clnt_volume = v106
+size        = total = 1024 avail = 0 used = 1024 ( 100% ) (sizes in MB)
+
+
+id          = 106
+name        = v106
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = s71
+block dedup = N/A
+disks       = d7,d8
+clnt_filesys= root_fs_vdm_Test_21
+size        = total = 1024 avail = 0 used = 1024 ( 100% ) (sizes in MB)
+
+
+id          = 107
+name        = s72
+acl         = 0
+in_use      = True
+type        = slice
+slice_name  = s72
+slice_of    = v99
+ offset(MB) = 21504
+ size  (MB) = 1024
+disks       = d7,d8
+clnt_volume = v108
+size        = total = 1024 avail = 0 used = 1024 ( 100% ) (sizes in MB)
+
+
+id          = 108
+name        = v108
+acl         = 0
+in_use      = True
+type        = meta
+volume_set  = s72
+block dedup = N/A
+disks       = d7,d8
+clnt_filesys= Test_fs
+size        = total = 1024 avail = 0 used = 1024 ( 100% ) (sizes in MB)
+
+

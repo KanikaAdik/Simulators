@@ -1,0 +1,45 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578474112, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "MBRead": 0.0, 
+                "SpeedGBs": 8.0, 
+                "Writes": 0.0, 
+                "MBWritten": 0.0, 
+                "IOs": 0.0, 
+                "Reads": 0.0, 
+                "PercentBusy": 0.0, 
+                "timestamp": 1494577800000, 
+                "MBs": 0.0
+            }, 
+            {
+                "MBRead": 0.0, 
+                "SpeedGBs": 8.0, 
+                "Writes": 0.0, 
+                "MBWritten": 0.0, 
+                "IOs": 0.0, 
+                "Reads": 0.0, 
+                "PercentBusy": 0.0, 
+                "timestamp": 1494578100000, 
+                "MBs": 0.0
+            }, 
+            {
+                "MBRead": 0.0, 
+                "SpeedGBs": 8.0, 
+                "Writes": 0.0, 
+                "MBWritten": 0.0, 
+                "IOs": 0.0, 
+                "Reads": 0.0, 
+                "PercentBusy": 0.0, 
+                "timestamp": 1494578400000, 
+                "MBs": 0.0
+            }
+        ]
+    }, 
+    "id": "1002ee0d-9d7e-4d4f-a177-9ad9bdbf3503_0", 
+    "maxPageSize": 1000
+}

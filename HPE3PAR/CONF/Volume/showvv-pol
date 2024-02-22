@@ -1,0 +1,7 @@
+ Id Name          --------------------Policies--------------------
+  1 .srdata       stale_ss,system,cache,no_zero_detect
+  0 admin         stale_ss,system,cache,no_zero_detect
+284 CS_InfraLUN31 stale_ss,no_system,no_one_host,cache,zero_detect
+------------------------------------------------------------------
+  3 total
+

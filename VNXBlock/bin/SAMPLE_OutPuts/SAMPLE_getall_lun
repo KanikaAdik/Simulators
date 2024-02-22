@@ -1,0 +1,1411 @@
+
+
+Agent Rev:           7.33.8 (1.19)
+
+
+All logical Units Information
+-----------------------------
+
+
+LOGICAL UNIT NUMBER 3
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        cumulus_load
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    1024
+LUN Capacity(Blocks):       2097152
+UID:                        60:06:01:60:0F:51:3E:00:A7:6E:A4:3A:68:E1:E5:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "~filestorage" "Storage Group 1"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 9
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Total Hard Errors:          0
+Total Soft Errors:          0
+Total Queue Length:         0
+Name                        CUMPUN_S
+Minimum latency reads N/A
+
+Read Histogram[0] 378
+Read Histogram[1] 4
+Read Histogram[2] 0
+Read Histogram[3] 23290
+Read Histogram[4] 7
+Read Histogram[5] 3
+Read Histogram[6] 1
+Read Histogram[7] 0
+Read Histogram[8] 0
+Read Histogram[9] 0
+Read Histogram overflows 0
+
+Write Histogram[0] 0
+Write Histogram[1] 0
+Write Histogram[2] 0
+Write Histogram[3] 0
+Write Histogram[4] 0
+Write Histogram[5] 0
+Write Histogram[6] 0
+Write Histogram[7] 0
+Write Histogram[8] 0
+Write Histogram[9] 0
+Write Histogram overflows 0
+
+Read Requests:              23683
+Write Requests:             0
+Blocks read:                186980
+Blocks written:             0
+Read cache hits:            17611
+Read cache misses:          6072
+Prefetched blocks:          0
+Unused prefetched blocks:   0
+Write cache hits:           0
+Forced flushes:             0
+Read Hit Ratio:             74
+Write Hit Ratio:            0
+RAID Type:                  RAID1
+RAIDGroup ID:               0
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               N/A
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    1024
+LUN Capacity(Blocks):       2097152
+UID:                        60:06:01:60:0F:51:3E:00:97:09:B1:92:C8:B6:E6:11
+LUN Capacity(Stripes):      N/A
+Blocks Read SPA:            71280
+Blocks Read SPB:            115700  (optimal)
+Blocks Written SPA:         0
+Blocks Written SPB:         0  (optimal)
+Read Requests SPA:          8910
+Read Requests SPB:          14773  (optimal)
+Write Requests SPA:         0
+Write Requests SPB:         0  (optimal)
+LUN Busy Ticks SPA:         13733192
+LUN Busy Ticks SPB:         3043392  (optimal)
+LUN Idle Ticks SPA:         2821093424
+LUN Idle Ticks SPB:         2800003167  (optimal)
+Number of arrivals with non-zero queue:          5387
+Sum queue lengths by arrivals:                   29650
+Statistics logging start time:                   05/15/17 15:07:42
+Statistics logging current time:                 05/15/17 09:46:57
+Explicit Trespasses SPA:                 0
+Explicit Trespasses SPB:                 0
+Explicit Trespasses:                     0
+Implicit Trespasses SPA:                 0
+Implicit Trespasses SPB:                 0
+Implicit Trespasses:                     0
+Non-zero Request Count Arrivals SPA:           1428
+Non-zero Request Count Arrivals SPB:           3959  (optimal)
+Non-zero Request Count Arrivals:              5387
+Sum of Oustanding Requests SPA:    10381
+Sum of Oustanding Requests SPB:    19269  (optimal)
+Sum of Oustanding Requests:      29650
+Shrink State:               N/A
+Write cache Re-hits:        0
+Fast Write Count:           0
+Bus 0 Enclosure 0  Disk 11  Queue Length:               577319008
+Bus 0 Enclosure 0  Disk 15  Queue Length:               3523774950
+Bus 0 Enclosure 0  Disk 11  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 11  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Soft Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Soft Write Errors:          0
+
+Bus 0 Enclosure 0  Disk 11  Enabled
+Reads:            6556685
+Writes:           130539288
+Blocks Read:      414892875
+Blocks Written:   3834994485
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        44.47
+Prct Busy:        55.52
+Idle Ticks:       2619298114
+Busy Ticks:       3269861582
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   185322016
+Idle Ticks SPB:   2433976098
+Busy Ticks SPA:   128445990
+Busy Ticks SPB:   3141415592
+High Sum of Seeks:       643557089414449
+Arrivals with Nonzero Queue: 118787434
+
+Bus 0 Enclosure 0  Disk 15  Enabled
+Reads:            7588974
+Writes:           2921239423
+Blocks Read:      2478714278
+Blocks Written:   256498696
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        96.37
+Prct Busy:        3.62
+Idle Ticks:       779250342
+Busy Ticks:       29286191
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   2577394580
+Idle Ticks SPB:   2496823058
+Busy Ticks SPA:   158107
+Busy Ticks SPB:   29128084
+High Sum of Seeks:       13796051953747840
+Arrivals with Nonzero Queue: 2598808824
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             8396800
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                NO
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             1326129295
+LUN Busy Ticks:             16776584
+LUN Offline (Cache Dirty Condition):  NO
+LU Storage Groups:         "Test-QA$" "Storage Group 1"
+Device Map:                 Valid
+Average Read Time:          101
+Average Write Time:         0
+FAST Cache :                Enabled
+FAST Cache Read Hits:       5385
+FAST Cache Read Misses:     11
+FAST Cache Write Hits:      0
+FAST Cache Write Misses:    0
+
+LOGICAL UNIT NUMBER 1
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        File_vnx5200cs0_1_d8
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    512000
+LUN Capacity(Blocks):       1048576000
+UID:                        60:06:01:60:0F:51:3E:00:C1:5A:68:4E:18:B3:E5:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "~filestorage"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 12
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        Linux_144
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    3072
+LUN Capacity(Blocks):       6291456
+UID:                        60:06:01:60:0F:51:3E:00:2D:64:DD:5D:F4:CC:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "Linux1"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 5
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        File_Pool_Lun
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    2048
+LUN Capacity(Blocks):       4194304
+UID:                        60:06:01:60:0F:51:3E:00:B2:B0:58:98:FC:27:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "~filestorage" "Storage Group 1"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 4
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        port_channel_testing
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    10240
+LUN Capacity(Blocks):       20971520
+UID:                        60:06:01:60:0F:51:3E:00:43:40:A1:AA:46:07:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "brazil_144.76"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 10
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Total Hard Errors:          0
+Total Soft Errors:          0
+Total Queue Length:         0
+Name                        RG_Lun1_QA
+Minimum latency reads N/A
+
+Read Histogram[0] 0
+Read Histogram[1] 0
+Read Histogram[2] 0
+Read Histogram[3] 0
+Read Histogram[4] 0
+Read Histogram[5] 0
+Read Histogram[6] 0
+Read Histogram[7] 0
+Read Histogram[8] 0
+Read Histogram[9] 0
+Read Histogram overflows 0
+
+Write Histogram[0] 0
+Write Histogram[1] 0
+Write Histogram[2] 0
+Write Histogram[3] 0
+Write Histogram[4] 0
+Write Histogram[5] 0
+Write Histogram[6] 0
+Write Histogram[7] 0
+Write Histogram[8] 0
+Write Histogram[9] 0
+Write Histogram overflows 0
+
+Read Requests:              0
+Write Requests:             0
+Blocks read:                0
+Blocks written:             0
+Read cache hits:            0
+Read cache misses:          0
+Prefetched blocks:          0
+Unused prefetched blocks:   0
+Write cache hits:           0
+Forced flushes:             0
+Read Hit Ratio:             0
+Write Hit Ratio:            0
+RAID Type:                  RAID1
+RAIDGroup ID:               0
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               N/A
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    1024
+LUN Capacity(Blocks):       2097152
+UID:                        60:06:01:60:0F:51:3E:00:7B:C8:9A:86:F7:B6:E6:11
+LUN Capacity(Stripes):      N/A
+Blocks Read SPA:            0
+Blocks Read SPB:            0  (optimal)
+Blocks Written SPA:         0
+Blocks Written SPB:         0  (optimal)
+Read Requests SPA:          0
+Read Requests SPB:          0  (optimal)
+Write Requests SPA:         0
+Write Requests SPB:         0  (optimal)
+LUN Busy Ticks SPA:         2
+LUN Busy Ticks SPB:         4  (optimal)
+LUN Idle Ticks SPA:         2834826631
+LUN Idle Ticks SPB:         2803046591  (optimal)
+Number of arrivals with non-zero queue:          0
+Sum queue lengths by arrivals:                   0
+Statistics logging start time:                   05/15/17 15:07:42
+Statistics logging current time:                 05/15/17 09:46:57
+Explicit Trespasses SPA:                 0
+Explicit Trespasses SPB:                 0
+Explicit Trespasses:                     0
+Implicit Trespasses SPA:                 0
+Implicit Trespasses SPB:                 0
+Implicit Trespasses:                     0
+Non-zero Request Count Arrivals SPA:           0
+Non-zero Request Count Arrivals SPB:           0  (optimal)
+Non-zero Request Count Arrivals:              0
+Sum of Oustanding Requests SPA:    0
+Sum of Oustanding Requests SPB:    0  (optimal)
+Sum of Oustanding Requests:      0
+Shrink State:               N/A
+Write cache Re-hits:        0
+Fast Write Count:           0
+Bus 0 Enclosure 0  Disk 11  Queue Length:               577319008
+Bus 0 Enclosure 0  Disk 15  Queue Length:               3523774950
+Bus 0 Enclosure 0  Disk 11  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 11  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Soft Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Soft Write Errors:          0
+
+Bus 0 Enclosure 0  Disk 11  Enabled
+Reads:            6556685
+Writes:           130539288
+Blocks Read:      414892875
+Blocks Written:   3834994485
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        44.47
+Prct Busy:        55.52
+Idle Ticks:       2619298114
+Busy Ticks:       3269861582
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   185322016
+Idle Ticks SPB:   2433976098
+Busy Ticks SPA:   128445990
+Busy Ticks SPB:   3141415592
+High Sum of Seeks:       643557089414449
+Arrivals with Nonzero Queue: 118787434
+
+Bus 0 Enclosure 0  Disk 15  Enabled
+Reads:            7588974
+Writes:           2921239423
+Blocks Read:      2478714278
+Blocks Written:   256498696
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        96.37
+Prct Busy:        3.62
+Idle Ticks:       779250342
+Busy Ticks:       29286191
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   2577394580
+Idle Ticks SPB:   2496823058
+Busy Ticks SPA:   158107
+Busy Ticks SPB:   29128084
+High Sum of Seeks:       13796051953747840
+Arrivals with Nonzero Queue: 2598808824
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             10498048
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                NO
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             1342905926
+LUN Busy Ticks:             6
+LUN Offline (Cache Dirty Condition):  NO
+LU Storage Groups:         "Test-QA$"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                Enabled
+FAST Cache Read Hits:       0
+FAST Cache Read Misses:     0
+FAST Cache Write Hits:      0
+FAST Cache Write Misses:    0
+
+LOGICAL UNIT NUMBER 0
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        File_vnx5200cs0_0_d7
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    512000
+LUN Capacity(Blocks):       1048576000
+UID:                        60:06:01:60:0F:51:3E:00:BF:5A:68:4E:18:B3:E5:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "~filestorage"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 2
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        LUN 2
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    512000
+LUN Capacity(Blocks):       1048576000
+UID:                        60:06:01:60:0F:51:3E:00:4A:9D:F2:CF:24:B3:E5:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "Storage Group 1"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 6
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Total Hard Errors:          0
+Total Soft Errors:          0
+Total Queue Length:         2738163024
+Name                        cum_qa_rg_load1
+Minimum latency reads N/A
+
+Read Histogram[0] 396
+Read Histogram[1] 0
+Read Histogram[2] 0
+Read Histogram[3] 160662
+Read Histogram[4] 1000426
+Read Histogram[5] 1143268
+Read Histogram[6] 592027935
+Read Histogram[7] 0
+Read Histogram[8] 0
+Read Histogram[9] 0
+Read Histogram overflows 0
+
+Write Histogram[0] 0
+Write Histogram[1] 0
+Write Histogram[2] 0
+Write Histogram[3] 50413
+Write Histogram[4] 352156
+Write Histogram[5] 402540
+Write Histogram[6] 3226063355
+Write Histogram[7] 0
+Write Histogram[8] 0
+Write Histogram[9] 0
+Write Histogram overflows 0
+
+Read Requests:              594332626
+Write Requests:             3226868432
+Blocks read:                3603357676
+Blocks written:             335385256
+Read cache hits:            4082041750
+Read cache misses:          807258233
+Prefetched blocks:          4178081536
+Unused prefetched blocks:   2186667648
+Write cache hits:           3226868464
+Forced flushes:             0
+Read Hit Ratio:             686
+Write Hit Ratio:            88
+RAID Type:                  RAID1
+RAIDGroup ID:               0
+State:                      Bound
+Stripe Crossing:            12
+Element Size:               N/A
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    2048
+LUN Capacity(Blocks):       4194304
+UID:                        60:06:01:60:0F:51:3E:00:AC:C9:D5:7E:8E:12:E6:11
+LUN Capacity(Stripes):      N/A
+Blocks Read SPA:            71280
+Blocks Read SPB:            3603286396  (optimal)
+Blocks Written SPA:         0
+Blocks Written SPB:         335385256  (optimal)
+Read Requests SPA:          8910
+Read Requests SPB:          594323716  (optimal)
+Write Requests SPA:         0
+Write Requests SPB:         3226868432  (optimal)
+LUN Busy Ticks SPA:         13096461
+LUN Busy Ticks SPB:         732734951  (optimal)
+LUN Idle Ticks SPA:         2821730092
+LUN Idle Ticks SPB:         2070311558  (optimal)
+Number of arrivals with non-zero queue:          120781149
+Sum queue lengths by arrivals:                   12531995849
+Statistics logging start time:                   05/15/17 15:07:42
+Statistics logging current time:                 05/15/17 09:46:57
+Explicit Trespasses SPA:                 0
+Explicit Trespasses SPB:                 0
+Explicit Trespasses:                     0
+Implicit Trespasses SPA:                 0
+Implicit Trespasses SPB:                 0
+Implicit Trespasses:                     0
+Non-zero Request Count Arrivals SPA:           1283
+Non-zero Request Count Arrivals SPB:           120779866  (optimal)
+Non-zero Request Count Arrivals:              120781149
+Sum of Oustanding Requests SPA:    10234
+Sum of Oustanding Requests SPB:    12531985615  (optimal)
+Sum of Oustanding Requests:      12531995849
+Shrink State:               N/A
+Write cache Re-hits:        2871336198
+Fast Write Count:           3226868464
+Bus 0 Enclosure 0  Disk 11  Queue Length:               577319008
+Bus 0 Enclosure 0  Disk 15  Queue Length:               3523774950
+Bus 0 Enclosure 0  Disk 11  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 11  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Soft Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Soft Write Errors:          0
+
+Bus 0 Enclosure 0  Disk 11  Enabled
+Reads:            6556685
+Writes:           130539288
+Blocks Read:      414892875
+Blocks Written:   3834994485
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        44.47
+Prct Busy:        55.52
+Idle Ticks:       2619298114
+Busy Ticks:       3269861582
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   185322016
+Idle Ticks SPB:   2433976098
+Busy Ticks SPA:   128445990
+Busy Ticks SPB:   3141415592
+High Sum of Seeks:       643557089414449
+Arrivals with Nonzero Queue: 118787434
+
+Bus 0 Enclosure 0  Disk 15  Enabled
+Reads:            7588974
+Writes:           2921239423
+Blocks Read:      2478714278
+Blocks Written:   256498696
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        96.37
+Prct Busy:        3.62
+Idle Ticks:       779250342
+Busy Ticks:       29286191
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   2577394580
+Idle Ticks SPB:   2496823058
+Busy Ticks SPA:   158107
+Busy Ticks SPB:   29128084
+High Sum of Seeks:       13796051953747840
+Arrivals with Nonzero Queue: 2598808824
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             4198400
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                NO
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             597074354
+LUN Busy Ticks:             745831412
+LUN Offline (Cache Dirty Condition):  NO
+LU Storage Groups:         "~filestorage" "Storage Group 1"
+Device Map:                 Valid
+Average Read Time:          11077790
+Average Write Time:         42363952849
+FAST Cache :                Enabled
+FAST Cache Read Hits:       3757158658
+FAST Cache Read Misses:     877500
+FAST Cache Write Hits:      1066047088
+FAST Cache Write Misses:    1
+
+LOGICAL UNIT NUMBER 7
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Total Hard Errors:          0
+Total Soft Errors:          0
+Total Queue Length:         0
+Name                        cumqa_rg_load2
+Minimum latency reads N/A
+
+Read Histogram[0] 0
+Read Histogram[1] 0
+Read Histogram[2] 0
+Read Histogram[3] 0
+Read Histogram[4] 0
+Read Histogram[5] 0
+Read Histogram[6] 0
+Read Histogram[7] 0
+Read Histogram[8] 0
+Read Histogram[9] 0
+Read Histogram overflows 0
+
+Write Histogram[0] 0
+Write Histogram[1] 0
+Write Histogram[2] 0
+Write Histogram[3] 0
+Write Histogram[4] 0
+Write Histogram[5] 0
+Write Histogram[6] 0
+Write Histogram[7] 0
+Write Histogram[8] 0
+Write Histogram[9] 0
+Write Histogram overflows 0
+
+Read Requests:              0
+Write Requests:             0
+Blocks read:                0
+Blocks written:             0
+Read cache hits:            0
+Read cache misses:          0
+Prefetched blocks:          0
+Unused prefetched blocks:   0
+Write cache hits:           0
+Forced flushes:             0
+Read Hit Ratio:             0
+Write Hit Ratio:            0
+RAID Type:                  RAID1
+RAIDGroup ID:               0
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               N/A
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    2048
+LUN Capacity(Blocks):       4194304
+UID:                        60:06:01:60:0F:51:3E:00:CD:1F:0B:CD:8E:12:E6:11
+LUN Capacity(Stripes):      N/A
+Blocks Read SPA:            0  (optimal)
+Blocks Read SPB:            0
+Blocks Written SPA:         0  (optimal)
+Blocks Written SPB:         0
+Read Requests SPA:          0  (optimal)
+Read Requests SPB:          0
+Write Requests SPA:         0  (optimal)
+Write Requests SPB:         0
+LUN Busy Ticks SPA:         1  (optimal)
+LUN Busy Ticks SPB:         2
+LUN Idle Ticks SPA:         2834826593  (optimal)
+LUN Idle Ticks SPB:         2803046534
+Number of arrivals with non-zero queue:          0
+Sum queue lengths by arrivals:                   0
+Statistics logging start time:                   05/15/17 15:07:42
+Statistics logging current time:                 05/15/17 09:46:57
+Explicit Trespasses SPA:                 0
+Explicit Trespasses SPB:                 0
+Explicit Trespasses:                     0
+Implicit Trespasses SPA:                 0
+Implicit Trespasses SPB:                 0
+Implicit Trespasses:                     0
+Non-zero Request Count Arrivals SPA:           0  (optimal)
+Non-zero Request Count Arrivals SPB:           0
+Non-zero Request Count Arrivals:              0
+Sum of Oustanding Requests SPA:    0  (optimal)
+Sum of Oustanding Requests SPB:    0
+Sum of Oustanding Requests:      0
+Shrink State:               N/A
+Write cache Re-hits:        0
+Fast Write Count:           0
+Bus 0 Enclosure 0  Disk 11  Queue Length:               577319008
+Bus 0 Enclosure 0  Disk 15  Queue Length:               3523774950
+Bus 0 Enclosure 0  Disk 11  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Hard Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Hard Write Errors:          0
+Bus 0 Enclosure 0  Disk 11  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 15  Soft Read Errors:           0
+Bus 0 Enclosure 0  Disk 11  Soft Write Errors:          0
+Bus 0 Enclosure 0  Disk 15  Soft Write Errors:          0
+
+Bus 0 Enclosure 0  Disk 11  Enabled
+Reads:            6556685
+Writes:           130539288
+Blocks Read:      414892875
+Blocks Written:   3834994485
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        44.47
+Prct Busy:        55.52
+Idle Ticks:       2619298114
+Busy Ticks:       3269861582
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   185322016
+Idle Ticks SPB:   2433976098
+Busy Ticks SPA:   128445990
+Busy Ticks SPB:   3141415592
+High Sum of Seeks:       643557089414449
+Arrivals with Nonzero Queue: 118787434
+
+Bus 0 Enclosure 0  Disk 15  Enabled
+Reads:            7588974
+Writes:           2921239423
+Blocks Read:      2478714278
+Blocks Written:   256498696
+Queue Max:        N/A
+Queue Avg:        N/A
+Avg Service Time: N/A
+Prct Idle:        96.37
+Prct Busy:        3.62
+Idle Ticks:       779250342
+Busy Ticks:       29286191
+Remapped Sectors: N/A
+Read Retries:     N/A
+Write Retries:    N/A
+Idle Ticks SPA:   2577394580
+Idle Ticks SPB:   2496823058
+Busy Ticks SPA:   158107
+Busy Ticks SPB:   29128084
+High Sum of Seeks:       13796051953747840
+Arrivals with Nonzero Queue: 2598808824
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             0
+Is Meta LUN:                NO
+Is Thin LUN:                NO
+Is Pool LUN:                NO
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             1342905831
+LUN Busy Ticks:             3
+LUN Offline (Cache Dirty Condition):  NO
+LU Storage Groups:          
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                Enabled
+FAST Cache Read Hits:       0
+FAST Cache Read Misses:     0
+FAST Cache Write Hits:      0
+FAST Cache Write Misses:    0
+
+LOGICAL UNIT NUMBER 13
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        ExternalWeb_DONOTDELETE
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP B
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP B
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    1048576
+LUN Capacity(Blocks):       2147483648
+UID:                        60:06:01:60:0F:51:3E:00:9E:06:DA:37:03:F3:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "ExternalWeb"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 8
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        Linux1_1
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    10240
+LUN Capacity(Blocks):       20971520
+UID:                        60:06:01:60:0F:51:3E:00:DE:C7:53:84:9F:90:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "Linux1"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+
+LOGICAL UNIT NUMBER 11
+Prefetch size (blocks) =         N/A
+Prefetch multiplier =            N/A
+Segment size (blocks) =          N/A
+Segment multiplier =             N/A
+Maximum prefetch (blocks) =      N/A
+Prefetch Disable Size (blocks) = N/A
+Prefetch idle count =            N/A
+
+Prefetching:                N/A
+Prefetched data retained:   N/A
+
+Read cache configured according to
+ specified parameters.
+
+Name                        Linux156.45
+Minimum latency reads N/A
+
+RAID Type:                  N/A
+RAIDGroup ID:               N/A
+State:                      Bound
+Stripe Crossing:            0
+Element Size:               0
+Current owner:              SP A
+Offset:                     N/A
+Auto-trespass:              DISABLED
+Auto-assign:                DISABLED
+Write cache:                ENABLED
+Read cache:                 ENABLED
+Idle Threshold:             N/A
+Idle Delay Time:            N/A
+Write Aside Size:           0
+Default Owner:              SP A
+Rebuild Priority:           N/A
+Verify Priority:            N/A
+Prct Reads Forced Flushed:  N/A
+Prct Writes Forced Flushed: N/A
+Prct Rebuilt:               100
+Prct Bound:                 N/A
+LUN Capacity(Megabytes):    1024
+LUN Capacity(Blocks):       2097152
+UID:                        60:06:01:60:0F:51:3E:00:71:34:B6:7E:BA:CC:E6:11
+LUN Capacity(Stripes):      N/A
+Shrink State:               N/A
+Is Private:                 NO
+Snapshots List:             Not Available
+MirrorView Name if any:     Not Available
+Address Offset:             N/A
+Is Meta LUN:                NO
+Is Thin LUN:                YES
+Is Pool LUN:                YES
+Is Snapshot Mount Point:    NO
+LUN Idle Ticks:             N/A
+LUN Busy Ticks:             N/A
+LUN Offline (Cache Dirty Condition):  N/A
+LU Storage Groups:         "Linux Host_156.45"
+Device Map:                 Valid
+Average Read Time:          0
+Average Write Time:         0
+FAST Cache :                N/A
+FAST Cache Read Hits:       N/A
+FAST Cache Read Misses:     N/A
+FAST Cache Write Hits:      N/A
+FAST Cache Write Misses:    N/A
+

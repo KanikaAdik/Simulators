@@ -1,0 +1,29 @@
+rotocol,Total_Chunk,Capacity,Volume_MB,Node_WWN,Order,Path_A0,Path_A1,Path_B0,P
+ath_B1,Port_A0,Port_A1,Port_B0,Port_B1
+ Id Type State  Model              Serial RPM  Size_MB Free_MB Protocol Total_Chunk Capacity Volume_MB         Node_WWN Order   Path_A0     Path_A1   Path_B0     Path_B1 Port_A0 Port_A1 Port_B0 Port_B1
+--- SSD  new    DOPE0480S5xnNMRI A001E86A 100   456704       0      SAS         446      480         0 500117310096F1E8   1/0 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1*  -----   0:0:1   -----
+--- SSD  new    DOPE0480S5xnNMRI A001E7AE 100   456704       0      SAS         446      480         0 500117310096EE94   0/1 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1   -----   0:0:1*  -----
+--- SSD  new    DOPE0480S5xnNMRI A001E817 100   456704       0      SAS         446      480         0 500117310096F06C   1/0 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1*  -----   0:0:1   -----
+--- SSD  new    DOPE0480S5xnNMRI A00207B5 100   456704       0      SAS         446      480         0 5001173100976AFC   0/1 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1   -----   0:0:1*  -----
+--- SSD  new    DOPE0480S5xnNMRI A0020556 100   456704       0      SAS         446      480         0 5001173100976970   1/0 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1*  -----   0:0:1   -----
+--- SSD  new    DOPE0480S5xnNMRI A001E84C 100   456704       0      SAS         446      480         0 500117310096F15C   0/1 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1   -----   0:0:1*  -----
+--- SSD  new    DOPE0480S5xnNMRI A001E899 100   456704       0      SAS         446      480         0 500117310096F268   1/0 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1*  -----   0:0:1   -----
+--- SSD  new    DOPE0480S5xnNMRI A001E84E 100   456704       0      SAS         446      480         0 500117310096F174   0/1 1:0:1\--- ---\missing 0:0:1\--- ---\missing  1:0:1   -----   0:0:1*  -----
+  0 SSD  normal DOPE0480S5xnNMRI 0001BC5A 100   456704  360448      SAS         446      480     50176 5001173100429280   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+  1 SSD  normal DOPE0480S5xnNMRI 0001BE05 100   456704  364544      SAS         446      480     46080 500117310042992C   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+  2 SSD  normal DOPE0480S5xnNMRI 0001B3E4 100   456704  360448      SAS         446      480     50176 50011731004270A8   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+  3 SSD  normal DOPE0480S5xnNMRI 0001BB18 100   456704  365568      SAS         446      480     45056 5001173100428D78   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+  4 SSD  normal DOPE0480S5xnNMRI 0001BC9A 100   456704  366592      SAS         446      480     41984 5001173100429380   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+  5 SSD  normal DOPE0480S5xnNMRI 0001BB72 100   456704  359424      SAS         446      480     51200 5001173100428EE0   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+  6 SSD  normal DOPE0480S5xnNMRI 0001B2F9 100   456704  366592      SAS         446      480     44032 5001173100426CFC   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+  7 SSD  normal DOPE0480S5xnNMRI 0001BE2C 100   456704  360448      SAS         446      480     50176 50011731004299C8   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+  8 SSD  normal DOPE0480S5xnNMRI A001E842 100   456704  403456      SAS         446      480      8192 500117310096F1D8   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+  9 SSD  normal DOPE0480S5xnNMRI A001E847 100   456704  403456      SAS         446      480      8192 500117310096F1EC   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+ 10 SSD  normal DOPE0480S5xnNMRI A001E768 100   456704  403456      SAS         446      480      8192 500117310096F00C   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+ 11 SSD  normal DOPE0480S5xnNMRI A0020596 100   456704  403456      SAS         446      480      8192 5001173100976A34   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+ 12 SSD  normal DOPE0480S5xnNMRI A001E87A 100   456704  403456      SAS         446      480      8192 500117310096F21C   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+ 13 SSD  normal DOPE0480S5xnNMRI A001E80D 100   456704  403456      SAS         446      480      8192 500117310096F064   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+ 14 SSD  normal DOPE0480S5xnNMRI A001E7A0 100   456704  403456      SAS         446      480      8192 500117310096F054   1/0     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1*  -----   0:0:1   -----
+ 15 SSD  normal DOPE0480S5xnNMRI A0020190 100   456704  403456      SAS         446      480      8192 50011731009765F8   0/1     1:0:1 ---\missing     0:0:1 ---\missing  1:0:1   -----   0:0:1*  -----
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 24                                           10960896 6131712        0       10704             444416        

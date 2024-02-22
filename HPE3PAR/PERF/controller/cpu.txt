@@ -1,0 +1,4 @@
+3Par7450 cli% srstatcpu -attime -groupby node 0 -etsecs "2017-06-22 04:40:00 CDT"
+Time: 2017-06-22 04:40:00 CDT (1498124400)
+NODE User% Sys% Idle% Intr/s CtxtSw/s
+   0   0.5  0.4  99.1 1873.6   3885.9

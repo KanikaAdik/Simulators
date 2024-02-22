@@ -1,0 +1,14 @@
+id           = 59
+name         = File Pool
+used_mb      = 22528
+avail_mb     = 1001471
+total_mb     = 1023999
+potential_mb = 0
+
+id           = 60
+name         = test_pool
+used_mb      = 0
+avail_mb     = 0
+total_mb     = 0
+potential_mb = 0
+

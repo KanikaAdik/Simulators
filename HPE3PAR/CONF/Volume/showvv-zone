@@ -1,0 +1,8 @@
+                            -(MB)- ---Adm---- ---Snp---- ----Usr----
+ Id Name          Prov Type VVSize Zn Free_Zn Zn Free_Zn  Zn Free_Zn
+  1 .srdata       full base  81920  0       0  0       0   0       0
+  0 admin         full base  10240  0       0  0       0   0       0
+284 CS_InfraLUN31 tpvv base 409600  8       5  4       4 260      14
+--------------------------------------------------------------------
+  3 total                   501760  8       5  4       4 260      14
+  

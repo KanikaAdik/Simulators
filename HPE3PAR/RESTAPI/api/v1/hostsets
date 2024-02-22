@@ -1,0 +1,34 @@
+{
+    "total": 3,
+    "members": [
+        {
+            "id": 7,
+            "name": "flashesxha",
+            "setmembers": [
+                "flashesx03.acme.local",
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "TECTalk_Hosts",
+            "comment": "3 UCS B200 M3 Hosts",
+            "setmembers": [
+                "flashesx01.acme.local",
+                "flashesx02.acme.local",
+                "flashesx04.acme.local"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "ESXVCDHA",
+            "setmembers": [
+                "esxvcd03",
+                "esxvcd04",
+                "NBU5240"
+            ]
+        }
+    ]
+}

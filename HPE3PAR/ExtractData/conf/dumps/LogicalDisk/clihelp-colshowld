@@ -1,0 +1,177 @@
+showld - Show information about logical disks (LDs) in the system.
+
+SYNTAX
+    showld [options <arg>] [<LD_name> |<pattern>...]
+
+DESCRIPTION
+    The showld command displays configuration information about the system's
+    logical disks.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -cpg <CPG_name|pattern>...
+        Requests that only logical disks in common provisioning groups (CPGs)
+        that match the specified CPG names or patterns be displayed. Multiple
+        CPG names or patterns can be repeated using a comma-separated list (for
+        example -cpg <CPG_name>,<CPG_name>...).
+
+    -vv <VV_name|pattern>...
+        Requests that only logical disks mapped to virtual volumes that match
+        and of the specified names or patterns be displayed. Multiple volume
+        names or patterns can be repeated using a comma-separated list (for
+        example -vv <VV_name>,<VV_name>...).
+
+    -domain <domainname|pattern>...
+        Only shows logical disks that are in domains with names that match any
+        of the names or specified patterns. Multiple domain names or patterns
+        can be repeated using a comma separated list (for example -domain
+        <domainname_name>,<domainname_name>...).
+
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+    -d
+        Requests that more detailed layout information is displayed.
+
+    -p
+        Requests that policy information about the logical disk is displayed.
+
+    -state
+        Requests that the detailed state information is displayed.
+        This is the same as -s.
+
+    -s
+        Requests that the detailed state information is displayed.
+        This option is deprecated and will be removed in a subsequent release.
+
+SPECIFIERS
+    <LD_name>...
+        Requests that information for a specified logical disk is displayed.
+        This specifier can be repeated to display configuration information
+        about multiple logical disks. If not specified, configuration
+        information for all logical disks in the system is displayed.
+
+    <pattern>...
+        Specifies that the logical disk matching the specified glob-style
+        pattern is displayed. This specifier can be repeated to display
+        configuration information about multiple logical disks. If not
+        specified, configuration information for all logical disks in the
+        system is displayed.
+
+NOTES
+    For this command, KB=1024 bytes and MB=1048576 bytes.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    The following example displays information for all system logical disks:
+
+       cli% showld
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+col,showld - Explanation of column headers for showld
+
+Id           LD Id
+Name         LD name
+Domain       LD domain
+RAID         RAID type of LD, can be one of
+                 0    RAID-0 (striped)
+                 1    RAID-1 (plus striping)
+                 5    RAID-5 (plus striping)
+                 6    RAID-6 (plus striping)
+State        State of the LD is one of
+                 normal     LD is operating normally
+                 failed     LD is operating abnormally
+                 degraded   LD is in degraded state
+Detailed_State
+             Detailed state of LD is one or more of
+                 nodes_unavail  Nodes are down
+                 not_started     Stopped and needs to be manually started
+                                 (see startld command)
+                 unavail         State not available
+                 preserved       One or more sets of the LD are not recoverable
+                                 because some chunklets are missing. The
+                                 remaining data from the LD has been preserved.
+                 checking        Consistency check is running
+                 inconsistent    LD is inconsistent
+                 degraded_avail  Degraded due to the availability
+                 degraded_perf   Degraded due to the performance
+                 unknown         LD state is unknown
+Own          Owning nodes primary/secondary
+SizeMB       LD size in MB (1024^2 bytes)
+RSizeMB      Raw LD size in MB (1024^2 bytes)
+UsedMB       Amount of LD space used in MB (1024^2 bytes)
+Use          What the LD is used for, can be one of
+                 V       Used for VVs
+                 P,F     First LD for preserved data
+                 P       LD for preserved data
+                 C,SA    Part of Snapshot Admin (SA) set of a CPG
+                 C,SD    part of Snapshot Data (SD) set of a CPG
+                 C,V     part of User Data (USR) set of a CPG
+                 log     Logging LD
+Lgct         Number of chunklets in logging mode in this LD
+LgId         Id of the logging LD used to log chunklets for this LD
+WThru        LD is in write-though mode (writes not cached)
+MapV         LD is mapped to a VV
+CPG          CPG that the LD belongs to, if any
+RowSz        Row size of the LD (number of sets in a row)
+StepKB       Step size in KB (1024 bytes). The number of contiguous bytes
+             that the system accesses before moving to the next chunklet.
+SetSz        Set size.  For RAID-1 = mirror depth, for RAID-5 and RAID-6 =
+             total number of chunklets in the set (data plus parity).
+RefCnt       Indicates how many active relocation operations are occurring
+             for the logical disk (reference count).
+Avail        Availability characteristics when LD was created.
+             Availability determines from where space chunklets can be
+             allocated when one of the LD's chunklets fails.
+             Availability characteristics are one of
+                 disk  chunklets in the same RAID set may reside on the
+                       same disk.
+                 port  chunklets in the same RAID set belong to disks on
+                       different port pairs.
+                 cage  chunklets in the same RAID set belong to disks on
+                       different cages.
+                 mag   chunklets in the same RAID set belong to disks on
+                       different magazines.
+                 ch    There will be no redundancy for the LD when the
+                       chunklet fails. This is only valid for RAID-0 LDs
+CAvail       Current availability characteristic, may be different
+             from Avail if some chunklets have been moved.
+Keep_Preserved Available data in this LD will be preserved in special LDs
+             reserved for preserved data in the event that LD loses
+             multiple disks.
+Dev_Type     Device type of the LD.
+             Device type is one of
+                 FC    All the chunklets in this LD are from PDs of
+                       'FC' device type.
+                 NL    At least one chunklet in this LD is from a PD of
+                       'NL' device type.
+                 SSD   At least one chunklet in this LD is from a PD of
+                       'SSD' device type.
+RPM          Drive relative performance metric. The number does not represent
+             a rotational speed for the drives without spinning media (SSD). It
+             is meant as a rough estimation of the performance difference
+             between the drive and the other drives in the system. For FC and
+             NL drives, the number corresponds to both a performance measure
+             and actual rotational speed. For SSD drives, the number is to be
+             treated as a relative performance benchmark that takes into
+             account I/O's per second, bandwidth and access time.	   
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	   

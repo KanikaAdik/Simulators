@@ -1,0 +1,20 @@
+System parameters from configured settings
+
+------Parameter------      --Value--
+RawSpaceAlertFC       :            0
+RawSpaceAlertNL       :            0
+RawSpaceAlertSSD      :            0
+RemoteSyslog          :            0
+RemoteSyslogHost      :      0.0.0.0
+SparingAlgorithm      :      Minimal
+EventLogSize          :           3M
+VVRetentionTimeMax    :    336 Hours
+UpgradeNote           :
+PortFailoverEnabled   :          yes
+AutoExportAfterReboot :          yes
+AllowR5OnNLDrives     :           no
+AllowR0               :           no
+ThermalShutdown       :          yes
+FailoverMatchedSet    :           no
+SessionTimeout        :     01:00:00
+

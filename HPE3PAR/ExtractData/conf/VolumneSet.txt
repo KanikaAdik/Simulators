@@ -1,0 +1,116 @@
+########################################### Virtual Volume Set ###################################
+SYNTAX
+    showvvset [options] [<setname_or_pattern>...]
+    showvvset -vv [options] [<vvname_or_pattern>...]
+
+DESCRIPTION
+    The showvvset command lists the Virtual Volume(VV) sets defined on the
+    storage system and their members.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -d
+        Show a more detailed listing of each set.
+    -vv
+        Show VV sets that contain the supplied vvnames or patterns
+    -summary
+        Shows VV sets with summarized output with VV sets names and number of VVs in those sets
+
+SPECIFIERS
+    <setname_or_pattern>...
+        An optional list of setnames or patterns.  If no setnames or patterns
+        are specified all sets are displayed, otherwise only sets with names
+        matching one or more of the setnames or patterns are displayed.
+        The patterns are glob-style patterns (see help on sub,globpat).
+    <vvname_or_pattern>...
+        Specifies that the sets containing virtual volumes with the specified
+        names or matching the glob-style patterns should be displayed.
+
+NOTES
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    To show all VV sets defined to the system:
+    cli% showvvset
+    Id Name   Members
+     0 oravv  oravv.0
+              oravv.1
+              oravv.2
+              oravv.3
+              oravv.4
+              oravv.5
+              oravv.6
+              oravv.7
+              oravv.8
+              oravv.9
+    20 sia-1  test
+              ttpvv.rw
+              test-sv
+              bar
+
+    Show the sia-1 set only, with detail:
+    cli% showvvset -d sia-1
+    20 sia-1 test     This set has a comment
+             ttpvv.rw
+             test-sv
+             bar
+
+    Show VV sets containing VVs matching test*:
+    cli% showvvset -vv test*
+    Id Name  Members
+    20 sia-1 test
+             ttpvv.rw
+             test-sv
+             bar
+
+    Show VV sets with summarized output:
+    cli% showvvset -summary
+    Id Name  VV_Cnt
+    0  oravv    10
+    20 sia-1     4
+    ---------------
+    2 total
+	
+@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showvvset
+col,showvvset - Explanation of column headers for showvvset
+
+Id                   Set identifier
+Name                 Name of the set
+Members              List of vvs that are a member of the set
+Comment              Any comment associated with the set
+///////////////////////////////////////////////////////////
+@@@@@@@@@@@@@@@@
+	
+	
+3Par7450 cli% showvvset -d
+No vv set listed
+///////////////////////////////////////////////////////////
+3Par7450 cli% showvvset -v
+showvvset: Invalid option: -v
+
+SYNTAX
+    showvvset [options] [<setname_or_pattern>...]
+    showvvset -vv [options] [<vvname_or_pattern>...]
+
+OPTIONS
+    -d
+        Show a more detailed listing of each set.
+    -vv
+        Show VV sets that contain the supplied vvnames or patterns
+    -summary
+        Shows VV sets with summarized output with VV sets names and number of VVs in those sets
+///////////////////////////////////////////////////////////
+3Par7450 cli% showvvset -vv
+Missing -vv argument
+///////////////////////////////////////////////////////////
+3Par7450 cli% showvvset -summary
+No vv set listed
+///////////////////////////////////////////////////////////

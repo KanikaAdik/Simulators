@@ -1,0 +1,45 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578474456, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "HostReads": 14.570001, 
+                "HostWrites": 66.26333, 
+                "HostMBReads": 0.364056, 
+                "PercentHit": 98.7464, 
+                "timestamp": 1494577800000, 
+                "WPCount": 390.0, 
+                "ResponseTime": 0.34586695, 
+                "HostIOs": 80.83333, 
+                "HostMBWritten": 1.1784896
+            }, 
+            {
+                "HostReads": 174.70668, 
+                "HostWrites": 137.39, 
+                "HostMBReads": 17.446032, 
+                "PercentHit": 96.208435, 
+                "timestamp": 1494578100000, 
+                "WPCount": 1774.0, 
+                "ResponseTime": 1.2825112, 
+                "HostIOs": 312.09668, 
+                "HostMBWritten": 18.926311
+            }, 
+            {
+                "HostReads": 277.80667, 
+                "HostWrites": 168.43, 
+                "HostMBReads": 26.23029, 
+                "PercentHit": 91.807045, 
+                "timestamp": 1494578400000, 
+                "WPCount": 883.0, 
+                "ResponseTime": 1.1976187, 
+                "HostIOs": 446.23666, 
+                "HostMBWritten": 24.75803
+            }
+        ]
+    }, 
+    "id": "9f204fb5-8ddc-45bf-be9a-0ff2df57dacf_0", 
+    "maxPageSize": 1000
+}

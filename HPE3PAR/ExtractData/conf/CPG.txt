@@ -1,0 +1,190 @@
+
+############################################################ CPG   ###########################################
+3Par7450 cli% showcpg -h
+showcpg - Show Common Provisioning Groups.
+
+SYNTAX
+    showcpg [options <arg>] [<CPG_name>...|<pattern>...]
+
+DESCRIPTION
+    The showcpg command displays common provisioning groups (CPGs) in the
+    system.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    The following options cannot be used together with other options except
+    -sortcol, -hist and -domain:
+
+    -d  Show the detail information of CPGs.
+
+    -r
+        Specifies that raw space used by the CPGs is displayed.
+
+    -alert
+        Indicates whether alerts are posted.
+
+    -alerttime
+        Show times when alerts were posted (when applicable).
+
+    -sag
+        Specifies that the snapshot administration space auto-growth parameters
+        are displayed.
+
+    -sdg
+        Specifies that the snapshot data space auto-growth parameters are
+        displayed.
+
+    -space (-s)
+        Show the space saving of CPGs.
+
+    The following options can be used together with other options:
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+    -hist
+        Specifies that current data from the CPG, as well as the CPG's history
+        data is displayed.
+
+    -domain <domain_name_or_pattern,...>
+        Shows only CPGs that are in domains with names matching one or more of
+        the <domain_name_or_pattern> argument. This option does not allow
+        listing objects within a domain of which the user is not a member.
+        Patterns are glob-style (shell-style) patterns (see help on sub,globpat).
+
+    -aocfg <aocfg_name>
+        Show only CPGs that are in the AOCFG <aocfg_name>.
+
+SPECIFIERS
+    [<CPG_name>...|<pattern>...]
+        Specifies that Common Provisioning Groups matching either the specified
+        common provisioning group name or those common provisioning groups
+        matching the specified pattern are displayed. This specifier can be
+        repeated to display information for multiple common provisioning groups.
+        If not specified, all common provisioning groups in the system are
+        displayed.
+
+NOTES
+    When using the createaldvv command, the size of the logical disk space
+    created is the first integer multiple of the RAID set size that is large
+    enough to accommodate the requested virtual volume size.
+
+    For example, with the default RAID-5 layout with a set size of 768 MB, a
+    requested virtual volume size of 8192 MB causes the creation of logical
+    disks with a total size rounded up to an integer multiple of 768 that is
+    8448 MB. The growth increment of CPGs is similarly rounded up because the
+    growth is done by creating logical disks that must be created in units of
+    the logical disk RAID set size.
+
+    For this command, 1 MB = 1048576 bytes.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    The following example displays a system's common provisioning groups:
+
+        cli% showcpg
+
+    The following example displays the historical data for the common
+    provisioning groups:
+        cli% showcpg -hist
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@		
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+3Par7450 cli% showcpg
+                                       --------------(MB)---------------
+               ----Volumes---- -Usage- --- Usr --- -- Snp --- -- Adm ---
+Id Name  Warn% VVs TPVVs TDVVs Usr Snp Total  Used Total Used Total Used
+ 0 AFA       -   1     1     0   1   1 33280 33280 40448  512  8192  256
+ 1 AFA2      -   0     0     0   0   0     0     0     0    0     0    0
+------------------------------------------------------------------------
+ 2 total                         1   1 33280 33280 40448  512  8192  256
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3Par7450 cli% showcpg -d
+                                       --------------(MB)---------------
+               ----Volumes---- -Usage- --- Usr --- -- Snp --- -- Adm --- --- LD ---- - RC_Usage -
+Id Name  Warn% VVs TPVVs TDVVs Usr Snp Total  Used Total Used Total Used Usr Snp Adm   Usr    Snp
+ 0 AFA       -   1     1     0   1   1 33280 33280 40448  512  8192  256   0   2   2     0      0
+ 1 AFA2      -   0     0     0   0   0     0     0     0    0     0    0   0   0   0     0      0
+-------------------------------------------------------------------------------------------------
+ 2 total                         1   1 33280 33280 40448  512  8192  256   0   2   2     0      0
+
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 3Par7450 cli% showcpg -space
+               --------------(MB)---------------
+               --- Usr --- -- Snp --- -- Adm --- - Capacity Efficiency -
+Id Name  Warn% Total  Used Total Used Total Used    Compaction     Dedup
+ 0 AFA       - 33280 33280 40448  512  8192  256          12.9         -
+ 1 AFA2      -     0     0     0    0     0    0             -         -
+------------------------------------------------------------------------
+ 2 total       33280 33280 40448  512  8192  256          12.9         -
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 3Par7450 cli% showcpg -r
+                                       ----------------------------------(MB)----------------------------------
+               ----Volumes---- -Usage- --------- Usr ---------- --------- Snp --------- --------- Adm ---------
+Id Name  Warn% VVs TPVVs TDVVs Usr Snp Total RTotal  Used RUsed Total RTotal Used RUsed Total RTotal Used RUsed
+ 0 AFA       -   1     1     0   1   1 33280  44373 33280 44373 40448  53931  512   683  8192  24576  256   768
+ 1 AFA2      -   0     0     0   0   0     0      0     0     0     0      0    0     0     0      0    0     0
+---------------------------------------------------------------------------------------------------------------
+ 2 total                         1   1 33280  44373 33280 44373 40448  53931  512   683  8192  24576  256   768
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+3Par7450 cli% showcpg -sag
+        -----(MB)------
+Id Name Warn Limit Grow Args
+ 0 AFA     -     - 8192 -ha mag -p -devtype SSD
+ 1 AFA2    -     - 8192 -ha mag -p -devtype SSD -rpm 100
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+3Par7450 cli% showcpg -sdg
+        ------(MB)------
+Id Name Warn Limit  Grow Args
+ 0 AFA     -     - 32768 -t r5 -ha mag -ssz 4 -ss 64 -ch first -p -devtype SSD
+ 1 AFA2    -     - 32768 -t r5 -ha mag -ssz 4 -p -devtype SSD -rpm 100
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+3Par7450 cli% showcpg -alert
+              ------------ Data ------------- ---- Adm ----
+              -(MB)- - Setting(MB) -   Alerts -(MB)- Alerts
+Id Name Warn%  Total   Warn    Limit W% W L F  Total  W%  F
+ 0 AFA      -  73728      -        -  - - - -   8192   -  -
+ 1 AFA2     -      0      -        -  - - - -      0   -  -
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 3Par7450 cli% showcpg -alerttime
+        - Data Alerts - - Adm Alerts -
+Id Name  W%   W   L   F     W%       F
+ 0 AFA   --  --  --  --     --      --
+ 1 AFA2  --  --  --  --     --      --
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*********************************************************************************

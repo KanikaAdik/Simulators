@@ -1,0 +1,19 @@
+{
+    "deviceGroupInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "deviceGroupId": "test_dg"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "deviceGroupId": "test_dg2"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "deviceGroupId": "test_dg4"
+        }
+    ]
+}

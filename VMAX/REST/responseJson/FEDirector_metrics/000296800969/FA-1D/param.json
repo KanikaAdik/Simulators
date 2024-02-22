@@ -1,0 +1,26 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "directorId": "FA-1D", 
+    "metrics": [
+        "PercentBusy", 
+        "TotalReadCount", 
+        "TotalWriteCount", 
+        "PercentReadReqs", 
+        "PercentWriteReqs", 
+        "ReadReqs", 
+        "WriteReqs", 
+        "Reqs", 
+        "ReadResponseTime", 
+        "WriteResponseTime", 
+        "HitReqs", 
+        "ReadHitReqs", 
+        "WriteHitReqs", 
+        "PercentReadReqHit", 
+        "PercentWriteReqHit", 
+        "QueueDepthUtilization", 
+        "HostMBs"
+    ], 
+    "dataFormat": "Average"
+}

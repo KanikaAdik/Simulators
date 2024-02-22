@@ -1,0 +1,41 @@
+col,showport - Explanation of column headers for showport
+
+N:S:P        Port location in the format <Node>:<Slot>:<Port> where Slot is the
+             PCI slot number in the node, and Port is the port number in the PCI
+             card.
+Mode         Can be one of
+                 initiator  Initiator port connects to disks (default state)
+                 target     Target port connects to hosts or fabric
+                 suspended  Target port that has yet to be initialized by the
+                            system
+                 peer       Peer port is an ethernet port used for remote
+                            copy or File Persona
+State
+Detailed_State
+             State and Detailed state of the port is one of
+                 config_wait           Configuration wait
+                 alpa_wait             ALPA wait
+                 login_wait            Login wait
+                 ready                 Link is ready
+                 loss_sync             Link loss sync
+                 error                 In error state
+                 xxx                   xxx
+                 non_participate       Link not participate
+                 taking_coredump       Taking coredump
+                 offline               Link offline
+                 fw_dead               Firmware dead
+                 link_idle_for_reset   Link is idle for reset
+                 dhcp_in_progress      DHCP is in progress
+                 pending_reset         Link reset pending
+                 unknown               Link state unknown
+Type         Link type can be one of
+                 host   FC port connected to hosts or fabric
+                 disk   FC port connected to disks
+                 rcfc   FC port used for Remote Copy
+                 peer   FC port used for data migration
+                 rcip   IP (ethernet) port used for Remote Copy
+                 fs     IP (ethernet) port used for File Persona
+                 iscsi  iSCSI (ethernet) port connected to hosts
+                 free   Port is not connected to hosts or disks
+Protocol     Protocol can be one of
+                 FC     Fibre Channel

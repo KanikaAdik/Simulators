@@ -1,0 +1,17 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "deviceGroupId": "test_dg", 
+    "metrics": [
+        "HostIOs", 
+        "HostReads", 
+        "HostWrites", 
+        "ResponseTime", 
+        "HostMBReads", 
+        "HostMBWritten", 
+        "PercentHit", 
+        "WPCount"
+    ], 
+    "dataFormat": "Average"
+}

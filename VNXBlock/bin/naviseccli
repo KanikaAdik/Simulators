@@ -1,0 +1,170 @@
+#!/usr/bin/env python
+import ntpath
+import os,sys,json
+
+def write_to_file(filename, data):
+    try:
+        file = open(filename,"a+")
+        file.write(data)
+        file.close()
+    except Exception as e:
+        log = "Error While writing file"
+        write_to_file(log_file,str(log)) 
+
+def read_file(filename, raise_exception=False):
+    text = None
+    try:
+        file = open(filename)
+        text = file.read().replace("\n","").strip()
+        file.close()
+    except IOError as e:
+         write_to_file(log_file,"Error While reading file %s :  %s" % (filename,str(e)))
+         pass 
+    return text
+
+def read_from_json(filename):
+    data = None
+    try:
+        with open(filename) as data_file:
+            data = json.load(data_file)
+    except Exception as e:
+        write_to_file(log_file,"Error While reading file %s :  %s" % (filename,str(e))) 
+        pass
+    return data
+
+def _write_to_json(file_path=None,details=None):
+    try:
+        with open(file_path, 'w') as fp:
+            json.dump(details,fp,indent=4)
+    except Exception as e:
+        write_to_file(log_file,"Error While writing file %s :  %s" % (file_path,str(e)))
+        raise
+
+def _get_serial_number(ip = None):
+    ip_adress = ip.split(".")  
+    check_ip = int(ip_adress[3] )
+
+    if check_ip % 2 == 0:
+       ser1 = check_ip
+       ser2 = check_ip + 1
+    else:
+       ser1 = check_ip - 1
+       ser2 = check_ip
+
+    serial_no = "APM%s%s%s%s%s" % (ip_adress[0], ip_adress[1], ip_adress[2], ser1, ser2) 
+    
+    return serial_no
+
+def _check_ip(ip = None):
+    ip_adress = ip.split(".")
+    check_ip = int(ip_adress[3])
+
+    if check_ip % 2 == 0:
+        return "conf_A" 
+    else:
+        return "conf_B"
+
+def _print_contents(content_file,log_file):
+    try: 
+        with open(content_file) as f:
+            print f.read()
+    except Exception as e:
+        write_to_file(log_file,"Error While printing contents of file %s :  %s" % (content_file,str(e)))      
+    
+ 
+if not (len(sys.argv) > 1):
+   sys.exit(0)
+
+outfile = None
+IP_ADRESS = sys.argv[2] 
+output_set = None
+bin_path      = os.path.join("/opt","Navisphere","bin")
+lastOutputSet = os.path.join(bin_path,"lastOutputSet.json")
+log_file      = os.path.join(bin_path,"probe.log")
+#Output Set List
+output_set_list = ["set1", "set2" , "set3"]
+
+try:
+    if sys.argv[9] == "-t" :
+        for item in sys.argv[11:]:
+            if not outfile:
+                outfile = item.strip("-")
+            else:
+                outfile = "%s_%s" % (outfile,item.strip("-"))
+
+    elif sys.argv[9] == "-xml" and sys.argv[10] == "-t":
+        outfile = "xml"
+        for item in sys.argv[12:]:
+            if not outfile:
+                outfile = item.strip("-")
+            else:
+                outfile = "%s_%s" % (outfile,item.strip("-"))
+
+    else:
+        for item in sys.argv[9:]:
+            if not outfile:
+                outfile = item.strip("-")
+            else:
+                outfile = "%s_%s" % (outfile,item.strip("-"))
+except Exception as e:
+    write_to_file(log_file,"Error while parsing command arguments") 
+
+dump_file     = os.path.join(bin_path,"OutPuts",outfile)
+    
+try:
+    if outfile in ['getall_cache','getall_disk','getall_host','getall_lun','getall_rg','getall_sg','getall_sp',\
+                        'ioportconfig_list_all','port_list_sp_all','lun_list_all','port_list','storagepool_list']:
+
+        conf_set =  _check_ip(IP_ADRESS)
+        SAMPLE_FILE = os.path.join(bin_path, "OutPuts", conf_set,outfile) 
+        dump_file =  os.path.join(bin_path, "OutPuts","%s" % outfile)
+        file = open(SAMPLE_FILE,'r')
+        sample_text_temp = file.read()
+        file.close()
+        try:
+            serial_no = _get_serial_number(IP_ADRESS)
+            sample_text_temp1 = sample_text_temp.replace("$$$$", IP_ADRESS)
+            sample_text = sample_text_temp1.replace("####", serial_no) 
+        except Exception as e:
+            write_to_file(log_file,"Error While Replacing file contents : %s" % str(e))
+
+        file = open(dump_file,'w')
+        file.write(sample_text)
+        file.close()
+        
+        _print_contents(dump_file, log_file)
+ 
+    elif outfile.startswith("xml"):
+        try:
+            outputSetData = read_from_json(lastOutputSet) 
+            if not outputSetData:
+                outputSetData = {}
+            outputSetKey = "%s_%s" % (IP_ADRESS,outfile)   
+            if outputSetData.has_key(outputSetKey):
+                output_set = outputSetData[outputSetKey] 
+            write_to_file(log_file,"Previous Output : %s : %s\n" % (outputSetKey,output_set)) 
+            set_index = 0
+           
+            if output_set:
+                set_index = output_set_list.index(output_set) + 1
+                if set_index >= len(output_set_list):
+                    set_index = 0 
+           
+            output_set = output_set_list[set_index] 
+
+            outputSetData.update({outputSetKey : output_set}) 
+            _write_to_json(lastOutputSet, outputSetData)            
+            new_dump_file = os.path.join(os.path.dirname(dump_file),output_set,outfile)    
+           
+            data = "Output Given : %s : %s : %s : %s\n\n" % (IP_ADRESS,outfile,output_set,new_dump_file)
+            write_to_file(log_file,data)
+            _print_contents(new_dump_file,log_file)
+
+        except Exception as e:
+            write_to_file(log_file,"Error : %s" % str(e)) 
+
+    else: 
+        write_to_file(log_file,"Invalid Command : %s\n" % outfile)     
+ 
+except Exception as e:
+    write_to_file(log_file,"Error : %s\n" % str(e))  

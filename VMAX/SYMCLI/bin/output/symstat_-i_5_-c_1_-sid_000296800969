@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes" ?>
+<SymCLI_ML>
+  <Statistics>
+    <time>Fri May 12 2017 04:14:09</time>
+  </Statistics>
+  <Statistics>
+    <time>Fri May 12 2017 04:15:09</time>
+    <Request>
+      <dev_name>00002</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>0</r_per_second>
+      <w_per_second>2</w_per_second>
+      <kb_r_per_second>0</kb_r_per_second>
+      <kb_w_per_second>19</kb_w_per_second>
+      <r_cache_hit_pct>N/A</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>N/A</sequential_r_pct>
+      <wp_tracks>4</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00003</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>0</r_per_second>
+      <w_per_second>2</w_per_second>
+      <kb_r_per_second>0</kb_r_per_second>
+      <kb_w_per_second>19</kb_w_per_second>
+      <r_cache_hit_pct>N/A</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>N/A</sequential_r_pct>
+      <wp_tracks>5</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00004</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>0</r_per_second>
+      <w_per_second>0</w_per_second>
+      <kb_r_per_second>0</kb_r_per_second>
+      <kb_w_per_second>0</kb_w_per_second>
+      <r_cache_hit_pct>N/A</r_cache_hit_pct>
+      <w_cache_hit_pct>N/A</w_cache_hit_pct>
+      <sequential_r_pct>N/A</sequential_r_pct>
+      <wp_tracks>6</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00033</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>4</r_per_second>
+      <w_per_second>27</w_per_second>
+      <kb_r_per_second>317</kb_r_per_second>
+      <kb_w_per_second>260</kb_w_per_second>
+      <r_cache_hit_pct>100</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>50</sequential_r_pct>
+      <wp_tracks>48</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00036</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>2650</r_per_second>
+      <w_per_second>5044</w_per_second>
+      <kb_r_per_second>80693</kb_r_per_second>
+      <kb_w_per_second>34537</kb_w_per_second>
+      <r_cache_hit_pct>79</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>13</sequential_r_pct>
+      <wp_tracks>6909</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00038</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>0</r_per_second>
+      <w_per_second>5</w_per_second>
+      <kb_r_per_second>0</kb_r_per_second>
+      <kb_w_per_second>60</kb_w_per_second>
+      <r_cache_hit_pct>N/A</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>N/A</sequential_r_pct>
+      <wp_tracks>29</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>0003A</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>3</r_per_second>
+      <w_per_second>6</w_per_second>
+      <kb_r_per_second>54</kb_r_per_second>
+      <kb_w_per_second>81</kb_w_per_second>
+      <r_cache_hit_pct>100</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>0</sequential_r_pct>
+      <wp_tracks>50</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>0003B</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>4</r_per_second>
+      <w_per_second>43</w_per_second>
+      <kb_r_per_second>21</kb_r_per_second>
+      <kb_w_per_second>971</kb_w_per_second>
+      <r_cache_hit_pct>100</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>0</sequential_r_pct>
+      <wp_tracks>197</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>0003D</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>5</r_per_second>
+      <w_per_second>135</w_per_second>
+      <kb_r_per_second>140</kb_r_per_second>
+      <kb_w_per_second>3835</kb_w_per_second>
+      <r_cache_hit_pct>60</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>0</sequential_r_pct>
+      <wp_tracks>157</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>0061A</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>0</r_per_second>
+      <w_per_second>2</w_per_second>
+      <kb_r_per_second>0</kb_r_per_second>
+      <kb_w_per_second>16</kb_w_per_second>
+      <r_cache_hit_pct>N/A</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>N/A</sequential_r_pct>
+      <wp_tracks>7</wp_tracks>
+    </Request>
+    <Request>
+      <dev_name>00623</dev_name>
+      <pd_name>Not Visible</pd_name>
+      <r_per_second>4</r_per_second>
+      <w_per_second>2</w_per_second>
+      <kb_r_per_second>6</kb_r_per_second>
+      <kb_w_per_second>1</kb_w_per_second>
+      <r_cache_hit_pct>100</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>0</sequential_r_pct>
+      <wp_tracks>2</wp_tracks>
+    </Request>
+    <Request_Totals>
+      <r_per_second>2670</r_per_second>
+      <w_per_second>5268</w_per_second>
+      <kb_r_per_second>81231</kb_r_per_second>
+      <kb_w_per_second>39799</kb_w_per_second>
+      <r_cache_hit_pct>79</r_cache_hit_pct>
+      <w_cache_hit_pct>100</w_cache_hit_pct>
+      <sequential_r_pct>13</sequential_r_pct>
+      <wp_tracks>7414</wp_tracks>
+    </Request_Totals>
+  </Statistics>
+</SymCLI_ML>

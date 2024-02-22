@@ -1,0 +1,9 @@
+Error: This system is not licensed for Remote Copy.
+                                                            ---Rsvd(MB)--- -(MB)-
+ Id Name          Prov Type CopyOf BsId Rd -Detailed_State- Adm Snp    Usr  VSize
+  0 admin         full base ---       0 RW normal             0   0  10240  10240
+  1 .srdata       full base ---       1 RW normal             0   0  81920  81920
+284 CS_InfraLUN31 tpvv base ---     284 RW normal           256 512  33280 409600
+---------------------------------------------------------------------------------
+  3 total                                                   256 512 125440 501760
+

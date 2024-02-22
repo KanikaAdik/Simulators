@@ -1,0 +1,10 @@
+id   inuse  sizeMB    storageID-devID     type  name        servers
+1     y      22527  $$$$-2007   CLSTD root_disk   1,2
+2     y      11263  $$$$-2008   CLSTD root_ldisk  1,2
+3     y       2047  $$$$-2009   CLSTD d3          1,2
+4     y       2047  $$$$-200A   CLSTD d4          1,2
+5     y       4095  $$$$-200B   CLSTD d5          1,2
+6     y      65535  $$$$-200C   CLSTD d6          1,2
+7     y     511999  $$$$-0000   PERF  d7          1,2
+8     y     511999  $$$$-0001   PERF  d8          1,2
+

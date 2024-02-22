@@ -1,0 +1,16 @@
+Id,Name,Members
+7,flashesxha,flashesx03.acme.local
+,,flashesx01.acme.local
+,,flashesx02.acme.local
+,,flashesx04.acme.local
+10,TECTalk_Hosts,flashesx01.acme.local
+,,flashesx02.acme.local
+,,flashesx04.acme.local
+11,ESXVCDHA,esxvcd03
+,,esxvcd04
+,,NBU5240
+13,cumulus_hostSet,cumulus_host2
+,,testHost1
+15,cumulus_hostset1,TECESX03
+,,TECESX04
+,,TECESX14

@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="yes" ?>
+<SymCLI_ML>
+  <Symmetrix>
+    <Symm_Info>
+      <symid>000296800969</symid>
+    </Symm_Info>
+    <Port_Group>
+      <Group_Info>
+        <group_name>1D_P28_PG</group_name>
+        <port_count>1</port_count>
+        <view_count>2</view_count>
+        <last_updated>01:12:51 PM on Mon Jun 06,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>WIN_1D_P28_MV</view_name>
+          <view_name>LINUX_1D_P28_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>2D_P28_PG</group_name>
+        <port_count>1</port_count>
+        <view_count>2</view_count>
+        <last_updated>01:13:33 PM on Mon Jun 06,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>WIN_2D_P28_MV</view_name>
+          <view_name>LINUX_2D_P28_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>FileServer_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>05:18:51 AM on Mon Feb 06,2017</last_updated>
+        <Mask_View_Names>
+          <view_name>FileServer_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>HyperV1_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>06:41:06 AM on Thu Sep 01,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>HyperV1_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>Itprodn_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>10:11:16 AM on Thu Oct 06,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>Itprodn_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>PG_QA_200029</group_name>
+        <port_count>1</port_count>
+        <view_count>1</view_count>
+        <last_updated>10:17:08 AM on Mon Mar 27,2017</last_updated>
+        <Mask_View_Names>
+          <view_name>MV_QA_200029_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>PG_QA_ESX20-249_FA-2D-28_29</group_name>
+        <port_count>2</port_count>
+        <view_count>1</view_count>
+        <last_updated>01:29:44 PM on Wed Mar 22,2017</last_updated>
+        <Mask_View_Names>
+          <view_name>MV_QA_20_248_HBA_30029_FA2D_28-29</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>Prodn_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>10:01:29 AM on Thu Oct 06,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>Prodn_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>Ucsrackvmware3_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>10:42:13 AM on Mon Jan 30,2017</last_updated>
+        <Mask_View_Names>
+          <view_name>Ucsrackvmware_3_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>VMware1_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>12:13:20 PM on Thu Jun 09,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>VMware1_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>Vmware6_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>10:32:57 AM on Tue Sep 06,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>Vmware6_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>VMware7_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>06:26:31 AM on Tue Jun 21,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>VMware7_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+    <Port_Group>
+      <Group_Info>
+        <group_name>VMware7_Test_PG</group_name>
+        <port_count>4</port_count>
+        <view_count>1</view_count>
+        <last_updated>07:43:55 AM on Fri Nov 04,2016</last_updated>
+        <Mask_View_Names>
+          <view_name>VMware7_Test_MV</view_name>
+        </Mask_View_Names>
+      </Group_Info>
+    </Port_Group>
+  </Symmetrix>
+</SymCLI_ML>

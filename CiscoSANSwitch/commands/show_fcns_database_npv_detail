@@ -1,0 +1,15 @@
+------------------------------------------------------------
+VSAN:1     NPV Node Name: 20:01:00:05:73:b1:38:d9
+------------------------------------------------------------
+NPV Fabric Port-WWN         :24:01:00:05:73:b1:38:d8
+class                       :2,3
+NPV IP Address              :192.168.144.11
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :npv 
+NPV Switch Name:Interface   :switch:port-channel 1
+port-type                   :NP
+Core Switch fabric-port-wwn :24:01:00:2a:6a:3b:95:80
+permanent-port-wwn (vendor) :24:01:00:05:73:b1:38:d8 (Cisco)     
+
+
+Total number of entries = 1

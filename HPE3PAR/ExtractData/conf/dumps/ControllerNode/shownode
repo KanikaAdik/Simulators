@@ -1,0 +1,215 @@
+col,shownode - Explanation of column headers for shownode
+
+Node           Node ID
+Name           Node name
+State          Node state
+                 OK              Node and its components are operating normally
+                 Degraded        Node is degraded when the power supply is
+                                 missing, failed, or degraded (fan failed,
+                                 battery max life low, failed, expired, or not
+                                 present
+                 Failed          Node is not initialized, offline, kernel
+                                 revision mismatched, IDE partition bad,
+                                 rebooting, or shutdown
+Detailed_State
+               Detailed state of node is one or more of
+                 tod_bat_fail
+                                 Time-Of-Day Battery Failure
+                 invalid_bat_config
+                                 Invalid Battery Configuration
+                 link_error
+                                 Link Error
+                 uncorrectable_mem_error
+                                 Uncorrectable Memory Error
+                 multi_uncorrectable_mem_error
+                                 Multiple Uncorrectable Memory Error
+                 correctable_mem_error
+                                 Correctable Memory Error
+                 internal_system_error
+                                 Internal System Error
+                 hardware_watchdog_error
+                                 Hardware Watchdog Error
+                 pci_error
+                                 PCI Error
+                 driver_software_error
+                                 Driver Software Error
+                 cpu_overheating
+                                 CPU Overheating
+                 cpu_vrm_overheating
+                                 CPU VRM Overheating
+                 control_cache_dimm_overheating
+                                 Control Cache DIMM Overheating
+                 node_offline_due_to_failure
+                                 Node Offline Due to Failure
+                 node_shutdown_manually
+                                 Node Shutdown Manually
+                 unknown         Node state unknown
+Master         Node is the master (Yes or No)
+InCluster      Node is in the cluster (Yes or No)
+LED            Node LED information
+                 --              Node LED is unknown
+                 off             Node LED is off
+                 Green           Kernel is not running
+                 GreenBlnk       Normal state
+                 Amber           Node is degraded/failed and kernel is not
+                                 running
+                 AmberBlnk       Node is degraded/failed
+                 Blue            A node component is placed into service-mode
+                 BlueBlnk        A node component is not properly seated
+ControlMem     Total control memory in the node in MB (1024^2 bytes)
+DataMem        Total data memory in the node in MB (1024^2 bytes)
+Assy_Serial    Assembly Serial Number
+Assy_Part      Model Number
+
+For PCI cards
+
+Node           Node ID
+Slot           Slot ID
+Type           PCI card type
+                 Eth    Ethernet
+                 FC     Fibre Channel
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+Rev            Revision number
+Firmware       Firmware version
+
+For CPUs
+
+Node           Node ID
+CPU            CPU ID
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+CPUSpeed       CPU speed (MHz)
+BusSpeed       Bus speed (MHz)
+
+For Physical Memory
+
+Node           Node ID
+Riser          The riser card info where the physical memory is located
+Slot           Slot
+SlotID         Slot ID in JXXX format
+Name           Physical memory name
+Usage          Physical memory usage type
+                  Control
+                  Data
+Type           DIMM Type
+Manufacturer   Manufacturer
+Serial         Serial number
+Latency        CAS Latency
+Size           Memory size in MB (1024^2 bytes)
+
+For IDE Drives
+
+Node           Node ID
+IDE            IDE ID
+Manufacturer   Manufacturer
+Model          Model
+Serial         Serial number
+Firmware       Firmware version
+Size           IDE drive size in MB (1024^2 bytes)
+
+For Power Supplies
+node
+Node           Node ID
+PS             Power supply ID
+PSState        Power supply state
+                 --          Cannot determine the state
+                 OK          Power supply is operating normally
+                 Failed      Power supply is operating abnormally
+                 NotPresent  Power supply is missing
+                 Degraded    Fan failure or battery state is not OK
+FanState       Power supply fan state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+ACState        AC state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+DCState        DC state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+BatState       Battery state
+                 --          Cannot determine the state
+                 OK          Operating normally
+                 Failed      Operating abnormally
+                 Degraded    Battery is in degraded state
+                 NotPresent  Battery is missing
+Detailed_State
+               Detailed state of power supply is one or more of
+                 invalid_bat_count      Invalid Battery Count
+                 dc_failed              DC Failed
+                 ac_failed              AC Failed
+                 fan_failed             Fan Failed
+                 charger_overload       Charger Overload
+                 battery_not_present    Battery Not Present
+                 invalid_firmware       Invalid Firmware
+                 oscillating_presence   Oscillating Presence
+                 oscillating_dc         Oscillating DC Failure
+                 oscillating_ac         Oscillating AC Failure
+                 oscillating_fan        Oscillating Fan Failure
+                 oscillating_charger    Oscillating Charger Overload
+                 oscillating_bat        Oscillating Battery Failure
+                 NotPresent             Not Present
+                 unknown                Power supply state unknown
+ChrgLvl        Battery charge level
+Assy_Serial    Assembly Serial Number
+
+For Node Fan
+
+Node           Node ID
+FanModuleID    Fan Module ID for V-Class systems only
+PriNode        Primary node ID
+SecNode        Secondary node ID
+State          State information
+LED            Status LED information
+Status_LED     Status LED information
+Service_LED    Service LED information for V-class systems only
+Speed          Fan speed
+FanASpeed      FanA speed for V-Class systems only
+FanBSpeed      FanB speed for V-Class systems only
+
+For MicroController Unit (MCU)
+
+Node                Node ID
+Model               Model
+Firmware            Firmware version
+State               The State of the MicroController Unit (MCU) is one of
+                        ready                 MicroController is ready
+                        updating_fw           MicroController firmware is being updated
+                        busy                  MicroController is busy processing other request
+                        failed                MicroController failed
+                        stopped               MicroController stopped
+                        panic                 MicroController is in a panic state
+                        unknown               MicroController is unknown
+
+ResetReason         The reset reason of the MicroController is one of
+                        cold_on_power            MicroController was cold reset
+                        watchdog_timer_expired   MicroController watchdog timer expired
+                        soft_reset               MicroController was soft reset
+                        external_reset           MicroController was reset by another process
+                        panic_reset              MicroController was reset because it was in a panic state
+                        flash_update             MicroController flash is being updated
+                        hard_reset               MicroController experienced a hard reset
+                        board_reset              MicroController board was reset
+
+up Since                Date since the MicroController Unit or node was up and running.
+
+For Field Replaceable Units (FRU)
+
+SaleableSerial      HP Saleable Serial Number
+Saleable_PN         HP Saleable Part   Number
+Spare_PN            HP Spare Part Number
+HPModelName         HP Model Name
+Assem_Rev           HP Assembly Revision Number
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                                                               Control    Data        Cache
+Node --Name--- -State- Master InCluster -Service_LED ---LED--- Mem(MB) Mem(MB) Available(%)
+   0 1649581-0 OK      Yes    Yes       Off          GreenBlnk   16384   16384          100
+   1 1649581-1 OK      No     Yes       Off          GreenBlnk   16384   16384          100
+

@@ -1,0 +1,58 @@
+col,showhost - Explanation of column headers for showhost
+
+ID              Host identifier
+Name            Host name
+Persona         Host persona
+WWN/iSCSI_Name  Host WWN name or iSCSI name
+Port            Storage system port host is visible on
+IP_addr         IP address for host if iSCSI
+
+For -pathsum
+
+WWNs            Number of host WWNs visible from the storage system cluster
+Ports           Number of storage system ports host is visible on
+Nodes           List of nodes that are connected to the host
+
+For -agent
+
+ReportedName    Hostname reported by the agent
+OS              OS type (eg Solaris, Linux)
+OS_Ver          OS Version
+OS_Patch        OS patch level
+IP              Primary IP address of the host
+Multipath       Multipathing software in use on host
+MPVer           Version of the multipathing software in use
+ClusterSW       Host clustering software in use on host
+ClusterVer      Version of the host clustering software in use
+ClusterID       ID of the host cluster the host is a member of
+ClusterName     Name of the host cluster the host is a member of
+HA_Ver          Version of host agent running on host
+WWN             WWN of the host HBA
+HBA_Vendor      Vendor of the host HBA
+HBA_Model       Model of the host HBA
+HBA_Firmware    Firmware version on the host HBA
+HBA_DriverVer   Host driver version
+Speed           Speed the host reports for this WWN
+MultipleAttach  Indicates if the host WWN is seen on multiple storage system
+                ports
+
+For -persona
+Id              Host identifier
+Name            Host name
+Persona_Id      Host persona identifier
+Persona_Name    Host persona name (generally an OS type)
+Persona_Caps    Host persona capabilities which are in effect (see -listpersona)
+
+For -listpersona
+Persona_Id      Host persona identifier
+Persona_Name    Host persona name (generally an OS type)
+Persona_Caps    Host persona capabilities which are in effect
+                        Capabilities are:
+                        RTPG            Report Target Port Groups
+                        UARepLun        Unit Attention/Report Luns changed
+                        NACA            Normal Auto Contingent Allegiance
+                        VolSetAddr      Volume Set Addressing
+                        SoftInq         Soft Inquiry data
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	  
+	  

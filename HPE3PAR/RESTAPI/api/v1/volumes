@@ -1,0 +1,153 @@
+{
+    "total": 3,
+    "members": [
+        {
+            "id": 0,
+            "name": "admin",
+            "provisioningType": 1,
+            "copyType": 1,
+            "baseId": 0,
+            "readOnly": false,
+            "state": 1,
+            "failedStates": [],
+            "degradedStates": [],
+            "additionalStates": [],
+            "adminSpace": {
+                "reservedMiB": 0,
+                "rawReservedMiB": 0,
+                "usedMiB": 0,
+                "freeMiB": 0
+            },
+            "snapshotSpace": {
+                "reservedMiB": 0,
+                "rawReservedMiB": 0,
+                "usedMiB": 0,
+                "freeMiB": 0
+            },
+            "userSpace": {
+                "reservedMiB": 10240,
+                "rawReservedMiB": 20480,
+                "usedMiB": 10240,
+                "freeMiB": 0
+            },
+            "sizeMiB": 10240,
+            "wwn": "60002AC000000000000000000000C1AD",
+            "creationTimeSec": 1417027393,
+            "creationTime8601": "2014-11-26T12:43:13-06:00",
+            "ssSpcAllocWarningPct": 0,
+            "ssSpcAllocLimitPct": 0,
+            "usrSpcAllocWarningPct": 0,
+            "usrSpcAllocLimitPct": 0,
+            "policies": {
+                "staleSS": true,
+                "oneHost": false,
+                "zeroDetect": false,
+                "system": true,
+                "caching": true,
+                "fsvc": false
+            },
+            "uuid": "82f07cec-1387-4393-a974-8b3821b04360",
+            "capacityEfficiency": {}
+        },
+        {
+            "id": 1,
+            "name": ".srdata",
+            "provisioningType": 1,
+            "copyType": 1,
+            "baseId": 1,
+            "readOnly": false,
+            "state": 1,
+            "failedStates": [],
+            "degradedStates": [],
+            "additionalStates": [],
+            "adminSpace": {
+                "reservedMiB": 0,
+                "rawReservedMiB": 0,
+                "usedMiB": 0,
+                "freeMiB": 0
+            },
+            "snapshotSpace": {
+                "reservedMiB": 0,
+                "rawReservedMiB": 0,
+                "usedMiB": 0,
+                "freeMiB": 0
+            },
+            "userSpace": {
+                "reservedMiB": 81920,
+                "rawReservedMiB": 109227,
+                "usedMiB": 81920,
+                "freeMiB": 0
+            },
+            "sizeMiB": 81920,
+            "wwn": "60002AC000000000000000010000C1AD",
+            "creationTimeSec": 1417027913,
+            "creationTime8601": "2014-11-26T12:51:53-06:00",
+            "ssSpcAllocWarningPct": 0,
+            "ssSpcAllocLimitPct": 0,
+            "usrSpcAllocWarningPct": 0,
+            "usrSpcAllocLimitPct": 0,
+            "policies": {
+                "staleSS": true,
+                "oneHost": false,
+                "zeroDetect": false,
+                "system": true,
+                "caching": true,
+                "fsvc": false
+            },
+            "uuid": "94301c5b-6740-4b1e-884a-d1ee55b77f60",
+            "capacityEfficiency": {}
+        },
+        {
+            "id": 284,
+            "name": "CS_InfraLUN31",
+            "provisioningType": 2,
+            "copyType": 1,
+            "baseId": 284,
+            "readOnly": false,
+            "state": 1,
+            "failedStates": [],
+            "degradedStates": [],
+            "additionalStates": [],
+            "adminSpace": {
+                "reservedMiB": 256,
+                "rawReservedMiB": 768,
+                "usedMiB": 25,
+                "freeMiB": 231
+            },
+            "snapshotSpace": {
+                "reservedMiB": 512,
+                "rawReservedMiB": 683,
+                "usedMiB": 0,
+                "freeMiB": 512
+            },
+            "userSpace": {
+                "reservedMiB": 41472,
+                "rawReservedMiB": 55296,
+                "usedMiB": 35511,
+                "freeMiB": 5961
+            },
+            "sizeMiB": 409600,
+            "wwn": "60002AC0000000000000011C0000C1AD",
+            "creationTimeSec": 1496960792,
+            "creationTime8601": "2017-06-08T17:26:32-05:00",
+            "ssSpcAllocWarningPct": 0,
+            "ssSpcAllocLimitPct": 0,
+            "usrSpcAllocWarningPct": 0,
+            "usrSpcAllocLimitPct": 0,
+            "policies": {
+                "staleSS": true,
+                "oneHost": false,
+                "zeroDetect": true,
+                "system": false,
+                "caching": true,
+                "fsvc": false
+            },
+            "userCPG": "AFA",
+            "snapCPG": "AFA",
+            "uuid": "14c574ac-4acd-4628-8e15-fdb041f3148c",
+            "capacityEfficiency": {
+                "compaction": 11.5
+            }
+        }
+    ]
+}

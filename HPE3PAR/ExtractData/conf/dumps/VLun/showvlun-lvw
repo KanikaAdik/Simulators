@@ -1,0 +1,60 @@
+col,showvlun - Explanation of column headers for showvlun
+
+Lun                  Exported LUN value
+VVName               Name of exported VV
+HostName             Host VLUN is exported to
+Host_WWN/iSCSI_Name  WWN or iSCSI name of host
+Port                 Storage system port VLUN exported on
+Type                 VLUN type; exported to host/host set/port/both
+VV_WWN               WWN of exported VV
+Status               Status of the target port for the VLUN has several options.
+                        active      The target port is in alua active state.
+                        standby     The target port is in alua standby state.
+                        unavail     The target port is in alua unavailable state.
+                        transit     The target port is in alua transition state.
+                        n/a         The target port does not support alua.
+ID                   Target port group ID for the VLUN
+
+For -pathsum:
+
+Ports:
+Host                 Number of host WWNs visible to the storage system
+Inactive             WWNs reported by the host but not visible to storage system
+InServ               Number of Storage System ports that can see the host
+
+Paths:
+Available            Total available distinct paths between host and storage
+                     system
+Healthy              Number of paths seen by storage system and reported good by
+                     host
+
+Multipathing         Multipathing method in use (eg round-robin, failover)
+
+FailedPathPolicy     Failed path monitoring method
+                     (Test Unit Read, Inquiry, ReadSector0)
+MonIntervalSecs      Monitoring interval in secs after which the host
+                     checks for failed paths
+HostDevName          The device name for this VLUN on the host
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		
+
+Active VLUNs
+Lun VVName        -------------VV_WWN------------- HostName -Host_WWN/iSCSI_Name-  Port Type Status ID
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015A      0:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015A      0:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015B      1:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 20000025B515015B      1:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150158      0:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150158      0:1:2 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150159      1:1:1 host active  1
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 20000025B5150159      1:1:2 host active  1
+------------------------------------------------------------------------------------------------------
+  8 total
+
+VLUN Templates
+Lun VVName        -------------VV_WWN------------- HostName -Host_WWN/iSCSI_Name- Port Type
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX03 ----------------       --- host
+ 31 CS_InfraLUN31 60002AC0000000000000011C0000C1AD TECESX04 ----------------       --- host
+-------------------------------------------------------------------------------------------
+  2 total
+

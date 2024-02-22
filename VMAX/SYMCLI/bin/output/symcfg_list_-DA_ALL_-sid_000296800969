@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes" ?>
+<SymCLI_ML>
+  <Symmetrix>
+    <Symm_Info>
+      <symid>000296800969</symid>
+      <attachment>Local</attachment>
+    </Symm_Info>
+    <Director>
+      <Dir_Info>
+        <id>DF-1C</id>
+        <type>DISK</type>
+        <symbolic>01C</symbolic>
+        <number>33</number>
+        <slot>1</slot>
+        <volumes>368</volumes>
+        <status>Online</status>
+      </Dir_Info>
+    </Director>
+    <Director>
+      <Dir_Info>
+        <id>DF-2C</id>
+        <type>DISK</type>
+        <symbolic>02C</symbolic>
+        <number>34</number>
+        <slot>2</slot>
+        <volumes>192</volumes>
+        <status>Online</status>
+      </Dir_Info>
+    </Director>
+  </Symmetrix>
+</SymCLI_ML>

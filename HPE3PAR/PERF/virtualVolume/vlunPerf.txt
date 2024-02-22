@@ -1,0 +1,7 @@
+3Par7450 cli% srstatvlun -attime -groupby VV_NAME
+Time: 2017-06-22 06:50:00 CDT (1498132200)
+              ---IO/s---- --KBytes/s--- ---Svct ms---- -IOSz KBytes-
+      VV_NAME  Rd  Wr Tot  Rd   Wr  Tot   Rd   Wr  Tot  Rd  Wr   Tot QLen AvgBusy%
+CS_InfraLUN31 1.0 7.4 8.4 1.4 61.1 62.5 0.70 0.24 0.29 1.5 8.2   7.5    0      0.0
+----------------------------------------------------------------------------------
+            1 1.0 7.4 8.4 1.4 61.1 62.5 0.70 0.24 0.29 1.5 8.2   7.5    0      0.0

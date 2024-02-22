@@ -1,0 +1,7 @@
+N:S:P -State- -Manufacturer- MaxSpeed(Gbps) TXDisable TXFault RXLoss DDM
+0:1:1 OK      HP-F                      8.5 No        No      No     Yes
+0:1:2 OK      HP-F                      8.5 No        No      No     Yes
+1:1:1 OK      HP-F                      8.5 No        No      No     Yes
+1:1:2 OK      HP-F                      8.5 No        No      No     Yes
+------------------------------------------------------------------------
+    4

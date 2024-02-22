@@ -1,0 +1,344 @@
+------------------------
+VSAN:1     FCID:0x860100
+------------------------
+port-wwn (vendor)           :50:0a:09:81:82:e1:91:16 (NetApp)    
+node-wwn                    :50:0a:09:80:82:e1:91:16
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp 
+symbolic-port-name          :NetApp FC Target Adapter (2532) netapp:1a
+symbolic-node-name          :NetApp FAS2240-4 (netapp)
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:06:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :50:0a:09:81:82:e1:91:16 (NetApp)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860200
+------------------------
+port-wwn (vendor)           :50:0a:09:82:82:e1:91:16 (NetApp)    
+node-wwn                    :50:0a:09:80:82:e1:91:16
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp 
+symbolic-port-name          :NetApp FC Target Adapter (2532) netapp:1b
+symbolic-node-name          :NetApp FAS2240-4 (netapp)
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:08:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :50:0a:09:82:82:e1:91:16 (NetApp)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860300
+------------------------
+port-wwn (vendor)           :21:03:00:e0:8b:fa:c3:08 (Qlogic)    
+node-wwn                    :20:03:00:e0:8b:fa:c3:08
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2462 FW:v8.02.00 DVR:v8.07.00.18.39.0-k
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:04:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :21:03:00:e0:8b:fa:c3:08 (Qlogic)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860400
+------------------------
+port-wwn (vendor)           :21:00:00:e0:8b:9a:35:0a (Qlogic)    
+node-wwn                    :20:00:00:e0:8b:9a:35:0a
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2462 FW:v5.02.00 DVR:v831.k1.28.1-7vmw
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0d:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :21:00:00:e0:8b:9a:35:0a (Qlogic)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860401
+------------------------
+port-wwn (vendor)           :28:1c:00:0c:29:00:00:02 (VMware)    
+node-wwn                    :28:1c:00:0c:29:00:00:01
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2462 FW:v5.02.00 DVR:v831.k1.28.1-7vmw
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0d:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :21:00:00:e0:8b:9a:35:0a (Qlogic)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860500
+------------------------
+port-wwn (vendor)           :10:00:00:90:fa:5a:17:11             
+node-wwn                    :20:00:00:90:fa:5a:17:11
+class                       :2,3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :Emulex PPN-10:00:00:90:fa:5a:17:11
+symbolic-node-name          :Emulex LPe12000-M8 FV2.01A10 DV10.0.727.24
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:02:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :10:00:00:90:fa:5a:17:11             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860600
+------------------------
+port-wwn (vendor)           :10:00:00:90:fa:5a:29:54             
+node-wwn                    :20:00:00:90:fa:5a:29:54
+class                       :2,3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :Emulex PPN-10:00:00:90:fa:5a:29:54
+symbolic-node-name          :Emulex LPe12000-M8 FV2.01A10 DV8.2.3.1-127vmw
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:03:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :10:00:00:90:fa:5a:29:54             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860700
+------------------------
+port-wwn (vendor)           :21:01:00:e0:8b:ba:35:0a (Qlogic)    
+node-wwn                    :20:01:00:e0:8b:ba:35:0a
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2462 FW:v5.02.00 DVR:v831.k1.28.1-7vmw
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:07:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :21:01:00:e0:8b:ba:35:0a (Qlogic)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860800
+------------------------
+port-wwn (vendor)           :10:00:00:90:fa:5a:26:e3             
+node-wwn                    :20:00:00:90:fa:5a:26:e3
+class                       :2,3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :Emulex PPN-10:00:00:90:fa:5a:26:e3
+symbolic-node-name          :Emulex LPe12000-M8 FV2.01A10 DV10.2.340.18
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:09:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :10:00:00:90:fa:5a:26:e3             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860900
+------------------------
+port-wwn (vendor)           :10:00:00:90:fa:48:6a:11             
+node-wwn                    :20:00:00:90:fa:48:6a:11
+class                       :2,3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :Emulex PPN-10:00:00:90:fa:48:6a:11
+symbolic-node-name          :Emulex LPe12000-M8 FV2.01A10 DV10.2.340.18
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0a:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :10:00:00:90:fa:48:6a:11             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860aef
+------------------------
+port-wwn (vendor)           :50:00:00:e0:da:1a:da:20 (Fujitsu)   
+node-wwn                    :50:00:00:e0:da:1a:da:00
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:target 
+symbolic-port-name          :
+symbolic-node-name          :
+port-type                   :NL
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0b:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :00:00:00:00:00:00:00:00             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860bef
+------------------------
+port-wwn (vendor)           :50:00:00:e0:da:1a:da:30 (Fujitsu)   
+node-wwn                    :50:00:00:e0:da:1a:da:00
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:target 
+symbolic-port-name          :
+symbolic-node-name          :
+port-type                   :NL
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0c:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :00:00:00:00:00:00:00:00             
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860c00
+------------------------
+port-wwn (vendor)           :21:02:00:e0:8b:da:c3:08 (Qlogic)    
+node-wwn                    :20:02:00:e0:8b:da:c3:08
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2462 FW:v8.02.00 DVR:v8.07.00.18.39.0-k
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0e:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :21:02:00:e0:8b:da:c3:08 (Qlogic)    
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860d00
+------------------------
+port-wwn (vendor)           :50:06:01:68:36:e0:18:3d (Clariion)  
+node-wwn                    :50:06:01:60:b6:e0:18:3d
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp 
+symbolic-port-name          :CLARiiON::::SPB20::FC::::::
+symbolic-node-name          :CLARiiON::::SPB::FC::::::
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:10:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :50:06:01:68:36:e0:18:3d (Clariion)  
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x860e00
+------------------------
+port-wwn (vendor)           :50:06:01:60:36:e0:18:3d (Clariion)  
+node-wwn                    :50:06:01:60:b6:e0:18:3d
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp 
+symbolic-port-name          :CLARiiON::::SPA20::FC::::::
+symbolic-node-name          :CLARiiON::::SPA::FC::::::
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :20:0f:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :50:06:01:60:36:e0:18:3d (Clariion)  
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x861100
+------------------------
+port-wwn (vendor)           :24:01:00:05:73:b1:38:d8 (Cisco)     
+node-wwn                    :20:01:00:05:73:b1:38:d9
+class                       :2,3
+node-ip-addr                :192.168.144.11
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :npv 
+symbolic-port-name          :switch:port-channel 1
+symbolic-node-name          :switch
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :24:01:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :24:01:00:05:73:b1:38:d8 (Cisco)     
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x861101
+------------------------
+port-wwn (vendor)           :21:00:00:e0:8b:1e:51:94 (Qlogic)    
+node-wwn                    :20:00:00:e0:8b:1e:51:94
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLA2342 FW:v3.03.06 DVR:v9.0.0.2 (w32 IP)
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :24:01:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :24:01:00:05:73:b1:38:d8 (Cisco)     
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x861102
+------------------------
+port-wwn (vendor)           :21:01:00:e0:8b:3e:51:94 (Qlogic)    
+node-wwn                    :20:01:00:e0:8b:3e:51:94
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLA2342 FW:v3.03.06 DVR:v9.0.0.2 (w32 IP)
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :24:01:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :24:01:00:05:73:b1:38:d8 (Cisco)     
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+------------------------
+VSAN:1     FCID:0x861104
+------------------------
+port-wwn (vendor)           :21:00:00:24:ff:0b:f4:05             
+node-wwn                    :20:00:00:24:ff:0b:f4:05
+class                       :3
+node-ip-addr                :0.0.0.0
+ipa                         :ff ff ff ff ff ff ff ff
+fc4-types:fc4_features      :scsi-fcp:init 
+symbolic-port-name          :
+symbolic-node-name          :QLE2460 FW:v7.03.00 DVR:v8.07.00.18.07.2-k
+port-type                   :N 
+port-ip-addr                :0.0.0.0
+fabric-port-wwn             :24:01:00:2a:6a:3b:95:80
+hard-addr                   :0x000000
+permanent-port-wwn (vendor) :24:01:00:05:73:b1:38:d8 (Cisco)     
+Connected Interface         :Not Available
+Switch Name (IP address)    :mds9148 (192.168.144.14)
+
+Total number of entries = 19

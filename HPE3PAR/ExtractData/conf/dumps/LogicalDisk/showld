@@ -1,0 +1,19 @@
+Id Name          RAID -Detailed_State- Own SizeMB UsedMB Use  Lgct LgId WThru MapV
+ 0 admin.usr.0      1 normal           0/1   4096   4096 V       0  ---     N    Y
+ 1 admin.usr.1      1 normal           0/1   1024   1024 V       0  ---     N    Y
+ 2 admin.usr.2      1 normal           1/0   4096   4096 V       0  ---     N    Y
+ 3 admin.usr.3      1 normal           1/0   1024   1024 V       0  ---     N    Y
+ 4 log0.0           1 normal           0/-  20480      0 log     0  ---     Y    N
+ 5 log1.0           1 normal           1/-  20480      0 log     0  ---     Y    N
+ 6 pdsld0.0         1 normal           0/1   2048      0 P,F     0  ---     Y    N
+ 7 pdsld0.1         1 normal           0/1  16384      0 P       0  ---     Y    N
+ 8 pdsld0.2         1 normal           1/0  16384      0 P       0  ---     Y    N
+ 9 .srdata.usr.0    5 normal           0/1  43008  40960 V       0  ---     N    Y
+10 .srdata.usr.1    5 normal           1/0  43008  40960 V       0  ---     N    Y
+11 tp-0-sa-0.0      1 normal           0/1   4096    128 C,SA    0  ---     N    Y
+12 tp-0-sa-0.1      1 normal           1/0   4096    128 C,SA    0  ---     N    Y
+13 tp-0-sd-0.0      5 normal           0/1  36864  16896 C,SD    0  ---     N    Y
+14 tp-0-sd-0.1      5 normal           1/0  36864  16896 C,SD    0  ---     N    Y
+----------------------------------------------------------------------------------
+15                                         253952 126208
+

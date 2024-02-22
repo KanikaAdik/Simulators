@@ -1,0 +1,826 @@
+<CELERRA SRC='controlstation' >
+<CELERRA_CABINET NAME='$$$$2007' TYPE='Celerra Argonaut'
+ PRODUCT_NAME='VNX5200' SERIAL_NO='$$$$'
+ DMSLOTS='2' CSSLOTS='1' CID='$$$$2007'>
+ <CONTROL_STATION HOSTNAME='vnx5200cs0_####' VERSION='8.1.8-121' NXV='8.1.8-121'
+  DATE_TIME_GMT='2017/05/05-08:42:22' DATE_TIME_LOCAL='2017/05/05-01:42:22'/>
+ <DATA_MOVERS>
+ <MOVER NAME="server_2" SLOT="2" ID="1" ACL="0000" TYPE="nas"
+  STATUS="enabled" GROUP="" DART_VERSION="T8.1.8.121"
+  MODEL="VNX5200" CPU_SPEED="2133" CPU="Intel Four Core Westmere" BUS_SPEED="4800"
+  MOTHERBOARD="CMB-Argonaut" TOTAL_MEMORY="6144"
+  MTIME="1452301479" MODSTAMP="1452301479:81825"
+  I18N_MODE="UNICODE" STANDBY_SERVER="server_3" STANDBY_POLICY="auto"
+  STANDBY_SERVERS="server_3"
+  STANDBY_CLIENTS=""
+  RDF_STANDBY_SLOT=""
+  IS_CIFS_STARTED="True" >
+  <CIFS THREADS="384" SECURITY="NT" DIALECT="SMB3.0"
+   HOMEDIR_ENABLED="False"
+   USERMAPPERS=""
+   DISABLED_INTERFACES="" UNUSED_INTERFACES=""
+   DEFAULT_WINS="" >
+    <CIFS_DOMAIN NAME="VNXCIFS" >
+     <CIFS_HOST NETBIOS="VNXCIFS" IS_DEFAULT="False" 
+      AUTHENTICATION="all" IS_HIDDEN="False" 
+      COMPNAME="" REALM="" COMPUTER_NAME="" 
+      ALIASES="" HAS_JOINED_DOMAIN="False" >
+      <CIFS_INTERFACE NAME="vnx_cifs1" IP="192.168.144.185"
+       BROADCAST="192.168.159.255" MAC_ADDR="0:60:48:28:ac:72" />
+     </CIFS_HOST>
+    </CIFS_DOMAIN>
+  </CIFS>
+  <NAME_SERVERS>
+     <NAME_SERVER TYPE="dns" DOMAIN="cumulus-systems.com" PROTOCOL="udp" 
+     ADDRESS="192.168.144.9,192.168.144.170" MTIME="0" MODSTAMP=""/>
+  </NAME_SERVERS>
+  <PHYSICAL_DEVICES>
+   <PDEV NAME="fcp-0-0" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="20" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016047604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-1" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="21" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016147604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-2" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="22" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016247604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-3" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="23" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016347604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fxg-1-0" SLOT="0" COUNT="2" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="24" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="131072" CONNECTOR="0" BUS="32" BUS2="0" 
+    DEVICE_ID="1662" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom 10 Gigabit" >
+    <PDEV_OPT>speed=10000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="fxg-1-1" SLOT="0" COUNT="2" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="26" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="131072" CONNECTOR="0" BUS="32" BUS2="0" 
+    DEVICE_ID="1662" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom 10 Gigabit" >
+    <PDEV_OPT>speed=10000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-0" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="28" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="67" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=1000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-1" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="29" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="67" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=1000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-2" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="30" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="69" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=1000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-3" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="31" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="69" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=1000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="PLX PEX8648" SLOT="4" COUNT="5" 
+    TYPE="" SUBTYPE="" IRQ="10" MTIME="0" MODSTAMP="" 
+    DEVNUM="1" CLASS_ID="425984" CONNECTOR="1" BUS="49" BUS2="0" 
+    DEVICE_ID="8648" ADDRESS="" VENDOR="10B5" 
+    DESC="PLX PCI-Express Switch" >
+   </PDEV>
+  </PHYSICAL_DEVICES>
+  <LOGICAL_DEVICES>
+    <VDEV NAME="lacp1" NUM_DEVICES="2" COUNT="4" PRIMARY="" 
+     DEVTYPE="Ethernet" TYPE="trk" SUBTYPE="" MTIME="1451938272" MODSTAMP="1451938272:81806" 
+     CLASS_ID="131072" DEVICE_ID="1678" VENDOR="14E4" 
+     DESC="Broadcom Gigabit" 
+     DEVICES="cge-2-0,cge-2-1" PROTOCOL="lacp" >
+    </VDEV>
+    <VDEV NAME="lacp2" NUM_DEVICES="2" COUNT="4" PRIMARY="" 
+     DEVTYPE="Ethernet" TYPE="trk" SUBTYPE="" MTIME="1451938272" MODSTAMP="1451938272:81806" 
+     CLASS_ID="131072" DEVICE_ID="1678" VENDOR="14E4" 
+     DESC="Broadcom Gigabit" 
+     DEVICES="cge-2-2,cge-2-3" PROTOCOL="lacp" >
+    </VDEV>
+    <VDEV NAME="fsn1" NUM_DEVICES="2" COUNT="4" PRIMARY="lacp1" 
+     DEVTYPE="Ethernet" TYPE="fsn" SUBTYPE="" MTIME="1451938272" MODSTAMP="1451938272:81806" 
+     CLASS_ID="131072" DEVICE_ID="1678" VENDOR="14E4" 
+     DESC="Broadcom Gigabit" 
+     DEVICES="lacp2,lacp1" PROTOCOL="" >
+    <INTERFACE DEVNAME="fsn1" NAME="vnx_cifs1" STATUS="UP" 
+     PROTOCOL="IP" ADDRESS="192.168.144.185" SUBNET="255.255.240.0" 
+     BROADCAST="192.168.159.255" MTU="1500" VLAN="0" MTIME="1452126931" MODSTAMP="1452126931:81921"/>
+    <INTERFACE DEVNAME="fsn1" NAME="vnx_nfs" STATUS="UP" 
+     PROTOCOL="IP" ADDRESS="192.168.144.186" SUBNET="255.255.240.0" 
+     BROADCAST="192.168.159.255" MTU="1500" VLAN="0" MTIME="1452126931" MODSTAMP="1452126931:81921"/>
+    </VDEV>
+  </LOGICAL_DEVICES>
+  <MOUNTPOINTS>
+   <MOUNTPOINT PATH="/.etc_common" IS_NESTED="False" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/Test1" IS_NESTED="False" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/Test2" IS_NESTED="False" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/root_vdm_1" IS_NESTED="False" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/root_vdm_1/.etc" IS_NESTED="True" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/root_vdm_1/Test_fs" IS_NESTED="True" OWNER="server_2" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+  </MOUNTPOINTS>
+  <MOUNTS>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/" 
+    FILESYSTEM="root_fs_2" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="False" OPTIONS="ro" PATH="/.etc_common" 
+    FILESYSTEM="root_fs_common" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/Test1" 
+    FILESYSTEM="Test1" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/Test2" 
+    FILESYSTEM="Test2" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/root_vdm_1/.etc" 
+    FILESYSTEM="root_fs_vdm_Test_21" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/root_vdm_1/Test_fs" 
+    FILESYSTEM="Test_fs" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+  </MOUNTS>
+  <EXPORTS>
+   <EXPORT PATH="/" MTIME="1452460798" MODSTAMP="1452460798:82019" 
+    IS_SHARE="False" SHARE_NAME="" ALTERNATE_NAME="" >
+    <OPTION>anon=0</OPTION>
+    <OPTION>access=128.221.252.100:128.221.253.100:128.221.252.101:128.221.253.101</OPTION>
+   </EXPORT>
+   <EXPORT PATH="/Test2" MTIME="1452460798" MODSTAMP="1452460798:82019" 
+    IS_SHARE="False" SHARE_NAME="" ALTERNATE_NAME="" >
+    <OPTION>rw=192.168.144.5</OPTION>
+   </EXPORT>
+     <SHARE PATH="/Test1" MTIME="1452460798" MODSTAMP="1452460798:82019" 
+      IS_SHARE="True" SHARE_NAME="Test1" ALTERNATE_NAME="" >
+    <OPTION>umask=022</OPTION>
+    <OPTION>maxusr=4294967295</OPTION>
+    <OPTION>netbios=VNXCIFS</OPTION>
+     </SHARE>
+  </EXPORTS>
+ </MOVER>
+ <MOVER NAME="server_3" SLOT="3" ID="2" ACL="0000" TYPE="standby"
+  STATUS="enabled" GROUP="" DART_VERSION="T8.1.8.121"
+  MODEL="VNX5200" CPU_SPEED="2133" CPU="Intel Four Core Westmere" BUS_SPEED="4800"
+  MOTHERBOARD="CMB-Argonaut" TOTAL_MEMORY="6144"
+  MTIME="1452301479" MODSTAMP="1452301479:81825"
+  I18N_MODE="ASCII" STANDBY_SERVER="" STANDBY_POLICY=""
+  STANDBY_SERVERS=""
+  STANDBY_CLIENTS="server_2"
+  RDF_STANDBY_SLOT=""
+  IS_CIFS_STARTED="False" >
+  <CIFS THREADS="0" SECURITY="NT" DIALECT="SMB3.0"
+   HOMEDIR_ENABLED="False"
+   USERMAPPERS=""
+   DISABLED_INTERFACES="" UNUSED_INTERFACES=""
+   DEFAULT_WINS="" >
+  </CIFS>
+  <NAME_SERVERS>
+  </NAME_SERVERS>
+  <PHYSICAL_DEVICES>
+   <PDEV NAME="fcp-0-0" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="20" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016847604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-1" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="21" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016947604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-2" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="22" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016a47604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fcp-0-3" SLOT="0" COUNT="4" 
+    TYPE="Fibre Channel" SUBTYPE="" IRQ="23" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="787456" CONNECTOR="0" BUS="16" BUS2="0" 
+    DEVICE_ID="8032" ADDRESS="5006016b47604cf8" VENDOR="11F8" 
+    DESC="PMC QE8" >
+   </PDEV>
+   <PDEV NAME="fxg-1-0" SLOT="0" COUNT="2" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="24" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="131072" CONNECTOR="0" BUS="32" BUS2="0" 
+    DEVICE_ID="1662" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom 10 Gigabit" >
+    <PDEV_OPT>speed=10000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="fxg-1-1" SLOT="0" COUNT="2" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="26" MTIME="0" MODSTAMP="" 
+    DEVNUM="0" CLASS_ID="131072" CONNECTOR="0" BUS="32" BUS2="0" 
+    DEVICE_ID="1662" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom 10 Gigabit" >
+    <PDEV_OPT>speed=10000</PDEV_OPT>
+    <PDEV_OPT>duplex=full</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-0" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="28" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="67" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=auto</PDEV_OPT>
+    <PDEV_OPT>duplex=auto</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-1" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="29" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="67" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=auto</PDEV_OPT>
+    <PDEV_OPT>duplex=auto</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-2" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="30" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="69" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=auto</PDEV_OPT>
+    <PDEV_OPT>duplex=auto</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="cge-2-3" SLOT="0" COUNT="4" 
+    TYPE="Ethernet" SUBTYPE="" IRQ="31" MTIME="0" MODSTAMP="" 
+    DEVNUM="4" CLASS_ID="131072" CONNECTOR="0" BUS="69" BUS2="0" 
+    DEVICE_ID="1678" ADDRESS="" VENDOR="14E4" 
+    DESC="Broadcom Gigabit" >
+    <PDEV_OPT>speed=auto</PDEV_OPT>
+    <PDEV_OPT>duplex=auto</PDEV_OPT>
+    <PDEV_OPT>txflowctl=disable</PDEV_OPT>
+    <PDEV_OPT>rxflowctl=disable</PDEV_OPT>
+   </PDEV>
+   <PDEV NAME="PLX PEX8648" SLOT="4" COUNT="5" 
+    TYPE="" SUBTYPE="" IRQ="10" MTIME="0" MODSTAMP="" 
+    DEVNUM="1" CLASS_ID="425984" CONNECTOR="1" BUS="49" BUS2="0" 
+    DEVICE_ID="8648" ADDRESS="" VENDOR="10B5" 
+    DESC="PLX PCI-Express Switch" >
+   </PDEV>
+  </PHYSICAL_DEVICES>
+  <LOGICAL_DEVICES>
+  </LOGICAL_DEVICES>
+  <MOUNTPOINTS>
+   <MOUNTPOINT PATH="/.etc_common" IS_NESTED="False" OWNER="server_3" MTIME="1449771002" MODSTAMP="1449771002:81854"/>
+  </MOUNTPOINTS>
+  <MOUNTS>
+   <MOUNT IS_PERM="False" IS_RW="True" OPTIONS="rw" PATH="/" 
+    FILESYSTEM="root_fs_3" MTIME="1451935562" MODSTAMP="1451935562:82059"/>
+   <MOUNT IS_PERM="False" IS_RW="False" OPTIONS="ro" PATH="/.etc_common" 
+    FILESYSTEM="root_fs_common" MTIME="1451935562" MODSTAMP="1451935562:82059"/>
+  </MOUNTS>
+  <EXPORTS>
+   <EXPORT PATH="/" MTIME="1449770970" MODSTAMP="1449770970:81856" 
+    IS_SHARE="False" SHARE_NAME="" ALTERNATE_NAME="" >
+    <OPTION>anon=0</OPTION>
+    <OPTION>access=128.221.252.100:128.221.253.100:128.221.252.101:128.221.253.101</OPTION>
+   </EXPORT>
+  </EXPORTS>
+ </MOVER>
+ <MOVER NAME="Test_21" SLOT="" ID="1" ACL="0000" TYPE="vdm"
+  PHYSICAL_HOST="server_2" STATUS="enabled" GROUP="" DART_VERSION="T8.1.8.121"
+  MODEL="" CPU_SPEED="" CPU="" BUS_SPEED=""
+  MOTHERBOARD="" TOTAL_MEMORY=""
+  MTIME="0" MODSTAMP=""
+  I18N_MODE="UNICODE" STANDBY_SERVER="" STANDBY_POLICY=""
+  STANDBY_SERVERS=""
+  STANDBY_CLIENTS=""
+  RDF_STANDBY_SLOT=""
+  IS_CIFS_STARTED="True" >
+  <CIFS THREADS="384" SECURITY="NT" DIALECT="SMB3.0"
+   HOMEDIR_ENABLED="False"
+   USERMAPPERS=""
+   DISABLED_INTERFACES="" UNUSED_INTERFACES=""
+   DEFAULT_WINS="" >
+    <CIFS_DOMAIN NAME="VNXCIFS1" >
+     <CIFS_HOST NETBIOS="VNXCIFS1" IS_DEFAULT="False" 
+      AUTHENTICATION="all" IS_HIDDEN="False" 
+      COMPNAME="" REALM="" COMPUTER_NAME="" 
+      ALIASES="TEST_SHARE1" HAS_JOINED_DOMAIN="False" >
+      <CIFS_INTERFACE NAME="vnx_nfs" IP="192.168.144.186"
+       BROADCAST="192.168.159.255" MAC_ADDR="0:60:48:28:ac:72" />
+     </CIFS_HOST>
+    </CIFS_DOMAIN>
+  </CIFS>
+  <NAME_SERVERS>
+     <NAME_SERVER TYPE="dns" DOMAIN="cumulus-systems.com" PROTOCOL="udp" 
+     ADDRESS="192.168.144.9,192.168.144.170" MTIME="0" MODSTAMP=""/>
+  </NAME_SERVERS>
+  <PHYSICAL_DEVICES>
+  </PHYSICAL_DEVICES>
+  <LOGICAL_DEVICES>
+  </LOGICAL_DEVICES>
+  <MOUNTPOINTS>
+   <MOUNTPOINT PATH="/.etc" IS_NESTED="False" OWNER="" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+   <MOUNTPOINT PATH="/Test_fs" IS_NESTED="False" OWNER="" MTIME="1469087106" MODSTAMP="1469087106:82095"/>
+  </MOUNTPOINTS>
+  <MOUNTS>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/root_vdm_1/.etc" 
+    FILESYSTEM="root_fs_vdm_Test_21" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+   <MOUNT IS_PERM="True" IS_RW="True" OPTIONS="rw" PATH="/root_vdm_1/Test_fs" 
+    FILESYSTEM="Test_fs" MTIME="1469087106" MODSTAMP="1469087106:81871"/>
+  </MOUNTS>
+  <EXPORTS>
+  </EXPORTS>
+ </MOVER>
+ </DATA_MOVERS>
+ <PHYSICAL_STORAGE>
+  <SYMMETRIX ID="$$$$" ACL="0000" SYMM_IDENT="" MODEL="VNX5200" 
+   uCODE_VERSION="" uCODE_VERSION_NUM="" uCODE_DATE="" 
+   PATCH_LEVEL="" PATCH_DATE="" 
+   POWER_ON_DATE="" 
+   DB_SYNC_DATE="" 
+   BCV_SYNC_DATE="" 
+   RDF_SYNC_DATE="" 
+   LAST_IPL="" 
+   API_VERSION="V7.6.1.29 Build 1755" CACHE_SIZE="" 
+   NUM_DEVICES="14" NUM_DISKS="31" 
+   MTIME="1493550004" MODSTAMP="1493550004:130826" 
+   PHYSICAL_DEVICES="" >
+   <DIRECTORS>
+   </DIRECTORS>
+  </SYMMETRIX>
+ </PHYSICAL_STORAGE>
+ <LOGICAL_STORAGE>
+  <VOLUMES>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="1" ACL="0000" SIZE="22527" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FF" NAME="root_disk" 
+   INUSE="True" CLIENT_TYPE="slice" CLIENTS="root_dos,root_layout,root_slice_1,root_slice_2,root_slice_3,root_slice_4,root_slice_5,root_slice_6,root_slice_7,root_slice_8,root_slice_9,root_slice_10,root_slice_11,root_slice_12,root_slice_13,root_slice_14,root_slice_15,root_slice_16,root_rdf_channel,root_log_2,root_log_3,root_log_4,root_log_5,root_log_6,root_log_7,root_log_8,root_log_9,root_log_10,root_log_11,root_log_12,root_log_13,root_log_14,root_log_15,root_log_16,root_disk_reserve" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="2" ACL="0000" SIZE="11263" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FE" NAME="root_ldisk" 
+   INUSE="True" CLIENT_TYPE="slice" CLIENTS="root_ufslog_1,root_ufslog_2,root_ufslog_3,root_ufslog_4,root_ufslog_5,root_ufslog_6,root_ufslog_7,root_ufslog_8,root_ufslog_9,root_ufslog_10,root_ufslog_11,root_ufslog_12,root_ufslog_13,root_ufslog_14,root_ufslog_15,root_ufslog_16,root_ldisk_reserve" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="3" ACL="0000" SIZE="2047" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FC" NAME="d3" 
+   INUSE="True" CLIENT_TYPE="meta" CLIENTS="md3" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="4" ACL="0000" SIZE="2047" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FB" NAME="d4" 
+   INUSE="True" CLIENT_TYPE="meta" CLIENTS="md4" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="5" ACL="0000" SIZE="4095" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FD" NAME="d5" 
+   INUSE="True" CLIENT_TYPE="meta" CLIENTS="md5" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="CLSTD" ID="6" ACL="0000" SIZE="65535" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="F9FA" NAME="d6" 
+   INUSE="True" CLIENT_TYPE="meta" CLIENTS="md6" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="Performance" ID="7" ACL="0000" SIZE="511999" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="0000" NAME="d7" 
+   INUSE="True" CLIENT_TYPE="stripe" CLIENTS="v99" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="disk" DISK_TYPE="Performance" ID="8" ACL="0000" SIZE="511999" 
+   MTIME="1451939006" MODSTAMP="1451939006:130818" SYMM_ID="$$$$" SYMM_DEV="0001" NAME="d8" 
+   INUSE="True" CLIENT_TYPE="stripe" CLIENTS="v99" 
+   SERVERS="server_2,server_3"/>
+   <VOLUME TYPE="slice" ID="1" ACL="0000" SIZE="134" NAME="root_dos" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="0" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="2" ACL="0000" SIZE="1" NAME="root_layout" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="134" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="3" ACL="0000" SIZE="16" NAME="root_slice_1" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="135" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_1"/>
+   <VOLUME TYPE="slice" ID="4" ACL="0000" SIZE="16" NAME="root_slice_2" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="151" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_2"/>
+   <VOLUME TYPE="slice" ID="5" ACL="0000" SIZE="16" NAME="root_slice_3" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="167" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_3"/>
+   <VOLUME TYPE="slice" ID="6" ACL="0000" SIZE="16" NAME="root_slice_4" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="183" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_4"/>
+   <VOLUME TYPE="slice" ID="7" ACL="0000" SIZE="16" NAME="root_slice_5" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="199" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_5"/>
+   <VOLUME TYPE="slice" ID="8" ACL="0000" SIZE="16" NAME="root_slice_6" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="215" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_6"/>
+   <VOLUME TYPE="slice" ID="9" ACL="0000" SIZE="16" NAME="root_slice_7" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="231" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_7"/>
+   <VOLUME TYPE="slice" ID="10" ACL="0000" SIZE="16" NAME="root_slice_8" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="247" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_8"/>
+   <VOLUME TYPE="slice" ID="11" ACL="0000" SIZE="16" NAME="root_slice_9" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="263" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_9"/>
+   <VOLUME TYPE="slice" ID="12" ACL="0000" SIZE="16" NAME="root_slice_10" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="279" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_10"/>
+   <VOLUME TYPE="slice" ID="13" ACL="0000" SIZE="16" NAME="root_slice_11" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="295" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_11"/>
+   <VOLUME TYPE="slice" ID="14" ACL="0000" SIZE="16" NAME="root_slice_12" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="311" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_12"/>
+   <VOLUME TYPE="slice" ID="15" ACL="0000" SIZE="16" NAME="root_slice_13" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="327" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_13"/>
+   <VOLUME TYPE="slice" ID="16" ACL="0000" SIZE="16" NAME="root_slice_14" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="343" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_14"/>
+   <VOLUME TYPE="slice" ID="17" ACL="0000" SIZE="16" NAME="root_slice_15" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="359" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_15"/>
+   <VOLUME TYPE="slice" ID="18" ACL="0000" SIZE="16" NAME="root_slice_16" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="375" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_16"/>
+   <VOLUME TYPE="slice" ID="19" ACL="0000" SIZE="4" NAME="root_rdf_channel" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="391" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="20" ACL="0000" SIZE="4" NAME="root_log_2" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="395" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="21" ACL="0000" SIZE="4" NAME="root_log_3" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="399" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="22" ACL="0000" SIZE="4" NAME="root_log_4" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="403" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="23" ACL="0000" SIZE="4" NAME="root_log_5" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="407" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="24" ACL="0000" SIZE="4" NAME="root_log_6" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="411" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="25" ACL="0000" SIZE="4" NAME="root_log_7" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="415" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="26" ACL="0000" SIZE="4" NAME="root_log_8" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="419" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="27" ACL="0000" SIZE="4" NAME="root_log_9" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="423" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="28" ACL="0000" SIZE="4" NAME="root_log_10" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="427" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="29" ACL="0000" SIZE="4" NAME="root_log_11" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="431" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="30" ACL="0000" SIZE="4" NAME="root_log_12" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="435" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="31" ACL="0000" SIZE="4" NAME="root_log_13" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="439" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="32" ACL="0000" SIZE="4" NAME="root_log_14" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="443" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="33" ACL="0000" SIZE="4" NAME="root_log_15" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="447" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="34" ACL="0000" SIZE="4" NAME="root_log_16" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="451" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="35" ACL="0000" SIZE="64" NAME="root_ufslog_1" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="0" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="36" ACL="0000" SIZE="64" NAME="root_ufslog_2" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="64" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="37" ACL="0000" SIZE="64" NAME="root_ufslog_3" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="128" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="38" ACL="0000" SIZE="64" NAME="root_ufslog_4" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="192" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="39" ACL="0000" SIZE="64" NAME="root_ufslog_5" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="256" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="40" ACL="0000" SIZE="64" NAME="root_ufslog_6" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="320" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="41" ACL="0000" SIZE="64" NAME="root_ufslog_7" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="384" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="42" ACL="0000" SIZE="64" NAME="root_ufslog_8" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="448" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="43" ACL="0000" SIZE="64" NAME="root_ufslog_9" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="512" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="44" ACL="0000" SIZE="64" NAME="root_ufslog_10" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="576" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="45" ACL="0000" SIZE="64" NAME="root_ufslog_11" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="640" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="46" ACL="0000" SIZE="64" NAME="root_ufslog_12" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="704" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="47" ACL="0000" SIZE="64" NAME="root_ufslog_13" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="768" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="48" ACL="0000" SIZE="64" NAME="root_ufslog_14" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="832" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="49" ACL="0000" SIZE="64" NAME="root_ufslog_15" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="896" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="50" ACL="0000" SIZE="64" NAME="root_ufslog_16" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="960" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_ufslog"/>
+   <VOLUME TYPE="slice" ID="51" ACL="0000" SIZE="10230" NAME="root_ldisk_reserve" 
+   DISKS="root_ldisk" VOLUME="root_ldisk" OFFSET="1024" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="slice" CLIENTS="root_panic_2,root_s54_2,root_panic_3,root_s56_3,root_panic_4,root_s58_4,root_panic_5,root_s60_5,root_panic_6,root_s62_6,root_panic_7,root_s64_7,root_panic_8,root_s66_8,root_panic_9,root_s68_9"/>
+   <VOLUME TYPE="slice" ID="52" ACL="0000" SIZE="22063" NAME="root_disk_reserve" 
+   DISKS="root_disk" VOLUME="root_disk" OFFSET="455" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_panic_reserve"/>
+   <VOLUME TYPE="slice" ID="53" ACL="0000" SIZE="8" NAME="root_panic_2" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="0" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="54" ACL="0000" SIZE="240" NAME="root_s54_2" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="8" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_2"/>
+   <VOLUME TYPE="slice" ID="55" ACL="0000" SIZE="8" NAME="root_panic_3" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="248" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="56" ACL="0000" SIZE="240" NAME="root_s56_3" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="256" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_3"/>
+   <VOLUME TYPE="slice" ID="57" ACL="0000" SIZE="8" NAME="root_panic_4" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="496" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="58" ACL="0000" SIZE="240" NAME="root_s58_4" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="504" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_4"/>
+   <VOLUME TYPE="slice" ID="59" ACL="0000" SIZE="8" NAME="root_panic_5" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="744" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="60" ACL="0000" SIZE="240" NAME="root_s60_5" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="752" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_5"/>
+   <VOLUME TYPE="slice" ID="61" ACL="0000" SIZE="8" NAME="root_panic_6" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="992" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="62" ACL="0000" SIZE="240" NAME="root_s62_6" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1000" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_6"/>
+   <VOLUME TYPE="slice" ID="63" ACL="0000" SIZE="8" NAME="root_panic_7" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1240" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="64" ACL="0000" SIZE="240" NAME="root_s64_7" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1248" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_7"/>
+   <VOLUME TYPE="slice" ID="65" ACL="0000" SIZE="8" NAME="root_panic_8" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1488" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="66" ACL="0000" SIZE="240" NAME="root_s66_8" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1496" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_8"/>
+   <VOLUME TYPE="slice" ID="67" ACL="0000" SIZE="8" NAME="root_panic_9" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1736" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="False" CLIENT_TYPE="" CLIENTS=""/>
+   <VOLUME TYPE="slice" ID="68" ACL="0000" SIZE="240" NAME="root_s68_9" 
+   DISKS="root_ldisk" VOLUME="root_ldisk_reserve" OFFSET="1744" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="root_volume_9"/>
+   <VOLUME TYPE="slice" ID="69" ACL="0000" SIZE="10240" NAME="s69" 
+   DISKS="d7,d8" VOLUME="v99" OFFSET="0" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="v102"/>
+   <VOLUME TYPE="slice" ID="70" ACL="0000" SIZE="10240" NAME="s70" 
+   DISKS="d7,d8" VOLUME="v99" OFFSET="10240" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="v104"/>
+   <VOLUME TYPE="slice" ID="71" ACL="0000" SIZE="1024" NAME="s71" 
+   DISKS="d7,d8" VOLUME="v99" OFFSET="20480" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="v106"/>
+   <VOLUME TYPE="slice" ID="72" ACL="0000" SIZE="1024" NAME="s72" 
+   DISKS="d7,d8" VOLUME="v99" OFFSET="21504" 
+   MTIME="1469087112" MODSTAMP="1469087112:130821" INUSE="True" CLIENT_TYPE="meta" CLIENTS="v108"/>
+   <VOLUME TYPE="meta" ID="10" ACL="0000" SIZE="16" NAME="root_volume_1" 
+   DISKS="root_disk" VOLUMES="root_slice_1" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_1" 
+   FILESYSTEM="root_fs_1"/>
+   <VOLUME TYPE="meta" ID="12" ACL="0000" SIZE="256" NAME="root_volume_2" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_2,root_s54_2" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_2" 
+   FILESYSTEM="root_fs_2"/>
+   <VOLUME TYPE="meta" ID="14" ACL="0000" SIZE="256" NAME="root_volume_3" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_3,root_s56_3" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_3" 
+   FILESYSTEM="root_fs_3"/>
+   <VOLUME TYPE="meta" ID="16" ACL="0000" SIZE="256" NAME="root_volume_4" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_4,root_s58_4" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="18" ACL="0000" SIZE="256" NAME="root_volume_5" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_5,root_s60_5" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="20" ACL="0000" SIZE="256" NAME="root_volume_6" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_6,root_s62_6" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="22" ACL="0000" SIZE="256" NAME="root_volume_7" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_7,root_s64_7" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="24" ACL="0000" SIZE="256" NAME="root_volume_8" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_8,root_s66_8" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="26" ACL="0000" SIZE="256" NAME="root_volume_9" 
+   DISKS="root_disk,root_ldisk" VOLUMES="root_slice_9,root_s68_9" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="28" ACL="0000" SIZE="16" NAME="root_volume_10" 
+   DISKS="root_disk" VOLUMES="root_slice_10" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="30" ACL="0000" SIZE="16" NAME="root_volume_11" 
+   DISKS="root_disk" VOLUMES="root_slice_11" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="32" ACL="0000" SIZE="16" NAME="root_volume_12" 
+   DISKS="root_disk" VOLUMES="root_slice_12" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="34" ACL="0000" SIZE="16" NAME="root_volume_13" 
+   DISKS="root_disk" VOLUMES="root_slice_13" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="36" ACL="0000" SIZE="16" NAME="root_volume_14" 
+   DISKS="root_disk" VOLUMES="root_slice_14" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="38" ACL="0000" SIZE="16" NAME="root_volume_15" 
+   DISKS="root_disk" VOLUMES="root_slice_15" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="False" CLIENT_TYPE="" CLIENTS="" 
+   FILESYSTEM=""/>
+   <VOLUME TYPE="meta" ID="40" ACL="0000" SIZE="16" NAME="root_volume_16" 
+   DISKS="root_disk" VOLUMES="root_slice_16" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_common" 
+   FILESYSTEM="root_fs_common"/>
+   <VOLUME TYPE="meta" ID="73" ACL="0000" SIZE="1024" NAME="root_ufslog" 
+   DISKS="root_ldisk" VOLUMES="root_ufslog_1,root_ufslog_2,root_ufslog_3,root_ufslog_4,root_ufslog_5,root_ufslog_6,root_ufslog_7,root_ufslog_8,root_ufslog_9,root_ufslog_10,root_ufslog_11,root_ufslog_12,root_ufslog_13,root_ufslog_14,root_ufslog_15,root_ufslog_16" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_ufslog" 
+   FILESYSTEM="root_fs_ufslog"/>
+   <VOLUME TYPE="meta" ID="76" ACL="0000" SIZE="22063" NAME="root_panic_reserve" 
+   DISKS="root_disk" VOLUMES="root_disk_reserve" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_panic_reserve" 
+   FILESYSTEM="root_panic_reserve"/>
+   <VOLUME TYPE="meta" ID="93" ACL="0000" SIZE="2047" NAME="md3" 
+   DISKS="d3" VOLUMES="d3" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_d3" 
+   FILESYSTEM="root_fs_d3"/>
+   <VOLUME TYPE="meta" ID="94" ACL="0000" SIZE="2047" NAME="md4" 
+   DISKS="d4" VOLUMES="d4" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_d4" 
+   FILESYSTEM="root_fs_d4"/>
+   <VOLUME TYPE="meta" ID="95" ACL="0000" SIZE="4095" NAME="md5" 
+   DISKS="d5" VOLUMES="d5" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_d5" 
+   FILESYSTEM="root_fs_d5"/>
+   <VOLUME TYPE="meta" ID="96" ACL="0000" SIZE="65535" NAME="md6" 
+   DISKS="d6" VOLUMES="d6" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_d6" 
+   FILESYSTEM="root_fs_d6"/>
+   <VOLUME TYPE="meta" ID="102" ACL="0000" SIZE="10240" NAME="v102" 
+   DISKS="d7,d8" VOLUMES="s69" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="Test1" 
+   FILESYSTEM="Test1"/>
+   <VOLUME TYPE="meta" ID="104" ACL="0000" SIZE="10240" NAME="v104" 
+   DISKS="d7,d8" VOLUMES="s70" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="Test2" 
+   FILESYSTEM="Test2"/>
+   <VOLUME TYPE="meta" ID="106" ACL="0000" SIZE="1024" NAME="v106" 
+   DISKS="d7,d8" VOLUMES="s71" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="root_fs_vdm_Test_21" 
+   FILESYSTEM="root_fs_vdm_Test_21"/>
+   <VOLUME TYPE="meta" ID="108" ACL="0000" SIZE="1024" NAME="v108" 
+   DISKS="d7,d8" VOLUMES="s72" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="fs" CLIENTS="Test_fs" 
+   FILESYSTEM="Test_fs"/>
+   <VOLUME TYPE="stripe" ID="99" ACL="0000" SIZE="1023999" NAME="v99" 
+   DISKS="d7,d8" VOLUMES="d7,d8" 
+   MTIME="1469087112" MODSTAMP="1469087112:130866" INUSE="True" CLIENT_TYPE="slice" CLIENTS="s69,s70,s71,s72" 
+   NUM_SECTORS="512" FILESYSTEM=""/>
+  </VOLUMES>
+  <FILESYSTEMS>
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="16" INUSE="False" 
+    VOLUME="root_volume_1" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="1" NAME="root_fs_1" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="16" INUSE="True" 
+    VOLUME="root_volume_16" 
+    ROSERVERS="server_2,server_3" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="2" NAME="root_fs_common" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="1024" INUSE="False" 
+    VOLUME="root_ufslog" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="3" NAME="root_fs_ufslog" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="22063" INUSE="False" 
+    VOLUME="root_panic_reserve" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="4" NAME="root_panic_reserve" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="2047" INUSE="False" 
+    VOLUME="md3" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="5" NAME="root_fs_d3" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="2047" INUSE="False" 
+    VOLUME="md4" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="6" NAME="root_fs_d4" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="4095" INUSE="False" 
+    VOLUME="md5" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="7" NAME="root_fs_d5" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="rawfs" ACL="0000" SIZE="65535" INUSE="False" 
+    VOLUME="md6" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="8" NAME="root_fs_d6" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="256" INUSE="True" 
+    VOLUME="root_volume_2" 
+    ROSERVERS="" 
+    RWSERVERS="server_2" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="9" NAME="root_fs_2" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="256" INUSE="True" 
+    VOLUME="root_volume_3" 
+    ROSERVERS="" 
+    RWSERVERS="server_3" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="10" NAME="root_fs_3" 
+    GROUP="" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="10240" INUSE="True" 
+    VOLUME="v102" 
+    ROSERVERS="" 
+    RWSERVERS="server_2" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="11" NAME="Test1" 
+    GROUP="root_avm_fs_group_59" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="avm_group" ACL="0000" SIZE="22528" INUSE="True" 
+    VOLUME="0" 
+    ROSERVERS="" 
+    RWSERVERS="" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="12" NAME="root_avm_fs_group_59" 
+    GROUP="" MEMBERS="Test1,Test2,root_fs_vdm_Test_21,Test_fs" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="10240" INUSE="True" 
+    VOLUME="v104" 
+    ROSERVERS="" 
+    RWSERVERS="server_2" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="13" NAME="Test2" 
+    GROUP="root_avm_fs_group_59" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="1024" INUSE="True" 
+    VOLUME="v106" 
+    ROSERVERS="" 
+    RWSERVERS="server_2" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="14" NAME="root_fs_vdm_Test_21" 
+    GROUP="root_avm_fs_group_59" MEMBERS="" PROFILE_NAME="" />
+   <FILESYSTEM TYPE="uxfs" ACL="0000" SIZE="1024" INUSE="True" 
+    VOLUME="v108" 
+    ROSERVERS="" 
+    RWSERVERS="server_2" MTIME="1469087112" MODSTAMP="1469087112:130868" ID="15" NAME="Test_fs" 
+    GROUP="root_avm_fs_group_59" MEMBERS="" PROFILE_NAME="" />
+  </FILESYSTEMS>
+ </LOGICAL_STORAGE>
+</CELERRA_CABINET>
+</CELERRA>

@@ -1,0 +1,79 @@
+{
+    "storageGroupInfo": [
+        {
+            "storageGroupId": "WIN_1D_P28_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "WIN_2D_P28_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "LINUX_1D_P28_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "LINUX_2D_P28_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "VMware1_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "VMware7_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "HyperV1_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "Vmware6_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "Prodn_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "Itprodn_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "VMware7_Test_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "SG_QA_ESX_20-248", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "Ucsrackvmware3_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "FileServer_SG", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }, 
+        {
+            "storageGroupId": "SG_QA_200029", 
+            "lastAvailableDate": 1494578400000, 
+            "firstAvailableDate": 1493280600000
+        }
+    ]
+}

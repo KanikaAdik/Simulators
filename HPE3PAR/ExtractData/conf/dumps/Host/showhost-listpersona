@@ -1,0 +1,12 @@
+Persona_Id Persona_Name   Persona_Caps
+         1 Generic        UARepLun,SESLun
+         2 Generic-ALUA   UARepLun,SESLun,ALUA
+         6 Generic-legacy --
+         7 HPUX-legacy    VolSetAddr,Lun0SCC
+         8 AIX-legacy     NACA
+         9 EGENERA        SoftInq
+        10 ONTAP-legacy   SoftInq
+        11 VMware         SubLun,ALUA
+        12 OpenVMS        UARepLun,RTPG,SESLun,Lun0SCC
+        13 HPUX           UARepLun,VolSetAddr,SESLun,ALUA,Lun0SCC
+        15 WindowsServer  UARepLun,SESLun,ALUA,WSC

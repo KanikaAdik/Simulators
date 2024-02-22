@@ -1,0 +1,6 @@
+col,showvvset - Explanation of column headers for showvvset
+
+Id                   Set identifier
+Name                 Name of the set
+Members              List of vvs that are a member of the set
+Comment              Any comment associated with the set

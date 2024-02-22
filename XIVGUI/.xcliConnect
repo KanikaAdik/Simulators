@@ -1,0 +1,33 @@
+#!/bin/sh
+
+add_class_path() {
+  if [ -n "$1" ] && [ `expr "$1" : '.*\*'` -eq "0" ]; then
+    local_classpath="$local_classpath${local_classpath:+:}$1"
+  fi
+}
+
+prg_dir=`dirname "$prg"`
+progname=`basename "$prg"`
+cd "$prg_dir"
+prg_dir=`pwd`
+app_home=.
+cd "$app_home"
+app_home=`pwd`
+bundled_jre_home="$app_home/jre"
+
+local_classpath=""
+add_class_path "$app_home/lib/XIVStorageManager.jar"
+add_class_path "$app_home/lib/jdom.jar"
+add_class_path "$app_home/lib/log4j-1.2.14.jar"
+add_class_path "$app_home/lib/looks-2.0.4.jar"
+add_class_path "$app_home/lib/socks.jar"
+add_class_path "$app_home/lib/icu4j-50_1.jar"
+add_class_path "$app_home/lib/jline-1.0.jar"
+
+"$app_home/jre/bin/java" -Xmx256m -classpath "$local_classpath" com.xiv.windows.xcli.xcliConnect "$@"
+rc="$?"
+if [ "$rc" = "127" ]; then
+     "$app_home/jre/jre/bin/java" -Xmx256m -classpath "$local_classpath" com.xiv.windows.xcli.xcliConnect "$@"
+     rc="$?"
+fi
+exit $?

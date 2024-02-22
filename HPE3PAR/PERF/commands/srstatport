@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+import sys, os
+"""
+StoragePort - port perf -     srstatport -attime -groupby PORT_N,PORT_S,PORT_P
+"""
+
+arglen = len(sys.argv)
+args = sys.argv[1:]
+command = 'vlunPerf.txt'
+
+
+if arglen == 1:
+    #no arguments
+    print "Not a valid command"
+else:
+    if 'PORT_N,PORT_S,PORT_P' in args:
+        path = os.path.join(os.sep,"root","HPE3PAR","PERF","StoragePort",command)
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        raise

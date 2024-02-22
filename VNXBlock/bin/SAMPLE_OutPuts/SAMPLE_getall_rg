@@ -1,0 +1,29 @@
+
+
+Agent Rev:           7.33.8 (1.19)
+
+
+All RAID Groups Information
+----------------------------
+
+
+RaidGroup ID:                              0
+RaidGroup Type:                            r1
+RaidGroup State:                           Valid_luns
+List of disks:                             Bus 0 Enclosure 0  Disk 11
+                                           Bus 0 Enclosure 0  Disk 15
+List of luns:                              7 6 9 10 
+Max Number of disks:                       2
+Max Number of luns:                        256
+Raw Capacity (Blocks):                     1720879104
+Logical Capacity (Blocks):                 1720870912
+Free Capacity (Blocks,non-contiguous):     1708271616
+Free contiguous group of unbound segments: 1708267136
+Defrag/Expand priority:                    N/A
+Percent defragmented:                      N/A
+Percent expanded:                          N/A
+Disk expanding onto:                       N/A
+Lun Expansion enabled:                     NO
+Legal RAID types:                          r1 
+
+

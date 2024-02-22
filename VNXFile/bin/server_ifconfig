@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import os,sys
+from nas_run import nas_run
+
+nas = nas_run(sys.argv,"serverIfconfig")
+
+nas._run()
+

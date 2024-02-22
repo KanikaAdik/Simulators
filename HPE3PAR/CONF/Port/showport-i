@@ -1,0 +1,13 @@
+N:S:P Brand  Model    Rev Firmware    Serial  HWType
+0:0:1 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+0:0:2 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+0:1:1 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+0:1:2 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+0:3:1 Intel  e1000e   n/a 2.3.2-k     Onboard Eth
+1:0:1 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+1:0:2 LSI    9205-8e  01  17.11.00.00 Onboard SAS
+1:1:1 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+1:1:2 EMULEX LPe12002 03  2.02.X.15   Onboard FC
+1:3:1 Intel  e1000e   n/a 2.3.2-k     Onboard Eth
+----------------------------------------------------
+   10

@@ -1,0 +1,72 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578474566, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "PercentReadReqHit": 86.29612, 
+                "PercentReadReqs": 42.500336, 
+                "PercentWriteReqHit": 99.93811, 
+                "timestamp": 1494577800000, 
+                "PercentBusy": 39.19526, 
+                "HitReqs": 8377.453, 
+                "WriteHitReqs": 5113.6763, 
+                "ReadResponseTime": 0.15319546, 
+                "ReadHitReqs": 3263.7769, 
+                "QueueDepthUtilization": 8.769163, 
+                "PercentWriteReqs": 57.49966, 
+                "WriteResponseTime": 0.6011859, 
+                "ReadReqs": 3782.0667, 
+                "HostMBs": 138.2634, 
+                "Reqs": 8898.91, 
+                "TotalReadCount": 3838.2966, 
+                "TotalWriteCount": 5151.0835, 
+                "WriteReqs": 5116.8433
+            }, 
+            {
+                "PercentReadReqHit": 83.54064, 
+                "PercentReadReqs": 43.53549, 
+                "PercentWriteReqHit": 99.90371, 
+                "timestamp": 1494578100000, 
+                "PercentBusy": 38.88818, 
+                "HitReqs": 8378.646, 
+                "WriteHitReqs": 5094.21, 
+                "ReadResponseTime": 0.17180778, 
+                "ReadHitReqs": 3284.4365, 
+                "QueueDepthUtilization": 8.662612, 
+                "PercentWriteReqs": 56.464516, 
+                "WriteResponseTime": 0.66823447, 
+                "ReadReqs": 3931.5432, 
+                "HostMBs": 140.443, 
+                "Reqs": 9030.663, 
+                "TotalReadCount": 3779.6533, 
+                "TotalWriteCount": 4648.0, 
+                "WriteReqs": 5099.12
+            }, 
+            {
+                "PercentReadReqHit": 84.337906, 
+                "PercentReadReqs": 45.882587, 
+                "PercentWriteReqHit": 99.822044, 
+                "timestamp": 1494578400000, 
+                "PercentBusy": 38.75093, 
+                "HitReqs": 7734.3965, 
+                "WriteHitReqs": 4506.383, 
+                "ReadResponseTime": 0.17072013, 
+                "ReadHitReqs": 3228.0137, 
+                "QueueDepthUtilization": 8.643187, 
+                "PercentWriteReqs": 54.117405, 
+                "WriteResponseTime": 0.67888343, 
+                "ReadReqs": 3827.4766, 
+                "HostMBs": 137.99446, 
+                "Reqs": 8341.894, 
+                "TotalReadCount": 3806.3567, 
+                "TotalWriteCount": 4408.6567, 
+                "WriteReqs": 4514.4165
+            }
+        ]
+    }, 
+    "id": "7da598cf-8474-4fd7-8e69-8954e2be26ee_0", 
+    "maxPageSize": 1000
+}

@@ -1,0 +1,52 @@
+-Service- -State- -HTTP_State- HTTP_Port -HTTPS_State- HTTPS_Port -Version-
+Enabled   Active  Enabled           8008 Enabled             8080 1.4.2
+-------WSAPI Server Configuration-------
+service State             :      Enabled
+server State              :       Active
+HTTP State                :      Enabled
+HTTP Port                 :         8008
+HTTPS State               :      Enabled
+HTTPS Port                :         8080
+Number of sessions In Use :            0
+System Resource Usage     :           48
+Version                   :        1.4.2
+Session Timeout           :   15 Minutes
+
+
+####################################################Version ############################################
+showversion - Show server software version information.
+
+SYNTAX
+    showversion [options]
+
+DESCRIPTION
+    The showversion command displays information about the storage server
+    software. Use this command to determine if the storage system is using the
+    latest software version.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -a
+        Show all component versions.
+
+    -b
+        Show build levels.
+
+    -s
+        Show release version number only (useful for scripting).
+
+SPECIFIERS
+    None.
+
+NOTES
+    When displaying all versions, for certain components multiple versions
+    might be installed.  In such cases, multiple lines are displayed.
+
+    If no options are specified, the overall version of the software is
+    displayed.
+
+EXAMPLES
+    None.
+

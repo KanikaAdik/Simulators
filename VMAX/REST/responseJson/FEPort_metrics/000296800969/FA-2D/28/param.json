@@ -1,0 +1,18 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "directorId": "FA-2D", 
+    "metrics": [
+        "Reads", 
+        "Writes", 
+        "IOs", 
+        "MBRead", 
+        "MBWritten", 
+        "MBs", 
+        "PercentBusy", 
+        "SpeedGBs"
+    ], 
+    "dataFormat": "Average", 
+    "portId": "28"
+}

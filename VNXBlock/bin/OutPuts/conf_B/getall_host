@@ -1,0 +1,165 @@
+
+
+Server IP Address:       $$$$
+Agent Rev:           7.33.8 (1.19)
+
+
+Agent/Host Information
+-----------------------
+
+
+
+Agent Rev:           7.33.8 (1.19)
+Name:                K10
+Desc:                
+Node:                B-####
+Physical Node:       K10
+Signature:           4083971
+Peer Signature:      4083983
+Revision:            05.33.008.5.119
+SCSI Id:             0
+Model:               VNX5200
+Model Type:          Rackmount
+Prom Rev:            33.40.00
+SP Memory:           16384
+Serial No:           ####
+SP Identifier:       B
+Cabinet:             DPE9 
+
+Name of the software package:        -Compression
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -Deduplication
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -FAST
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -FASTCache
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -MirrorView/A
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -MirrorView/S
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -ODXCopy
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -SANCopy
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -SnapView
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -ThinProvisioning
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -Unisphere
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -UnisphereAnalyzer
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -UnisphereBlock
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -UnisphereFile
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -UnisphereQoSManager
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        -VNXSnapshots
+Revision of the software package:    -
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+Name of the software package:        VNX-Block-Operating-Environment
+Revision of the software package:    05.33.008.5.119
+Commit Required:                     NO
+Revert Possible:                     NO
+Active State:                        YES
+Is installation completed:           YES
+Is this System Software:             NO
+
+

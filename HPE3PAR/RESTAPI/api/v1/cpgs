@@ -1,0 +1,118 @@
+{
+    "total": 2,
+    "members": [
+        {
+            "id": 0,
+            "uuid": "2bd8460b-a6d3-4d4f-ae13-8cac221274a2",
+            "name": "AFA",
+            "numFPVVs": 0,
+            "numTPVVs": 1,
+            "numTDVVs": 0,
+            "UsrUsage": {
+                "totalMiB": 41472,
+                "rawTotalMiB": 55295,
+                "usedMiB": 41472,
+                "rawUsedMiB": 55295
+            },
+            "SAUsage": {
+                "totalMiB": 8192,
+                "rawTotalMiB": 24576,
+                "usedMiB": 256,
+                "rawUsedMiB": 768
+            },
+            "SDUsage": {
+                "totalMiB": 32256,
+                "rawTotalMiB": 43008,
+                "usedMiB": 512,
+                "rawUsedMiB": 682
+            },
+            "SAGrowth": {
+                "incrementMiB": 8192,
+                "LDLayout": {
+                    "HA": 3,
+                    "diskPatterns": [
+                        {
+                            "diskType": 3
+                        }
+                    ],
+                    "RAIDType": 2
+                }
+            },
+            "SDGrowth": {
+                "incrementMiB": 32768,
+                "LDLayout": {
+                    "RAIDType": 3,
+                    "HA": 3,
+                    "setSize": 4,
+                    "chunkletPosPref": 1,
+                    "diskPatterns": [
+                        {
+                            "diskType": 3
+                        }
+                    ]
+                }
+            },
+            "state": 1,
+            "failedStates": [],
+            "degradedStates": [],
+            "additionalStates": []
+        },
+        {
+            "id": 1,
+            "uuid": "e701271c-c5b9-4e65-9fe1-da388522be59",
+            "name": "AFA2",
+            "numFPVVs": 0,
+            "numTPVVs": 0,
+            "numTDVVs": 0,
+            "UsrUsage": {
+                "totalMiB": 0,
+                "rawTotalMiB": 0,
+                "usedMiB": 0,
+                "rawUsedMiB": 0
+            },
+            "SAUsage": {
+                "totalMiB": 0,
+                "rawTotalMiB": 0,
+                "usedMiB": 0,
+                "rawUsedMiB": 0
+            },
+            "SDUsage": {
+                "totalMiB": 0,
+                "rawTotalMiB": 0,
+                "usedMiB": 0,
+                "rawUsedMiB": 0
+            },
+            "SAGrowth": {
+                "incrementMiB": 8192,
+                "LDLayout": {
+                    "HA": 3,
+                    "diskPatterns": [
+                        {
+                            "diskType": 3,
+                            "RPM": 100
+                        }
+                    ],
+                    "RAIDType": 2
+                }
+            },
+            "SDGrowth": {
+                "incrementMiB": 32768,
+                "LDLayout": {
+                    "RAIDType": 3,
+                    "HA": 3,
+                    "setSize": 4,
+                    "diskPatterns": [
+                        {
+                            "diskType": 3,
+                            "RPM": 100
+                        }
+                    ]
+                }
+            },
+            "state": 1,
+            "failedStates": [],
+            "degradedStates": [],
+            "additionalStates": []
+        }
+    ]
+}

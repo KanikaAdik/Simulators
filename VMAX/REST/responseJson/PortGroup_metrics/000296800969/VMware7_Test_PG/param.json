@@ -1,0 +1,14 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "metrics": [
+        "Reads", 
+        "Writes", 
+        "MBRead", 
+        "MBWritten", 
+        "PercentBusy"
+    ], 
+    "dataFormat": "Average", 
+    "portGroupId": "VMware7_Test_PG"
+}

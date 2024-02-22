@@ -1,0 +1,7 @@
+ Id Name          Prov Type CopyOf VSize_MB Copied_MB Copied%
+  1 .srdata       full base ---       81920        --      --
+  0 admin         full base ---       10240        --      --
+284 CS_InfraLUN31 tpvv base ---      409600        --      --
+-------------------------------------------------------------
+  3 total                            501760         0
+

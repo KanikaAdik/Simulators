@@ -1,0 +1,8 @@
+Available_Cache,Control_Mem,Data_Mem,InCluster,LED,Master,Name,Node,State
+
+ata_Mem,Available_Cache
+Name       Node State Master InCluster Control_Mem Data_Mem Available_Cache
+1649581-0     0 OK    Yes    Yes             16384    16384             100
+1649581-1     1 OK    No     Yes             16384    16384             100
+---------------------------------------------------------------------------
+          total                                                           2

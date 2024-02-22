@@ -1,0 +1,25 @@
+
+
+Server IP Address:       $$$$
+Agent Rev:           7.33.8 (1.19)
+
+
+Cache Information
+-----------------
+
+
+SP Read Cache State:  Enabled
+SP Write Cache State:  Enabled
+Cache Page size (KB):  8
+Read Hit Ratio:  99
+Write Hit Ratio:  67
+Dirty Cache Pages (MB):  1336
+SPA Read Cache State:  Enabled
+SPB Read Cache State:  Enabled
+SPA Write Cache State:  Enabled
+SPB Write Cache State:  Enabled
+SPS Test Day:  Sunday
+SPS Test Time:  01:00
+SPA Physical Memory Size (MB):  16384
+SPB Physical Memory Size (MB):  16384
+

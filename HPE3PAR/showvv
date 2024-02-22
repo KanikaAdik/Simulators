@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+"""
+Volume --       showvv
+                showvv -d
+                                showvv -space
+                                showvv -r
+                                showvv -pol
+                                showvv -g
+                                showvv -alert
+                                showvv -alerttime
+                                showvv -zone
+                                showvv -cpprog
+                                showvv -rcopy
+                                showvv -expired
+                                showvv -failed
+                                showvv -retained
+
+"""
+import sys, os
+
+args = len(sys.argv)
+command = sys.argv[0].split("/")[-1]
+
+if args == 1:
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","Volume",command)
+    with open(path) as f:
+        print f.read()
+else:
+    filename = command+"".join(sys.argv[1:])
+    #print args
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","Volume","showvv-showcolsId,Udid,Name,VV_WWN,Prov,Type,CopyOf,PPrnt,Prnt,BsId")
+    """
+    try:
+        path = os.path.join(os.sep,"root","HPE3PAR","CONF","Volume",filename)
+    except:
+        path = os.path.join(os.sep,"root","HPE3PAR","CONF","Volume","showvv-showcolsId,Udid,Name,VV_WWN,Prov,Type,CopyOf,PPrnt,Prnt,BsId")
+        pass 
+    """
+    argument = sys.argv[1]
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        path = os.path.join(os.sep,"root","HPE3PAR","CONF","Volume","showvv-showcolsId,Udid,Name,VV_WWN,Prov,Type,CopyOf,PPrnt,Prnt,BsId")
+        with open(path) as f:
+            print f.read()      
+        pass 
+        #raise
+

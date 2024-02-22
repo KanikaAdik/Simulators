@@ -1,0 +1,45 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578474050, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "MBRead": 0.18690105, 
+                "SpeedGBs": 16.0, 
+                "Writes": 31.95, 
+                "MBWritten": 0.35051107, 
+                "IOs": 43.236668, 
+                "Reads": 11.286667, 
+                "PercentBusy": 0.021393498, 
+                "timestamp": 1494577800000, 
+                "MBs": 0.5374121
+            }, 
+            {
+                "MBRead": 4.4159408, 
+                "SpeedGBs": 16.0, 
+                "Writes": 68.37334, 
+                "MBWritten": 4.713971, 
+                "IOs": 114.316666, 
+                "Reads": 45.943333, 
+                "PercentBusy": 0.28771794, 
+                "timestamp": 1494578100000, 
+                "MBs": 9.129911
+            }, 
+            {
+                "MBRead": 6.648428, 
+                "SpeedGBs": 16.0, 
+                "Writes": 79.95, 
+                "MBWritten": 6.4117384, 
+                "IOs": 149.69666, 
+                "Reads": 69.746666, 
+                "PercentBusy": 0.40578783, 
+                "timestamp": 1494578400000, 
+                "MBs": 13.060166
+            }
+        ]
+    }, 
+    "id": "50648874-0c68-417c-82ff-2323cb754401_0", 
+    "maxPageSize": 1000
+}

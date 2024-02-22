@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+"""
+Volume Set--    showvvset
+                showvvset -d
+                                showvvset -v
+                                showvvset -vv
+                                showvvset -summary
+"""
+import sys, os
+
+args = len(sys.argv)
+command = sys.argv[0].split("/")[-1]
+
+if args == 1:
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","VolumneSet",command)
+    with open(path) as f:
+        print f.read()
+else:
+    filename = command+"".join(sys.argv[1:])
+    path = os.path.join(os.sep,"root","HPE3PAR","CONF","VolumneSet",filename)
+    argument = sys.argv[1]
+    try:
+        with open(path) as f:
+            print f.read()
+    except:
+        raise
+

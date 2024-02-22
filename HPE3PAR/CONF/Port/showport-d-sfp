@@ -1,0 +1,59 @@
+---------Port 0:1:1----------
+N:S:P          :   0:1:1
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY83230GQM
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 0:1:2----------
+N:S:P          :   0:1:2
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY83230GR1
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 1:1:1----------
+N:S:P          :   1:1:1
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY832301NJ
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes
+
+---------Port 1:1:2----------
+N:S:P          :   1:1:2
+State          :   OK
+Manufacturer   :   HP-F
+Part Number    :   AJ718A
+Serial Number  :   MY832301NQ
+Revision       :   A
+MaxSpeed(Gbps) :   8.5
+Qualified      :   Yes
+TX Disable     :   No
+TX Fault       :   No
+RX Loss        :   No
+RX Power Low   :   No
+DDM Support    :   Yes

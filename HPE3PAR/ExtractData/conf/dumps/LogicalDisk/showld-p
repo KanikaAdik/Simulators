@@ -1,0 +1,18 @@
+Id Name          Keep_Preserved Dev_Type RPM
+ 0 admin.usr.0                1 SSD      100
+ 1 admin.usr.1                1 SSD      100
+ 2 admin.usr.2                1 SSD      100
+ 3 admin.usr.3                1 SSD      100
+ 4 log0.0                     0 SSD      100
+ 5 log1.0                     0 SSD      100
+ 6 pdsld0.0                   0 SSD      100
+ 7 pdsld0.1                   0 SSD      100
+ 8 pdsld0.2                   0 SSD      100
+ 9 .srdata.usr.0              1 SSD      100
+10 .srdata.usr.1              1 SSD      100
+11 tp-0-sa-0.0                1 SSD      100
+12 tp-0-sa-0.1                1 SSD      100
+13 tp-0-sd-0.0                1 SSD      100
+14 tp-0-sd-0.1                1 SSD      100
+--------------------------------------------
+15

@@ -1,0 +1,95 @@
+###################################### Host Set ###############################################################
+SYNTAX
+    showhostset [options] [<setname_or_pattern>...]
+    showhostset -host [options] [<hostname_or_pattern>...]
+
+DESCRIPTION
+    The showhostset command lists the host sets defined on the storage system
+    and their members.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    -d
+        Show a more detailed listing of each set.
+    -host
+        Show host sets that contain the supplied hostnames or patterns
+
+SPECIFIERS
+    <setname_or_pattern>...
+        An optional list of setnames or patterns.  If no setnames or patterns
+        are specified all sets are displayed, otherwise only sets with names
+        matching one or more of the setnames or patterns are displayed.
+        The patterns are glob-style patterns (see help on sub,globpat).
+    <hostname_or_pattern>...
+        Specifies that the sets containing hosts with the specified names or
+        matching the glob-style patterns should be displayed.
+
+NOTES
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+EXAMPLES
+    Show all host sets defined to the system:
+    cli% showhostset
+    Id Name       Members
+    22 myset      -
+    18 seta       -
+     3 sunv40z-09 sunv40z-09-0
+                  sunv40z-09-1
+                  sunv40z-09-2
+                  sunv40z-09-3
+
+    Show the details of myset only:
+    cli% showhostset -d myset
+    Id Name  Members Comment
+    22 myset -       This is an empty set
+
+    Show the host sets containing host sun40z-09-0:
+    cli% showhostset -host sun40z-09-0
+    Id Name       Members
+     3 sunv40z-09 sunv40z-09-0
+                  sunv40z-09-1
+                  sunv40z-09-2
+                  sunv40z-09-3
+
+@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showhostset
+col,showhostset - Explanation of column headers for showhostset
+
+Id                   Set identifier
+Name                 Name of the set
+Members              List of hosts that are a member of the set
+Comment              Any comment associated with the set
+@@@@@@@@@@@@@@@@@@@@				  
+				  
+				  
+3Par7450 cli% showhostset
+Id Name          Members
+ 7 flashesxha    flashesx03.acme.local
+                 flashesx01.acme.local
+                 flashesx02.acme.local
+                 flashesx04.acme.local
+10 TECTalk_Hosts flashesx01.acme.local
+                 flashesx02.acme.local
+                 flashesx04.acme.local
+11 ESXVCDHA      esxvcd03
+                 esxvcd04
+                 NBU5240
+3Par7450 cli% showhostset -d
+Id Name          Members               Comment
+ 7 flashesxha    flashesx03.acme.local --
+                 flashesx01.acme.local
+                 flashesx02.acme.local
+                 flashesx04.acme.local
+10 TECTalk_Hosts flashesx01.acme.local 3 UCS B200 M3 Hosts
+                 flashesx02.acme.local
+                 flashesx04.acme.local
+11 ESXVCDHA      esxvcd03              --
+                 esxvcd04
+                 NBU5240

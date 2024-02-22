@@ -1,0 +1,14 @@
+{
+    "beDirectorInfo": [
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "directorId": "DF-1C"
+        }, 
+        {
+            "firstAvailableDate": 1493280600000, 
+            "lastAvailableDate": 1494578400000, 
+            "directorId": "DF-2C"
+        }
+    ]
+}

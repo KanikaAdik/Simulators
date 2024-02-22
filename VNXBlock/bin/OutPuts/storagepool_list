@@ -1,0 +1,77 @@
+Pool Name:  Block Pool
+Pool ID:  0
+Raid Type:  Mixed
+Percent Full Threshold:  70
+Description:  
+Disk Type:  Mixed
+State:  Ready
+Status:  OK(0x0)
+Current Operation:  None
+Current Operation State:  N/A
+Current Operation Status:  N/A
+Current Operation Percent Completed:  0
+Raw Capacity (Blocks):  14334608640
+Raw Capacity (GBs):  6835.274
+User Capacity (Blocks):  10540385280
+User Capacity (GBs):  5026.047
+Consumed Capacity (Blocks):  112416768
+Consumed Capacity (GBs):  53.604
+Available Capacity (Blocks):  10427968512
+Available Capacity (GBs):  4972.443
+Percent Full:  1.067
+Total Subscribed Capacity (Blocks):  3374604288
+Total Subscribed Capacity (GBs):  1609.137
+Percent Subscribed:  32.016
+Oversubscribed by (Blocks):  0
+Oversubscribed by (GBs):  0.000
+Disks:  
+Bus 1 Enclosure 0 Disk 0
+Bus 0 Enclosure 0 Disk 8
+Bus 1 Enclosure 0 Disk 3
+Bus 0 Enclosure 0 Disk 10
+Bus 1 Enclosure 0 Disk 5
+Bus 1 Enclosure 0 Disk 8
+Bus 0 Enclosure 0 Disk 9
+Bus 1 Enclosure 0 Disk 6
+Bus 1 Enclosure 0 Disk 1
+Bus 1 Enclosure 0 Disk 4
+Bus 0 Enclosure 0 Disk 7
+Bus 1 Enclosure 0 Disk 2
+Bus 1 Enclosure 0 Disk 9
+Bus 1 Enclosure 0 Disk 7
+LUNs:  13, 8, 2, 11, 12, 4, 3
+
+Pool Name:  File Pool
+Pool ID:  1
+Raid Type:  r_5
+Percent Full Threshold:  70
+Description:  
+Disk Type:  SAS
+State:  Ready
+Status:  OK(0x0)
+Current Operation:  None
+Current Operation State:  N/A
+Current Operation Status:  N/A
+Current Operation Percent Completed:  0
+Raw Capacity (Blocks):  8604807720
+Raw Capacity (GBs):  4103.092
+User Capacity (Blocks):  6881061888
+User Capacity (GBs):  3281.146
+Consumed Capacity (Blocks):  2171114496
+Consumed Capacity (GBs):  1035.268
+Available Capacity (Blocks):  4709947392
+Available Capacity (GBs):  2245.878
+Percent Full:  31.552
+Total Subscribed Capacity (Blocks):  2170589184
+Total Subscribed Capacity (GBs):  1035.018
+Percent Subscribed:  31.544
+Oversubscribed by (Blocks):  0
+Oversubscribed by (GBs):  0.000
+Disks:  
+Bus 0 Enclosure 0 Disk 18
+Bus 0 Enclosure 0 Disk 14
+Bus 0 Enclosure 0 Disk 17
+Bus 0 Enclosure 0 Disk 12
+Bus 0 Enclosure 0 Disk 13
+LUNs:  5, 0, 1
+

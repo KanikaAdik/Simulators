@@ -1,0 +1,327 @@
+id        = 1
+name      = root_fs_1
+acl       = 0
+in_use    = False
+type      = uxfs
+worm      = off
+volume    = root_volume_1
+block dedup = Disabled
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+fast_clone_level = unavailable
+deduplication   = unavailable
+size      = total = 16 (sizes in MB) ( blockcount = 32768 )
+stor_devs = $$$$-2007
+disks     = root_disk
+
+id        = 2
+name      = root_fs_common
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = root_volume_16
+block dedup = Disabled
+pool      = 
+rw_servers= 
+ro_servers= server_2,server_3
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+fast_clone_level = 1
+deduplication   = Off
+size      = total = 15 avail = 10 used = 5 ( 34% ) (sizes in MB) ( blockcount = 32768 )
+volume: total = 16 (sizes in MB) ( blockcount = 32768 ) avail = 10 used = 6 ( 38% )
+stor_devs = $$$$-2007
+disks     = root_disk
+ disk=root_ stor_dev=$$$$-2007 addr=c0t0l0         server=server_2
+ disk=root_ stor_dev=$$$$-2007 addr=c16t0l0        server=server_2
+ disk=root_ stor_dev=$$$$-2007 addr=c0t0l0         server=server_3
+ disk=root_ stor_dev=$$$$-2007 addr=c16t0l0        server=server_3
+
+id        = 3
+name      = root_fs_ufslog
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = root_ufslog
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 1024 (sizes in MB) ( blockcount = 2097152 )
+stor_devs = $$$$-2008
+disks     = root_ldisk
+
+id        = 4
+name      = root_panic_reserve
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = root_panic_reserve
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 22063 (sizes in MB) ( blockcount = 45185024 )
+stor_devs = $$$$-2007
+disks     = root_disk
+
+id        = 5
+name      = root_fs_d3
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = md3
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 2047 (sizes in MB) ( blockcount = 0 )
+stor_devs = $$$$-2009
+disks     = d3
+
+id        = 6
+name      = root_fs_d4
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = md4
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 2047 (sizes in MB) ( blockcount = 0 )
+stor_devs = $$$$-200A
+disks     = d4
+
+id        = 7
+name      = root_fs_d5
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = md5
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 4095 (sizes in MB) ( blockcount = 0 )
+stor_devs = $$$$-200B
+disks     = d5
+
+id        = 8
+name      = root_fs_d6
+acl       = 0
+in_use    = False
+type      = rawfs
+worm      = off
+volume    = md6
+pool      = 
+rw_servers= 
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+deduplication   = unavailable
+size      = total = 65535 (sizes in MB) ( blockcount = 0 )
+stor_devs = $$$$-200C
+disks     = d6
+
+id        = 9
+name      = root_fs_2
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = root_volume_2
+block dedup = Disabled
+pool      = 
+rw_servers= server_2
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+fast_clone_level = 1
+deduplication   = Off
+size      = total = 252 avail = 244 used = 8 ( 3% ) (sizes in MB) ( blockcount = 524288 )
+volume: total = 256 (sizes in MB) ( blockcount = 524288 ) avail = 244 used = 12 ( 5% )
+stor_devs = $$$$-2007,$$$$-2008
+disks     = root_disk,root_ldisk
+ disk=root_ stor_dev=$$$$-2007 addr=c0t0l0         server=server_2
+ disk=root_ stor_dev=$$$$-2007 addr=c16t0l0        server=server_2
+ disk=root_ stor_dev=$$$$-2008 addr=c0t0l1         server=server_2
+ disk=root_ stor_dev=$$$$-2008 addr=c16t0l1        server=server_2
+
+id        = 10
+name      = root_fs_3
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = root_volume_3
+block dedup = Disabled
+pool      = 
+rw_servers= server_3
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+fast_clone_level = unavailable
+deduplication   = unavailable
+size      = total = 256 (sizes in MB) ( blockcount = 524288 ) avail = 0 used = 256 ( 100% )
+stor_devs = $$$$-2007,$$$$-2008
+disks     = root_disk,root_ldisk
+ disk=root_ stor_dev=$$$$-2007 addr=c0t0l0         server=server_3
+ disk=root_ stor_dev=$$$$-2007 addr=c16t0l0        server=server_3
+ disk=root_ stor_dev=$$$$-2008 addr=c0t0l1         server=server_3
+ disk=root_ stor_dev=$$$$-2008 addr=c16t0l1        server=server_3
+
+id        = 11
+name      = Test1
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = v102
+block dedup = Disabled
+pool      = File Pool
+member_of = root_avm_fs_group_59
+rw_servers= server_2
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+log_type  = split
+fast_clone_level = 2
+deduplication   = Off
+thin_storage    = False
+tiering_policy  = Auto-Tier/Highest Available Tier
+compressed= False
+mirrored  = False
+size      = total = 10021 avail = 10018 used = 3 ( 0% ) (sizes in MB) ( blockcount = 20971520 )
+volume: total = 10240 (sizes in MB) ( blockcount = 20971520 ) avail = 10018 used = 222 ( 2% )
+stor_devs = $$$$-0000,$$$$-0001
+disks     = d7,d8
+ disk=d7    stor_dev=$$$$-0000 addr=c0t1l1         server=server_2
+ disk=d7    stor_dev=$$$$-0000 addr=c16t1l1        server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c0t1l2         server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c16t1l2        server=server_2
+
+id        = 13
+name      = Test2
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = v104
+block dedup = Disabled
+pool      = File Pool
+member_of = root_avm_fs_group_59
+rw_servers= server_2
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+log_type  = split
+fast_clone_level = 2
+deduplication   = Off
+thin_storage    = False
+tiering_policy  = Auto-Tier/Highest Available Tier
+compressed= False
+mirrored  = False
+size      = total = 10021 avail = 10020 used = 1 ( 0% ) (sizes in MB) ( blockcount = 20971520 )
+volume: total = 10240 (sizes in MB) ( blockcount = 20971520 ) avail = 10020 used = 220 ( 2% )
+stor_devs = $$$$-0000,$$$$-0001
+disks     = d7,d8
+ disk=d7    stor_dev=$$$$-0000 addr=c0t1l1         server=server_2
+ disk=d7    stor_dev=$$$$-0000 addr=c16t1l1        server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c0t1l2         server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c16t1l2        server=server_2
+
+id        = 14
+name      = root_fs_vdm_Test_21
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = v106
+block dedup = Disabled
+pool      = File Pool
+member_of = root_avm_fs_group_59
+rw_servers= server_2
+ro_servers= 
+rw_vdms   = 
+ro_vdms   = 
+auto_ext  = no,thin=no
+log_type  = split
+fast_clone_level = 2
+deduplication   = Off
+thin_storage    = False
+tiering_policy  = Auto-Tier/Highest Available Tier
+compressed= False
+mirrored  = False
+size      = total = 887 avail = 880 used = 8 ( 1% ) (sizes in MB) ( blockcount = 2097152 )
+volume: total = 1024 (sizes in MB) ( blockcount = 2097152 ) avail = 879 used = 145 ( 14% )
+stor_devs = $$$$-0000,$$$$-0001
+disks     = d7,d8
+ disk=d7    stor_dev=$$$$-0000 addr=c0t1l1         server=server_2
+ disk=d7    stor_dev=$$$$-0000 addr=c16t1l1        server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c0t1l2         server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c16t1l2        server=server_2
+
+id        = 15
+name      = Test_fs
+acl       = 0
+in_use    = True
+type      = uxfs
+worm      = off
+volume    = v108
+block dedup = Disabled
+pool      = File Pool
+member_of = root_avm_fs_group_59
+rw_servers= server_2
+ro_servers= 
+rw_vdms   = Test_21
+ro_vdms   = 
+auto_ext  = no,thin=no
+log_type  = split
+fast_clone_level = 2
+deduplication   = Off
+thin_storage    = False
+tiering_policy  = Auto-Tier/Highest Available Tier
+compressed= False
+mirrored  = False
+size      = total = 945 avail = 945 used = 1 ( 0% ) (sizes in MB) ( blockcount = 2097152 )
+volume: total = 1024 (sizes in MB) ( blockcount = 2097152 ) avail = 944 used = 80 ( 8% )
+stor_devs = $$$$-0000,$$$$-0001
+disks     = d7,d8
+ disk=d7    stor_dev=$$$$-0000 addr=c0t1l1         server=server_2
+ disk=d7    stor_dev=$$$$-0000 addr=c16t1l1        server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c0t1l2         server=server_2
+ disk=d8    stor_dev=$$$$-0001 addr=c16t1l2        server=server_2
+
+

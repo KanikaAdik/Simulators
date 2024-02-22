@@ -1,0 +1,9 @@
+Component ID   Status   Currently Functioning   WWPN               Port ID   Role   User Enabled   Current Rate (GBaud)   Port State   Link Type           
+1:FC_Port:5:1  OK       yes                     5001738003110150   00000000  Target yes            0                      Offline      None                
+1:FC_Port:5:2  OK       yes                     5001738003110151   00342400  Target yes            4                      Online       Fabric Direct Attach
+1:FC_Port:5:3  OK       yes                     5001738003110152   0005A080  Target yes            4                      Online       Fabric Direct Attach
+1:FC_Port:5:4  OK       yes                     5001738003110153   00000000  Target yes            0                      Offline      None                
+1:FC_Port:4:1  OK       yes                     5001738003110140   00042C00  Target yes            4                      Online       Fabric Direct Attach
+1:FC_Port:4:2  OK       yes                     5001738003110141   00342000  Target yes            4                      Online       Fabric Direct Attach
+1:FC_Port:4:3  OK       yes                     5001738003110142   00010D00  Target yes            4                      Online       Fabric Direct Attach
+1:FC_Port:4:4  OK       yes                     5001738003110143   006E004D  Target yes            4                      Online       Fabric Direct Attach

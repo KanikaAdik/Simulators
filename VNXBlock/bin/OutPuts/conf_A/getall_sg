@@ -1,0 +1,114 @@
+
+
+Server IP Address:       $$$$
+Agent Rev:           7.33.8 (1.19)
+
+
+All Storage Groups Information
+------------------------------
+
+
+Data Access control: ENABLED
+
+Storage Group Name:    brazil_144.76
+Storage Group UID:     EF:BD:66:E2:46:07:E6:11:AA:B5:00:60:16:58:D2:4B
+HBA/SP Pairs:
+
+  HBA UID                                          SP Name     SPPort
+  -------                                          -------     ------ 
+  20:00:00:E0:8B:1E:51:94:21:00:00:E0:8B:1E:51:94   SP A         0
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               4
+Shareable:             YES
+
+Storage Group Name:    ExternalWeb
+Storage Group UID:     45:D6:78:49:03:F3:E6:11:AA:B5:00:60:16:58:D2:4B
+HBA/SP Pairs:
+
+  HBA UID                                          SP Name     SPPort
+  -------                                          -------     ------ 
+  20:00:00:90:FA:48:6A:11:10:00:00:90:FA:48:6A:11   SP A         0
+  20:00:00:90:FA:5A:26:E3:10:00:00:90:FA:5A:26:E3   SP A         0
+  20:00:00:90:FA:48:6A:11:10:00:00:90:FA:48:6A:11   SP B         0
+  20:00:00:90:FA:5A:26:E3:10:00:00:90:FA:5A:26:E3   SP B         0
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               13
+Shareable:             YES
+
+Storage Group Name:    Linux1
+Storage Group UID:     E0:E1:9C:A0:9F:90:E6:11:AA:B5:00:60:16:58:D2:4B
+HBA/SP Pairs:
+
+  HBA UID                                          SP Name     SPPort
+  -------                                          -------     ------ 
+  20:00:00:24:FF:0B:F4:05:21:00:00:24:FF:0B:F4:05   SP A         0
+  20:00:00:24:FF:0B:F4:05:21:00:00:24:FF:0B:F4:05   SP B         0
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               8
+    1               12
+Shareable:             YES
+
+Storage Group Name:    Linux Host_156.45
+Storage Group UID:     97:8B:1B:4E:C8:CC:E6:11:AA:B5:00:60:16:58:D2:4B
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               11
+Shareable:             YES
+
+Storage Group Name:    Test-QA$
+Storage Group UID:     1D:EB:94:82:B2:B6:E6:11:AA:B5:00:60:16:58:D2:4B
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               9
+    1               10
+Shareable:             YES
+
+Storage Group Name:    Storage Group Linux Test
+Storage Group UID:     7C:2A:C4:63:E1:CC:E6:11:AA:B5:00:60:16:58:D2:4B
+Shareable:             YES
+
+Storage Group Name:    Storage Group 1
+Storage Group UID:     30:68:F6:81:24:B3:E5:11:BC:1B:00:60:16:58:D2:4B
+HBA/SP Pairs:
+
+  HBA UID                                          SP Name     SPPort
+  -------                                          -------     ------ 
+  20:00:00:E0:8B:9A:35:0A:21:00:00:E0:8B:9A:35:0A   SP A         0
+  20:00:00:E0:8B:9A:35:0A:21:00:00:E0:8B:9A:35:0A   SP B         0
+  20:01:00:E0:8B:BA:35:0A:21:01:00:E0:8B:BA:35:0A   SP A         0
+  20:01:00:E0:8B:BA:35:0A:21:01:00:E0:8B:BA:35:0A   SP B         0
+  28:1C:00:0C:29:00:00:05:28:1C:00:0C:29:00:00:06   SP A         0
+  20:02:00:E0:8B:DA:C3:08:21:02:00:E0:8B:DA:C3:08   SP A         0
+  20:03:00:E0:8B:FA:C3:08:21:03:00:E0:8B:FA:C3:08   SP A         0
+  20:02:00:E0:8B:DA:C3:08:21:02:00:E0:8B:DA:C3:08   SP B         0
+  20:03:00:E0:8B:FA:C3:08:21:03:00:E0:8B:FA:C3:08   SP B         0
+
+HLU/ALU Pairs:
+
+  HLU Number     ALU Number
+  ----------     ----------
+    0               2
+    1               3
+    2               6
+    3               5
+    4               9
+Shareable:             YES
+

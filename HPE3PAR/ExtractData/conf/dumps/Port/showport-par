@@ -1,0 +1,11 @@
+N:S:P Connmode ConnType CfgRate MaxRate Class2   UniqNodeWwn VCN      IntCoal  TMWO
+0:0:1 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+0:0:2 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+0:1:1 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+0:1:2 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+1:0:1 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+1:0:2 disk     point    6Gbps   6Gbps   n/a      n/a         n/a      enabled  n/a
+1:1:1 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+1:1:2 host     point    auto    8Gbps   disabled disabled    disabled disabled enabled
+--------------------------------------------------------------------------------------
+8

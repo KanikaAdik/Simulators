@@ -1,0 +1,5 @@
+        -----(MB)------
+Id Name Warn Limit Grow Args
+ 0 AFA     -     - 8192 -ha mag -p -devtype SSD
+ 1 AFA2    -     - 8192 -ha mag -p -devtype SSD -rpm 100
+ 

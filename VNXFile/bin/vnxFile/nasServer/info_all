@@ -1,0 +1,22 @@
+id        = 1
+name      = server_2
+acl       = 0
+type      = nas
+slot      = 2
+member_of =
+standby   = server_3, policy=auto
+status    :
+  defined = enabled
+   actual = online, active
+
+id        = 2
+name      = server_3
+acl       = 0
+type      = standby
+slot      = 3
+member_of =
+standbyfor= server_2
+status    :
+  defined = enabled
+   actual = online, ready
+

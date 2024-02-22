@@ -1,0 +1,652 @@
+############################################## Virtual Volume #############################################
+ OPTIONS
+    -listcols
+        List the columns available to be shown in the -showcols option
+        described below (see 'clihelp -col showvv' for help on each column).
+
+    The [options] are generally of two kinds: those that select the type of
+    information that is displayed, and those that filter the list of VVs that
+    are displayed.
+
+    By default (if none of the information selection options below are
+    specified) the following columns are shown:
+    Id Name Prov Type CopyOf BsId Rd State Adm_Rsvd_MB Snp_Rsvd_MB Usr_Rsvd_MB VSize_MB
+
+    Options that select the type of information shown include the following:
+
+    -showcols <column>[,<column>...]
+        Explicitly select the columns to be shown using a comma-separated list
+        of column names.  For this option the full column names are shown in
+        the header.
+        Run 'showvv -listcols' to list the available columns.
+        Run 'clihelp -col showvv' for a description of each column.
+
+    -d
+        Displays detailed information about the VVs.  The following columns
+        are shown:
+        Id Name Rd Mstr Prnt Roch Rwch PPrnt PBlkRemain VV_WWN CreationTime Udid
+
+    -pol
+        Displays policy information about the VVs. The following columns
+        are shown: Id Name Policies
+
+    -space (-s)
+        Displays Logical Disk (LD) space use by the VVs.  The following columns
+        are shown:
+        Id Name Prov Type Adm_Rsvd_MB Adm_Used_MB Snp_Rsvd_MB Snp_Used_MB
+        Snp_Used_Perc Warn_Snp_Perc Limit_Snp_Perc Usr_Rsvd_MB Usr_Used_MB
+        Usr_Used_Perc Warn_Usr_Perc Limit_Usr_Perc Tot_Rsvd_MB VSize_MB
+        Compaction Dedup
+
+        Note: For snapshot (vcopy) VVs, the Adm_Used_MB, Snp_Used_MB,
+        Usr_Used_MB and the corresponding _Perc columns have a '*' before
+        the number for two reasons: to indicate that the number is an estimate
+        that must be updated using the updatesnapspace command, and to indicate
+        that the number is not included in the total for the column since the
+        corresponding number for the snapshot's base VV already includes that
+        number.
+
+    -r
+        Displays raw space use by the VVs.  The following columns are shown:
+        Id Name Prov Type Adm_RawRsvd_MB Adm_Rsvd_MB Snp_RawRsvd_MB Snp_Rsvd_MB
+        Usr_RawRsvd_MB Usr_Rsvd_MB Tot_RawRsvd_MB Tot_Rsvd_MB VSize_MB
+
+    -zone
+        Displays mapping zone information for VVs.
+        The following columns are shown:
+        Id Name Prov Type VSize_MB Adm_Zn Adm_Free_Zn Snp_Zn Snp_Free_Zn
+        Usr_Zn Usr_Free_Zn
+
+    -g
+        Displays the SCSI geometry settings for the VVs.  The following
+        columns are shown: Id Name SPT HPC SctSz
+
+    -alert
+        Indicates whether alerts are posted on behalf of the VVs.
+        The following columns are shown:
+        Id Name Prov Type VSize_MB Snp_Used_Perc Warn_Snp_Perc Limit_Snp_Perc
+        Usr_Used_Perc Warn_Usr_Perc Limit_Usr_Perc Alert_Adm_Fail_Y
+        Alert_Snp_Fail_Y Alert_Snp_Wrn_Y Alert_Snp_Lim_Y Alert_Usr_Fail_Y
+        Alert_Usr_Wrn_Y Alert_Usr_Lim_Y
+
+    -alerttime
+        Shows times when alerts were posted (when applicable).
+        The following columns are shown:
+        Id Name Alert_Adm_Fail Alert_Snp_Fail Alert_Snp_Wrn Alert_Snp_Lim
+        Alert_Usr_Fail Alert_Usr_Wrn Alert_Usr_Lim
+
+    -cpprog
+        Shows the physical copy and promote progress.
+        The following columns are shown:
+        Id Name Prov Type CopyOf VSize_MB Copied_MB Copied_Perc
+
+    -cpgalloc
+        Shows CPGs associated with each VV.  The following columns are
+        shown: Id Name Prov Type UsrCPG SnpCPG
+
+    -state
+        Shows the detailed state information for the VVs.  The following
+        columns are shown: Id Name Prov Type State Detailed_State SedState
+
+    -hist
+        Shows the history information of the VVs.
+        The following columns are shown:
+        Id Name Prov Type CreationTime RetentionEndTime ExpirationTime SpaceCalcTime Comment
+
+    -rcopy
+        This option appends two columns, RcopyStatus and RcopyGroup, to
+        any of the display options above.
+
+    -notree
+        Do not display VV names in tree format.
+        Unless either the -notree or the -sortcol option described below
+        are specified, the VVs are ordered and the  names are indented in
+        tree format to indicate the virtual copy snapshot hierarchy.
+
+    -sortcol <col>[,<dir>][:<col>[,<dir>]...]
+        Sorts command output based on column number (<col>). Columns are
+        numbered from left to right, beginning with 0. At least one column must
+        be specified. In addition, the direction of sorting (<dir>) can be
+        specified as follows:
+          inc
+              Sort in increasing order (default).
+          dec
+              Sort in decreasing order.
+
+        Multiple columns can be specified and separated by a colon (:). Rows
+        with the same information in them as earlier columns will be sorted
+        by values in later columns.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+    The VV filtering option include:
+
+    -p <pattern>
+        Pattern for matching VVs to show (see below for description
+        of <pattern>) If the -p option is specified multiple times, each
+        instance of <pattern> adds additional candidate VVs that match that
+        pattern.
+
+        A <pattern> is one or more of the following:
+
+        -cpg <cpgname_or_pattern>[,<cpgname_or_pattern>...]
+          Show only VVs whose UsrCPG or SnpCPG matches the one or more of
+          the cpgname_or_patterns.
+        -prov <prov_or_pattern>[,<prov_or_pattern>...]
+          Show only VVs with Prov (provisioning) values that match the
+          prov_or_pattern.
+        -type <type_or_pattern>[,<type_or_pattern>...]
+          Show only VVs of types that match the type_or_pattern.
+        -host <hostname_or_pattern>[,<hostname_or_pattern>...]
+          Show only VVs that are exported as VLUNs to hosts with names that
+          match one or more of the hostname_or_patterns.
+        -baseid <baseid_or_pattern>[,<baseid_or_pattern>...]
+          Show only VVs whose BsId column matches one more more of the
+          baseid_or_patterns.
+        -copyof <vvname_or_pattern>[,<vvname_or_pattern>...]
+          Show only VVs whose CopyOf column matches one more more of the
+          vvname_or_patterns.
+        -rcopygroup <groupname_or_pattern>[,<groupname_or_pattern>...]
+          Show only VVs that are in Remote Copy groups that match
+          one or more of the groupname_or_patterns.
+        -policy <policy_or_pattern>[,<policy_or_pattern>...]
+          Show only VVs whose policy matches the one or more of the
+          policy_or_pattern.
+
+    -domain <domain_name|pattern>[,<domain_name|pattern>...]
+        Show only VVs that are in domains with names matching one or more of
+        the specified domain_name or patterns. Only VVs within domains that
+        the user is a member of can be listed. Multiple domain names or
+        patterns can be repeated using a comma-separated list
+        (for example -domain <domain_name>,<domain_name>...).
+
+    -expired
+        Show only VVs that have expired.
+
+    -exp <time>{d|D|h|H}
+        Show only VVs that will expire in <time> days or hours. <time> is a
+        positive integer value and in the range of 1 - 43,800 hours (1825 days).
+        Time can be specified in days or hours providing either the 'd' or 'D'
+        for day and 'h' or 'H' for hours following the entered time value.
+
+    -retained
+        Show only VVs that have a retention time.
+
+    -failed
+        Shows only failed virtual volumes.
+
+    The following VV filtering options are deprecated and will be removed in
+    a future release.  Instead, use the appropriate -p <pattern> option
+    described above.
+
+    -cpg <cpgname_or_pattern>[,<cpgname_or_pattern>...]
+        Show only VVs whose UsrCPG or SnpCPG matches the one or more of
+        the cpgname_or_patterns.  This option is deprecated without the
+        preceding -p. Use -p -cpg option described above instead.
+    -tpvv
+        Show only thin provisioned VVs (TPVVs).  This option is deprecated.
+        Use the -p -prov tp* option described above instead.
+    -host <hostname_or_pattern>[,<hostname_or_pattern>...]
+        Show only VVs that are exported as VLUNs to hosts with names that
+        match one or more of the hostname_or_patterns.
+        This option is deprecated without the preceding -p.
+        Use -p -host option described above instead.
+    -rcopygroup <groupname_or_pattern>[,<groupname_or_pattern>...]
+        Show only VVs that are in Remote Copy groups that match one or
+        more of the groupname_or_patterns.
+        This option is deprecated without the preceding -p.
+        Use -p -rcopygroup option described above instead.
+
+SPECIFIERS
+    <VV_name|pattern|VV_set>...
+        Specifies the VVs with the specified name (up to 31 characters in
+        length), matching the glob-style pattern or that are members of the
+        supplied VV set will have their information displayed. The VV set name
+        must start with "set:". This specifier can be repeated to display
+        configuration information about multiple VVs. This specifier is not
+        required. If not specified, configuration information for all VVs in
+        the system is displayed.
+
+NOTES
+    The per-snapshot space is approximate and must be calculated using the
+    updatesnapspace command.
+
+    For all the <name_or_pattern> fields, the patterns are glob-style
+    (shell-style) patterns (see help on sub,globpat).
+
+    If the -showcols option is used the full column names are shown in the
+    header otherwise the header contains abbreviated column names.
+
+    A Domain column may be included by using the setclienv command to
+    set listdom to 1.  The listdom option is also set to 1 if the CLI was
+    started with the -listdom option, or if the CLI was started with the
+    TPDLISTDOM environment variable set. Please run "cli -h"  and
+    "setclienv -h" for details of the environment variables.
+
+
+    For this command, 1 MB = 1048576 bytes.
+
+EXAMPLES
+    The following example displays space usage information for thin provisioned
+     VVs that are exported to host hname:
+
+        cli% showvv -s -p -prov tp* -host hname
+
+     Note that the 'tp*' matches tpvv as well as tpsd.
+
+     The following example displays raw space usage information for thin
+     provisioned VVs exported to host hname and all VVs in the tree with the
+     base VV of Id 50.
+
+         cli% showvv -r -p -prov tp* -host hname -p -baseid 50
+
+     The following example lists the Id, Name and VSize_MB columns only for thin
+     provisioned VVs exported to host hname:
+
+        cli% showvv -showcols Id,Name,VSize_MB -p -prov tp* -host hname
+
+3Par7450 cli%
+///////////////////////////////////////////////////////////
+3Par7450 cli% showvv -listcols
+Adm_Free_MB,Adm_Free_Zn,Adm_RawRsvd_MB,Adm_Rsvd_MB,Adm_Used_MB,Adm_Zn,Alert_Adm_Fail,Alert_Adm_Fail_Y,Alert_Snp_Fail,Alert_Snp_Fail_Y,Alert_Snp_Lim,Alert_Snp_Lim_Y,Alert_Snp_Wrn,Alert_Snp_Wrn_Y,Alert_Usr_Fail,Alert_Usr_Fail_Y,Alert_Usr_Lim,Alert_Usr_Lim_Y,Alert_Usr_Wrn,Alert_Usr_Wrn_Y,BsId,Comment,Compaction,Copied_MB,Copied_Perc,CopyOf,CreationTime,Dedup,Detailed_State,Domain,EfficiencyUpdateTime,ExpirationTime,Grown_Adm_MB,Grown_Snp_MB,Grown_Usr_MB,HPC,Id,Limit_Snp_Perc,Limit_Usr_Perc,Mstr,Name,PBlkRemain,Policies,PPrnt,Prnt,Prov,RcopyGroup,RcopyStatus,Rd,Reclaimed_Adm_MB,Reclaimed_Snp_MB,Reclaimed_Usr_MB,RetentionEndTime,Roch,Rwch,SctSz,Snp_Free_MB,Snp_Free_Zn,Snp_RawRsvd_MB,Snp_Rsvd_MB,Snp_Used_MB,Snp_Used_Perc,Snp_Zn,SnpCPG,SpaceCalcTime,SPT,State,Tot_RawRsvd_MB,Tot_Rsvd_MB,Type,Udid,UnrefSpaceFreedTime,Usr_Free_MB,Usr_Free_Zn,Usr_RawRsvd_MB,Usr_Rsvd_MB,Usr_Used_MB,Usr_Used_Perc,Usr_Zn,UsrCPG,VSize_MB,VV_WWN,Warn_Snp_Perc,Warn_Usr_Perc
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+3Par7450 cli% clihelp -col showvv
+col,showvv - Explanation of column headers for showvv
+
+Id           VV identifier
+Name         VV name
+Domain       VV domain
+Prov         The provisioning for the VV, can be one of the following
+                 full     Fully provisioned VV, either with no Snp (snapshot)
+                          space or with statically allocated Snp space.
+                 tpvv     Thin provisioned VV, with space for the base volume
+                          allocated from the Usr space that is associated with
+                          the UsrCPG.  Snapshots allocate space from the Snp
+                          space associated with the SnpCPG (if any).
+                 tdvv     Thin deduplicated VV, with space for the base volume
+                          allocated from the Usr space that is associated with
+                          the UsrCPG.  Snapshots allocate space from the Snp
+                          space associated with the SnpCPG (if any).
+                 cpvv     Commonly provisioned VV.  The Usr space for this VV is
+                          fully provisioned and the Snp space is associated with
+                          a SnpCPG.
+                 tpsd     An old-style thin provisioned VV (created on a 2.2.4
+                          release or earlier) where both the base VV and
+                          snapshot data are allocated from the Snp space
+                          associated with the UsrCPG.
+                 snp      The VV is a snapshot (Type vcopy) and its space is
+                          provisioned from the base volume's snapshot space.
+                 peer     Remote volume admitted into the local storage system
+Type         Indicates the copy type of the VV and can be one of the following
+                 base     Base volume (not a copy)
+                 pcopy    Physical copy (full copy)
+                 vcopy    Snapshot copy (virtual copy)
+CopyOf       If the VV is a physical copy or virtual copy of another VV, this
+             field indicates the VV that this VV is a copy of.
+BsId         The Id of the VV that is the base VV (at the root of the snapshot
+             tree) for the VV.
+Rd           The Read/Write permissions for the VV, takes the following values
+                 RW       Read and write allowed
+                 RO       Read only
+State        State of the VV is one of
+                 normal     VV is operating normally
+                 failed     VV is operating abnormally
+                 degraded   VV is in degraded state
+Detailed_State
+             Detailed state of VV is one or more of
+                 lds_not_started              LDs Not Started
+                 needs_check                  Needs to be checked for consistency
+                 not_started                  VV Not Started
+                 needs_maint_check            Maintenance Check Required
+                 internal_consistency_error   Internal Consistency Error
+                 snapdata_invalid             Snapdata Invalid
+                 preserved                    One or more sets of an LD is
+                                              unavailable due to missing chunklets
+                                              and the remaining VV data is preserved
+                                              in a preserved data ld.
+                 stale                        Parts of the VV contain old data
+                                              because a copy-on-write operation
+                                              failed
+                 copy_failed                  A promote or copy to this volume
+                                              failed
+                 degraded_avail               Degraded due to availability
+                 degraded_perf                Degraded due to performance
+                 promoting                    Volume is currently the target of a
+                                              promote
+                 copy_target                  Volume is currently the target of a
+                                              physical copy
+                 resync_target                Volume is currently the target of a
+                                              resync copy
+                 tuning                       Volume is tuning
+                 closing                      Volume is closing
+                 removing                     Volume is removing
+                 creating                     Volume is creating
+                 importing                    Volume is importing
+                 exclusive                    Local storage system has exclusive
+                                              access to the volume. Any host
+                                              access to the volume is going
+                                              through local storage system and
+                                              not through remote storage system
+                 converting                   Volume is converting to a thin
+                                              provisioned or fully provisioned
+                                              virtual volume
+                 copy_source                  Copy Source
+                 consistent                   Volume is being imported consistently
+                                              along with other volumes in the VV set.
+
+                 standby                      Standby mode
+                 unknown                      Volume state unknown
+Mstr         Master node for the VV (node that is responsible for assigning
+             mapping zones)
+Prnt         Id of the parent in the snapshot tree (not necessarily same
+             as the CopyOf VV)
+Roch         Id of the read-only child VV in the snapshot tree
+Rwch         Id of the read-write child VV in the snapshot tree
+PPrnt        Id of the Physical Parent.  Valid only for a physical copy
+VV_WWN       Volume World Wide Name
+CreationTime
+             The time when the VV was created
+RetentionEndTime
+             The time at which the volume retention time expires
+ExpirationTime
+             The time when the VV will expire
+SpaceCalcTime
+             The time when the snapshot space was calculated
+Comment      Comment associated with the volume
+Policies     Policies used for the VV, of the form <snap_pol>,<sys_pol>,<vv_pol>
+             where <snap_pol> is one of
+                 no_stale_ss    No stale snapshots. If there is no space for
+                                a copy-on-write operation, the host write will
+                                fail.
+                 stale_ss       Stale snapshots. If there is no space for
+                                a copy-on-write operation, the snapshot is
+                                allowed to go stale but the host write can
+                                proceed without an error.
+             and <sys_pol> is one of
+                 system         Special volume used by the system
+                 no_system      Normal user volume
+             and <vv_pol> is one of
+                 one_host       This indicates a volume is constrained to export
+                                to one host or one host cluster.
+                 no_one_host    This indicates a volume exported to multiple
+                                hosts for use by a cluster-aware application, or
+                                when "port presents" VLUNs are used.
+                 zero_detect    This indicates that the storage system will scan
+                                for zeros in the incoming write data.
+                 no_zero_detect This indicates that the storage system will not
+                                scan for zeros in the incoming write data.
+                 no_cache       This indicates that the storage system is
+                                disabled for write caching, read caching, and
+                                read ahead for the volume. This is a read-only
+                                policy and cannot be set.
+                 read_cache     This indicates that the storage system is
+                                disabled for write caching. This is a read-only
+                                policy and cannot be set.
+Adm_Rsvd_MB  Adm (snapshot admin or SA) reserved space in MB (1024^2 bytes)
+Adm_RawRsvd_MB
+             Raw (including RAID overhead) Adm reserved space in
+             MB (1024^2 bytes)
+Adm_Used_MB  Adm used space in MB (1024^2 bytes).
+Adm_Free_MB  Adm free space in MB (1024^2 bytes)
+Adm_Zn       Adm space zones
+Adm_Free_Zn  Adm space free zones
+Snp_Rsvd_MB  Snp (snapshot data or SD) reserved space in MB (1024^2 bytes)
+Snp_RawRsvd_MB
+             Raw (including RAID overhead) Snp reserved space in
+             MB (1024^2 bytes)
+Snp_Used_MB  Snp used space in MB (1024^2 bytes).
+Snp_Free_MB  Snp free space in MB (1024^2 bytes)
+Snp_Zn       Snp space zones
+Snp_Free_Zn  Snp space free zones
+Snp_Used_Perc
+             Snp used space as a percentage of the virtual size (VSize_MB).
+Usr_Rsvd_MB  Usr (User) reserved space in MB (1024^2 bytes)
+Usr_RawRsvd_MB
+             Raw (including RAID overhead) Usr reserved space in
+             MB (1024^2 bytes)
+Usr_Used_MB  Usr used space in MB (1024^2 bytes)
+Usr_Free_MB  Usr free space in MB (1024^2 bytes)
+Usr_Zn       Usr space zones
+Usr_Free_Zn  Usr space free zones
+Usr_Used_Perc
+             Usr used space as a percentage of the virtual size (VSize_MB)
+VSize_MB     Virtual size of volume in MB (1024^2 bytes)
+Tot_Rsvd_MB  Total reserved space (Adm_Rsvd_MB + Snp_Rsvd_MB + Usr_Rsvd_MB)
+Tot_RawRsvd_MB
+             Total raw reserved space (Adm_RawRsvd_MB + Snp_RawRsvd_MB +
+             Usr_RawRsvd_MB)
+PBlkRemain   For a physical copy destination, the number of blocks that
+             still remain to be copied from the parent
+SPT          Sectors per track. Simulated geometry of the 'disk' for the VV.
+HPC          Head per cylinder. Simulated geometry of the 'disk' for the VV.
+SctSz        Sector Size in Bytes.
+UsrCPG       CPG name from which the user (Usr) space is allocated
+SnpCPG       CPG name from which the snapshot (Snp and Adm) space is allocated
+Copied_MB    MB copied for physical copies and snapshot promotes
+Copied_Perc  Copied_MB as a percent of the virtual size (VSize_MB)
+RcopyStatus  Remote Copy status of the volume.  Valid states are
+                 none      Volume is not associated with Remote Copy
+                 primary   Volume is the primary copy
+                 secondary Volume is the secondary copy
+                 snap      Volume is a Remote Copy snapshot
+                 sync      Volume is a Remote Copy snapshot that is being
+                           used for synchronization.
+                 delete    Volume is a Remote Copy snapshot that is marked for
+                           deletion.
+RcopyGroup   The Remote Copy group that the volume is a part of (if any)
+Warn_Snp_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Snp_Used_MB
+             will generate a warning alert.
+Limit_Snp_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Snp_Used_MB
+             will be prevented from growing.
+Warn_Usr_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Usr_Used_MB
+             will generate a warning alert.
+Limit_Usr_Perc
+             Percentage of VV virtual size (VSize_MB) at which the Usr_Used_MB
+             will be prevented from growing.
+Alert_Adm_Fail
+             Time (if any) at which an alert was posted indicating that the Adm
+             space for the VV failed to grow.
+Alert_Snp_Fail
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV failed to grow.
+Alert_Usr_Fail
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV failed to grow.
+Alert_Snp_Wrn
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV passed the warning limit (Warn_Snp_Perc).
+Alert_Usr_Wrn
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV passed the warning limit (Warn_Usr_Perc).
+Alert_Snp_Lim
+             Time (if any) at which an alert was posted indicating that the Snp
+             space for the VV reached the growth limit (Limit_Snp_Perc).
+Alert_Usr_Wrn
+             Time (if any) at which an alert was posted indicating that the Usr
+             space for the VV reached the growth limit (Limit_Usr_Perc).
+Alert_Adm_Fail_Y
+Alert_Snp_Fail_Y
+Alert_Usr_Fail_Y
+Alert_Snp_Wrn_Y
+Alert_Usr_Wrn_Y
+Alert_Snp_Lim_Y
+Alert_Usr_Wrn_Y
+             Indication that the corresponding alert was generated. For example,
+             if Alert_Snp_Fail is a valid time, Alert_Snp_Fail_Y is 'Y'
+             otherwise Alert_Snp_Fail_Y is '-'.
+Grown_Adm_MB
+             Amount of adm space that the volume has grown.
+Grown_Snp_MB
+             Amount of snapshot space that the volume has grown.
+Grown_Usr_MB
+             Amount of user space that the volume has grown.
+Reclaimed_Adm_MB
+             Amount of adm space that the volume has had reclaimed.
+Reclaimed_Snp_MB
+             Amount of snapshot space that the volume has had reclaimed.
+Reclaimed_Usr_MB
+             Amount of user space that the volume has had reclaimed.
+Udid
+             User-defined identifier per VV for OpenVMS hosts.
+Compaction   Compaction ratio (TPVV and TDVV)
+Dedup        Dedup ratio (TDVV)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showvv
+                                                            ---Rsvd(MB)--- -(MB)-
+ Id Name          Prov Type CopyOf BsId Rd -Detailed_State- Adm Snp    Usr  VSize
+  1 .srdata       full base ---       1 RW normal             0   0  81920  81920
+  0 admin         full base ---       0 RW normal             0   0  10240  10240
+284 CS_InfraLUN31 tpvv base ---     284 RW normal           256 512  33280 409600
+---------------------------------------------------------------------------------
+  3 total                                                   256 512 125440 501760
+
+////////////////////////////////////////////////////////////////////////////////////////////////  
+  
+3Par7450 cli% showvv -d
+ Id Name          Rd Mstr  Prnt Roch Rwch PPrnt PBlkRemain -------------VV_WWN------------- -----CreationTime------ Udid
+  1 .srdata       RW 0/1/-  ---  ---  ---   ---         -- 60002AC000000000000000010000C1AD 2014-11-26 12:51:53 CST    1
+  0 admin         RW 1/0/-  ---  ---  ---   ---         -- 60002AC000000000000000000000C1AD 2014-11-26 12:43:13 CST    0
+284 CS_InfraLUN31 RW 1/0/-  ---  ---  ---   ---         -- 60002AC0000000000000011C0000C1AD 2017-06-08 17:26:32 CDT  284
+------------------------------------------------------------------------------------------------------------------------
+  3 total                                                0
+
+////////////////////////////////////////////////////////////////////////////////////////////////  
+
+3Par7450 cli% showvv -space
+                            ---Adm--- ---------Snp---------- ------------Usr------------
+                            --(MB)--- --(MB)--- -(% VSize)-- ----(MB)----- --(% VSize)-- -----(MB)------ -Capacity Efficiency-
+ Id Name          Prov Type Rsvd Used Rsvd Used Used Wrn Lim   Rsvd   Used  Used Wrn Lim Tot_Rsvd  VSize   Compaction    Dedup
+  1 .srdata       full base    0    0    0    0  0.0  --  --  81920  81920 100.0  --  --    81920  81920           --       --
+  0 admin         full base    0    0    0    0  0.0  --  --  10240  10240 100.0  --  --    10240  10240           --       --
+284 CS_InfraLUN31 tpvv base  256   23  512    0  0.0   0   0  33280  32074   7.8   0   0    34048 409600         12.8       --
+------------------------------------------------------------------------------------------------------------------------------
+  3 total                    256   23  512    0              125440 124234                 126208 501760         12.8       --
+  
+////////////////////////////////////////////////////////////////////////////////////////////////
+  
+3Par7450 cli% showvv -r
+                            -----------------------------(MB)-----------------------------
+                            ----Adm----- ----Snp----- -----Usr------ -----Tot------
+ Id Name          Prov Type RawRsvd Rsvd RawRsvd Rsvd RawRsvd   Rsvd RawRsvd   Rsvd  VSize
+  1 .srdata       full base       0    0       0    0  109227  81920  109227  81920  81920
+  0 admin         full base       0    0       0    0   20480  10240   20480  10240  10240
+284 CS_InfraLUN31 tpvv base     768  256     683  512   44373  33280   45824  34048 409600
+------------------------------------------------------------------------------------------
+  3 total                       768  256     683  512  174080 125440  175531 126208 501760
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+  
+3Par7450 cli% showvv -state
+ Id Name          Prov Type State  -Detailed_State-
+  1 .srdata       full base normal normal
+  0 admin         full base normal normal
+284 CS_InfraLUN31 tpvv base normal normal
+---------------------------------------------------
+  3 total
+  
+  
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showvv -pol
+ Id Name          --------------------Policies--------------------
+  1 .srdata       stale_ss,system,cache,no_zero_detect
+  0 admin         stale_ss,system,cache,no_zero_detect
+284 CS_InfraLUN31 stale_ss,no_system,no_one_host,cache,zero_detect
+------------------------------------------------------------------
+  3 total
+
+////////////////////////////////////////////////////////////////////////////////////////////////  
+
+3Par7450 cli% showvv -g
+ Id Name          SPT HPC SctSz
+  1 .srdata       304   8   512
+  0 admin         304   8   512
+284 CS_InfraLUN31 304   8   512
+-------------------------------
+  3 total
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////// 
+ 
+3Par7450 cli% showvv -alert
+                                                               ------------Alerts------------
+                            -(MB)- -Snp(%VSize)- -Usr(%VSize)-  Adm ----Snp----- ----Usr-----
+ Id Name          Prov Type  VSize Used Wrn  Lim  Used Wrn Lim Fail Fail Wrn Lim Fail Wrn Lim
+  1 .srdata       full base  81920  0.0  --   -- 100.0  --  --    -    -   -   -    -   -   -
+  0 admin         full base  10240  0.0  --   -- 100.0  --  --    -    -   -   -    -   -   -
+284 CS_InfraLUN31 tpvv base 409600  0.0   0    0   7.8   0   0    -    -   -   -    -   -   -
+---------------------------------------------------------------------------------------------
+  3 total                   501760
+  
+////////////////////////////////////////////////////////////////////////////////////////////////
+  
+3Par7450 cli% showvv -alerttime
+                  ----------Alert Time-----------
+                  -Adm- ----Snp----- ----Usr-----
+ Id Name          Fail  Fail Wrn Lim Fail Wrn Lim
+  1 .srdata       --    --   --  --  --   --  --
+  0 admin         --    --   --  --  --   --  --
+284 CS_InfraLUN31 --    --   --  --  --   --  --
+-------------------------------------------------
+  3 total         -     -    -   -   -    -   -
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////
+  
+3Par7450 cli% showvv -zone
+                            -(MB)- ---Adm---- ---Snp---- ----Usr----
+ Id Name          Prov Type VVSize Zn Free_Zn Zn Free_Zn  Zn Free_Zn
+  1 .srdata       full base  81920  0       0  0       0   0       0
+  0 admin         full base  10240  0       0  0       0   0       0
+284 CS_InfraLUN31 tpvv base 409600  8       5  4       4 260      14
+--------------------------------------------------------------------
+  3 total                   501760  8       5  4       4 260      14
+  
+////////////////////////////////////////////////////////////////////////////////////////////////
+  
+3Par7450 cli% showvv -cpprog
+ Id Name          Prov Type CopyOf VSize_MB Copied_MB Copied%
+  1 .srdata       full base ---       81920        --      --
+  0 admin         full base ---       10240        --      --
+284 CS_InfraLUN31 tpvv base ---      409600        --      --
+-------------------------------------------------------------
+  3 total                            501760         0
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 3Par7450 cli% showvv -rcopy
+Error: This system is not licensed for Remote Copy.
+3Par7450 cli% showvv -notree
+                                                            ---Rsvd(MB)--- -(MB)-
+ Id Name          Prov Type CopyOf BsId Rd -Detailed_State- Adm Snp    Usr  VSize
+  0 admin         full base ---       0 RW normal             0   0  10240  10240
+  1 .srdata       full base ---       1 RW normal             0   0  81920  81920
+284 CS_InfraLUN31 tpvv base ---     284 RW normal           256 512  33280 409600
+---------------------------------------------------------------------------------
+  3 total                                                   256 512 125440 501760
+
+////////////////////////////////////////////////////////////////////////////////////////////////  
+
+3Par7450 cli% showvv -expired
+no vv listed
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showvv -failed
+no vv listed
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+3Par7450 cli% showvv -retained
+no vv listed

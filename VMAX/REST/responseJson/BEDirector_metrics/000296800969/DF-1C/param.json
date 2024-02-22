@@ -1,0 +1,17 @@
+{
+    "startDate": "1494577800000", 
+    "symmetrixId": "000296800969", 
+    "endDate": "1494578400000", 
+    "directorId": "DF-1C", 
+    "metrics": [
+        "IOs", 
+        "ReadReqs", 
+        "WriteReqs", 
+        "Reqs", 
+        "MBs", 
+        "MBRead", 
+        "MBWritten", 
+        "PercentBusy"
+    ], 
+    "dataFormat": "Average"
+}

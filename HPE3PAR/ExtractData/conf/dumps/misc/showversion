@@ -1,0 +1,188 @@
+Release version 3.2.1 (MU3)
+Patches:  P17,P18,P19,P23,P27,P28,P29,P30,P31
+
+Component Name                   Version
+CLI Server                       3.2.1 (P27)
+CLI Client                       3.2.1
+System Manager                   3.2.1 (P30)
+Kernel                           3.2.1 (MU3)
+TPD Kernel Code                  3.2.1 (P17)
+TPD Kernel Patch                 3.2.1 (P31)
+
+
+
+
+
+
+ 
+showspace - Show estimated free space for logical disk creation.
+
+SYNTAX
+    showspace [options <arg>]
+
+DESCRIPTION
+    The showspace command displays estimated free space for logical disk
+    creation.
+
+AUTHORITY
+    Any role in the system
+
+OPTIONS
+    The following options are used to select the logical disk creation
+    parameters used for space calculation:
+
+    -cpg <CPG_name>|<pattern>
+        Specifies that logical disk creation parameters are taken from CPGs that
+        match the specified CPG name or pattern, indicated with a glob-style
+        pattern. Multiple CPG names or patterns can be specified using a comma
+        separated list, for example cpg1,cpg2,cpg3. Only the -hist option can be
+        specified with the -cpg option.
+
+    -hist
+        Specifies that free space history over time for CPGs specified with the
+        -cpg option is displayed. This option can only be used if the -cpg
+        option is specified.
+
+    -t <RAID_type>
+        Specifies the RAID type of the logical disk: r0 for RAID-0, r1 for
+        RAID-1, r5 for RAID-5, or r6 for RAID-6. If no RAID type is specified,
+        the default is r1 for FC and SSD device types and r6 for NL device types.
+
+    -ssz <size_number_chunklets>
+        Specifies the set size in terms of chunklets. The default depends on the
+        RAID type specified: 2 for RAID-1, 4 for RAID-5, and 8 for RAID-6.
+
+    -rs <size>
+        Specifies the number of sets in a row. The <size> is a positive integer.
+        If not specified, no row limit is imposed.
+
+    -ss <size_KB>
+        Specifies the step size from 32 KB to 512 KB. The step size should be a
+        power of 2 and a multiple of 32. The default value depends on raid type and
+        device type used. If no value is entered and FC or NL drives are used, the
+        step size defaults to 256 KB for RAID-0 and RAID-1, and 128 KB for RAID-5.
+        If SSD drives are used, the step size defaults to 32 KB for RAID-0 and
+        RAID-1, and 64 KB for RAID-5. For RAID-6, the default is a function of the
+        set size.
+
+    -ha port|cage|mag
+        Specifies that the layout must support the failure of one port pair,
+        one cage, or one drive magazine (mag).  This option has no meaning
+        for RAID-0.
+
+    -ch first|last
+        Specifies the chunklet location preference characteristics: either first
+        (attempt to use the lowest numbered available chunklets) or last(attempt
+        to use the highest numbered available chunklets). If no argument is
+        specified, the default characteristic is first.
+
+    -p <pattern>
+        Specifies a pattern for candidate disks. Patterns are used to select
+        disks that are used for creating logical disks. If no pattern is
+        specified, the option defaults to Fibre Channel (FC) disks. If
+        specified multiple times, each instance of the specified pattern adds
+        additional candidate disks that match the pattern. The -devtype pattern
+        cannot be used to mix Nearline (NL), FC, and Solid State Drive (SSD)
+        drives.
+
+        The following arguments can be specified as patterns for this option:
+        -nd <item>
+            Specifies one or more nodes. Nodes are identified by one or more
+            integers (item).  Multiple nodes are separated with a single comma
+            (e.g. 1,2,3). A range of nodes is separated with a hyphen (e.g. 0-
+            7). The primary path of the disks must be on the specified node(s).
+        -st <item>
+            Specifies one or more PCI slots. Slots are identified by one or more
+            integers (item). Multiple slots are separated with a single comma
+            (e.g. 1,2,3). A range of slots is separated with a hyphen (e.g. 0-
+            7). The primary path of the disks must be on the specified PCI
+            slot(s).
+        -pt <item>
+            Specifies one or more ports. Ports are identified by one or more
+            integers (item). Multiple ports are separated with a single comma
+            (e.g. 1,2,3). A range of ports is separated with a hyphen (e.g. 0-
+            4). The primary path of the disks must be on the specified port(s).
+        -cg <item>
+            Specifies one or more drive cages. Drive cages are identified by one
+            or more integers (item). Multiple drive cages are separated with a
+            single comma (e.g. 1,2,3). A range of drive cages is separated with
+            a hyphen (e.g. 0-3). The specified drive cage(s) must contain disks.
+        -mg <item>
+            Specifies one or more drive magazines. (The "1." or "0." displayed
+            in the CagePos column of showpd output indicating the side of the
+            cage is omitted when using -mg.) Drive magazines are identified by
+            one or more integers (item). Multiple drive magazines are separated
+            with a single comma (e.g. 1,2,3). A range of drive magazines is
+            separated with a hyphen(e.g. 0-7). The specified drive magazine(s)
+            must contain disks.
+        -pn <item>
+            Specifies one or more disk positions within a drive magazine. Disk
+            positions are identified by one or more integers (item). Multiple
+            disk positions are separated with a single comma(e.g. 1,2,3). A
+            range of disk positions is separated with a hyphen(e.g. 0-3). The
+            specified position(s) must contain disks.
+        -dk <item>
+            Specifies one or more physical disks. Disks are identified by one or
+            more integers(item). Multiple disks are separated with a single
+            comma (e.g. 1,2,3). A range of disks is separated with a hyphen(e.g.
+            0-3).  Disks must match the specified ID(s).
+        -tc_gt <number>
+            Specifies that physical disks with total chunklets greater than the
+            number specified be selected.
+        -tc_lt <number>
+            Specifies that physical disks with total chunklets less than the
+            number specified be selected.
+        -fc_gt <number>
+            Specifies that physical disks with free chunklets greater than the
+            number specified be selected.
+        -fc_lt <number>
+            Specifies that physical disks with free chunklets less than the
+            number specified be selected.
+        -devid <model>
+            Specifies that physical disks identified by their models be
+            selected. Models can be specified in a comma-separated list.
+            Models can be displayed by issuing the "showpd -i" command.
+        -devtype <type>
+            Specifies that physical disks must have the specified device type
+                (FC for Fibre Channel, NL for Nearline, SSD for Solid State
+            Drive to be used. Device types can be displayed by issuing the
+            "showpd" command. If it is not specified, the default device type
+            is FC.
+        -rpm <number>
+            Drives must be of the specified relative performance metric, as
+            shown in the "RPM" column of the "showpd" command.
+            The number does not represent a rotational speed for the drives
+            without spinning media (SSD). It is meant as a rough estimation of
+            the performance difference between the drive and the other drives
+            in the system.  For FC and NL drives, the number corresponds to
+            both a performance measure and actual rotational speed. For SSD
+            drives, the number is to be treated as a relative performance
+            benchmark that takes into account I/O's per second, bandwidth and
+            access time.
+
+        Disks that satisfy all of the specified characteristics are used.
+        For example -p -fc_gt 60 -fc_lt 230 -nd 2 specifies all the disks that
+        have greater than 60 and less than 230 free chunklets and that are
+        connected to node 2 through their primary path.
+
+SPECIFIERS
+    None.
+
+NOTES
+    The -cpg and -hist options cannot be used with any other option.
+
+    The showspace command includes chunklets in the process of being initialized
+    as shown by the "Normal, Unused, Uninit" column of showpd -c. The space
+    represented by these chunklets will not actually be available until the
+    initialization process is complete.
+
+    The space calculated is an estimate and not an exact figure.
+
+    For this command MB = 1048576 bytes.
+
+EXAMPLES
+    The following example displays the estimated free space for a RAID-1
+    logical disk:
+
+        cli% showspace -t r1
+

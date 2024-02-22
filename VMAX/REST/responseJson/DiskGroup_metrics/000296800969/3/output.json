@@ -1,0 +1,51 @@
+{
+    "count": 3, 
+    "expirationTime": 1494578473597, 
+    "resultList": {
+        "to": 3, 
+        "from": 1, 
+        "result": [
+            {
+                "timestamp": 1494577800000, 
+                "MBWritten": 150.98555, 
+                "DiskReads": 1294.7267, 
+                "PercentBusy": 11.283229, 
+                "IOs": 2890.0234, 
+                "DiskWrites": 1595.2966, 
+                "ReadResponseTime": 0.6162052, 
+                "ResponseTime": 0.45216635, 
+                "MBReads": 112.32463, 
+                "WriteResponseTime": 0.3190341, 
+                "MBs": 263.31018
+            }, 
+            {
+                "timestamp": 1494578100000, 
+                "MBWritten": 162.32333, 
+                "DiskReads": 1339.2434, 
+                "PercentBusy": 12.117437, 
+                "IOs": 2996.8435, 
+                "DiskWrites": 1657.6, 
+                "ReadResponseTime": 0.6915101, 
+                "ResponseTime": 0.49536458, 
+                "MBReads": 120.59185, 
+                "WriteResponseTime": 0.3368905, 
+                "MBs": 282.9152
+            }, 
+            {
+                "timestamp": 1494578400000, 
+                "MBWritten": 165.95212, 
+                "DiskReads": 1382.9468, 
+                "PercentBusy": 12.324071, 
+                "IOs": 3100.2803, 
+                "DiskWrites": 1717.3334, 
+                "ReadResponseTime": 0.6804537, 
+                "ResponseTime": 0.4890382, 
+                "MBReads": 120.662636, 
+                "WriteResponseTime": 0.3348937, 
+                "MBs": 286.61475
+            }
+        ]
+    }, 
+    "id": "46f76ad6-c161-42f3-9ad5-2939d691eda9_0", 
+    "maxPageSize": 1000
+}

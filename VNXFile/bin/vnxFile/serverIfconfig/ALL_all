@@ -1,0 +1,34 @@
+server_2 : 
+el30 protocol=IP device=mge0
+	 inet=128.221.252.2 netmask=255.255.255.0 broadcast=128.221.252.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:16:5f:bd:b4 netname=localhost
+el31 protocol=IP device=mge1
+	 inet=128.221.253.2 netmask=255.255.255.0 broadcast=128.221.253.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:16:5f:bd:b5 netname=localhost
+vnx_nfs protocol=IP device=fsn1
+	 inet=192.168.144.186 netmask=255.255.240.0 broadcast=192.168.159.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:48:28:ac:72
+vnx_cifs1 protocol=IP device=fsn1
+	 inet=192.168.144.185 netmask=255.255.240.0 broadcast=192.168.159.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:48:28:ac:72
+loop6 protocol=IP6 device=loop
+	 inet=::1 prefix=128
+	UP, Loopback, mtu=576, vlan=0, macaddr=0:0:0:0:0:0 netname=localhost
+loop protocol=IP device=loop
+	 inet=127.0.0.1 netmask=255.0.0.0 broadcast=127.255.255.255
+	UP, Loopback, mtu=576, vlan=0, macaddr=0:0:0:0:0:0 netname=localhost
+
+server_3 : 
+el30 protocol=IP device=mge0
+	 inet=128.221.252.3 netmask=255.255.255.0 broadcast=128.221.252.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:16:37:ff:68 netname=localhost
+el31 protocol=IP device=mge1
+	 inet=128.221.253.3 netmask=255.255.255.0 broadcast=128.221.253.255
+	UP, Ethernet, mtu=1500, vlan=0, macaddr=0:60:16:37:ff:69 netname=localhost
+loop6 protocol=IP6 device=loop
+	 inet=::1 prefix=128
+	UP, Loopback, mtu=576, vlan=0, macaddr=0:0:0:0:0:0 netname=localhost
+loop protocol=IP device=loop
+	 inet=127.0.0.1 netmask=255.0.0.0 broadcast=127.255.255.255
+	UP, Loopback, mtu=576, vlan=0, macaddr=0:0:0:0:0:0 netname=localhost
+
